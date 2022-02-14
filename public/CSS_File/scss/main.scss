@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+$color_red:red;
+%card_item_style{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30vw;
+        height: 12vw;
+        border-radius: 30px;
+        background-color: rgb(190, 146, 92);
+}
+.card{
+    width: 100%;
+    height: 70vw;
+    background-color: bisque;
+    &-expertise-html{
+       @extend %card_item_style;
+    }
+    &-expertise-css{
+       @extend %card_item_style;
+    }
+    &-expertise-javascript{
+       @extend %card_item_style;
+    }
+    &-expertise-bootstrap{
+       @extend %card_item_style;
+    }
+    &-expertise-jquary{
+       @extend %card_item_style;
+    }
+    &-expertise-sass{
+       @extend %card_item_style;
+    }
+    &-expertise-react{
+       @extend %card_item_style;
+    }
+    &-expertise-git{
+       @extend %card_item_style;
+    }
+}

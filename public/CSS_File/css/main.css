@@ -1,0 +1,23 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+.card-expertise-git, .card-expertise-react, .card-expertise-sass, .card-expertise-jquary, .card-expertise-bootstrap, .card-expertise-javascript, .card-expertise-css, .card-expertise-html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 12vw;
+  border-radius: 30px;
+  background-color: #be925c;
+}
+
+.card {
+  width: 100%;
+  height: 70vw;
+  background-color: bisque;
+}
+
+/*# sourceMappingURL=main.css.map */
