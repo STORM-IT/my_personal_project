@@ -3,42 +3,72 @@
     padding: 0px;
     font-family: sans-serif;
 }
-$color_red:red;
+$color_black:#222831;
+$color_gray:#393E46;
+$color_blue:#0092CA;
+$color_light:#EEEEEE;
 %card_item_style{
     display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 30vw;
-        height: 12vw;
+    // align-items: center;
+    // align-content: space-around;
+    justify-content:space-around;
+        width: 20vw;
+        height: 5vw;
         border-radius: 30px;
-        background-color: rgb(190, 146, 92);
+        margin-bottom: 15px;
+        background-color: $color_blue;
 }
 .card{
     width: 100%;
     height: 70vw;
-    background-color: bisque;
+    background-color: $color_gray;
     &-expertise-html{
        @extend %card_item_style;
+       span{
+           align-self: center
+       }
+    //    background-image: url(../../IMG/logo_lessen/html.svg)
     }
     &-expertise-css{
        @extend %card_item_style;
+       span{
+        align-self: center
+    }
     }
     &-expertise-javascript{
        @extend %card_item_style;
+       span{
+        align-self: center
+    }
     }
     &-expertise-bootstrap{
        @extend %card_item_style;
+       span{
+        align-self: center
     }
-    &-expertise-jquary{
+    }
+    &-expertise-jquery{
        @extend %card_item_style;
+       span{
+        align-self: center
+    }
     }
     &-expertise-sass{
        @extend %card_item_style;
+       span{
+        align-self: center
+    }
     }
     &-expertise-react{
        @extend %card_item_style;
+       span{
+        align-self: center
+    }
     }
     &-expertise-git{
        @extend %card_item_style;
+       span{
+        align-self: center
+    }
     }
 }

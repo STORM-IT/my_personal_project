@@ -4,20 +4,44 @@
   font-family: sans-serif;
 }
 
-.card-expertise-git, .card-expertise-react, .card-expertise-sass, .card-expertise-jquary, .card-expertise-bootstrap, .card-expertise-javascript, .card-expertise-css, .card-expertise-html {
+.card-expertise-git, .card-expertise-react, .card-expertise-sass, .card-expertise-jquery, .card-expertise-bootstrap, .card-expertise-javascript, .card-expertise-css, .card-expertise-html {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30vw;
-  height: 12vw;
+  justify-content: space-around;
+  width: 20vw;
+  height: 5vw;
   border-radius: 30px;
-  background-color: #be925c;
+  margin-bottom: 15px;
+  background-color: #0092CA;
 }
 
 .card {
   width: 100%;
   height: 70vw;
-  background-color: bisque;
+  background-color: #393E46;
+}
+.card-expertise-html span {
+  align-self: center;
+}
+.card-expertise-css span {
+  align-self: center;
+}
+.card-expertise-javascript span {
+  align-self: center;
+}
+.card-expertise-bootstrap span {
+  align-self: center;
+}
+.card-expertise-jquery span {
+  align-self: center;
+}
+.card-expertise-sass span {
+  align-self: center;
+}
+.card-expertise-react span {
+  align-self: center;
+}
+.card-expertise-git span {
+  align-self: center;
 }
 
 /*# sourceMappingURL=main.css.map */
