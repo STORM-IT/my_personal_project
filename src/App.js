@@ -71,9 +71,9 @@ export default function App() {
       <main>
         <section className='main-information'>
           <img className='main-information-picture' src='./IMG/information/final/IMG_20220210_180308.jpg' />
-          <div className='main-information-container'>
-            <h3 className='main-information-container-head'>اطلاعات کلی درباره</h3>
-            <p className='main-information-container-text'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
+          <div className='main-information-text-container'>
+            <h3 className=''>اطلاعات کلی درباره</h3><hr/><br/>
+            <p className=''>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
                و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با 
               هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
                جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص

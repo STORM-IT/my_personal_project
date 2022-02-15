@@ -71,7 +71,7 @@ body {
   font-size: 40px;
 }
 .header-short-video {
-  position: absolute;
+  position: fixed;
   top: 0px;
   width: 100%;
   object-fit: fill;
@@ -87,6 +87,36 @@ body {
   height: 300px;
   bottom: 0px;
   object-fit: fill;
+}
+
+.main-information {
+  display: flex;
+  position: relative;
+  background-color: #393e46;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+}
+.main-information img {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  width: 350px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: black -5px 5px 10px;
+}
+.main-information-text-container {
+  position: absolute;
+  width: 70vw;
+  right: 0px;
+  direction: rtl;
+  font-family: RoyaBold;
+  font-size: 2em;
+  padding: 50px;
+  text-indent: 10px;
+  line-height: 50px;
+  color: #eeeeee;
 }
 
 /*# sourceMappingURL=main.css.map */
