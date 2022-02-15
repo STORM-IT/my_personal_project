@@ -19,7 +19,7 @@ export default function App() {
           {/* </video> */}
           <div className='header-short'>
           <video className='header-short-video'  src="./IMG/head_short_video/top-view-of-business-handshake-and-client-meeting.mp4" ref={vidRef} muted loop/>
-          <span>STOOORMIX</span>
+          <span>به وبساخت شخصی من خوش آمدید</span>
           </div>
         {/* <div>
         <nav>
@@ -37,7 +37,7 @@ export default function App() {
           </span>
         </div> */}
       </header>
-      {/* <section className='card'>
+      <section className='card'>
         <div className='card-expertise'>
           <div className='card-expertise-html'>
             <span>HTML</span>
@@ -72,7 +72,7 @@ export default function App() {
             <img src='./IMG/logo_lessen/git.svg' />
           </div>
         </div>
-      </section> */}
+      </section>
     </Fragment>
   )
 }
