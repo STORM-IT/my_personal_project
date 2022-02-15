@@ -5,10 +5,10 @@ import {url} from './component/utils/video_short_head'
 
 export default function App() {
 
-  const [url,setUrl]=useState("./IMG/head_short_video/top-view-of-business-handshake-and-client-meeting.mp4");
+  const [url,setUrl]=useState("./IMG/head_short_video/top-view-of-business-handshake-and-client-meeting.m4v");
   const [currentVideo,setCurrentVideo] =useState(1);
   
-  const videos=["./IMG/head_short_video/top-view-of-business-handshake-and-client-meeting.mp4","./IMG/head_short_video/computer-code-in-the-screen.mp4","./IMG/head_short_video/open-office-space.mp4"];
+  const videos=["./IMG/head_short_video/top-view-of-business-handshake-and-client-meeting.mp4","./IMG/head_short_video/computer-code-in-the-screen.mp4","./IMG/head_short_video/open-office-space.m4v"];
 
 
   const vidRef = useRef();
