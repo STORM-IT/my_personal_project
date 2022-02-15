@@ -1,0 +1,1 @@
+var vidShortHead = document.getElementById("short-video_head");

@@ -57,7 +57,7 @@ body {
   display: flex;
   position: relative;
   width: 100%;
-  height: 700px;
+  height: 40vw;
   overflow: hidden;
   justify-content: center;
   align-items: center;
@@ -71,12 +71,22 @@ body {
   font-size: 40px;
 }
 .header-short-video {
-  position: fixed;
+  position: absolute;
+  top: 0px;
   width: 100%;
   object-fit: fill;
   height: 40vw;
   opacity: 0.6;
   z-index: -10;
+}
+.header-short-footer {
+  position: absolute;
+  align-self: flex-end;
+  display: block;
+  width: 100%;
+  height: 300px;
+  bottom: 0px;
+  object-fit: fill;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,27 +1,59 @@
-import React, { Fragment, useEffect, useRef } from 'react'
+import React, { Fragment, useEffect, useRef, useState } from 'react'
 
+import {url} from './component/utils/video_short_head'
 
 
 export default function App() {
+
+  const [url,setUrl]=useState("./IMG/head_short_video/top-view-of-business-handshake-and-client-meeting.mp4");
+  const [currentVideo,setCurrentVideo] =useState(1);
   
-  const vidRef=useRef();
+  const videos=["./IMG/head_short_video/top-view-of-business-handshake-and-client-meeting.mp4","./IMG/head_short_video/computer-code-in-the-screen.mp4","./IMG/head_short_video/open-office-space.mp4"];
+
+
+  const vidRef = useRef();
   useEffect(() => {
     require("./JS/script");
+    // setUrl(videos[currentVideo])
+    // setUrl(videos[1])
     vidRef.current.play();
-  },[])
+  }, [])
   
+  useEffect(() => {
+    console.log("effect")
+    vidRef.current.play();
+  }, [url])
+  
+
+  const next_video=()=>{
+    if (currentVideo === videos.length) {
+      setCurrentVideo(0);
+      setUrl(videos[currentVideo])
+    } else {
+      setCurrentVideo(currentVideo+1)
+      setUrl(videos[currentVideo])
+      }
+    }
+
   return (
     <Fragment>
       <header className='header'>
-        
+
         {/* <video id='video_tag' src='./IMG/head_short_video/top-view-of-business-handshake-and-client-meeting.mp4' width="100%" height="240" autoplay muted loop/> */}
-          {/* <source src='./IMG/head_short_video/top-view-of-business-handshake-and-client-meeting.mp4' type="video/mp4"/> */}
-          {/* </video> */}
-          <div className='header-short'>
-          <video className='header-short-video'  src="./IMG/head_short_video/top-view-of-business-handshake-and-client-meeting.mp4" ref={vidRef} muted loop/>
-          <span>به وبساخت شخصی من خوش آمدید</span>
-          </div>
-        {/* <div>
+        {/* <source src='./IMG/head_short_video/top-view-of-business-handshake-and-client-meeting.mp4' type="video/mp4"/> */}
+        {/* </video> */}
+        <div className='header-short'>
+          <video id='short-video_head' className='header-short-video' src={url} onEnded={()=>next_video()} ref={vidRef} muted />
+              <span>به وبساخت شخصی من خوش آمدید</span>
+              <svg className='header-short-footer' xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 1440 200">
+                <path fill="#393e46" fill-opacity="1" d="M0,96L80,90.7C160,85,320,75,480,90.7C640,107,800,149,960,149.3C1120,149,1280,107,1360,85.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+              </svg>
+
+
+            </div>
+          
+
+            {/* <div>
         <nav>
           <select>
             <option value={"home"}>خانه</option>
@@ -36,43 +68,43 @@ export default function App() {
             STORM
           </span>
         </div> */}
-      </header>
-      <section className='card'>
-        <div className='card-expertise'>
-          <div className='card-expertise-html'>
-            <span>HTML</span>
-            <img src='./IMG/logo_lessen/html.svg' />
-          </div>
-          <div className='card-expertise-css'>
-            <span>CSS</span>
-            <img src='./IMG/logo_lessen/css.svg' />
-          </div>
-          <div className='card-expertise-javascript'>
-            <span>JAVASCTIPT</span>
-            <img src='./IMG/logo_lessen/javascript.svg' />
-          </div>
-          <div className='card-expertise-bootstrap'>
-            <span>BOOTSTRAP</span>
-            <img src='./IMG/logo_lessen/bootstrap.svg' />
-          </div>
-          <div className='card-expertise-jquery'>
-            <span>JQUERY</span>
-            <img src='./IMG/logo_lessen/jquery.svg' />
-          </div>
-          <div className='card-expertise-sass'>
-            <span>SASS</span>
-            <img src='./IMG/logo_lessen/sass.svg' />
-          </div>
-          <div className='card-expertise-react'>
-            <span>REACT</span>
-            <img src='./IMG/logo_lessen/react.svg' />
-          </div>
-          <div className='card-expertise-git'>
-            <span>GIT</span>
-            <img src='./IMG/logo_lessen/git.svg' />
-          </div>
-        </div>
-      </section>
-    </Fragment>
-  )
+          </header>
+          {/* <section className='card'>
+            <div className='card-expertise'>
+              <div className='card-expertise-html'>
+                <span>HTML</span>
+                <img src='./IMG/logo_lessen/html.svg' />
+              </div>
+              <div className='card-expertise-css'>
+                <span>CSS</span>
+                <img src='./IMG/logo_lessen/css.svg' />
+              </div>
+              <div className='card-expertise-javascript'>
+                <span>JAVASCTIPT</span>
+                <img src='./IMG/logo_lessen/javascript.svg' />
+              </div>
+              <div className='card-expertise-bootstrap'>
+                <span>BOOTSTRAP</span>
+                <img src='./IMG/logo_lessen/bootstrap.svg' />
+              </div>
+              <div className='card-expertise-jquery'>
+                <span>JQUERY</span>
+                <img src='./IMG/logo_lessen/jquery.svg' />
+              </div>
+              <div className='card-expertise-sass'>
+                <span>SASS</span>
+                <img src='./IMG/logo_lessen/sass.svg' />
+              </div>
+              <div className='card-expertise-react'>
+                <span>REACT</span>
+                <img src='./IMG/logo_lessen/react.svg' />
+              </div>
+              <div className='card-expertise-git'>
+                <span>GIT</span>
+                <img src='./IMG/logo_lessen/git.svg' />
+              </div>
+            </div>
+          </section> */}
+        </Fragment>
+        )
 }
