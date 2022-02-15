@@ -1,11 +1,43 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect, useRef } from 'react'
 
 
 
 export default function App() {
+  
+  const vidRef=useRef();
+  useEffect(() => {
+    require("./JS/script");
+    vidRef.current.play();
+  },[])
+  
   return (
     <Fragment>
-      <section className='card'>
+      <header className='header'>
+        
+        {/* <video id='video_tag' src='./IMG/head_short_video/top-view-of-business-handshake-and-client-meeting.mp4' width="100%" height="240" autoplay muted loop/> */}
+          {/* <source src='./IMG/head_short_video/top-view-of-business-handshake-and-client-meeting.mp4' type="video/mp4"/> */}
+          {/* </video> */}
+          <div className='header-short'>
+          <video className='header-short-video'  src="./IMG/head_short_video/top-view-of-business-handshake-and-client-meeting.mp4" ref={vidRef} muted loop/>
+          <span>STOOORMIX</span>
+          </div>
+        {/* <div>
+        <nav>
+          <select>
+            <option value={"home"}>خانه</option>
+            <option value={"info"}>خصوصیات</option>
+            <option value={"expertise"}>دانش</option>
+            <option value={"social_network"}>شبکه های اجتماعی</option>
+          </select>
+        </nav>
+        </div>
+        <div>
+          <span>
+            STORM
+          </span>
+        </div> */}
+      </header>
+      {/* <section className='card'>
         <div className='card-expertise'>
           <div className='card-expertise-html'>
             <span>HTML</span>
@@ -40,7 +72,7 @@ export default function App() {
             <img src='./IMG/logo_lessen/git.svg' />
           </div>
         </div>
-      </section>
+      </section> */}
     </Fragment>
   )
 }

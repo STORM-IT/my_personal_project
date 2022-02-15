@@ -1,74 +1,103 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-family: sans-serif;
 }
-$color_black:#222831;
-$color_gray:#393E46;
-$color_blue:#0092CA;
-$color_light:#EEEEEE;
-%card_item_style{
+$color_black: #222831;
+$color_gray: #393e46;
+$color_blue: #0092ca;
+$color_light: #eeeeee;
+%card_item_style {
     display: flex;
     // align-items: center;
     // align-content: space-around;
-    justify-content:space-around;
-        width: 20vw;
-        height: 5vw;
-        border-radius: 30px;
-        margin-bottom: 15px;
-        background-color: $color_blue;
+    justify-content: space-around;
+    width: 20vw;
+    height: 5vw;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    background-color: $color_blue;
 }
-.card{
+body{
+    background-color: $color_black;
+}
+.card {
     width: 100%;
     height: 70vw;
     background-color: $color_gray;
-    &-expertise-html{
-       @extend %card_item_style;
-       span{
-           align-self: center
-       }
-    //    background-image: url(../../IMG/logo_lessen/html.svg)
+    &-expertise-html {
+        @extend %card_item_style;
+        span {
+            align-self: center;
+        }
+        //    background-image: url(../../IMG/logo_lessen/html.svg)
     }
-    &-expertise-css{
-       @extend %card_item_style;
-       span{
-        align-self: center
+    &-expertise-css {
+        @extend %card_item_style;
+        span {
+            align-self: center;
+        }
     }
+    &-expertise-javascript {
+        @extend %card_item_style;
+        span {
+            align-self: center;
+        }
     }
-    &-expertise-javascript{
-       @extend %card_item_style;
-       span{
-        align-self: center
+    &-expertise-bootstrap {
+        @extend %card_item_style;
+        span {
+            align-self: center;
+        }
     }
+    &-expertise-jquery {
+        @extend %card_item_style;
+        span {
+            align-self: center;
+        }
     }
-    &-expertise-bootstrap{
-       @extend %card_item_style;
-       span{
-        align-self: center
+    &-expertise-sass {
+        @extend %card_item_style;
+        span {
+            align-self: center;
+        }
     }
+    &-expertise-react {
+        @extend %card_item_style;
+        span {
+            align-self: center;
+        }
     }
-    &-expertise-jquery{
-       @extend %card_item_style;
-       span{
-        align-self: center
+    &-expertise-git {
+        @extend %card_item_style;
+        span {
+            align-self: center;
+        }
     }
-    }
-    &-expertise-sass{
-       @extend %card_item_style;
-       span{
-        align-self: center
-    }
-    }
-    &-expertise-react{
-       @extend %card_item_style;
-       span{
-        align-self: center
-    }
-    }
-    &-expertise-git{
-       @extend %card_item_style;
-       span{
-        align-self: center
-    }
+}
+.header {
+    &-short {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height:750px;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        span{
+            position: absolute;
+            justify-self: center;
+            color: $color_light;
+            vertical-align: middle;
+        }
+
+        &-video {
+            display: block;
+            position: absolute;
+            width: 100%;
+            object-fit:fill;
+            height: 40vw;
+            opacity: 0.6;
+        }
     }
 }

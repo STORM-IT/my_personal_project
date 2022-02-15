@@ -11,13 +11,17 @@
   height: 5vw;
   border-radius: 30px;
   margin-bottom: 15px;
-  background-color: #0092CA;
+  background-color: #0092ca;
+}
+
+body {
+  background-color: #222831;
 }
 
 .card {
   width: 100%;
   height: 70vw;
-  background-color: #393E46;
+  background-color: #393e46;
 }
 .card-expertise-html span {
   align-self: center;
@@ -42,6 +46,30 @@
 }
 .card-expertise-git span {
   align-self: center;
+}
+
+.header-short {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 750px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+.header-short span {
+  position: absolute;
+  justify-self: center;
+  color: #eeeeee;
+  vertical-align: middle;
+}
+.header-short-video {
+  display: block;
+  position: absolute;
+  width: 100%;
+  object-fit: fill;
+  height: 40vw;
+  opacity: 0.6;
 }
 
 /*# sourceMappingURL=main.css.map */
