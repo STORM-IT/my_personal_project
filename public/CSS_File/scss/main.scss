@@ -9,8 +9,21 @@ $color_blue: #0092ca;
 $color_light: #eeeeee;
 
 @font-face {
+    font-family: Nazanin;
+    src: url("../../Font/Far.Nazanin\ Bold.ttf");
+}
+@font-face {
     font-family: RoyaBold;
-    src: url("../../Font/Far.RoyaBold.ttf");
+    src: url("../../Font/Far.Roya\ Bold.ttf");
+}
+@font-face {
+    font-family: Yekan;
+    src: url("../../Font/Far.Yekan.ttf");
+    // src: url("../../Font/Far.Nazanin.ttf");
+}
+@font-face {
+    font-family: Ye;
+    src: url("../../Font/Far.Yekan.ttf");
 }
 %card_item_style {
     display: flex;
@@ -35,9 +48,22 @@ body{
     display: flex;
     justify-content: center;
     &-text{
+        display: flex;
+        justify-content: center;
+        position: relative;
         width: 100%;
-        height: 200px;
+        height: 150px;
         text-align: center;
+        background-color: darken($color: $color_blue, $amount:10);
+        margin-bottom: 50px;
+        h3{
+            position: absolute;
+            top: 20px;
+            color: $color_light;
+            font-size: 40px;
+            font-family:Yekan ;
+            // font-family:Nazanin ;
+        }
     }
 
     &-container{
@@ -174,10 +200,17 @@ body{
         position: absolute;
         width: 70vw;
         right: 0px;
-        direction: rtl;
-        font-family: RoyaBold;
         font-size: 2em;
+        direction: rtl;
         padding: 50px;
         color: $color_light;
+        h3{
+            font-family: Yekan;
+
+        }
+        p{
+            font-family: RoyaBold;
+
+        }
     }
 }

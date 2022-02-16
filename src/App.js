@@ -88,7 +88,7 @@ export default function App() {
         <section className='card'>
           <div className='card-container'>
             <div className='card-text'>
-              <h2>تکنولوژی های آموزش دیده</h2>
+              <h3>تکنولوژی های آموزش دیده</h3>
             </div>
             <div className='card-expertise'>
               <div className='card-body'>

@@ -5,8 +5,20 @@
 }
 
 @font-face {
+  font-family: Nazanin;
+  src: url("../../Font/Far.Nazanin Bold.ttf");
+}
+@font-face {
   font-family: RoyaBold;
-  src: url("../../Font/Far.RoyaBold.ttf");
+  src: url("../../Font/Far.Roya Bold.ttf");
+}
+@font-face {
+  font-family: Yekan;
+  src: url("../../Font/Far.Yekan.ttf");
+}
+@font-face {
+  font-family: Ye;
+  src: url("../../Font/Far.Yekan.ttf");
 }
 .card-expertise-git, .card-expertise-react, .card-expertise-sass, .card-expertise-jquery, .card-expertise-bootstrap, .card-expertise-javascript, .card-expertise-css, .card-expertise-html {
   display: flex;
@@ -32,9 +44,21 @@ body {
   justify-content: center;
 }
 .card-text {
+  display: flex;
+  justify-content: center;
+  position: relative;
   width: 100%;
-  height: 200px;
+  height: 150px;
   text-align: center;
+  background-color: #006d97;
+  margin-bottom: 50px;
+}
+.card-text h3 {
+  position: absolute;
+  top: 20px;
+  color: #eeeeee;
+  font-size: 40px;
+  font-family: Yekan;
 }
 .card-container {
   width: 80vw;
@@ -144,11 +168,16 @@ body {
   position: absolute;
   width: 70vw;
   right: 0px;
-  direction: rtl;
-  font-family: RoyaBold;
   font-size: 2em;
+  direction: rtl;
   padding: 50px;
   color: #eeeeee;
+}
+.main-information-text-container h3 {
+  font-family: Yekan;
+}
+.main-information-text-container p {
+  font-family: RoyaBold;
 }
 
 /*# sourceMappingURL=main.css.map */
