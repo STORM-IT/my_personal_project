@@ -40,39 +40,118 @@ $color_light: #eeeeee;
 body{
     background-color: $color_black;
 }
+
+.header {
+    &-short {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height:40vw;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        span{
+            position: absolute;
+            justify-self: center;
+            color: $color_light;
+            vertical-align: middle;
+            font-family: RoyaBold;
+            font-size: 40px;
+        }
+
+        &-video {
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            object-fit:fill;
+            height: 40vw;
+            opacity: 0.4;
+            z-index: -10;
+        }
+        &-footer{
+            position: absolute;
+            align-self: flex-end;
+            display: block;
+            width: 100%;
+            height: 300px;
+            bottom: 0px;
+            object-fit: fill;
+        }
+    }
+}
+
+.main-information{
+    display: flex;
+    position: relative;
+    background-color: $color_gray;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    img{
+        // position: absolute;
+        position: absolute;
+
+        top: 20px;
+        left: 50px;
+        width: 350px;
+        height: 500px;
+        border-radius: 10px;
+        box-shadow: black -5px 5px 10px;
+
+    }
+    &-text-container{
+        
+        position: absolute;
+        width: 70vw;
+        right: 0px;
+        font-size: 2em;
+        direction: rtl;
+        padding: 50px;
+        color: $color_light;
+        h3{
+            font-family: Yekan;
+
+        }
+        p{
+            font-family: RoyaBold;
+
+        }
+    }
+}
+
 .card {
     width: 100%;
-    height: 70vw;
+    // height: 1400px;
     background-color: $color_gray;
     z-index: 100;
     display: flex;
     justify-content: center;
+    margin-bottom: 300px;
     &-text{
         display: flex;
         justify-content: center;
         position: relative;
         width: 100%;
         height: 150px;
-        text-align: center;
         background-color: darken($color: $color_blue, $amount:10);
         margin-bottom: 50px;
         h3{
             position: absolute;
-            top: 20px;
+            top: 40px;
             color: $color_light;
             font-size: 40px;
             font-family:Yekan ;
-            // font-family:Nazanin ;
         }
     }
 
     &-container{
         width: 80vw;
-        height: 1300px;
+        // height: 1300px;
         border-radius: 50px;
         overflow: hidden;
         flex-direction: column;
         background-color: $color_black;
+        margin-bottom: 70px;
     }
     &-expertise{
         width: 100%;
@@ -87,7 +166,7 @@ body{
     }
     &-expertise-html {
         @extend %card_item_style;
-        // left: 100px;
+        // left: 0px;
         span {
             align-self: center;
             overflow: hidden;
@@ -138,79 +217,40 @@ body{
         }
     }
 }
-.header {
-    &-short {
-        display: flex;
-        position: relative;
-        width: 100%;
-        height:40vw;
-        overflow: hidden;
-        justify-content: center;
-        align-items: center;
-        span{
-            position: absolute;
-            justify-self: center;
-            color: $color_light;
-            vertical-align: middle;
-            font-family: RoyaBold;
-            font-size: 40px;
-        }
 
-        &-video {
-            position: fixed;
-            top: 0px;
-            width: 100%;
-            object-fit:fill;
-            height: 40vw;
-            opacity: 0.4;
-            z-index: -10;
-        }
-        &-footer{
-            position: absolute;
-            align-self: flex-end;
-            display: block;
-            width: 100%;
-            height: 300px;
-            bottom: 0px;
-            object-fit: fill;
-        }
-    }
-}
-.main-information{
-    display: flex;
+
+.project{
     position: relative;
-    background-color: $color_gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 800px;
-    overflow: hidden;
-    img{
-        // position: absolute;
-        position: absolute;
-
-        top: 20px;
-        left: 50px;
-        width: 350px;
-        height: 500px;
-        border-radius: 10px;
-        box-shadow: black -5px 5px 10px;
-
-    }
-    &-text-container{
+    background-color: darken($color: $color_blue, $amount:10);
+    margin-bottom: 100px;
+    &-container{
+        position: relative;
+        width: 80vw;
+        height: 600px;
+        background-color: darken($color: $color_blue, $amount:15);
         
-        position: absolute;
-        width: 70vw;
-        right: 0px;
-        font-size: 2em;
-        direction: rtl;
-        padding: 50px;
-        color: $color_light;
-        h3{
-            font-family: Yekan;
+        &-project-1{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            span{
+                display: block;
+                width: 80px;
+                height: 30px;
+                background-color: darken($color:$color_blue, $amount:0);
+                border-radius: 5px 5px 0px 0px;
 
-        }
-        p{
-            font-family: RoyaBold;
-
+            }
+            div{
+                width: 800px;
+                height: 400px;
+                background-color: darken($color: $color_blue, $amount:20);
+            }
         }
     }
 }

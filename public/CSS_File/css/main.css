@@ -35,82 +35,6 @@ body {
   background-color: #222831;
 }
 
-.card {
-  width: 100%;
-  height: 70vw;
-  background-color: #393e46;
-  z-index: 100;
-  display: flex;
-  justify-content: center;
-}
-.card-text {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  width: 100%;
-  height: 150px;
-  text-align: center;
-  background-color: #006d97;
-  margin-bottom: 50px;
-}
-.card-text h3 {
-  position: absolute;
-  top: 20px;
-  color: #eeeeee;
-  font-size: 40px;
-  font-family: Yekan;
-}
-.card-container {
-  width: 80vw;
-  height: 1300px;
-  border-radius: 50px;
-  overflow: hidden;
-  flex-direction: column;
-  background-color: #222831;
-}
-.card-expertise {
-  width: 100%;
-}
-.card-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 130px;
-  width: 100%;
-  position: relative;
-}
-.card-expertise-html span {
-  align-self: center;
-  overflow: hidden;
-}
-.card-expertise-css {
-  position: absolute;
-}
-.card-expertise-css span {
-  align-self: center;
-}
-.card-expertise-javascript {
-  position: absolute;
-}
-.card-expertise-javascript span {
-  align-self: center;
-}
-.card-expertise-bootstrap span {
-  align-self: center;
-}
-.card-expertise-jquery span {
-  align-self: center;
-}
-.card-expertise-sass span {
-  align-self: center;
-}
-.card-expertise-react span {
-  align-self: center;
-}
-.card-expertise-git span {
-  align-self: center;
-}
-
 .header-short {
   display: flex;
   position: relative;
@@ -178,6 +102,115 @@ body {
 }
 .main-information-text-container p {
   font-family: RoyaBold;
+}
+
+.card {
+  width: 100%;
+  background-color: #393e46;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 300px;
+}
+.card-text {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 150px;
+  background-color: #006d97;
+  margin-bottom: 50px;
+}
+.card-text h3 {
+  position: absolute;
+  top: 40px;
+  color: #eeeeee;
+  font-size: 40px;
+  font-family: Yekan;
+}
+.card-container {
+  width: 80vw;
+  border-radius: 50px;
+  overflow: hidden;
+  flex-direction: column;
+  background-color: #222831;
+  margin-bottom: 70px;
+}
+.card-expertise {
+  width: 100%;
+}
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+  width: 100%;
+  position: relative;
+}
+.card-expertise-html span {
+  align-self: center;
+  overflow: hidden;
+}
+.card-expertise-css {
+  position: absolute;
+}
+.card-expertise-css span {
+  align-self: center;
+}
+.card-expertise-javascript {
+  position: absolute;
+}
+.card-expertise-javascript span {
+  align-self: center;
+}
+.card-expertise-bootstrap span {
+  align-self: center;
+}
+.card-expertise-jquery span {
+  align-self: center;
+}
+.card-expertise-sass span {
+  align-self: center;
+}
+.card-expertise-react span {
+  align-self: center;
+}
+.card-expertise-git span {
+  align-self: center;
+}
+
+.project {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+  background-color: #006d97;
+  margin-bottom: 100px;
+}
+.project-container {
+  position: relative;
+  width: 80vw;
+  height: 600px;
+  background-color: #005b7e;
+}
+.project-container-project-1 {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+.project-container-project-1 span {
+  display: block;
+  width: 80px;
+  height: 30px;
+  background-color: #0092ca;
+  border-radius: 5px 5px 0px 0px;
+}
+.project-container-project-1 div {
+  width: 800px;
+  height: 400px;
+  background-color: #004864;
 }
 
 /*# sourceMappingURL=main.css.map */

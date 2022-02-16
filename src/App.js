@@ -142,6 +142,18 @@ export default function App() {
             </div>
           </div>
         </section>
+        <section className='project'>
+          <div className='project-container'>
+
+            <div >
+              <div className='project-container-project-1'>
+                <span></span>
+                <div></div>
+              </div>f
+            </div>
+          </div>
+
+        </section>
       </main>
     </Fragment>
   )
