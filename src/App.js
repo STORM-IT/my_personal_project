@@ -72,53 +72,77 @@ export default function App() {
         <section className='main-information'>
           <img className='main-information-picture' src='./IMG/information/final/IMG_20220210_180308.jpg' />
           <div className='main-information-text-container'>
-            <h3 className=''>اطلاعات کلی درباره</h3><hr/><br/>
+            <h3 className=''>اطلاعات کلی درباره من</h3><hr /><br />
             <p className=''>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
-               و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با 
+              و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با
               هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
-               جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
-               طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و
-               دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی
-               دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+              جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
+              طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و
+              دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی
+              دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+          </div>
+        </section>
+        {/* <section>
+          
+        </section> */}
+        <section className='card'>
+          <div className='card-container'>
+            <div className='card-text'>
+              <h2>تکنولوژی های آموزش دیده</h2>
+            </div>
+            <div className='card-expertise'>
+              <div className='card-body'>
+                <div className='card-expertise-html'>
+                  <span>HTML</span>
+                  <img src='./IMG/logo_lessen/html.svg' />
+                </div>
+              </div>
+              <div className='card-body'>
+                <div className='card-expertise-css'>
+                  <span>CSS</span>
+                  <img src='./IMG/logo_lessen/css.svg' />
+                </div>
+              </div>
+              <div className='card-body'>
+                <div className='card-expertise-javascript'>
+                  <span>JAVASCTIPT</span>
+                  <img src='./IMG/logo_lessen/javascript.svg' />
+                </div>
+              </div>
+              <div className='card-body'>
+                <div className='card-expertise-bootstrap'>
+                  <span>BOOTSTRAP</span>
+                  <img src='./IMG/logo_lessen/bootstrap.svg' />
+                </div>
+              </div>
+              <div className='card-body'>
+                <div className='card-expertise-jquery'>
+                  <span>JQUERY</span>
+                  <img src='./IMG/logo_lessen/jquery.svg' />
+                </div>
+              </div>
+              <div className='card-body'>
+                <div className='card-expertise-sass'>
+                  <span>SASS</span>
+                  <img src='./IMG/logo_lessen/sass.svg' />
+                </div>
+              </div>
+              <div className='card-body'>
+                <div className='card-expertise-react'>
+                  <span>REACT</span>
+                  <img src='./IMG/logo_lessen/react.svg' />
+                </div>
+              </div>
+              <div className='card-body'>
+                <div className='card-expertise-git'>
+                  <span>GIT</span>
+                  <img src='./IMG/logo_lessen/git.svg' />
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>
-      {/* <section className='card'>
-            <div className='card-expertise'>
-              <div className='card-expertise-html'>
-                <span>HTML</span>
-                <img src='./IMG/logo_lessen/html.svg' />
-              </div>
-              <div className='card-expertise-css'>
-                <span>CSS</span>
-                <img src='./IMG/logo_lessen/css.svg' />
-              </div>
-              <div className='card-expertise-javascript'>
-                <span>JAVASCTIPT</span>
-                <img src='./IMG/logo_lessen/javascript.svg' />
-              </div>
-              <div className='card-expertise-bootstrap'>
-                <span>BOOTSTRAP</span>
-                <img src='./IMG/logo_lessen/bootstrap.svg' />
-              </div>
-              <div className='card-expertise-jquery'>
-                <span>JQUERY</span>
-                <img src='./IMG/logo_lessen/jquery.svg' />
-              </div>
-              <div className='card-expertise-sass'>
-                <span>SASS</span>
-                <img src='./IMG/logo_lessen/sass.svg' />
-              </div>
-              <div className='card-expertise-react'>
-                <span>REACT</span>
-                <img src='./IMG/logo_lessen/react.svg' />
-              </div>
-              <div className='card-expertise-git'>
-                <span>GIT</span>
-                <img src='./IMG/logo_lessen/git.svg' />
-              </div>
-            </div>
-          </section> */}
     </Fragment>
   )
 }

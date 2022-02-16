@@ -10,6 +10,7 @@
 }
 .card-expertise-git, .card-expertise-react, .card-expertise-sass, .card-expertise-jquery, .card-expertise-bootstrap, .card-expertise-javascript, .card-expertise-css, .card-expertise-html {
   display: flex;
+  position: absolute;
   justify-content: space-around;
   width: 20vw;
   height: 5vw;
@@ -27,12 +28,45 @@ body {
   height: 70vw;
   background-color: #393e46;
   z-index: 100;
+  display: flex;
+  justify-content: center;
+}
+.card-text {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+}
+.card-container {
+  width: 80vw;
+  height: 1300px;
+  border-radius: 50px;
+  overflow: hidden;
+  flex-direction: column;
+  background-color: #222831;
+}
+.card-expertise {
+  width: 100%;
+}
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+  width: 100%;
+  position: relative;
 }
 .card-expertise-html span {
   align-self: center;
+  overflow: hidden;
+}
+.card-expertise-css {
+  position: absolute;
 }
 .card-expertise-css span {
   align-self: center;
+}
+.card-expertise-javascript {
+  position: absolute;
 }
 .card-expertise-javascript span {
   align-self: center;
@@ -114,8 +148,6 @@ body {
   font-family: RoyaBold;
   font-size: 2em;
   padding: 50px;
-  text-indent: 10px;
-  line-height: 50px;
   color: #eeeeee;
 }
 

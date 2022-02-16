@@ -16,6 +16,7 @@ $color_light: #eeeeee;
     display: flex;
     // align-items: center;
     // align-content: space-around;
+    position: absolute;
     justify-content: space-around;
     width: 20vw;
     height: 5vw;
@@ -31,21 +32,51 @@ body{
     height: 70vw;
     background-color: $color_gray;
     z-index: 100;
+    display: flex;
+    justify-content: center;
+    &-text{
+        width: 100%;
+        height: 200px;
+        text-align: center;
+    }
+
+    &-container{
+        width: 80vw;
+        height: 1300px;
+        border-radius: 50px;
+        overflow: hidden;
+        flex-direction: column;
+        background-color: $color_black;
+    }
+    &-expertise{
+        width: 100%;
+    }
+    &-body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 130px;
+        width: 100%;
+        position: relative;
+    }
     &-expertise-html {
         @extend %card_item_style;
+        // left: 100px;
         span {
             align-self: center;
+            overflow: hidden;
         }
-        //    background-image: url(../../IMG/logo_lessen/html.svg)
     }
     &-expertise-css {
         @extend %card_item_style;
+        position: absolute;
         span {
             align-self: center;
         }
     }
     &-expertise-javascript {
         @extend %card_item_style;
+        position: absolute;
         span {
             align-self: center;
         }
