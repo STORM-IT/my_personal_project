@@ -230,27 +230,31 @@ body{
     margin-bottom: 100px;
     &-container{
         position: relative;
-        width: 80vw;
+        width: 1500px;
         height: 600px;
         background-color: darken($color: $color_blue, $amount:15);
-        
-        &-project-1{
-            position: absolute;
-            top: 50px;
-            left: 50px;
-            span{
-                display: block;
-                width: 80px;
-                height: 30px;
-                background-color: darken($color:$color_blue, $amount:0);
-                border-radius: 5px 5px 0px 0px;
-
+        $number:50px;
+        @for $i from 1 to 7 {
+            &-project-#{$i}{
+                position: absolute;
+                top: 50px;
+                left: $number;
+                span{
+                    display: block;
+                    width: 80px;
+                    height: 30px;
+                    background-color: darken($color:$color_blue, $amount:0);
+                    border-radius: 5px 5px 0px 0px;
+                    
+                }
+                div{
+                    width: 800px;
+                    height: 400px;
+                    background-color: darken($color: $color_blue, $amount:$i*9);
+                }
             }
-            div{
-                width: 800px;
-                height: 400px;
-                background-color: darken($color: $color_blue, $amount:20);
-            }
+            $number:$number+100;
         }
+    
     }
 }

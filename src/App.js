@@ -145,12 +145,32 @@ export default function App() {
         <section className='project'>
           <div className='project-container'>
 
-            <div >
               <div className='project-container-project-1'>
                 <span></span>
                 <div></div>
-              </div>f
-            </div>
+              </div>
+
+              <div className='project-container-project-2'>
+                <span></span>
+                <div></div>
+              </div>
+              <div className='project-container-project-3'>
+                <span></span>
+                <div></div>
+              </div>
+              <div className='project-container-project-4'>
+                <span></span>
+                <div></div>
+              </div>
+              <div className='project-container-project-5'>
+                <span></span>
+                <div></div>
+              </div>
+              <div className='project-container-project-6'>
+                <span></span>
+                <div></div>
+              </div>
+
           </div>
 
         </section>
