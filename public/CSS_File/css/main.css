@@ -20,6 +20,14 @@
   font-family: Ye;
   src: url("../../Font/Far.Yekan.ttf");
 }
+@font-face {
+  font-family: MacLemon;
+  src: url("../../Font/ENGLISH/MacLemon_PersonalUseOnly.ttf");
+}
+@font-face {
+  font-family: Ye;
+  src: url("../../Font/Far.Yekan.ttf");
+}
 .card-expertise-git, .card-expertise-react, .card-expertise-sass, .card-expertise-jquery, .card-expertise-bootstrap, .card-expertise-javascript, .card-expertise-css, .card-expertise-html {
   display: flex;
   position: absolute;
@@ -201,16 +209,21 @@ body {
   left: 50px;
 }
 .project-container-project-1 span {
+  position: absolute;
   display: block;
   width: 80px;
   height: 30px;
   background-color: #0092ca;
   border-radius: 5px 5px 0px 0px;
+  z-index: 1;
 }
 .project-container-project-1 div {
+  position: absolute;
+  display: block;
+  top: 30px;
   width: 800px;
   height: 400px;
-  background-color: #00719c;
+  background-color: #0080b1;
 }
 .project-container-project-2 {
   position: absolute;
@@ -218,16 +231,21 @@ body {
   left: 150px;
 }
 .project-container-project-2 span {
+  position: absolute;
   display: block;
   width: 80px;
   height: 30px;
   background-color: #0092ca;
   border-radius: 5px 5px 0px 0px;
+  z-index: 1;
 }
 .project-container-project-2 div {
+  position: absolute;
+  display: block;
+  top: 30px;
   width: 800px;
   height: 400px;
-  background-color: #00506e;
+  background-color: #006d97;
 }
 .project-container-project-3 {
   position: absolute;
@@ -235,16 +253,21 @@ body {
   left: 250px;
 }
 .project-container-project-3 span {
+  position: absolute;
   display: block;
   width: 80px;
   height: 30px;
   background-color: #0092ca;
   border-radius: 5px 5px 0px 0px;
+  z-index: 1;
 }
 .project-container-project-3 div {
+  position: absolute;
+  display: block;
+  top: 30px;
   width: 800px;
   height: 400px;
-  background-color: #002e40;
+  background-color: #005b7e;
 }
 .project-container-project-4 {
   position: absolute;
@@ -252,16 +275,21 @@ body {
   left: 350px;
 }
 .project-container-project-4 span {
+  position: absolute;
   display: block;
   width: 80px;
   height: 30px;
   background-color: #0092ca;
   border-radius: 5px 5px 0px 0px;
+  z-index: 1;
 }
 .project-container-project-4 div {
+  position: absolute;
+  display: block;
+  top: 30px;
   width: 800px;
   height: 400px;
-  background-color: #000d12;
+  background-color: #004864;
 }
 .project-container-project-5 {
   position: absolute;
@@ -269,16 +297,21 @@ body {
   left: 450px;
 }
 .project-container-project-5 span {
+  position: absolute;
   display: block;
   width: 80px;
   height: 30px;
   background-color: #0092ca;
   border-radius: 5px 5px 0px 0px;
+  z-index: 1;
 }
 .project-container-project-5 div {
+  position: absolute;
+  display: block;
+  top: 30px;
   width: 800px;
   height: 400px;
-  background-color: black;
+  background-color: #00364b;
 }
 .project-container-project-6 {
   position: absolute;
@@ -286,16 +319,21 @@ body {
   left: 550px;
 }
 .project-container-project-6 span {
+  position: absolute;
   display: block;
   width: 80px;
   height: 30px;
   background-color: #0092ca;
   border-radius: 5px 5px 0px 0px;
+  z-index: 1;
 }
 .project-container-project-6 div {
+  position: absolute;
+  display: block;
+  top: 30px;
   width: 800px;
   height: 400px;
-  background-color: black;
+  background-color: #002331;
 }
 
 /*# sourceMappingURL=main.css.map */

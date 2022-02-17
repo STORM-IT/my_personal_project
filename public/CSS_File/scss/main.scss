@@ -25,6 +25,14 @@ $color_light: #eeeeee;
     font-family: Ye;
     src: url("../../Font/Far.Yekan.ttf");
 }
+@font-face {
+    font-family: MacLemon;
+    src: url("../../Font/ENGLISH/MacLemon_PersonalUseOnly.ttf");
+}
+@font-face {
+    font-family: Ye;
+    src: url("../../Font/Far.Yekan.ttf");
+}
 %card_item_style {
     display: flex;
     // align-items: center;
@@ -240,17 +248,24 @@ body{
                 top: 50px;
                 left: $number;
                 span{
+                    position: absolute;
                     display: block;
                     width: 80px;
                     height: 30px;
                     background-color: darken($color:$color_blue, $amount:0);
                     border-radius: 5px 5px 0px 0px;
+                    z-index: 1;
+                 
                     
                 }
                 div{
+                    position: absolute;
+                    display: block;
+                    top:30px ;
                     width: 800px;
                     height: 400px;
-                    background-color: darken($color: $color_blue, $amount:$i*9);
+                    background-color: darken($color: $color_blue, $amount:$i*5);
+          
                 }
             }
             $number:$number+100;
