@@ -3,6 +3,7 @@
   padding: 0px;
   font-family: sans-serif;
   text-decoration: none;
+  scroll-behavior: 200px;
 }
 
 @font-face {
@@ -45,10 +46,13 @@ body {
 }
 
 .nav-container {
+  position: fixed;
+  top: 0px;
   width: 100%;
   direction: rtl;
   background-color: #0092ca;
   height: 50px;
+  z-index: 1;
 }
 .nav-container a {
   display: inline-block;
@@ -205,6 +209,12 @@ body {
 }
 .card-expertise-sharp span {
   align-self: center;
+}
+
+.nav-space {
+  width: 100%;
+  height: 100px;
+  background-color: #393e46;
 }
 
 .project {

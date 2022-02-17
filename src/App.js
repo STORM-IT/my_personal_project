@@ -41,9 +41,9 @@ export default function App() {
       <header className='header'>
         <div className='nav'>
           <nav className='nav-container'>
-            <a href=''>اطلاعات کلی</a>
-            <a href=''>تکنولوژی ها</a>
-            <a href=''>پروژه ها</a>
+            <a href='#information'>اطلاعات کلی</a>
+            <a href='#expertise'>تکنولوژی ها</a>
+            <a href='#project'>پروژه ها</a>
             <a href=''>شبکه های اجتماعی</a>
             {/* <a href=''>اطلاعات کلی</a> */}
           </nav>
@@ -73,6 +73,9 @@ export default function App() {
         </div> */}
       </header>
       <main>
+        <div id='information' className='nav-space'>
+
+        </div>
         <section className='main-information'>
           <img className='main-information-picture' src='./IMG/information/final/IMG_20220210_180308.jpg' />
           <div className='main-information-text-container'>
@@ -89,6 +92,9 @@ export default function App() {
         {/* <section>
           
         </section> */}
+        <div id='expertise' className='nav-space'>
+
+        </div>
         <section className='card'>
           <div className='card-container'>
             <div className='card-text'>
@@ -152,38 +158,42 @@ export default function App() {
             </div>
           </div>
         </section>
+
+        <div id='project' className='nav-space'>
+
+        </div>
         <section className='project'>
           <div className='project-container'>
 
-              <div className='project-container-project-1'>
-                <span>HTML CSS</span>
-                <div></div>
-              </div>
+            <div className='project-container-project-1'>
+              <span>HTML CSS</span>
+              <div></div>
+            </div>
 
-              <div className='project-container-project-2'>
-                <span>JAVASCTIPT</span>
-                <div></div>
-              </div>
-              <div className='project-container-project-3'>
-                <span>BOOTSTRAP</span>
-                <div></div>
-              </div>
-              <div className='project-container-project-4'>
-                <span>JQUERY</span>
-                <div></div>
-              </div>
-              <div className='project-container-project-5'>
-                <span>SASS</span>
-                <div></div>
-              </div>
-              <div className='project-container-project-6'>
-                <span>REACT</span>
-                <div></div>
-              </div>
-              <div className='project-container-project-7'>
-                <span>C#</span>
-                <div></div>
-              </div>
+            <div className='project-container-project-2'>
+              <span>JAVASCTIPT</span>
+              <div></div>
+            </div>
+            <div className='project-container-project-3'>
+              <span>BOOTSTRAP</span>
+              <div></div>
+            </div>
+            <div className='project-container-project-4'>
+              <span>JQUERY</span>
+              <div></div>
+            </div>
+            <div className='project-container-project-5'>
+              <span>SASS</span>
+              <div></div>
+            </div>
+            <div className='project-container-project-6'>
+              <span>REACT</span>
+              <div></div>
+            </div>
+            <div className='project-container-project-7'>
+              <span>C#</span>
+              <div></div>
+            </div>
 
           </div>
 

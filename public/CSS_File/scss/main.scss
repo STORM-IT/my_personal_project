@@ -3,6 +3,7 @@
     padding: 0px;
     font-family: sans-serif;
     text-decoration: none;
+    scroll-behavior:calc(200px);
 }
 $color_black: #222831;
 $color_gray: #393e46;
@@ -53,10 +54,13 @@ body{
 }
 .nav{
     &-container{
+        position: fixed;
+        top: 0px;
         width: 100%;
         direction: rtl;
         background-color: $color_blue;
         height: 50px;
+        z-index: 1;
         a{
             display: inline-block;
             color: darken($color: $color_light, $amount: 7);
@@ -254,7 +258,13 @@ body{
     }
 }
 
+.nav-space{
+    width: 100%;
+    height: 100px;
+    // background-color:#0092ca;
 
+    background-color:$color_gray ;
+}
 .project{
     position: relative;
     display: flex;
@@ -263,6 +273,7 @@ body{
     width: 100%;
     height: 800px;
     background-color: $color_gray;
+    
     margin-bottom: 100px;
     &-container{
         position: relative;
