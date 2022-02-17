@@ -152,32 +152,32 @@ export default function App() {
           <div className='project-container'>
 
               <div className='project-container-project-1'>
-                <span></span>
+                <span>HTML CSS</span>
                 <div></div>
               </div>
 
               <div className='project-container-project-2'>
-                <span></span>
+                <span>JAVASCTIPT</span>
                 <div></div>
               </div>
               <div className='project-container-project-3'>
-                <span></span>
+                <span>BOOTSTRAP</span>
                 <div></div>
               </div>
               <div className='project-container-project-4'>
-                <span></span>
+                <span>JQUERY</span>
                 <div></div>
               </div>
               <div className='project-container-project-5'>
-                <span></span>
+                <span>SASS</span>
                 <div></div>
               </div>
               <div className='project-container-project-6'>
-                <span></span>
+                <span>REACT</span>
                 <div></div>
               </div>
               <div className='project-container-project-7'>
-                <span></span>
+                <span>C#</span>
                 <div></div>
               </div>
 

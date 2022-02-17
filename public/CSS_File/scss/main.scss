@@ -29,11 +29,15 @@ $expertise: "Html & css" ,"JavaScript","Bootstrap","Jquery","Sass","React","C#";
 }
 @font-face {
     font-family: MacLemon;
-    src: url("../../Font/ENGLISH/MacLemon_PersonalUseOnly.ttf");
+    src: url("../../Font/ENGLISH/Hey.ttf");
 }
 @font-face {
     font-family: Ye;
     src: url("../../Font/Far.Yekan.ttf");
+}
+@font-face {
+    font-family: NavineDemo;
+    src: url("../../Font/ENGLISH/NavineDemo-SemiCondensed.ttf");
 }
 %card_item_style {
     display: flex;
@@ -242,13 +246,13 @@ body{
     align-items: center;
     width: 100%;
     height: 800px;
-    background-color: darken($color: $color_blue, $amount:10);
+    background-color: $color_gray;
     margin-bottom: 100px;
     &-container{
         position: relative;
         width: 1500px;
         height: 600px;
-        background-color: darken($color: $color_blue, $amount:15);
+        // background-color: darken($color: $color_blue, $amount:15);
         $number:50px;
         @for $i from 1 to 8 {
             &-project-#{$i}{
@@ -258,28 +262,41 @@ body{
                 span{
                     position: absolute;
                     display: block;
-                    width: 80px;
+                    width: 90px;
                     height: 30px;
-                    background-color: darken($color:$color_blue, $amount:0);
+                    color: $color_light;
+                    text-align: center;
+                    font-family: NavineDemo;
+                    // background-color: darken($color:$color_blue, $amount:0);
+                    background-color: darken($color: $color_blue, $amount:$i*4);
                     border-radius: 5px 5px 0px 0px;
+                    border-bottom: 1px solid darken($color: $color_blue, $amount:$i*1);
                     z-index: 1;
+                    overflow: hidden;
+                    cursor:pointer;
                     &:hover  { 
-                            top: -10px;
+                        top: -10px;
+                        z-index: 3;
+                        border-bottom: 1px solid darken($color: $color_blue, $amount:$i*1);
                     }
                     &:hover + div { 
                             top: 20px;
-                            z-index: 10;
+                            z-index: 2;
                             // filter: blur(10px);
                     }
                     
                 }
                 div{
                     position: absolute;
-                    display: block;
+                    display: flex;
+
+                    justify-content: center;
                     top:30px ;
                     width: 800px;
                     height: 400px;
-                    background-color: darken($color: $color_blue, $amount:$i*5);
+                    border-radius: 0px 7px 7px 7px;
+                    background-color: darken($color: $color_blue, $amount:$i*4);
+                    align-items: center;
                     &::after{
                         font-family:MacLemon ;
                         font-size: 200px;
