@@ -220,6 +220,14 @@ body {
   border-radius: 5px 5px 0px 0px;
   z-index: 1;
 }
+.project-container-project-1 span:hover {
+  top: -10px;
+}
+.project-container-project-1 span:hover + div {
+  top: 20px;
+  z-index: 10;
+  filter: blur(10px);
+}
 .project-container-project-1 div {
   position: absolute;
   display: block;
@@ -241,6 +249,14 @@ body {
   background-color: #0092ca;
   border-radius: 5px 5px 0px 0px;
   z-index: 1;
+}
+.project-container-project-2 span:hover {
+  top: -10px;
+}
+.project-container-project-2 span:hover + div {
+  top: 20px;
+  z-index: 10;
+  filter: blur(10px);
 }
 .project-container-project-2 div {
   position: absolute;
@@ -264,6 +280,14 @@ body {
   border-radius: 5px 5px 0px 0px;
   z-index: 1;
 }
+.project-container-project-3 span:hover {
+  top: -10px;
+}
+.project-container-project-3 span:hover + div {
+  top: 20px;
+  z-index: 10;
+  filter: blur(10px);
+}
 .project-container-project-3 div {
   position: absolute;
   display: block;
@@ -285,6 +309,14 @@ body {
   background-color: #0092ca;
   border-radius: 5px 5px 0px 0px;
   z-index: 1;
+}
+.project-container-project-4 span:hover {
+  top: -10px;
+}
+.project-container-project-4 span:hover + div {
+  top: 20px;
+  z-index: 10;
+  filter: blur(10px);
 }
 .project-container-project-4 div {
   position: absolute;
@@ -308,6 +340,14 @@ body {
   border-radius: 5px 5px 0px 0px;
   z-index: 1;
 }
+.project-container-project-5 span:hover {
+  top: -10px;
+}
+.project-container-project-5 span:hover + div {
+  top: 20px;
+  z-index: 10;
+  filter: blur(10px);
+}
 .project-container-project-5 div {
   position: absolute;
   display: block;
@@ -329,6 +369,14 @@ body {
   background-color: #0092ca;
   border-radius: 5px 5px 0px 0px;
   z-index: 1;
+}
+.project-container-project-6 span:hover {
+  top: -10px;
+}
+.project-container-project-6 span:hover + div {
+  top: 20px;
+  z-index: 10;
+  filter: blur(10px);
 }
 .project-container-project-6 div {
   position: absolute;

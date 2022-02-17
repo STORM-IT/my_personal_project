@@ -261,7 +261,14 @@ body{
                     background-color: darken($color:$color_blue, $amount:0);
                     border-radius: 5px 5px 0px 0px;
                     z-index: 1;
-                 
+                    &:hover  { 
+                            top: -10px;
+                    }
+                    &:hover + div { 
+                            top: 20px;
+                            z-index: 10;
+                            filter: blur(10px);
+                    }
                     
                 }
                 div{
