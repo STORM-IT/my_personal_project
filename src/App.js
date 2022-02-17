@@ -39,10 +39,15 @@ export default function App() {
   return (
     <Fragment>
       <header className='header'>
-
-        {/* <video id='video_tag' src='./IMG/head_short_video/top-view-of-business-handshake-and-client-meeting.mp4' width="100%" height="240" autoplay muted loop/> */}
-        {/* <source src='./IMG/head_short_video/top-view-of-business-handshake-and-client-meeting.mp4' type="video/mp4"/> */}
-        {/* </video> */}
+        <div className='nav'>
+          <nav className='nav-container'>
+            <a href=''>اطلاعات کلی</a>
+            <a href=''>تکنولوژی ها</a>
+            <a href=''>پروژه ها</a>
+            <a href=''>شبکه های اجتماعی</a>
+            {/* <a href=''>اطلاعات کلی</a> */}
+          </nav>
+        </div>
         <div className='header-short'>
           <video id='short-video_head' className='header-short-video' src={url} onEnded={() => next_video()} ref={vidRef} muted />
           <span>به وبساخت شخصی من خوش آمدید</span>
@@ -50,7 +55,6 @@ export default function App() {
             <path fill="#393e46" fill-opacity="1" d="M0,96L80,90.7C160,85,320,75,480,90.7C640,107,800,149,960,149.3C1120,149,1280,107,1360,85.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
           </svg>
         </div>
-
 
         {/* <div>
         <nav>
@@ -185,6 +189,11 @@ export default function App() {
 
         </section>
       </main>
+      <footer>
+        <div>
+
+        </div>
+      </footer>
     </Fragment>
   )
 }

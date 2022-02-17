@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   font-family: sans-serif;
+  text-decoration: none;
 }
 
 @font-face {
@@ -25,10 +26,6 @@
   src: url("../../Font/ENGLISH/Hey.ttf");
 }
 @font-face {
-  font-family: Ye;
-  src: url("../../Font/Far.Yekan.ttf");
-}
-@font-face {
   font-family: NavineDemo;
   src: url("../../Font/ENGLISH/NavineDemo-SemiCondensed.ttf");
 }
@@ -45,6 +42,22 @@
 
 body {
   background-color: #222831;
+}
+
+.nav-container {
+  width: 100%;
+  direction: rtl;
+  background-color: #0092ca;
+  height: 50px;
+}
+.nav-container a {
+  display: inline-block;
+  color: gainsboro;
+  font-family: Yekan;
+  padding: 10px 30px;
+}
+.nav-container a:hover {
+  color: white;
 }
 
 .header-short {

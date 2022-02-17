@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     font-family: sans-serif;
+    text-decoration: none;
 }
 $color_black: #222831;
 $color_gray: #393e46;
@@ -32,10 +33,6 @@ $expertise: "Html & css" ,"JavaScript","Bootstrap","Jquery","Sass","React","C#";
     src: url("../../Font/ENGLISH/Hey.ttf");
 }
 @font-face {
-    font-family: Ye;
-    src: url("../../Font/Far.Yekan.ttf");
-}
-@font-face {
     font-family: NavineDemo;
     src: url("../../Font/ENGLISH/NavineDemo-SemiCondensed.ttf");
 }
@@ -54,7 +51,26 @@ $expertise: "Html & css" ,"JavaScript","Bootstrap","Jquery","Sass","React","C#";
 body{
     background-color: $color_black;
 }
+.nav{
+    &-container{
+        width: 100%;
+        direction: rtl;
+        background-color: $color_blue;
+        height: 50px;
+        a{
+            display: inline-block;
+            color: darken($color: $color_light, $amount: 7);
+            font-family:Yekan ;
+            padding: 10px 30px;
+            &:hover{
+                color: white;
+            }
+            // border-left: 1px solid rgb(156, 156, 156);
 
+
+        }
+    }
+}
 .header {
     &-short {
         display: flex;
