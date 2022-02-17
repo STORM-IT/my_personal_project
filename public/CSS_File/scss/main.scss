@@ -8,6 +8,8 @@ $color_gray: #393e46;
 $color_blue: #0092ca;
 $color_light: #eeeeee;
 
+$expertise: "Html & css" ,"JavaScript","Bootstrap","Jquery","Sass","React","C#";
+
 @font-face {
     font-family: Nazanin;
     src: url("../../Font/Far.Nazanin\ Bold.ttf");
@@ -248,7 +250,7 @@ body{
         height: 600px;
         background-color: darken($color: $color_blue, $amount:15);
         $number:50px;
-        @for $i from 1 to 7 {
+        @for $i from 1 to 8 {
             &-project-#{$i}{
                 position: absolute;
                 top: 50px;
@@ -267,7 +269,7 @@ body{
                     &:hover + div { 
                             top: 20px;
                             z-index: 10;
-                            filter: blur(10px);
+                            // filter: blur(10px);
                     }
                     
                 }
@@ -282,7 +284,7 @@ body{
                         font-family:MacLemon ;
                         font-size: 200px;
                         color: $color_light;
-                        content: "REACT";
+                        content: nth($list: $expertise, $n:$i );
                     }
                 }
             }

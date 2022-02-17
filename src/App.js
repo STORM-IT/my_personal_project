@@ -176,6 +176,10 @@ export default function App() {
                 <span></span>
                 <div></div>
               </div>
+              <div className='project-container-project-7'>
+                <span></span>
+                <div></div>
+              </div>
 
           </div>
 

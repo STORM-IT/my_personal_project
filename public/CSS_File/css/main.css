@@ -226,7 +226,6 @@ body {
 .project-container-project-1 span:hover + div {
   top: 20px;
   z-index: 10;
-  filter: blur(10px);
 }
 .project-container-project-1 div {
   position: absolute;
@@ -240,7 +239,7 @@ body {
   font-family: MacLemon;
   font-size: 200px;
   color: #eeeeee;
-  content: "REACT";
+  content: "Html & css";
 }
 .project-container-project-2 {
   position: absolute;
@@ -262,7 +261,6 @@ body {
 .project-container-project-2 span:hover + div {
   top: 20px;
   z-index: 10;
-  filter: blur(10px);
 }
 .project-container-project-2 div {
   position: absolute;
@@ -276,7 +274,7 @@ body {
   font-family: MacLemon;
   font-size: 200px;
   color: #eeeeee;
-  content: "REACT";
+  content: "JavaScript";
 }
 .project-container-project-3 {
   position: absolute;
@@ -298,7 +296,6 @@ body {
 .project-container-project-3 span:hover + div {
   top: 20px;
   z-index: 10;
-  filter: blur(10px);
 }
 .project-container-project-3 div {
   position: absolute;
@@ -312,7 +309,7 @@ body {
   font-family: MacLemon;
   font-size: 200px;
   color: #eeeeee;
-  content: "REACT";
+  content: "Bootstrap";
 }
 .project-container-project-4 {
   position: absolute;
@@ -334,7 +331,6 @@ body {
 .project-container-project-4 span:hover + div {
   top: 20px;
   z-index: 10;
-  filter: blur(10px);
 }
 .project-container-project-4 div {
   position: absolute;
@@ -348,7 +344,7 @@ body {
   font-family: MacLemon;
   font-size: 200px;
   color: #eeeeee;
-  content: "REACT";
+  content: "Jquery";
 }
 .project-container-project-5 {
   position: absolute;
@@ -370,7 +366,6 @@ body {
 .project-container-project-5 span:hover + div {
   top: 20px;
   z-index: 10;
-  filter: blur(10px);
 }
 .project-container-project-5 div {
   position: absolute;
@@ -384,7 +379,7 @@ body {
   font-family: MacLemon;
   font-size: 200px;
   color: #eeeeee;
-  content: "REACT";
+  content: "Sass";
 }
 .project-container-project-6 {
   position: absolute;
@@ -406,7 +401,6 @@ body {
 .project-container-project-6 span:hover + div {
   top: 20px;
   z-index: 10;
-  filter: blur(10px);
 }
 .project-container-project-6 div {
   position: absolute;
@@ -420,7 +414,42 @@ body {
   font-family: MacLemon;
   font-size: 200px;
   color: #eeeeee;
-  content: "REACT";
+  content: "React";
+}
+.project-container-project-7 {
+  position: absolute;
+  top: 50px;
+  left: 650px;
+}
+.project-container-project-7 span {
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 30px;
+  background-color: #0092ca;
+  border-radius: 5px 5px 0px 0px;
+  z-index: 1;
+}
+.project-container-project-7 span:hover {
+  top: -10px;
+}
+.project-container-project-7 span:hover + div {
+  top: 20px;
+  z-index: 10;
+}
+.project-container-project-7 div {
+  position: absolute;
+  display: block;
+  top: 30px;
+  width: 800px;
+  height: 400px;
+  background-color: #001118;
+}
+.project-container-project-7 div::after {
+  font-family: MacLemon;
+  font-size: 200px;
+  color: #eeeeee;
+  content: "C#";
 }
 
 /*# sourceMappingURL=main.css.map */
