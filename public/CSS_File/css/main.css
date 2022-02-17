@@ -28,7 +28,7 @@
   font-family: Ye;
   src: url("../../Font/Far.Yekan.ttf");
 }
-.card-expertise-git, .card-expertise-react, .card-expertise-sass, .card-expertise-jquery, .card-expertise-bootstrap, .card-expertise-javascript, .card-expertise-css, .card-expertise-html {
+.card-expertise-sharp, .card-expertise-git, .card-expertise-react, .card-expertise-sass, .card-expertise-jquery, .card-expertise-bootstrap, .card-expertise-javascript, .card-expertise-css, .card-expertise-html {
   display: flex;
   position: absolute;
   justify-content: space-around;
@@ -184,6 +184,9 @@ body {
   align-self: center;
 }
 .card-expertise-git span {
+  align-self: center;
+}
+.card-expertise-sharp span {
   align-self: center;
 }
 

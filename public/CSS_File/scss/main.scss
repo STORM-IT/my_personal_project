@@ -224,6 +224,12 @@ body{
             align-self: center;
         }
     }
+    &-expertise-sharp {
+        @extend %card_item_style;
+        span {
+            align-self: center;
+        }
+    }
 }
 
 

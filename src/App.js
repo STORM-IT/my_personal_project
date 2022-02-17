@@ -139,6 +139,12 @@ export default function App() {
                   <img src='./IMG/logo_lessen/git.svg' />
                 </div>
               </div>
+              <div className='card-body'>
+                <div className='card-expertise-sharp'>
+                  <span>C#</span>
+                  <img src='./IMG/logo_lessen/c_sharp_logo.svg' />
+                </div>
+              </div>
             </div>
           </div>
         </section>
