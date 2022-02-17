@@ -236,6 +236,12 @@ body {
   height: 400px;
   background-color: #0080b1;
 }
+.project-container-project-1 div::after {
+  font-family: MacLemon;
+  font-size: 200px;
+  color: #eeeeee;
+  content: "REACT";
+}
 .project-container-project-2 {
   position: absolute;
   top: 50px;
@@ -265,6 +271,12 @@ body {
   width: 800px;
   height: 400px;
   background-color: #006d97;
+}
+.project-container-project-2 div::after {
+  font-family: MacLemon;
+  font-size: 200px;
+  color: #eeeeee;
+  content: "REACT";
 }
 .project-container-project-3 {
   position: absolute;
@@ -296,6 +308,12 @@ body {
   height: 400px;
   background-color: #005b7e;
 }
+.project-container-project-3 div::after {
+  font-family: MacLemon;
+  font-size: 200px;
+  color: #eeeeee;
+  content: "REACT";
+}
 .project-container-project-4 {
   position: absolute;
   top: 50px;
@@ -325,6 +343,12 @@ body {
   width: 800px;
   height: 400px;
   background-color: #004864;
+}
+.project-container-project-4 div::after {
+  font-family: MacLemon;
+  font-size: 200px;
+  color: #eeeeee;
+  content: "REACT";
 }
 .project-container-project-5 {
   position: absolute;
@@ -356,6 +380,12 @@ body {
   height: 400px;
   background-color: #00364b;
 }
+.project-container-project-5 div::after {
+  font-family: MacLemon;
+  font-size: 200px;
+  color: #eeeeee;
+  content: "REACT";
+}
 .project-container-project-6 {
   position: absolute;
   top: 50px;
@@ -385,6 +415,12 @@ body {
   width: 800px;
   height: 400px;
   background-color: #002331;
+}
+.project-container-project-6 div::after {
+  font-family: MacLemon;
+  font-size: 200px;
+  color: #eeeeee;
+  content: "REACT";
 }
 
 /*# sourceMappingURL=main.css.map */

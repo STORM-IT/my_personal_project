@@ -278,7 +278,12 @@ body{
                     width: 800px;
                     height: 400px;
                     background-color: darken($color: $color_blue, $amount:$i*5);
-          
+                    &::after{
+                        font-family:MacLemon ;
+                        font-size: 200px;
+                        color: $color_light;
+                        content: "REACT";
+                    }
                 }
             }
             $number:$number+100;
