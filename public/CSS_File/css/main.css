@@ -568,6 +568,18 @@ body {
   position: relative;
   background-color: #eeeeee;
   height: 2px;
+  animation: rotateLine 2s ease 1s alternate forwards;
+}
+.SocialNetwork .line img {
+  position: absolute;
+  width: 400px;
+  height: 210px;
+  top: 100px;
+  left: -70px;
+  transform: rotate(-90deg);
+  object-fit: fill;
+  object-position: 360px 0;
+  z-index: 100;
 }
 
 @keyframes rotateLine {
