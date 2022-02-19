@@ -555,6 +555,7 @@ body {
 }
 
 .SocialNetwork {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -568,7 +569,8 @@ body {
   position: relative;
   background-color: #eeeeee;
   height: 2px;
-  animation: rotateLine 2s ease 1s alternate forwards;
+  transform: rotate(90deg);
+  width: 500px;
 }
 .SocialNetwork .line img {
   position: absolute;
@@ -581,6 +583,17 @@ body {
   object-position: 360px 0;
   z-index: 100;
   animation: showLogoGit 2s ease 3s alternate forwards;
+}
+.SocialNetwork .line div {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  direction: rtl;
+  overflow: hidden;
+  width: 0px;
+  right: 65px;
+  z-index: 10;
+  transform: rotate(-90deg);
 }
 
 @keyframes showLogoGit {
