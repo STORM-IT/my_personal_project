@@ -34,8 +34,8 @@
   display: flex;
   position: absolute;
   justify-content: space-around;
-  width: 20vw;
-  height: 5vw;
+  width: 400px;
+  height: 80px;
   border-radius: 30px;
   margin-bottom: 15px;
   background-color: #0092ca;
@@ -43,6 +43,11 @@
 
 body {
   background-color: #222831;
+}
+
+main {
+  background-color: #222831;
+  padding: 0px 100px;
 }
 
 .nav-container {
@@ -119,7 +124,7 @@ body {
 }
 .main-information-text-container {
   position: absolute;
-  width: 70vw;
+  width: 60vw;
   right: 0px;
   font-size: 2em;
   direction: rtl;
@@ -175,6 +180,9 @@ body {
   height: 130px;
   width: 100%;
   position: relative;
+}
+.card-expertise-html {
+  left: -350px;
 }
 .card-expertise-html span {
   align-self: center;
@@ -265,15 +273,15 @@ body {
   display: flex;
   justify-content: center;
   top: 30px;
-  width: 800px;
-  height: 400px;
+  width: 40vw;
+  height: 20vw;
   border-radius: 0px 7px 7px 7px;
   background-color: #0083b6;
   align-items: center;
 }
 .project-container-project-1 div::after {
   font-family: MacLemon;
-  font-size: 200px;
+  font-size: 8vw;
   color: #eeeeee;
   content: "Html & css";
 }
@@ -311,15 +319,15 @@ body {
   display: flex;
   justify-content: center;
   top: 30px;
-  width: 800px;
-  height: 400px;
+  width: 40vw;
+  height: 20vw;
   border-radius: 0px 7px 7px 7px;
   background-color: #0075a1;
   align-items: center;
 }
 .project-container-project-2 div::after {
   font-family: MacLemon;
-  font-size: 200px;
+  font-size: 8vw;
   color: #eeeeee;
   content: "JavaScript";
 }
@@ -357,15 +365,15 @@ body {
   display: flex;
   justify-content: center;
   top: 30px;
-  width: 800px;
-  height: 400px;
+  width: 40vw;
+  height: 20vw;
   border-radius: 0px 7px 7px 7px;
   background-color: #00668d;
   align-items: center;
 }
 .project-container-project-3 div::after {
   font-family: MacLemon;
-  font-size: 200px;
+  font-size: 8vw;
   color: #eeeeee;
   content: "Bootstrap";
 }
@@ -403,15 +411,15 @@ body {
   display: flex;
   justify-content: center;
   top: 30px;
-  width: 800px;
-  height: 400px;
+  width: 40vw;
+  height: 20vw;
   border-radius: 0px 7px 7px 7px;
   background-color: #005778;
   align-items: center;
 }
 .project-container-project-4 div::after {
   font-family: MacLemon;
-  font-size: 200px;
+  font-size: 8vw;
   color: #eeeeee;
   content: "Jquery";
 }
@@ -449,15 +457,15 @@ body {
   display: flex;
   justify-content: center;
   top: 30px;
-  width: 800px;
-  height: 400px;
+  width: 40vw;
+  height: 20vw;
   border-radius: 0px 7px 7px 7px;
   background-color: #004864;
   align-items: center;
 }
 .project-container-project-5 div::after {
   font-family: MacLemon;
-  font-size: 200px;
+  font-size: 8vw;
   color: #eeeeee;
   content: "Sass";
 }
@@ -495,15 +503,15 @@ body {
   display: flex;
   justify-content: center;
   top: 30px;
-  width: 800px;
-  height: 400px;
+  width: 40vw;
+  height: 20vw;
   border-radius: 0px 7px 7px 7px;
   background-color: #003a50;
   align-items: center;
 }
 .project-container-project-6 div::after {
   font-family: MacLemon;
-  font-size: 200px;
+  font-size: 8vw;
   color: #eeeeee;
   content: "React";
 }
@@ -541,15 +549,15 @@ body {
   display: flex;
   justify-content: center;
   top: 30px;
-  width: 800px;
-  height: 400px;
+  width: 40vw;
+  height: 20vw;
   border-radius: 0px 7px 7px 7px;
   background-color: #002b3b;
   align-items: center;
 }
 .project-container-project-7 div::after {
   font-family: MacLemon;
-  font-size: 200px;
+  font-size: 8vw;
   color: #eeeeee;
   content: "C#";
 }
@@ -570,7 +578,7 @@ body {
   background-color: #eeeeee;
   height: 2px;
   transform: rotate(90deg);
-  width: 500px;
+  animation: rotateLine 2s ease 1s alternate forwards;
 }
 .SocialNetwork .line img {
   position: absolute;
@@ -582,7 +590,7 @@ body {
   object-fit: fill;
   object-position: 360px 0;
   z-index: 100;
-  animation: showLogoGit 2s ease 1s alternate forwards;
+  animation: showLogoGit 2s ease 2s alternate forwards;
 }
 .SocialNetwork .line div {
   display: block;
@@ -594,7 +602,7 @@ body {
   right: 65px;
   z-index: 10;
   transform: rotate(-90deg);
-  animation: gitUsername 2s ease 2s alternate forwards;
+  animation: gitUsername 2s ease 3s alternate forwards;
 }
 .SocialNetwork .line div a {
   color: #eeeeee;

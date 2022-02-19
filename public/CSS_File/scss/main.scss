@@ -43,14 +43,18 @@ $expertise: "Html & css", "JavaScript", "Bootstrap", "Jquery", "Sass", "React", 
     // align-content: space-around;
     position: absolute;
     justify-content: space-around;
-    width: 20vw;
-    height: 5vw;
+    width: 400px;
+    height: 80px;
     border-radius: 30px;
     margin-bottom: 15px;
     background-color: $color_blue;
 }
 body {
     background-color: $color_black;
+}
+main{
+    background-color: $color_black;
+    padding: 0px 100px;
 }
 .nav {
     &-container {
@@ -132,7 +136,7 @@ body {
     }
     &-text-container {
         position: absolute;
-        width: 70vw;
+        width: 60vw;
         right: 0px;
         font-size: 2em;
         direction: rtl;
@@ -194,7 +198,7 @@ body {
     }
     &-expertise-html {
         @extend %card_item_style;
-        // left: 0px;
+        left: -350px;
         span {
             align-self: center;
             overflow: hidden;
@@ -311,14 +315,16 @@ body {
 
                     justify-content: center;
                     top: 30px;
-                    width: 800px;
-                    height: 400px;
+                    width: 40vw;
+                    height: 20vw;
+                    // width: 800px;
+                    // height: 400px;
                     border-radius: 0px 7px 7px 7px;
                     background-color: darken($color: $color_blue, $amount: $i * 4);
                     align-items: center;
                     &::after {
                         font-family: MacLemon;
-                        font-size: 200px;
+                        font-size: 8vw;
                         color: $color_light;
                         content: nth($list: $expertise, $n: $i);
                     }
@@ -340,13 +346,14 @@ body {
     background-color: $color_black;
     margin-bottom: 200px;
     .line {
+       
         position: relative;
         background-color: $color_light;
         height: 2px;
         // transform: rotate(90deg);
         transform: rotate(90deg);
-        width: 500px;
-        // animation: rotateLine 2s ease 1s  alternate forwards;
+        // width: 500px;
+        animation: rotateLine 2s ease 1s  alternate forwards;
         img {
             position: absolute;
             width: 400px;
@@ -357,7 +364,7 @@ body {
             object-fit: fill;
             object-position: 360px 0;
             z-index: 100;
-            animation: showLogoGit 2s ease 1s alternate forwards;
+            animation: showLogoGit 2s ease 2s alternate forwards;
         }
         div {
             display: block;
@@ -370,7 +377,7 @@ body {
             z-index: 10;
             transform: rotate(-90deg);
             // transform: rotate(-90deg);
-            animation: gitUsername 2s ease 2s alternate forwards;
+            animation: gitUsername 2s ease 3s alternate forwards;
             a{
                 color: $color_light;
                 font-size: 50px;
@@ -406,6 +413,7 @@ body {
 }
 @keyframes rotateLine {
     0% {
+
         transform: rotate(0deg);
         width: 0px;
     }
