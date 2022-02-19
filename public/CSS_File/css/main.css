@@ -564,5 +564,10 @@ body {
   background-color: #222831;
   margin-bottom: 200px;
 }
+.SocialNetwork .line {
+  position: relative;
+  background-color: #eeeeee;
+  height: 2px;
+}
 
 /*# sourceMappingURL=main.css.map */

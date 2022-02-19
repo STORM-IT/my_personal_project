@@ -346,6 +346,13 @@ body{
     height: 600px;
     background-color: $color_black;
     margin-bottom: 200px;
-    
+    .line{
+        position: relative;
+        background-color: $color_light;
+        height: 2px;
+ 
+       
+       
+    }
 }
 
