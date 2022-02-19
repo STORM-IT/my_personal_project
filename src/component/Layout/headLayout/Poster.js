@@ -11,8 +11,6 @@ export default function Poster() {
     const vidRef = useRef();
     useEffect(() => {
         require("../../../JS/script");
-        // setUrl(videos[currentVideo])
-        // setUrl(videos[1])
         vidRef.current.play();
     }, [])
 
@@ -24,7 +22,6 @@ export default function Poster() {
 
     const next_video = () => {
         if (currentVideo === videos.length) {
-            // debugger
             setCurrentVideo(0);
             setUrl(videos[0])
         } else {
