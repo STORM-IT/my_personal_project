@@ -570,4 +570,15 @@ body {
   height: 2px;
 }
 
+@keyframes rotateLine {
+  0% {
+    transform: rotate(0deg);
+    width: 0px;
+  }
+  100% {
+    transform: rotate(90deg);
+    width: 500px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -350,9 +350,17 @@ body{
         position: relative;
         background-color: $color_light;
         height: 2px;
- 
+        // transform: rotate(90deg); 
        
        
     }
 }
 
+
+@keyframes rotateLine {
+    0%{transform: rotate(0deg); width: 0px;}
+    100%{
+        transform: rotate(90deg); 
+        width: 500px;
+    }
+}
