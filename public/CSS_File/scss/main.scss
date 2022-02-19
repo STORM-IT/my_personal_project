@@ -369,12 +369,33 @@ body {
             right: 65px;
             z-index: 10;
             transform: rotate(-90deg);
-     
+            // transform: rotate(-90deg);
+            animation: gitUsername 2s ease 4s alternate forwards;
+            a{
+                color: $color_light;
+                font-size: 50px;
+                font-family: MacLemon;
+
+            }
         }
     }
 }
 
-
+@keyframes gitUsername {
+    0% {
+        display: block;
+        width: 0px;
+        height: 0px;
+        right: 135px;
+        // right: 135px;
+    }
+    100% {
+        width: 400px;
+        height: 400px;
+        right: -265px;
+        // right: -65px;
+    }
+}
 @keyframes showLogoGit {
     0% {
         object-position: 360px 0;
