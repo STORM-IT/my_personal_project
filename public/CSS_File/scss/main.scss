@@ -362,13 +362,16 @@ body{
             object-fit: fill;
             object-position: 360px 0;
             z-index: 100;
-          
+            animation: showLogoGit 2s ease 3s  alternate forwards;
             
         }
     }
 }
 
-
+@keyframes showLogoGit {
+    0%{object-position: 360px 0;}
+    100%{object-position: 0px 0;}
+}
 @keyframes rotateLine {
     0%{transform: rotate(0deg); width: 0px;}
     100%{
