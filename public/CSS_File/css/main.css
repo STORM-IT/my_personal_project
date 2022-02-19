@@ -3,7 +3,7 @@
   padding: 0px;
   font-family: sans-serif;
   text-decoration: none;
-  scroll-behavior: 200px;
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -582,7 +582,7 @@ body {
   object-fit: fill;
   object-position: 360px 0;
   z-index: 100;
-  animation: showLogoGit 2s ease 3s alternate forwards;
+  animation: showLogoGit 2s ease 1s alternate forwards;
 }
 .SocialNetwork .line div {
   display: block;
@@ -594,7 +594,7 @@ body {
   right: 65px;
   z-index: 10;
   transform: rotate(-90deg);
-  animation: gitUsername 2s ease 4s alternate forwards;
+  animation: gitUsername 2s ease 2s alternate forwards;
 }
 .SocialNetwork .line div a {
   color: #eeeeee;

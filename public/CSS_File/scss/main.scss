@@ -3,7 +3,7 @@
     padding: 0px;
     font-family: sans-serif;
     text-decoration: none;
-    scroll-behavior: calc(200px);
+    scroll-behavior:smooth;
 }
 $color_black: #222831;
 $color_gray: #393e46;
@@ -357,7 +357,7 @@ body {
             object-fit: fill;
             object-position: 360px 0;
             z-index: 100;
-            animation: showLogoGit 2s ease 3s alternate forwards;
+            animation: showLogoGit 2s ease 1s alternate forwards;
         }
         div {
             display: block;
@@ -370,7 +370,7 @@ body {
             z-index: 10;
             transform: rotate(-90deg);
             // transform: rotate(-90deg);
-            animation: gitUsername 2s ease 4s alternate forwards;
+            animation: gitUsername 2s ease 2s alternate forwards;
             a{
                 color: $color_light;
                 font-size: 50px;

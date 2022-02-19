@@ -8,7 +8,7 @@ export default function Nav() {
                     <a href='#information'>اطلاعات کلی</a>
                     <a href='#expertise'>تکنولوژی ها</a>
                     <a href='#project'>پروژه ها</a>
-                    <a href=''>شبکه های اجتماعی</a>
+                    <a href='#SocialNetwork'>شبکه های اجتماعی</a>
                 </nav>
             </div>
         </Fragment>
