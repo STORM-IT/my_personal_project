@@ -181,7 +181,7 @@ main {
   background-color: #0092ca;
   overflow: hidden;
   left: -300px;
-  animation: MoveExpertiseRight 2s ease 0s alternate forwards;
+  animation: MoveExpertiseRight 1s ease 0s alternate forwards;
 }
 .card-expertise-html span {
   align-self: center;
@@ -197,7 +197,7 @@ main {
   background-color: #0092ca;
   overflow: hidden;
   right: -300px;
-  animation: MoveExpertiseLeft 2s ease 1s alternate forwards;
+  animation: MoveExpertiseLeft 1s ease 0.5s alternate forwards;
 }
 .card-expertise-css span {
   align-self: center;
@@ -213,7 +213,7 @@ main {
   background-color: #0092ca;
   overflow: hidden;
   left: -300px;
-  animation: MoveExpertiseRight 2s ease 2s alternate forwards;
+  animation: MoveExpertiseRight 1s ease 1s alternate forwards;
 }
 .card-expertise-javascript span {
   align-self: center;
@@ -229,7 +229,7 @@ main {
   background-color: #0092ca;
   overflow: hidden;
   right: -300px;
-  animation: MoveExpertiseLeft 2s ease 3s alternate forwards;
+  animation: MoveExpertiseLeft 1s ease 1.5s alternate forwards;
 }
 .card-expertise-bootstrap span {
   align-self: center;
@@ -245,7 +245,7 @@ main {
   background-color: #0092ca;
   overflow: hidden;
   left: -300px;
-  animation: MoveExpertiseRight 2s ease 4s alternate forwards;
+  animation: MoveExpertiseRight 1s ease 2s alternate forwards;
 }
 .card-expertise-jquery span {
   align-self: center;
@@ -261,7 +261,7 @@ main {
   background-color: #0092ca;
   overflow: hidden;
   right: -300px;
-  animation: MoveExpertiseLeft 2s ease 5s alternate forwards;
+  animation: MoveExpertiseLeft 1s ease 2.5s alternate forwards;
 }
 .card-expertise-sass span {
   align-self: center;
@@ -277,7 +277,7 @@ main {
   background-color: #0092ca;
   overflow: hidden;
   left: -300px;
-  animation: MoveExpertiseRight 2s ease 6s alternate forwards;
+  animation: MoveExpertiseRight 1s ease 3s alternate forwards;
 }
 .card-expertise-react span {
   align-self: center;
@@ -293,7 +293,7 @@ main {
   background-color: #0092ca;
   overflow: hidden;
   right: -300px;
-  animation: MoveExpertiseLeft 2s ease 7s alternate forwards;
+  animation: MoveExpertiseLeft 1s ease 3.5s alternate forwards;
 }
 .card-expertise-git span {
   align-self: center;
@@ -309,7 +309,7 @@ main {
   background-color: #0092ca;
   overflow: hidden;
   left: -300px;
-  animation: MoveExpertiseRight 2s ease 8s alternate forwards;
+  animation: MoveExpertiseRight 1s ease 4s alternate forwards;
 }
 .card-expertise-sharp span {
   align-self: center;
@@ -352,14 +352,18 @@ main {
   overflow: hidden;
 }
 .project-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 1500px;
   height: 600px;
 }
 .project-container-project-1 {
   position: absolute;
+  width: 100%;
   top: 50px;
-  left: 50px;
+  left: 1%;
 }
 .project-container-project-1 span {
   position: absolute;
@@ -404,8 +408,9 @@ main {
 }
 .project-container-project-2 {
   position: absolute;
+  width: 100%;
   top: 50px;
-  left: 150px;
+  left: 9%;
 }
 .project-container-project-2 span {
   position: absolute;
@@ -450,8 +455,9 @@ main {
 }
 .project-container-project-3 {
   position: absolute;
+  width: 100%;
   top: 50px;
-  left: 250px;
+  left: 17%;
 }
 .project-container-project-3 span {
   position: absolute;
@@ -496,8 +502,9 @@ main {
 }
 .project-container-project-4 {
   position: absolute;
+  width: 100%;
   top: 50px;
-  left: 350px;
+  left: 25%;
 }
 .project-container-project-4 span {
   position: absolute;
@@ -542,8 +549,9 @@ main {
 }
 .project-container-project-5 {
   position: absolute;
+  width: 100%;
   top: 50px;
-  left: 450px;
+  left: 33%;
 }
 .project-container-project-5 span {
   position: absolute;
@@ -588,8 +596,9 @@ main {
 }
 .project-container-project-6 {
   position: absolute;
+  width: 100%;
   top: 50px;
-  left: 550px;
+  left: 41%;
 }
 .project-container-project-6 span {
   position: absolute;
@@ -634,8 +643,9 @@ main {
 }
 .project-container-project-7 {
   position: absolute;
+  width: 100%;
   top: 50px;
-  left: 650px;
+  left: 49%;
 }
 .project-container-project-7 span {
   position: absolute;
