@@ -11,6 +11,9 @@ export default function Main() {
         <Expertise/>
         <Project/>
         <SocialNetwork/>
+        <a href='#head-nav' className='move-top'>
+          <img src='./IMG/Move_logo/up.svg' className='move-top-icon'/>
+        </a>
     </main>
   )
 }
