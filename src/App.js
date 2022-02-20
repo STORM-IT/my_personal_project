@@ -1,4 +1,5 @@
 import React, { Fragment} from 'react'
+import Footer from './component/Layout/footer/Footer';
 import Head from './component/Layout/headLayout/Head';
 import Main from './component/Layout/mainLayout/Main';
 
@@ -13,11 +14,7 @@ export default function App() {
     <Fragment>
       <Head/>
       <Main/>
-      <footer>
-        <div>
-
-        </div>
-      </footer>
+      <Footer/>
     </Fragment>
   )
 }

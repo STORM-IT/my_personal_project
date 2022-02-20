@@ -76,10 +76,20 @@ $expertise: "Html & css", "JavaScript", "Bootstrap", "Jquery", "Sass", "React", 
 }
 body {
     background-color: $color_black;
+    height: 5000px;
+    // overflow: hidden;
 }
+// #root{
+//     padding: 0px 100px;
+
+// }
 main {
     background-color: $color_black;
-    padding: 0px 100px;
+    width: 100%;
+    height: 4700px;
+    border-radius: 0 0 70px 70px;
+    z-index: 3000;
+    margin-bottom: -20px;
 }
 .nav {
     &-container {
@@ -362,7 +372,8 @@ main {
     width: 100%;
     height: 600px;
     background-color: $color_black;
-    margin-bottom: 200px;
+    z-index: 1;
+    margin-bottom: -20px;
     .line {
         position: relative;
         background-color: $color_light;
@@ -380,7 +391,7 @@ main {
             transform: rotate(-90deg);
             object-fit: fill;
             object-position: 360px 0;
-            z-index: 100;
+            z-index: 5;
             animation: showLogoGit 2s ease 2s alternate forwards;
         }
         div {
@@ -435,5 +446,48 @@ main {
     100% {
         transform: rotate(90deg);
         width: 500px;
+    }
+}
+
+.footer{
+    // z-index: 1000;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: $color_gray;
+    // margin-top: -250px;
+    z-index: -10;
+    &-head{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        height: 400px;
+        &-left{
+            // position: absolute;
+            width: 500px;
+            height: 300px;
+            background-color: $color_light;
+            
+        }
+        &-right{
+            position:sticky;
+            width: 500px;
+            height: 300px;
+            background-color: $color_light;
+            bottom: -100px;
+            
+        }
+    }
+    &-creator{
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 40px;
+        font-size: 20px;
+        background-color: darken($color: $color_gray, $amount: 10);
+        color: $color_light;
+        direction: ltr;
+        text-align: center;
+        font-family: RoyaBold;
     }
 }

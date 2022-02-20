@@ -7,7 +7,7 @@ export default function Footer() {
         <div className='footer-head-left'></div>
         <div className='footer-head-right'></div>
       </div>
-      <div className='footer-creator'></div>
+      <div className='footer-creator'>این سایت متعلق به علی پارسامنش میباشد  </div>
     </div>
   )
 }
