@@ -89,7 +89,7 @@ main {
     height: 4700px;
     border-radius: 0 0 70px 70px;
     z-index: 3000;
-    margin-bottom: -20px;
+    margin-bottom: -400px;
 }
 .nav {
     &-container {
@@ -450,27 +450,24 @@ main {
 }
 
 .footer{
-    // z-index: 1000;
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 800px;
     background-color: $color_gray;
-    // margin-top: -250px;
     z-index: -10;
     &-head{
         display: flex;
         justify-content: space-around;
         align-items: flex-end;
-        height: 400px;
+        bottom: 50px;
+        height: 800px;
         &-left{
-            // position: absolute;
             width: 500px;
             height: 300px;
             background-color: $color_light;
             
         }
         &-right{
-            position:sticky;
             width: 500px;
             height: 300px;
             background-color: $color_light;
