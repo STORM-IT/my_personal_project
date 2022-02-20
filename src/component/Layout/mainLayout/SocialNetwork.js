@@ -9,8 +9,7 @@ export default function SocialNetwork() {
         <div className='line'>
         <img id='659' src='./IMG/logo_lessen/github.svg'/>
         <div>
-
-        <a href='https://github.com/STORM-IT' target={"_blank"} className='Username'>Account</a>
+        <a href='https://github.com/STORM-IT' target={"_blank"} className='Username'>STOORMIX</a>
         </div>
         </div>
     </div>
