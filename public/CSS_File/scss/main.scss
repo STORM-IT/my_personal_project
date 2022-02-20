@@ -242,11 +242,14 @@ main {
     &-expertise-react {
         @include style(6);
     }
-    &-expertise-git {
+    &-expertise-redux {
         @include style(7);
     }
-    &-expertise-sharp {
+    &-expertise-git {
         @include style(8);
+    }
+    &-expertise-sharp {
+        @include style(9);
     }
 }
 @keyframes MoveExpertiseRight {

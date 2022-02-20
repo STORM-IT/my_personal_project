@@ -54,6 +54,12 @@ export default function Expertise() {
                 </div>
               </div>
               <div className='card-body'>
+                <div className='card-expertise-redux'>
+                  <span>REDUX</span>
+                  <img src='./IMG/logo_lessen/redux.svg' />
+                </div>
+              </div>
+              <div className='card-body'>
                 <div className='card-expertise-git'>
                   <span>GIT</span>
                   <img src='./IMG/logo_lessen/git.svg' />
