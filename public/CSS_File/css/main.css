@@ -16,11 +16,11 @@
 }
 @font-face {
   font-family: Yekan;
-  src: url("../../Font/Far.Yekan.ttf");
+  src: url("../../Font/Far.Nazanin.ttf");
 }
 @font-face {
   font-family: Ye;
-  src: url("../../Font/Far.Yekan.ttf");
+  src: url("../../Font/Far.Roya.ttf");
 }
 @font-face {
   font-family: MacLemon;
@@ -79,17 +79,50 @@ main .move-top {
   top: 0px;
   width: 100%;
   direction: rtl;
-  background-color: #0092ca;
+  background-color: #00b7fd;
   height: 50px;
   z-index: 1000;
+  text-align: center;
 }
-.nav-container a {
-  display: inline-block;
-  color: gainsboro;
+.nav-container .select {
+  width: 200px;
+  height: 35px;
+  display: fixed;
+  justify-content: center;
+  align-items: center;
+}
+.nav-container .select p {
+  text-align: center;
+  width: 200px;
+  height: 35px;
+  background-color: #505762;
+  border-radius: 5px;
+  margin-top: 6px;
+  margin-right: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: Ye;
+  color: #d5d5d5;
+}
+.nav-container .select p:hover {
+  background-color: #494f5a;
+  color: #eeeeee;
+}
+.nav-container .select-option {
+  position: absolute;
+  width: 200px;
+  background-color: #3c3c3c;
+  border-radius: 10px;
+  margin: 25px 20px 0px 0px;
+}
+.nav-container .select-option a {
+  display: block;
+  color: #d5d5d5;
+  width: 100%;
+  padding: 20px 20px;
   font-family: Yekan;
-  padding: 10px 30px;
 }
-.nav-container a:hover {
+.nav-container .select-option a:hover {
   color: white;
 }
 
