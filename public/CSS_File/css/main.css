@@ -843,7 +843,6 @@ main .move-top {
   position: relative;
   width: 500px;
   height: 300px;
-  background-color: #222831;
 }
 .footer-head-left-telegram {
   position: relative;
@@ -957,7 +956,6 @@ main .move-top {
   align-items: center;
   width: 500px;
   height: 300px;
-  background-color: #222831;
 }
 .footer-head-right .version {
   text-align: center;
