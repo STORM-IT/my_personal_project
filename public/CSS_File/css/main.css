@@ -821,9 +821,8 @@ main .move-top {
   }
 }
 .footer-head-left-location img, .footer-head-left-call img, .footer-head-left-instagram img, .footer-head-left-whatsApp img, .footer-head-left-telegram img {
-  width: 35px;
-  height: 35px;
-  overflow: hidden;
+  width: 25px;
+  height: 25px;
 }
 
 .footer {
@@ -848,20 +847,20 @@ main .move-top {
 }
 .footer-head-left-telegram {
   position: relative;
+  text-align: center;
   width: 100%;
   height: 50px;
-  direction: rtl;
 }
 .footer-head-left-telegram img {
-  display: block;
   position: absolute;
+  margin-top: -5px;
+  margin-left: 5px;
   filter: grayscale(70%);
   content: url("../../IMG/socialNetwork/telegram.svg");
 }
-.footer-head-left-telegram a {
-  font-family: Nazanin;
+.footer-head-left-telegram p {
   height: 100%;
-  width: 100%;
+  width: 500px;
   margin-top: 7px;
   margin-right: 40px;
   position: absolute;
@@ -869,20 +868,20 @@ main .move-top {
 }
 .footer-head-left-whatsApp {
   position: relative;
+  text-align: center;
   width: 100%;
   height: 50px;
-  direction: rtl;
 }
 .footer-head-left-whatsApp img {
-  display: block;
   position: absolute;
+  margin-top: -5px;
+  margin-left: 5px;
   filter: grayscale(70%);
   content: url("../../IMG/socialNetwork/whatsApp.svg");
 }
-.footer-head-left-whatsApp a {
-  font-family: Nazanin;
+.footer-head-left-whatsApp p {
   height: 100%;
-  width: 100%;
+  width: 500px;
   margin-top: 7px;
   margin-right: 40px;
   position: absolute;
@@ -890,20 +889,20 @@ main .move-top {
 }
 .footer-head-left-instagram {
   position: relative;
+  text-align: center;
   width: 100%;
   height: 50px;
-  direction: rtl;
 }
 .footer-head-left-instagram img {
-  display: block;
   position: absolute;
+  margin-top: -5px;
+  margin-left: 5px;
   filter: grayscale(70%);
   content: url("../../IMG/socialNetwork/instagram.svg");
 }
-.footer-head-left-instagram a {
-  font-family: Nazanin;
+.footer-head-left-instagram p {
   height: 100%;
-  width: 100%;
+  width: 500px;
   margin-top: 7px;
   margin-right: 40px;
   position: absolute;
@@ -911,20 +910,20 @@ main .move-top {
 }
 .footer-head-left-call {
   position: relative;
+  text-align: center;
   width: 100%;
   height: 50px;
-  direction: rtl;
 }
 .footer-head-left-call img {
-  display: block;
   position: absolute;
+  margin-top: -5px;
+  margin-left: 5px;
   filter: grayscale(70%);
   content: url("../../IMG/socialNetwork/call.svg");
 }
-.footer-head-left-call a {
-  font-family: Nazanin;
+.footer-head-left-call p {
   height: 100%;
-  width: 100%;
+  width: 500px;
   margin-top: 7px;
   margin-right: 40px;
   position: absolute;
@@ -932,30 +931,61 @@ main .move-top {
 }
 .footer-head-left-location {
   position: relative;
+  text-align: center;
   width: 100%;
   height: 50px;
-  direction: rtl;
 }
 .footer-head-left-location img {
-  display: block;
   position: absolute;
+  margin-top: -5px;
+  margin-left: 5px;
   filter: grayscale(70%);
   content: url("../../IMG/socialNetwork/location.svg");
 }
-.footer-head-left-location a {
-  font-family: Nazanin;
+.footer-head-left-location p {
   height: 100%;
-  width: 100%;
+  width: 500px;
   margin-top: 7px;
   margin-right: 40px;
   position: absolute;
   color: #bbbbbb;
 }
 .footer-head-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   width: 500px;
   height: 300px;
   background-color: #222831;
-  bottom: -100px;
+}
+.footer-head-right .version {
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  color: #bbbbbb;
+  font-family: sans-serif;
+}
+.footer-head-right .create {
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  color: #bbbbbb;
+  font-family: sans-serif;
+}
+.footer-head-right .update {
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  color: #bbbbbb;
+  font-family: sans-serif;
+}
+.footer-head-right .brand {
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  color: #bbbbbb;
+  font-family: sans-serif;
 }
 .footer-creator {
   position: absolute;

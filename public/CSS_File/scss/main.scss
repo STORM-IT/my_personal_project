@@ -12,6 +12,7 @@ $color_light: #eeeeee;
 
 $expertise: "Html & css", "JavaScript", "Bootstrap", "Jquery", "Sass", "React", "C#";
 $socialNetwork: "telegram","whatsApp","instagram","call","location";
+$footerRightInfoSite: "version","create","update","brand";
 @font-face {
     font-family: Nazanin;
     src: url("../../Font/Far.Nazanin\ Bold.ttf");
@@ -325,8 +326,6 @@ main {
 .nav-space {
     width: 100%;
     height: 100px;
-    // background-color:#0092ca;
-
     background-color: $color_gray;
 }
 .project {
@@ -488,9 +487,10 @@ main {
     }
 }
 %socialNetworkIcon{
-    width: 35px;
-    height: 35px;
-    overflow: hidden;
+    width: 25px;
+    height: 25px;
+    // width: 35px;
+    // height: 35px;
 }
 .footer {
     position: relative;
@@ -513,21 +513,27 @@ main {
                 
                 &-#{$i}{
                     position: relative;
+            //         display: flex;
+            // flex-direction: column;
+            // justify-content: space-evenly;
+            // align-items: center;
+            text-align:center;
                     width: 100%;
                     height: 50px;
-                    // background-color: $color_blue;
-                    direction: rtl;
+                    // direction: rtl;
                     img{
-                        display: block;
                         @extend %socialNetworkIcon;
+                        // margin-left: 100px;
                         position: absolute;
+                        margin-top: -5px;
+                        margin-left: 5px;
                         filter: grayscale(70%);
                         content: url("../../IMG/socialNetwork/#{$i}.svg");
+                  
                     }
-                    a{
-                        font-family: Nazanin;
+                    p{
                         height: 100%;
-                        width: 100%;
+                        width:500px;
                         margin-top: 7px;
                         margin-right: 40px;
                         position: absolute;
@@ -538,10 +544,24 @@ main {
      
         }
         &-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            
             width: 500px;
             height: 300px;
             background-color: $color_black;
-            bottom: -100px;
+            @each $i in $footerRightInfoSite {
+                .#{$i}{
+                    text-align: center;
+                    width: 100%;
+                    height: 50px;
+                    color: darken($color: $color_light, $amount: 20);
+                    font-family: sans-serif;
+                }
+            }
+
         }
     }
     &-creator {

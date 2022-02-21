@@ -6,28 +6,27 @@ export default function Footer() {
       <div className='footer-head'>
         <div className='footer-head-left'>
           <div className='footer-head-left-telegram' >
-            <img  />
-            <a href='' className='telegram'>PSMNS@</a>
+            
+            <p  className='telegram'><span>@PSMNS<img  /></span></p>
           </div>
           <div className='footer-head-left-instagram' >
-            <img />
-            <a href='' className='instagram'>ali._.psm</a>
+            <p href='' className='instagram'><span>ali._.psm<img /></span></p>
           </div>
           <div className='footer-head-left-whatsApp' >
-            <img />
-            <a href='' className='whatsApp'>09370915132</a>
+            <p href='' className='whatsApp'><span>09370915132<img /></span></p>
           </div>
           <div className='footer-head-left-call' >
-            <img />
-            <a href='' className='call'>09370915132</a>
+            <p href='' className='call'><span>09370915132<img /></span></p>
           </div>
           <div className='footer-head-left-location' >
-            <img />
-            <a href='' className='location'>مشهد / سیمتر طلاب /رسیدی زنگ بزن میام بیرون</a>
+            <p href='' className='location'><span>Iran / Mashhad<img /></span></p>
           </div>
         </div>
         <div className='footer-head-right'>
-
+          <p className='version'>version : <span>1.1.1</span></p>
+          <p className='create'>create : <span> 2022/02/21</span></p>
+          <p className='update'>last update : <span> 2022/02/21</span></p>
+          <p className='brand'>brand : <span> STOORMIX</span></p>
         </div>
       </div>
       <div className='footer-creator'>این سایت متعلق به علی پارسامنش میباشد  </div>
