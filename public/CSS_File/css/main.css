@@ -81,7 +81,7 @@ main .move-top {
   direction: rtl;
   background-color: #00b7fd;
   height: 50px;
-  z-index: 1000;
+  z-index: 10005;
   text-align: center;
 }
 .nav-container .select {
@@ -92,6 +92,7 @@ main .move-top {
   align-items: center;
 }
 .nav-container .select p {
+  position: relative;
   text-align: center;
   width: 200px;
   height: 35px;
@@ -103,9 +104,10 @@ main .move-top {
   font-size: 20px;
   font-family: Ye;
   color: #d5d5d5;
+  z-index: 1010;
 }
 .nav-container .select p:hover {
-  background-color: #494f5a;
+  background-color: #b8bdc6;
   color: #eeeeee;
 }
 .nav-container .select-option {
@@ -118,12 +120,23 @@ main .move-top {
 .nav-container .select-option a {
   display: block;
   color: #d5d5d5;
-  width: 100%;
   padding: 20px 20px;
   font-family: Yekan;
 }
 .nav-container .select-option a:hover {
   color: white;
+}
+.nav-container span {
+  display: block;
+  position: absolute;
+  top: 7px;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  color: #eeeeee;
+  font-family: MacLemon;
+  font-size: 40px;
+  z-index: 1010;
 }
 
 .header-short {
