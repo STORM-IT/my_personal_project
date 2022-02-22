@@ -106,9 +106,27 @@ main .move-top {
   color: #d5d5d5;
   z-index: 1010;
 }
+.nav-container .select input::selection {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+  supported by Chrome, Edge, Opera and Firefox */
+}
 .nav-container .select input:hover {
-  background-color: #b8bdc6;
+  background-color: #5b6370;
   color: #eeeeee;
+}
+.nav-container .select input:focus {
+  outline: none;
 }
 .nav-container .select-option {
   position: absolute;
