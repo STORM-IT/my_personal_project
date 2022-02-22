@@ -91,7 +91,7 @@ main .move-top {
   justify-content: center;
   align-items: center;
 }
-.nav-container .select p {
+.nav-container .select input {
   position: relative;
   text-align: center;
   width: 200px;
@@ -106,7 +106,7 @@ main .move-top {
   color: #d5d5d5;
   z-index: 1010;
 }
-.nav-container .select p:hover {
+.nav-container .select input:hover {
   background-color: #b8bdc6;
   color: #eeeeee;
 }

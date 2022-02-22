@@ -10,7 +10,7 @@ export default function Nav() {
                 <nav className='nav-container'>
                     <div className='select'>
                         <div className='select-input'>
-                            <p>بخش های سایت</p>
+                            <input value={inputHeadMove} readOnly></input>
                         </div>
                         <div className='select-option'>
                             <a href='#head-nav' onClick={()=>setInputHeadMove("خانه")}>خانه</a>
