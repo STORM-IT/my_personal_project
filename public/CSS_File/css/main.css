@@ -202,7 +202,9 @@ main .move-top {
   color: #eeeeee;
 }
 .main-information-text-container h3 {
+  text-align: right;
   font-family: Yekan;
+  margin-bottom: 10px;
 }
 .main-information-text-container p {
   font-family: RoyaBold;
