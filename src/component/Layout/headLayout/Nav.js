@@ -16,7 +16,7 @@ export default function Nav() {
                 <nav className='nav-container'>
                     <div className='select'>
                         <div className='select-input'>
-                            <input onClick={()=>show_select_option_nav()} value={inputHeadMove} readOnly></input>
+                            <input onClick={()=>show_select_option_nav()} value={showNavOption?inputHeadMove:"بخش های سایت"} readOnly></input>
                         </div>
                         {showNavOption?(
 
