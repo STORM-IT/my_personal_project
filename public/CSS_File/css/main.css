@@ -810,6 +810,18 @@ main .move-top {
   content: "C#";
 }
 
+.animation_socialNetwork_line {
+  animation: rotateLine 2s ease 1s alternate forwards;
+}
+
+.animation_socialNetwork_logo {
+  animation: showLogoGit 2s ease 2s alternate forwards;
+}
+
+.animation_socialNetwork_userName {
+  animation: gitUsername 2s ease 3s alternate forwards;
+}
+
 .SocialNetwork {
   position: relative;
   display: flex;
@@ -826,7 +838,6 @@ main .move-top {
   background-color: #eeeeee;
   height: 2px;
   transform: rotate(90deg);
-  animation: rotateLine 2s ease 1s alternate forwards;
 }
 .SocialNetwork .line img {
   position: absolute;
@@ -838,7 +849,6 @@ main .move-top {
   object-fit: fill;
   object-position: 360px 0;
   z-index: 5;
-  animation: showLogoGit 2s ease 2s alternate forwards;
 }
 .SocialNetwork .line div {
   display: block;
@@ -850,7 +860,6 @@ main .move-top {
   right: 65px;
   z-index: 10;
   transform: rotate(-90deg);
-  animation: gitUsername 2s ease 3s alternate forwards;
 }
 .SocialNetwork .line div a {
   color: #eeeeee;

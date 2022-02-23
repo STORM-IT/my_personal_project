@@ -522,7 +522,15 @@ main {
         }
     }
 }
-
+.animation_socialNetwork_line{
+    animation: rotateLine 2s ease 1s alternate forwards;
+}
+.animation_socialNetwork_logo{
+    animation: showLogoGit 2s ease 2s alternate forwards;
+}
+.animation_socialNetwork_userName{
+    animation: gitUsername 2s ease 3s alternate forwards;
+}
 .SocialNetwork {
     position: relative;
     display: flex;
@@ -541,7 +549,7 @@ main {
         // transform: rotate(90deg);
         transform: rotate(90deg);
         // width: 500px;
-        animation: rotateLine 2s ease 1s alternate forwards;
+        // animation: rotateLine 2s ease 1s alternate forwards;
         img {
             position: absolute;
             width: 400px;
@@ -552,7 +560,7 @@ main {
             object-fit: fill;
             object-position: 360px 0;
             z-index: 5;
-            animation: showLogoGit 2s ease 2s alternate forwards;
+            // animation: showLogoGit 2s ease 2s alternate forwards;
         }
         div {
             display: block;
@@ -564,7 +572,7 @@ main {
             right: 65px;
             z-index: 10;
             transform: rotate(-90deg);
-            animation: gitUsername 2s ease 3s alternate forwards;
+            // animation: gitUsername 2s ease 3s alternate forwards;
             a {
                 color: $color_light;
                 font-size: 50px;
