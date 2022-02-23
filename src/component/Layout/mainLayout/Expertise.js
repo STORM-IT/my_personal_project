@@ -13,13 +13,13 @@ export default function Expertise() {
             </div>
             <div className='card-expertise'>
               <div className='card-body'>
-                <div className='card-expertise-html'>
+                <div className='card-expertise-html vc'>
                   <span>HTML</span>
                   <img src='./IMG/logo_lessen/html.svg' />
                 </div>
               </div>
               <div className='card-body'>
-                <div className='card-expertise-css'>
+                <div id='card-expertise-css1' className='card-expertise-css vc'>
                   <span>CSS</span>
                   <img src='./IMG/logo_lessen/css.svg' />
                 </div>

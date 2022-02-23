@@ -2,7 +2,7 @@ import React, { Fragment, useEffect, useState} from 'react'
 import Footer from './component/Layout/footer/Footer';
 import Head from './component/Layout/headLayout/Head';
 import Main from './component/Layout/mainLayout/Main';
-import {show_footer} from './component/utils/check_scroll_length'
+import {Show_footer} from './component/utils/check_scroll_length'
 
 export default function App() {
 
@@ -15,7 +15,7 @@ export default function App() {
       <Main/>
       <Footer/>
       {/* <check_scroll_length/> */}
-      {/* {show_footer} */}
+      {Show_footer}
     </Fragment>
   )
 }
