@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 
 export default function Expertise() {
+
   return (
     <Fragment>
         <div id='expertise' className='nav-space'>
