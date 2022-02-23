@@ -1,13 +1,24 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 
 export default function Nav() {
     
     const [inputHeadMove, setInputHeadMove] = useState("بخش های سایت")
     const [showNavOption, setshowNavOption] = useState(false)
+    // const [scrollTop, setScrollTop] = useState(window.pageYOffset)
 
+    // const scrollTop=document.getElementById("root").onscroll;
+    // useEffect(() => {
+    //     setScrollTop(window.pageYOffset)
+    //     console.log(scrollTop)
+    // }, [scrollTop])
+    
     const show_select_option_nav=()=>{
         setshowNavOption(!showNavOption);
         console.log(showNavOption)
+    }
+
+    const show_footer=()=>{
+
     }
 
     return (

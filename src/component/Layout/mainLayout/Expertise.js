@@ -6,7 +6,7 @@ export default function Expertise() {
         <div id='expertise' className='nav-space'>
         </div>
         <section className='card'>
-          <div className='card-container'>
+          <div className='card-container' >
             <div className='card-text'>
               <h3>تکنولوژی های آموزش دیده</h3>
             </div>

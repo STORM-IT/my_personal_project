@@ -30,16 +30,19 @@
   font-family: NavineDemo;
   src: url("../../Font/ENGLISH/NavineDemo-SemiCondensed.ttf");
 }
-body {
-  background-color: #222831;
-  height: 5000px;
+#root {
+  width: 100%;
+}
+
+html {
+  overflow: auto;
 }
 
 main {
   position: relative;
   background-color: #222831;
   width: 100%;
-  height: 4700px;
+  height: 4000px;
   border-radius: 0 0 70px 70px;
   z-index: 300;
   margin: auto;
@@ -254,11 +257,13 @@ main .move-top {
 }
 .card-container {
   width: 80vw;
+  height: 1000px;
   border-radius: 50px;
   overflow: hidden;
   flex-direction: column;
   background-color: #222831;
   margin-bottom: 70px;
+  overflow: scroll;
 }
 .card-expertise {
   width: 100%;
