@@ -30,16 +30,21 @@ export const Show_footer = (Scroll) => {
     const main = document.querySelector("main")
     const moveTopIcon = document.querySelector(".move-top")
     if (4400<= Scroll) {
-        main.classList.add("show_footer_animation")
-        main.classList.remove("hide_footer_animation")
-        moveTopIcon.classList.add("showIconTop")
-        moveTopIcon.classList.remove("hideIconTop")
+        main.classList.replace("hide_footer_animation","show_footer_animation")
+        moveTopIcon.classList.replace("hideIconTop","showIconTop")
+        // main.classList.add("show_footer_animation")
+        // main.classList.remove("hide_footer_animation")
+        // moveTopIcon.classList.add("showIconTop")
+        // moveTopIcon.classList.remove("hideIconTop")
         
     }else if(4400>= Scroll){
-        main.classList.add("hide_footer_animation")
-        main.classList.remove("show_footer_animation")
-        moveTopIcon.classList.add("hideIconTop")
-        moveTopIcon.classList.remove("showIconTop")
+
+        main.classList.replace("show_footer_animation","hide_footer_animation")
+        moveTopIcon.classList.replace("showIconTop","hideIconTop")
+        // main.classList.add("hide_footer_animation")
+        // main.classList.remove("show_footer_animation")
+        // moveTopIcon.classList.add("hideIconTop")
+        // moveTopIcon.classList.remove("showIconTop")
 
     }
     // const first=Scroll;
