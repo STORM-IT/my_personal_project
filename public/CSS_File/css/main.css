@@ -42,17 +42,25 @@ body {
 }
 
 .show_footer_animation {
-  animation: showFooter 700ms linear alternate forwards;
+  animation: showFooter 500ms linear alternate forwards;
 }
 
 .hide_footer_animation {
-  animation: hideFooter 700ms linear alternate forwards;
+  animation: hideFooter 500ms linear alternate forwards;
+}
+
+.showIconTop {
+  animation: showIconTop 500ms linear alternate forwards;
+}
+
+.hideIconTop {
+  animation: hideIconTop 500ms linear alternate forwards;
 }
 
 main {
+  position: relative;
   background-color: #222831;
   width: 100%;
-  height: 4500px;
   border-radius: 0 0 70px 70px;
   z-index: 300;
   margin: auto;
@@ -71,10 +79,22 @@ main .move-top {
   overflow: hidden;
 }
 
-@keyframes iconTop {
+@keyframes showIconTop {
+  0% {
+    height: 0px;
+  }
   100% {
     height: 60px;
     width: 60px;
+  }
+}
+@keyframes hideIconTop {
+  0% {
+    height: 60px;
+    width: 60px;
+  }
+  100% {
+    height: 0px;
   }
 }
 @keyframes showFooter {

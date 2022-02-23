@@ -28,13 +28,18 @@ export const Show_footer = (Scroll) => {
         userName.classList.add("animation_socialNetwork_userName")
     }
     const main = document.querySelector("main")
-    if (4230<= Scroll) {
-        main.classList.remove("hide_footer_animation")
+    const moveTopIcon = document.querySelector(".move-top")
+    if (4400<= Scroll) {
         main.classList.add("show_footer_animation")
+        main.classList.remove("hide_footer_animation")
+        moveTopIcon.classList.add("showIconTop")
+        moveTopIcon.classList.remove("hideIconTop")
         
-    }else if(4230>= Scroll){
-        main.classList.remove("show_footer_animation")
+    }else if(4400>= Scroll){
         main.classList.add("hide_footer_animation")
+        main.classList.remove("show_footer_animation")
+        moveTopIcon.classList.add("hideIconTop")
+        moveTopIcon.classList.remove("showIconTop")
 
     }
     // const first=Scroll;
