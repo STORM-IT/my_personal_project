@@ -305,7 +305,7 @@ main .move-top {
   font-family: Yekan;
 }
 .card-container {
-  width: 80vw;
+  width: 60vw;
   border-radius: 50px;
   overflow: hidden;
   flex-direction: column;

@@ -78,63 +78,31 @@ $footerRightInfoSite: "version", "create", "update", "brand";
     }
 }
 
-#root{
+#root {
     position: relative;
     background-color: $color_gray;
     z-index: -51;
-    
 }
-body{
+body {
     position: relative;
     z-index: -10000;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.show_footer_animation{
+.show_footer_animation {
     animation: showFooter 500ms linear alternate forwards;
 }
-.hide_footer_animation{
+.hide_footer_animation {
     animation: hideFooter 500ms linear alternate forwards;
 }
 
-.showIconTop{
+.showIconTop {
     animation: showIconTop 500ms linear alternate forwards;
 }
-.hideIconTop{
+.hideIconTop {
     animation: hideIconTop 500ms linear alternate forwards;
 }
 
 main {
-   
     position: relative;
     background-color: $color_black;
     width: 100%;
@@ -196,13 +164,11 @@ main {
         margin-bottom: -900px;
     }
 }
-.opacity{
-
+.opacity {
     opacity: 0.7;
 }
-.hidOpacity{
-
-    opacity:1;
+.hidOpacity {
+    opacity: 1;
 }
 .nav {
     &-container {
@@ -247,7 +213,7 @@ main {
                     background-color: lighten($color: $color_gray, $amount: 15);
                     color: $color_light;
                 }
-                &:focus{
+                &:focus {
                     outline: none;
                 }
             }
@@ -390,14 +356,13 @@ main {
     }
 
     &-container {
-        width: 80vw;
+        width: 60vw;
         // height: 1000px;
         border-radius: 50px;
         overflow: hidden;
         flex-direction: column;
         background-color: $color_black;
         margin-bottom: 70px;
-
     }
     &-expertise {
         width: 100%;
@@ -442,25 +407,10 @@ main {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.moveExpertiseLeft{
+.moveExpertiseLeft {
     animation: MoveExpertiseLeft 1s ease alternate forwards;
 }
-.moveExpertiseRight{
+.moveExpertiseRight {
     animation: MoveExpertiseRight 1s ease alternate forwards;
 }
 @keyframes MoveExpertiseRight {
@@ -560,13 +510,13 @@ main {
         }
     }
 }
-.animation_socialNetwork_line{
+.animation_socialNetwork_line {
     animation: rotateLine 2s ease 1s alternate forwards;
 }
-.animation_socialNetwork_logo{
+.animation_socialNetwork_logo {
     animation: showLogoGit 2s ease 2s alternate forwards;
 }
-.animation_socialNetwork_userName{
+.animation_socialNetwork_userName {
     animation: gitUsername 2s ease 3s alternate forwards;
 }
 .SocialNetwork {
