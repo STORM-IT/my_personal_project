@@ -124,6 +124,7 @@ main {
         background-color: darken($color: $color_light, $amount: 100);
         // animation: iconTop 500ms linear alternate forwards;
         overflow: hidden;
+        z-index: 1000;
     }
 }
 @keyframes showIconTop {

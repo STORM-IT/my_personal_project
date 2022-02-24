@@ -77,6 +77,7 @@ main .move-top {
   color: #eeeeee;
   background-color: black;
   overflow: hidden;
+  z-index: 1000;
 }
 
 @keyframes showIconTop {
