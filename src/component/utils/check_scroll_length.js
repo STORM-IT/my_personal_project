@@ -42,11 +42,13 @@ export const Show_footer = (Scroll) => {
     const moveTopIcon = document.querySelector(".move-top")
     if (4300 <= Scroll) {
         moveTopIcon.classList.add("showIconTop")
+        main.classList.add("show_footer_animation")
         moveTopIcon.classList.replace("hideIconTop", "showIconTop")
-        // moveTopIcon.classList.replace("hideIconTop", "showIconTop")
+        main.classList.replace("hide_footer_animation", "show_footer_animation")
         
     } else {
         
+        main.classList.add("hide_footer_animation")
         moveTopIcon.classList.add("hideIconTop")
         main.classList.replace("show_footer_animation", "hide_footer_animation")
         moveTopIcon.classList.replace("showIconTop", "hideIconTop")
