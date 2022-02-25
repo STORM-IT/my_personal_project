@@ -6,27 +6,29 @@ export const Show_footer = (Scroll) => {
     console.log(window.pageYOffset)
     const nav = document.querySelector(".nav-container")
     if (Scroll >= 600) {
-        
         nav.classList.remove("hidOpacity")
         nav.classList.add("opacity")
     }
     else{
         nav.classList.add("hidOpacity")
         nav.classList.remove("opacity")
-        
     }
+
+
     const short_video=document.querySelector(".header-short-video");
-    if (Scroll >= 1800) {
+    if (Scroll >= 200) {
         
         // short_video.classList.remove("hidOpacity")
         short_video.classList.add("display-none")
-        short_video.classList.replace("display-none", "display-block")
+        short_video.classList.replace("display-block", "display-none")
     }else{
         // short_video.classList.remove("opacity")
         short_video.classList.add("display-block")
-        short_video.classList.replace("display-block", "display-none")
+        short_video.classList.replace("display-none", "display-block")
 
     }
+
+
     if (Scroll >= 1300) {
         const card = document.querySelectorAll(".card-body > div");
         for (let i = 0; i < card.length; i++) {
@@ -43,6 +45,8 @@ export const Show_footer = (Scroll) => {
             }
         }
     }
+
+
     if (3900 <= Scroll) {
         let line = document.querySelector(".line")
         let logo = document.querySelector(".line img")
@@ -51,6 +55,8 @@ export const Show_footer = (Scroll) => {
         logo.classList.add("animation_socialNetwork_logo")
         userName.classList.add("animation_socialNetwork_userName")
     }
+
+
     const main = document.querySelector("main")
     const moveTopIcon = document.querySelector(".move-top")
     if (4300 <= Scroll) {

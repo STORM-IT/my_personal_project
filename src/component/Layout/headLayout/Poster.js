@@ -6,9 +6,9 @@ import { Set_url_video } from '../../Redux/Action/url_short_top_video/top_video'
 export default function Poster() {
 
     // const [url, setUrl] = useState("./IMG/head_short_video/top-view-of-business-handshake-and-client-meeting.m4v");
-    const [currentVideo, setCurrentVideo] = useState(1);
+    // const [currentVideo, setCurrentVideo] = useState(1);
 
-    const videos = ["./IMG/head_short_video/top-view-of-business-handshake-and-client-meeting.m4v", "./IMG/head_short_video/open-office-space.m4v"];
+    // const videos = ["./IMG/head_short_video/top-view-of-business-handshake-and-client-meeting.m4v", "./IMG/head_short_video/open-office-space.m4v"];
 
     const url=useSelector(state=>state.url)
     const dispatch=useDispatch();
@@ -18,13 +18,12 @@ export default function Poster() {
     useEffect(() => {
         // dispatch(set_url_video())
         require("../../../JS/script");
-        vidRef.current.play();
+        // vidRef.current.play();
     }, [])
 
-    useEffect(() => {
-        console.log("effect")
-        vidRef.current.play();
-    }, [url])
+    // useEffect(() => {
+    //     vidRef.current.play();
+    // }, [url])
 
 
     // const next_video = () => {
@@ -39,7 +38,10 @@ export default function Poster() {
     return (
         <Fragment>
             <div className='header-short'>
-                <video id='short-video_head' className='header-short-video' src={url} onEnded={() =>dispatch(Set_url_video())} ref={vidRef} muted poster='./IMG/poster/picture.jpg' />
+                {/* <div> */}
+                <video id='short-video_head' className='header-short-video' src={url} onEnded={() =>dispatch(Set_url_video())} ref={vidRef} muted poster="../../IMG/poster/picture.jpg"/>
+                <img className='header-short-img' src="../../IMG/poster/picture_2.jpg"/>
+                {/* </div> */}
                 {/* <video id='short-video_head' className='header-short-video' src={url} onEnded={() => next_video()} ref={vidRef} muted poster='./IMG/poster/picture.jpg' /> */}
                 <span>به وبساخت شخصی من خوش آمدید</span>
                 <svg className='header-short-footer' xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 1440 200">

@@ -78,11 +78,14 @@ $footerRightInfoSite: "version", "create", "update", "brand";
     }
 }
 .display-none {
-    opacity: 0;
+    // object-fit:cover !important;
+    // opacity: 0 !important;
+    z-index: -11 !important;
 }
 .display-block {
-    opacity: 0.4;
+    // opacity: 0.3 !important;
     // height: 40vw!important;
+    z-index: -10 !important;
 }
 
 #root {
@@ -294,6 +297,18 @@ main {
             height: 750px;
             opacity: 0.4;
             z-index: -10;
+        }
+        &-img{
+            // display: none;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            object-fit: fill;
+            // height: 40vw;
+            height: 750px;
+            // opacity: 0.4;
+            z-index: -11;
         }
         &-footer {
             position: absolute;
