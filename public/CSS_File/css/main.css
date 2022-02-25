@@ -115,7 +115,7 @@ main {
   }
 }
 .opacity::before {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .hidOpacity::before {
@@ -524,14 +524,15 @@ main {
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 1500px;
+  width: 81vw;
   height: 600px;
 }
 .project-container-project-1 {
   position: absolute;
-  width: 100%;
+  width: 1500px;
+  height: 600px;
   top: 50px;
-  left: 1%;
+  left: 0vw;
 }
 .project-container-project-1 span {
   position: absolute;
@@ -562,23 +563,24 @@ main {
   display: flex;
   justify-content: center;
   top: 30px;
-  width: 30vw;
-  height: 20vw;
+  width: 33vw;
+  height: 350px;
   border-radius: 0px 7px 7px 7px;
   background-color: #0083b6;
   align-items: center;
 }
 .project-container-project-1 div::after {
   font-family: MacLemon;
-  font-size: 8vw;
+  font-size: 5vw;
   color: #eeeeee;
   content: "Html & css";
 }
 .project-container-project-2 {
   position: absolute;
-  width: 100%;
+  width: 1500px;
+  height: 600px;
   top: 50px;
-  left: 9%;
+  left: 8vw;
 }
 .project-container-project-2 span {
   position: absolute;
@@ -609,23 +611,24 @@ main {
   display: flex;
   justify-content: center;
   top: 30px;
-  width: 30vw;
-  height: 20vw;
+  width: 33vw;
+  height: 350px;
   border-radius: 0px 7px 7px 7px;
   background-color: #0075a1;
   align-items: center;
 }
 .project-container-project-2 div::after {
   font-family: MacLemon;
-  font-size: 8vw;
+  font-size: 5vw;
   color: #eeeeee;
   content: "JavaScript";
 }
 .project-container-project-3 {
   position: absolute;
-  width: 100%;
+  width: 1500px;
+  height: 600px;
   top: 50px;
-  left: 17%;
+  left: 16vw;
 }
 .project-container-project-3 span {
   position: absolute;
@@ -656,23 +659,24 @@ main {
   display: flex;
   justify-content: center;
   top: 30px;
-  width: 30vw;
-  height: 20vw;
+  width: 33vw;
+  height: 350px;
   border-radius: 0px 7px 7px 7px;
   background-color: #00668d;
   align-items: center;
 }
 .project-container-project-3 div::after {
   font-family: MacLemon;
-  font-size: 8vw;
+  font-size: 5vw;
   color: #eeeeee;
   content: "Bootstrap";
 }
 .project-container-project-4 {
   position: absolute;
-  width: 100%;
+  width: 1500px;
+  height: 600px;
   top: 50px;
-  left: 25%;
+  left: 24vw;
 }
 .project-container-project-4 span {
   position: absolute;
@@ -703,23 +707,24 @@ main {
   display: flex;
   justify-content: center;
   top: 30px;
-  width: 30vw;
-  height: 20vw;
+  width: 33vw;
+  height: 350px;
   border-radius: 0px 7px 7px 7px;
   background-color: #005778;
   align-items: center;
 }
 .project-container-project-4 div::after {
   font-family: MacLemon;
-  font-size: 8vw;
+  font-size: 5vw;
   color: #eeeeee;
   content: "Jquery";
 }
 .project-container-project-5 {
   position: absolute;
-  width: 100%;
+  width: 1500px;
+  height: 600px;
   top: 50px;
-  left: 33%;
+  left: 32vw;
 }
 .project-container-project-5 span {
   position: absolute;
@@ -750,23 +755,24 @@ main {
   display: flex;
   justify-content: center;
   top: 30px;
-  width: 30vw;
-  height: 20vw;
+  width: 33vw;
+  height: 350px;
   border-radius: 0px 7px 7px 7px;
   background-color: #004864;
   align-items: center;
 }
 .project-container-project-5 div::after {
   font-family: MacLemon;
-  font-size: 8vw;
+  font-size: 5vw;
   color: #eeeeee;
   content: "Sass";
 }
 .project-container-project-6 {
   position: absolute;
-  width: 100%;
+  width: 1500px;
+  height: 600px;
   top: 50px;
-  left: 41%;
+  left: 40vw;
 }
 .project-container-project-6 span {
   position: absolute;
@@ -797,23 +803,24 @@ main {
   display: flex;
   justify-content: center;
   top: 30px;
-  width: 30vw;
-  height: 20vw;
+  width: 33vw;
+  height: 350px;
   border-radius: 0px 7px 7px 7px;
   background-color: #003a50;
   align-items: center;
 }
 .project-container-project-6 div::after {
   font-family: MacLemon;
-  font-size: 8vw;
+  font-size: 5vw;
   color: #eeeeee;
   content: "React";
 }
 .project-container-project-7 {
   position: absolute;
-  width: 100%;
+  width: 1500px;
+  height: 600px;
   top: 50px;
-  left: 49%;
+  left: 48vw;
 }
 .project-container-project-7 span {
   position: absolute;
@@ -844,15 +851,15 @@ main {
   display: flex;
   justify-content: center;
   top: 30px;
-  width: 30vw;
-  height: 20vw;
+  width: 33vw;
+  height: 350px;
   border-radius: 0px 7px 7px 7px;
   background-color: #002b3b;
   align-items: center;
 }
 .project-container-project-7 div::after {
   font-family: MacLemon;
-  font-size: 8vw;
+  font-size: 5vw;
   color: #eeeeee;
   content: "C#";
 }
