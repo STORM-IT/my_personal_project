@@ -80,14 +80,14 @@ $footerRightInfoSite: "version", "create", "update", "brand";
 .display-none {
     // object-fit:cover !important;
     // opacity: 0 !important;
-    display: block !important;
-    z-index: -9 !important;
+    display: none !important;
+    z-index: -10 !important;
 }
 .display-block {
     // opacity: 0.3 !important;
     // height: 40vw!important;
-    display: none !important;
-    z-index: -10 !important;
+    display: block !important;
+    z-index: -9 !important;
 }
 
 

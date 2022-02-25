@@ -16,13 +16,15 @@ export const Show_footer = (Scroll) => {
 
 
     const short_img=document.querySelector(".header-short-img");
-    if(Scroll<=1300&&3900>=Scroll){
+    if(Scroll<=1300||3900<=Scroll){
         
-        short_img.classList.add("display-none")
-        short_img.classList.replace("display-none", "display-block")
-    }else{
         short_img.classList.add("display-block")
         short_img.classList.replace("display-block", "display-none")
+        console.log("block")
+    }else{
+        short_img.classList.add("display-none")
+        short_img.classList.replace("display-none", "display-block")
+        console.log("none")
     }
 
     if (Scroll >= 200) {
