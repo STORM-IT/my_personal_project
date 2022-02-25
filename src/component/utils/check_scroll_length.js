@@ -2,9 +2,10 @@ import { useState } from "react";
 
 window.addEventListener('scroll', () => { Show_footer(window.pageYOffset) });
 export const Show_footer = (Scroll) => {
+    
     console.log(window.pageYOffset)
     const nav = document.querySelector(".nav-container")
-    if (Scroll >= 400) {
+    if (Scroll >= 600) {
         
         nav.classList.remove("hidOpacity")
         nav.classList.add("opacity")
@@ -12,8 +13,9 @@ export const Show_footer = (Scroll) => {
     else{
         nav.classList.add("hidOpacity")
         nav.classList.remove("opacity")
-
+        
     }
+
     if (Scroll >= 1300) {
         const card = document.querySelectorAll(".card-body > div");
         for (let i = 0; i < card.length; i++) {
@@ -42,15 +44,17 @@ export const Show_footer = (Scroll) => {
     const moveTopIcon = document.querySelector(".move-top")
     if (4300 <= Scroll) {
         moveTopIcon.classList.add("showIconTop")
-        main.classList.add("show_footer_animation")
         moveTopIcon.classList.replace("hideIconTop", "showIconTop")
-        main.classList.replace("hide_footer_animation", "show_footer_animation")
-        
-    } else {
-        
+
+
         main.classList.add("hide_footer_animation")
-        moveTopIcon.classList.add("hideIconTop")
+        main.classList.replace("hide_footer_animation", "show_footer_animation")
+    } else {
+        main.classList.add("show_footer_animation")
         main.classList.replace("show_footer_animation", "hide_footer_animation")
+
+
+        moveTopIcon.classList.add("hideIconTop")
         moveTopIcon.classList.replace("showIconTop", "hideIconTop")
     }
 
