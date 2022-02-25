@@ -1,11 +1,8 @@
-export const urlVideoReducer = (state = "", action) => {
+export const urlVideoReducer = (state = "./IMG/head_short_video/computer-code-in-the-screen.mp4", action) => {
 
     switch (action.type) {
       case "SET-URL": 
-        return state
-
-    //   case "GET-URL": 
-    //     return {...state}
+        return action.payload;
         
       default: return state;
     }
