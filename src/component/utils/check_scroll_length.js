@@ -15,7 +15,18 @@ export const Show_footer = (Scroll) => {
         nav.classList.remove("opacity")
         
     }
+    const short_video=document.querySelector(".header-short-video");
+    if (Scroll >= 1800) {
+        
+        // short_video.classList.remove("hidOpacity")
+        short_video.classList.add("display-none")
+        short_video.classList.replace("display-none", "display-block")
+    }else{
+        // short_video.classList.remove("opacity")
+        short_video.classList.add("display-block")
+        short_video.classList.replace("display-block", "display-none")
 
+    }
     if (Scroll >= 1300) {
         const card = document.querySelectorAll(".card-body > div");
         for (let i = 0; i < card.length; i++) {

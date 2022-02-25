@@ -1,4 +1,7 @@
 import React, { Fragment, useEffect, useRef, useState } from 'react'
+import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { set_url_video } from '../../Redux/Action/url_short_top_video/top_video';
 
 export default function Poster() {
 
@@ -7,7 +10,11 @@ export default function Poster() {
 
     const videos = ["./IMG/head_short_video/top-view-of-business-handshake-and-client-meeting.m4v", "./IMG/head_short_video/computer-code-in-the-screen.mp4", "./IMG/head_short_video/open-office-space.m4v"];
 
+    const dispatch=useDispatch();
+    dispatch(set_url_video());
+    const urld=useSelector(state=>state.url)
 
+    console.log(urld)
     const vidRef = useRef();
     useEffect(() => {
         require("../../../JS/script");
