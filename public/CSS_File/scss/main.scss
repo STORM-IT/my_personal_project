@@ -80,13 +80,42 @@ $footerRightInfoSite: "version", "create", "update", "brand";
 .display-none {
     // object-fit:cover !important;
     // opacity: 0 !important;
-    z-index: -11 !important;
+    display: block !important;
+    z-index: -9 !important;
 }
 .display-block {
     // opacity: 0.3 !important;
     // height: 40vw!important;
+    display: none !important;
     z-index: -10 !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #root {
     position: relative;
@@ -115,7 +144,7 @@ body {
 
 main {
     position: relative;
-    background-color: $color_black;
+    // background-color: $color_black;
     width: 100%;
     // height: 4500px;
     border-radius: 0 0 70px 70px;
@@ -295,19 +324,19 @@ main {
             object-fit: fill;
             // height: 40vw;
             height: 750px;
-            opacity: 0.4;
+            opacity: 0.6;
             z-index: -10;
         }
         &-img{
-            // display: none;
+            display: none;
             position: fixed;
             top: 0px;
             left: 0px;
             width: 100%;
             object-fit: fill;
-            // height: 40vw;
-            height: 750px;
-            // opacity: 0.4;
+            height: 100%;
+            // height: 750px;
+            // opacity: 0;
             z-index: -11;
         }
         &-footer {
@@ -569,6 +598,8 @@ main {
     height: 600px;
     z-index: 1;
     margin-bottom: -20px;
+    background-color: $color_black;
+    border-radius: 0 0 70px 70px;
 
     .line {
         position: absolute;

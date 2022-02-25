@@ -15,35 +15,39 @@ export const Show_footer = (Scroll) => {
     }
 
 
-    const short_video=document.querySelector(".header-short-video");
-    if (Scroll >= 200) {
+    const short_img=document.querySelector(".header-short-img");
+    if(Scroll<=1300&&3900>=Scroll){
         
-        // short_video.classList.remove("hidOpacity")
-        short_video.classList.add("display-none")
-        short_video.classList.replace("display-block", "display-none")
+        short_img.classList.add("display-none")
+        short_img.classList.replace("display-none", "display-block")
     }else{
-        // short_video.classList.remove("opacity")
-        short_video.classList.add("display-block")
-        short_video.classList.replace("display-none", "display-block")
-
+        short_img.classList.add("display-block")
+        short_img.classList.replace("display-block", "display-none")
     }
 
-
+    if (Scroll >= 200) {
+        // short_img.classList.remove("hidOpacity")
+    }else{
+        // short_img.classList.remove("opacity")
+    }
+    
+    
+    const card = document.querySelectorAll(".card-body > div");
     if (Scroll >= 1300) {
-        const card = document.querySelectorAll(".card-body > div");
         for (let i = 0; i < card.length; i++) {
             if (i % 2 == 1) {
                 setTimeout(() => {
-
+                    
                     card[i].classList.add("moveExpertiseLeft");
                 }, 700 * i);
             } else {
                 setTimeout(() => {
-
+                    
                     card[i].classList.add("moveExpertiseRight");
                 }, 700 * i);
             }
         }
+        
     }
 
 
@@ -54,6 +58,11 @@ export const Show_footer = (Scroll) => {
         line.classList.add("animation_socialNetwork_line")
         logo.classList.add("animation_socialNetwork_logo")
         userName.classList.add("animation_socialNetwork_userName")
+
+        
+    }else{
+        
+
     }
 
 
@@ -63,13 +72,14 @@ export const Show_footer = (Scroll) => {
         moveTopIcon.classList.add("showIconTop")
         moveTopIcon.classList.replace("hideIconTop", "showIconTop")
 
-
         main.classList.add("hide_footer_animation")
         main.classList.replace("hide_footer_animation", "show_footer_animation")
     } else {
-        main.classList.add("show_footer_animation")
-        main.classList.replace("show_footer_animation", "hide_footer_animation")
-
+    
+            
+            main.classList.add("show_footer_animation")
+            main.classList.replace("show_footer_animation", "hide_footer_animation")
+        
 
         moveTopIcon.classList.add("hideIconTop")
         moveTopIcon.classList.replace("showIconTop", "hideIconTop")

@@ -31,10 +31,12 @@
   src: url("../../Font/ENGLISH/NavineDemo-SemiCondensed.ttf");
 }
 .display-none {
-  z-index: -11 !important;
+  display: block !important;
+  z-index: -9 !important;
 }
 
 .display-block {
+  display: none !important;
   z-index: -10 !important;
 }
 
@@ -67,7 +69,6 @@ body {
 
 main {
   position: relative;
-  background-color: #222831;
   width: 100%;
   border-radius: 0 0 70px 70px;
   z-index: 300;
@@ -232,16 +233,17 @@ main {
   width: 100%;
   object-fit: fill;
   height: 750px;
-  opacity: 0.4;
+  opacity: 0.6;
   z-index: -10;
 }
 .header-short-img {
+  display: none;
   position: fixed;
   top: 0px;
   left: 0px;
   width: 100%;
   object-fit: fill;
-  height: 750px;
+  height: 100%;
   z-index: -11;
 }
 .header-short-footer {
@@ -895,6 +897,8 @@ main {
   height: 600px;
   z-index: 1;
   margin-bottom: -20px;
+  background-color: #222831;
+  border-radius: 0 0 70px 70px;
 }
 .SocialNetwork .line {
   position: absolute;
