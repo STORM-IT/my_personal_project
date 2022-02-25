@@ -30,6 +30,14 @@
   font-family: NavineDemo;
   src: url("../../Font/ENGLISH/NavineDemo-SemiCondensed.ttf");
 }
+.display-none {
+  opacity: 0;
+}
+
+.display-block {
+  opacity: 0.4;
+}
+
 #root {
   position: relative;
   background-color: #393e46;
@@ -42,11 +50,11 @@ body {
 }
 
 .show_footer_animation {
-  animation: showFooter 500ms linear alternate forwards;
+  animation: showFooter 200ms linear alternate forwards;
 }
 
 .hide_footer_animation {
-  animation: hideFooter 500ms linear alternate forwards;
+  animation: hideFooter 200ms linear alternate forwards;
 }
 
 .showIconTop {
@@ -67,22 +75,10 @@ main {
   margin-bottom: -900px;
   text-align: center;
 }
-main .move-top {
-  position: absolute;
-  width: 50px;
-  height: 0px;
-  border-radius: 50%;
-  bottom: -25px;
-  font-size: 30px;
-  color: #eeeeee;
-  background-color: black;
-  overflow: hidden;
-  z-index: 1000;
-}
 
 @keyframes showIconTop {
   0% {
-    height: 0px;
+    height: 1px;
   }
   100% {
     height: 60px;
@@ -95,7 +91,7 @@ main .move-top {
     width: 60px;
   }
   100% {
-    height: 0px;
+    height: 1px;
   }
 }
 @keyframes showFooter {
@@ -118,30 +114,34 @@ main .move-top {
     margin-bottom: -900px;
   }
 }
-.opacity {
+.opacity::before {
   opacity: 0.7;
 }
 
-.hidOpacity {
+.hidOpacity::before {
   opacity: 1;
 }
 
-.nav-container {
+.nav-container::before {
+  content: " ";
   position: fixed;
   top: 0px;
   width: 100%;
   direction: rtl;
   background-color: #00b7fd;
   height: 50px;
-  z-index: 10005;
   text-align: center;
+  z-index: 10000;
 }
 .nav-container .select {
+  position: fixed;
   width: 200px;
   height: 35px;
+  right: 20px;
   display: fixed;
   justify-content: center;
   align-items: center;
+  z-index: 10005;
 }
 .nav-container .select input {
   position: relative;
@@ -156,7 +156,6 @@ main .move-top {
   font-size: 20px;
   font-family: Ye;
   color: #d5d5d5;
-  z-index: 10100000;
 }
 .nav-container .select input::selection {
   -webkit-touch-callout: none;
@@ -186,6 +185,8 @@ main .move-top {
   background-color: #3c3c3c;
   border-radius: 10px;
   margin: 25px 20px 0px 0px;
+  text-align: center;
+  z-index: 10005;
 }
 .nav-container .select-option a {
   display: block;
@@ -197,8 +198,7 @@ main .move-top {
   color: white;
 }
 .nav-container span {
-  display: block;
-  position: absolute;
+  position: fixed;
   top: 7px;
   width: 100%;
   height: 50px;
@@ -206,7 +206,7 @@ main .move-top {
   color: #eeeeee;
   font-family: MacLemon;
   font-size: 40px;
-  z-index: 1005;
+  z-index: 10000;
 }
 
 .header-short {
@@ -231,7 +231,7 @@ main .move-top {
   top: 0px;
   width: 100%;
   object-fit: fill;
-  height: 40vw;
+  height: 750px;
   opacity: 0.4;
   z-index: -10;
 }
@@ -881,7 +881,7 @@ main .move-top {
   margin-bottom: -20px;
 }
 .SocialNetwork .line {
-  position: relative;
+  position: absolute;
   background-color: #eeeeee;
   height: 2px;
   transform: rotate(90deg);
@@ -912,6 +912,17 @@ main .move-top {
   color: #eeeeee;
   font-size: 50px;
   font-family: MacLemon;
+}
+.SocialNetwork .move-top {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  bottom: -25px;
+  font-size: 30px;
+  color: #eeeeee;
+  background-color: black;
+  overflow: hidden;
 }
 
 @keyframes gitUsername {
