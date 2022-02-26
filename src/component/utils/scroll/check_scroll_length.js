@@ -13,7 +13,7 @@ export const scroll_utils = (Scroll) => {
     // console.log(LastScroll,Scroll);
     // console.log(window.pageYOffset)
     scroll_nav(Scroll); // Scroll >= 600
-    scroll_text_head(Scroll,LastScroll);
+    scroll_text_head(Scroll,LastScroll); //
     scroll_img_background(Scroll);// Scroll <= 1300 || 3900 <= Scroll
     scroll_card_expertise(Scroll);// Scroll > 1300
     scroll_sociaNetwork(Scroll); // Scroll >= 3900

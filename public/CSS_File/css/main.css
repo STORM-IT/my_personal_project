@@ -213,78 +213,84 @@ main {
   font-size: 40px;
 }
 
+.minimizing_text_head {
+  color: #222831;
+}
 .minimizing_text_head span:nth-child(1) {
   position: relative;
-  animation: show_text_head_char_1 2s ease alternate forwards;
+  animation: show_text_head_char_1 1s ease alternate forwards;
 }
 .minimizing_text_head span:nth-child(2) {
   position: relative;
-  animation: show_text_head_char_2 2s ease alternate forwards;
+  animation: show_text_head_char_2 1s ease alternate forwards;
 }
 .minimizing_text_head span:nth-child(3) {
   position: relative;
-  animation: show_text_head_char_3 2s ease alternate forwards;
+  animation: show_text_head_char_3 1s ease alternate forwards;
 }
 .minimizing_text_head span:nth-child(4) {
   position: relative;
-  animation: show_text_head_char_4 2s ease alternate forwards;
+  animation: show_text_head_char_4 1s ease alternate forwards;
 }
 .minimizing_text_head span:nth-child(5) {
   position: relative;
-  animation: show_text_head_char_5 2s ease alternate forwards;
+  animation: show_text_head_char_5 1s ease alternate forwards;
 }
 .minimizing_text_head span:nth-child(6) {
   position: relative;
-  animation: show_text_head_char_6 2s ease alternate forwards;
+  animation: show_text_head_char_6 1s ease alternate forwards;
 }
 .minimizing_text_head span:nth-child(7) {
   position: relative;
-  animation: show_text_head_char_7 2s ease alternate forwards;
+  animation: show_text_head_char_7 1s ease alternate forwards;
 }
 .minimizing_text_head span:nth-child(8) {
   position: relative;
-  animation: show_text_head_char_8 2s ease alternate forwards;
+  animation: show_text_head_char_8 1s ease alternate forwards;
 }
 .minimizing_text_head span:nth-child(9) {
   position: relative;
-  animation: show_text_head_char_9 2s ease alternate forwards;
+  animation: show_text_head_char_9 1s ease alternate forwards;
 }
 
+.maximizing_text_head {
+  color: #eeeeee;
+}
 .maximizing_text_head span:nth-child(1) {
   position: relative;
-  animation: hide_text_head_char_1 2s ease alternate forwards;
+  animation: hide_text_head_char_1 1s ease alternate forwards;
 }
 .maximizing_text_head span:nth-child(2) {
   position: relative;
-  animation: hide_text_head_char_2 2s ease alternate forwards;
+  animation: hide_text_head_char_2 1s ease alternate forwards;
 }
 .maximizing_text_head span:nth-child(3) {
   position: relative;
-  animation: hide_text_head_char_3 2s ease alternate forwards;
+  animation: hide_text_head_char_3 1s ease alternate forwards;
 }
 .maximizing_text_head span:nth-child(4) {
   position: relative;
-  animation: hide_text_head_char_4 2s ease alternate forwards;
+  animation: hide_text_head_char_4 1s ease alternate forwards;
 }
 .maximizing_text_head span:nth-child(5) {
   position: relative;
-  animation: hide_text_head_char_5 2s ease alternate forwards;
+  animation: hide_text_head_char_5 1s ease alternate forwards;
 }
 .maximizing_text_head span:nth-child(6) {
   position: relative;
-  animation: hide_text_head_char_6 2s ease alternate forwards;
+  animation: hide_text_head_char_6 1s ease alternate forwards;
 }
 .maximizing_text_head span:nth-child(7) {
   position: relative;
-  animation: hide_text_head_char_7 2s ease alternate forwards;
+  animation: hide_text_head_char_7 1s ease alternate forwards;
 }
 .maximizing_text_head span:nth-child(8) {
   position: relative;
-  animation: hide_text_head_char_8 2s ease alternate forwards;
+  animation: hide_text_head_char_8 1s ease alternate forwards;
 }
 .maximizing_text_head span:nth-child(9) {
   position: relative;
-  animation: hide_text_head_char_9 2s ease alternate forwards;
+  animation: hide_text_head_char_9 1s ease alternate forwards;
 }
 
 @keyframes show_text_head_char_1 {
@@ -367,6 +373,83 @@ main {
   }
   100% {
     left: -40px;
+  }
+}
+@keyframes hide_text_head_char_1 {
+  0% {
+    left: 48px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes hide_text_head_char_2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+@keyframes hide_text_head_char_3 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+@keyframes hide_text_head_char_4 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+@keyframes hide_text_head_char_5 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes hide_text_head_char_6 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+@keyframes hide_text_head_char_7 {
+  0% {
+    left: -32px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes hide_text_head_char_8 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+@keyframes hide_text_head_char_9 {
+  0% {
+    left: -40px;
+  }
+  100% {
+    left: 0px;
   }
 }
 .header-short {

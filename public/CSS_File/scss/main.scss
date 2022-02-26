@@ -275,18 +275,22 @@ main {
     }
 }
 .minimizing_text_head {
+    color: $color_black;
     @for $i from 1 to 10 {
         span:nth-child(#{$i}) {
             position: relative;
-            animation: show_text_head_char_#{$i} 2s ease alternate forwards;
+            animation: show_text_head_char_#{$i} 1s ease alternate forwards;
+            // animation: show_text_head_char_#{$i} 1s ease-in-out alternate forwards;
         }
     }
 }
 .maximizing_text_head {
+    color: $color_light;
     @for $i from 1 to 10 {
         span:nth-child(#{$i}) {
             position: relative;
-            animation: hide_text_head_char_#{$i} 2s ease alternate forwards;
+            animation: hide_text_head_char_#{$i} 1s ease alternate forwards;
+            // animation: hide_text_head_char_#{$i} 1s ease-in-out alternate forwards;
         }
     }
 }
@@ -374,15 +378,25 @@ main {
     }
 }
 
-// @keyframes hide_text_head_char_1 {0% {left: 0px;} 100% {left: -48px;}}
-// @keyframes hide_text_head_char_2 {0% {opacity: 0;left: 0px;} 100% {opacity: 0;left: -48px;}}
-// @keyframes hide_text_head_char_3 {0% {opacity: 0;left: 0px;} 100%{opacity: 0;left: -32px;}}
-// @keyframes hide_text_head_char_4 {0% {opacity: 0;left: 0px;} 100%{left: -16px;opacity: 0;}}
-// @keyframes hide_text_head_char_5 {0% {opacity: 0;} 100% {opacity: 0;}}
-// @keyframes hide_text_head_char_6 {0% {opacity: 0;left: 0px;} 100% {left: 16px;opacity: 0;}}
-// @keyframes hide_text_head_char_7 {0% {left: 0px;} 100%{left: -32px;}}
-// @keyframes hide_text_head_char_8 {0% {opacity: 0;left: 0px;} 100%{opacity: 0;left: 64px;}}
-// @keyframes hide_text_head_char_9 {0% {left: 0px;} 100%{left: 40px;}}
+@keyframes hide_text_head_char_1 {0% {left: 48px;} 100% {left: 0px;}}
+@keyframes hide_text_head_char_2 {0% {opacity: 0;} 100% {opacity: 1;left: 0px;}}
+@keyframes hide_text_head_char_3 {0% {opacity: 0;} 100%{opacity: 1;left: 0px;}}
+@keyframes hide_text_head_char_4 {0% {opacity: 0;} 100%{opacity: 1;left: 0px;}}
+@keyframes hide_text_head_char_5 {0% {opacity: 0;} 100% {opacity: 1;}}
+@keyframes hide_text_head_char_6 {0% {opacity: 0;} 100% {opacity: 1;left: 0px;}}
+@keyframes hide_text_head_char_7 {0% {left: -32px;} 100%{left: 0px;}}
+@keyframes hide_text_head_char_8 {0% {opacity: 0;} 100%{opacity: 1;left: 0px;}}
+@keyframes hide_text_head_char_9 {0% {left: -40px;} 100%{left: 0px;}}
+
+// @keyframes hide_text_head_char_1 {0% {left: 48px;} 100% {left: 0px;}}
+// @keyframes hide_text_head_char_2 {0% {opacity: 0;left: 48px;} 100% {opacity: 1;left: 0px;}}
+// @keyframes hide_text_head_char_3 {0% {opacity: 0;left: 32px;} 100%{opacity: 1;left: 0px;}}
+// @keyframes hide_text_head_char_4 {0% {opacity: 0;left: 16px;} 100%{opacity: 1;left: 0px;}}
+// @keyframes hide_text_head_char_5 {0% {opacity: 0;} 100% {opacity: 1;}}
+// @keyframes hide_text_head_char_6 {0% {opacity: 0;left: -16px;} 100% {opacity: 1;left: 0px;}}
+// @keyframes hide_text_head_char_7 {0% {left: -32px;} 100%{left: 0px;}}
+// @keyframes hide_text_head_char_8 {0% {opacity: 0;left: -64px;} 100%{opacity: 1;left: 0px;}}
+// @keyframes hide_text_head_char_9 {0% {left: -40px;} 100%{left: 0px;}}
 
 .header {
     &-short {
