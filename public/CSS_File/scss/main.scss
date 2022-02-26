@@ -271,17 +271,27 @@ main {
                 font-family: MacLemon;
                 font-size: 40px;
             }
-            @for $i from 1 to 10 {
-            span:nth-child(#{$i}) {
-                position: relative;
-                animation: text_head_#{$i} 2s ease alternate forwards;
-            }
-
-            }
         }
     }
 }
-@keyframes text_head_1 {
+.minimizing_text_head {
+    @for $i from 1 to 10 {
+        span:nth-child(#{$i}) {
+            position: relative;
+            animation: show_text_head_char_#{$i} 2s ease alternate forwards;
+        }
+    }
+}
+.maximizing_text_head {
+    @for $i from 1 to 10 {
+        span:nth-child(#{$i}) {
+            position: relative;
+            animation: hide_text_head_char_#{$i} 2s ease alternate forwards;
+        }
+    }
+}
+
+@keyframes show_text_head_char_1 {
     0% {
         left: 0px;
     }
@@ -289,7 +299,7 @@ main {
         left: 48px;
     }
 }
-@keyframes text_head_2 {
+@keyframes show_text_head_char_2 {
     0% {
         opacity: 1;
         left: 0px;
@@ -299,27 +309,27 @@ main {
         left: 48px;
     }
 }
-@keyframes text_head_3 {
+@keyframes show_text_head_char_3 {
     0% {
         opacity: 1;
         left: 0px;
     }
-    100%{
+    100% {
         opacity: 0;
         left: 32px;
     }
 }
-@keyframes text_head_4 {
+@keyframes show_text_head_char_4 {
     0% {
         left: 0px;
         opacity: 1;
     }
-    100%{
+    100% {
         left: 16px;
         opacity: 0;
     }
 }
-@keyframes text_head_5 {
+@keyframes show_text_head_char_5 {
     0% {
         opacity: 1;
     }
@@ -327,7 +337,7 @@ main {
         opacity: 0;
     }
 }
-@keyframes text_head_6 {
+@keyframes show_text_head_char_6 {
     0% {
         left: 0px;
         opacity: 1;
@@ -337,32 +347,43 @@ main {
         opacity: 0;
     }
 }
-@keyframes text_head_7 {
+@keyframes show_text_head_char_7 {
     0% {
         left: 0px;
     }
-    100%{
+    100% {
         left: -32px;
     }
 }
-@keyframes text_head_8 {
+@keyframes show_text_head_char_8 {
     0% {
         opacity: 1;
         left: 0px;
     }
-    100%{
+    100% {
         opacity: 0;
         left: -64px;
     }
 }
-@keyframes text_head_9 {
+@keyframes show_text_head_char_9 {
     0% {
         left: 0px;
     }
-    100%{
+    100% {
         left: -40px;
     }
 }
+
+// @keyframes hide_text_head_char_1 {0% {left: 0px;} 100% {left: -48px;}}
+// @keyframes hide_text_head_char_2 {0% {opacity: 0;left: 0px;} 100% {opacity: 0;left: -48px;}}
+// @keyframes hide_text_head_char_3 {0% {opacity: 0;left: 0px;} 100%{opacity: 0;left: -32px;}}
+// @keyframes hide_text_head_char_4 {0% {opacity: 0;left: 0px;} 100%{left: -16px;opacity: 0;}}
+// @keyframes hide_text_head_char_5 {0% {opacity: 0;} 100% {opacity: 0;}}
+// @keyframes hide_text_head_char_6 {0% {opacity: 0;left: 0px;} 100% {left: 16px;opacity: 0;}}
+// @keyframes hide_text_head_char_7 {0% {left: 0px;} 100%{left: -32px;}}
+// @keyframes hide_text_head_char_8 {0% {opacity: 0;left: 0px;} 100%{opacity: 0;left: 64px;}}
+// @keyframes hide_text_head_char_9 {0% {left: 0px;} 100%{left: 40px;}}
+
 .header {
     &-short {
         display: flex;
@@ -564,7 +585,7 @@ main {
     // background-color: $color_gray;
 }
 
-    .project {
+.project {
     position: relative;
     display: flex;
     justify-content: center;
@@ -642,9 +663,7 @@ main {
             $number: $number + 6;
         }
     }
-
 }
-
 
 .animation_socialNetwork_line {
     animation: rotateLine 2s ease 1s alternate forwards;

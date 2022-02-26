@@ -212,44 +212,82 @@ main {
   font-family: MacLemon;
   font-size: 40px;
 }
-.nav-container div span:nth-child(1) {
+
+.minimizing_text_head span:nth-child(1) {
   position: relative;
-  animation: text_head_1 2s ease alternate forwards;
+  animation: show_text_head_char_1 2s ease alternate forwards;
 }
-.nav-container div span:nth-child(2) {
+.minimizing_text_head span:nth-child(2) {
   position: relative;
-  animation: text_head_2 2s ease alternate forwards;
+  animation: show_text_head_char_2 2s ease alternate forwards;
 }
-.nav-container div span:nth-child(3) {
+.minimizing_text_head span:nth-child(3) {
   position: relative;
-  animation: text_head_3 2s ease alternate forwards;
+  animation: show_text_head_char_3 2s ease alternate forwards;
 }
-.nav-container div span:nth-child(4) {
+.minimizing_text_head span:nth-child(4) {
   position: relative;
-  animation: text_head_4 2s ease alternate forwards;
+  animation: show_text_head_char_4 2s ease alternate forwards;
 }
-.nav-container div span:nth-child(5) {
+.minimizing_text_head span:nth-child(5) {
   position: relative;
-  animation: text_head_5 2s ease alternate forwards;
+  animation: show_text_head_char_5 2s ease alternate forwards;
 }
-.nav-container div span:nth-child(6) {
+.minimizing_text_head span:nth-child(6) {
   position: relative;
-  animation: text_head_6 2s ease alternate forwards;
+  animation: show_text_head_char_6 2s ease alternate forwards;
 }
-.nav-container div span:nth-child(7) {
+.minimizing_text_head span:nth-child(7) {
   position: relative;
-  animation: text_head_7 2s ease alternate forwards;
+  animation: show_text_head_char_7 2s ease alternate forwards;
 }
-.nav-container div span:nth-child(8) {
+.minimizing_text_head span:nth-child(8) {
   position: relative;
-  animation: text_head_8 2s ease alternate forwards;
+  animation: show_text_head_char_8 2s ease alternate forwards;
 }
-.nav-container div span:nth-child(9) {
+.minimizing_text_head span:nth-child(9) {
   position: relative;
-  animation: text_head_9 2s ease alternate forwards;
+  animation: show_text_head_char_9 2s ease alternate forwards;
 }
 
-@keyframes text_head_1 {
+.maximizing_text_head span:nth-child(1) {
+  position: relative;
+  animation: hide_text_head_char_1 2s ease alternate forwards;
+}
+.maximizing_text_head span:nth-child(2) {
+  position: relative;
+  animation: hide_text_head_char_2 2s ease alternate forwards;
+}
+.maximizing_text_head span:nth-child(3) {
+  position: relative;
+  animation: hide_text_head_char_3 2s ease alternate forwards;
+}
+.maximizing_text_head span:nth-child(4) {
+  position: relative;
+  animation: hide_text_head_char_4 2s ease alternate forwards;
+}
+.maximizing_text_head span:nth-child(5) {
+  position: relative;
+  animation: hide_text_head_char_5 2s ease alternate forwards;
+}
+.maximizing_text_head span:nth-child(6) {
+  position: relative;
+  animation: hide_text_head_char_6 2s ease alternate forwards;
+}
+.maximizing_text_head span:nth-child(7) {
+  position: relative;
+  animation: hide_text_head_char_7 2s ease alternate forwards;
+}
+.maximizing_text_head span:nth-child(8) {
+  position: relative;
+  animation: hide_text_head_char_8 2s ease alternate forwards;
+}
+.maximizing_text_head span:nth-child(9) {
+  position: relative;
+  animation: hide_text_head_char_9 2s ease alternate forwards;
+}
+
+@keyframes show_text_head_char_1 {
   0% {
     left: 0px;
   }
@@ -257,7 +295,7 @@ main {
     left: 48px;
   }
 }
-@keyframes text_head_2 {
+@keyframes show_text_head_char_2 {
   0% {
     opacity: 1;
     left: 0px;
@@ -267,7 +305,7 @@ main {
     left: 48px;
   }
 }
-@keyframes text_head_3 {
+@keyframes show_text_head_char_3 {
   0% {
     opacity: 1;
     left: 0px;
@@ -277,7 +315,7 @@ main {
     left: 32px;
   }
 }
-@keyframes text_head_4 {
+@keyframes show_text_head_char_4 {
   0% {
     left: 0px;
     opacity: 1;
@@ -287,7 +325,7 @@ main {
     opacity: 0;
   }
 }
-@keyframes text_head_5 {
+@keyframes show_text_head_char_5 {
   0% {
     opacity: 1;
   }
@@ -295,7 +333,7 @@ main {
     opacity: 0;
   }
 }
-@keyframes text_head_6 {
+@keyframes show_text_head_char_6 {
   0% {
     left: 0px;
     opacity: 1;
@@ -305,7 +343,7 @@ main {
     opacity: 0;
   }
 }
-@keyframes text_head_7 {
+@keyframes show_text_head_char_7 {
   0% {
     left: 0px;
   }
@@ -313,7 +351,7 @@ main {
     left: -32px;
   }
 }
-@keyframes text_head_8 {
+@keyframes show_text_head_char_8 {
   0% {
     opacity: 1;
     left: 0px;
@@ -323,7 +361,7 @@ main {
     left: -64px;
   }
 }
-@keyframes text_head_9 {
+@keyframes show_text_head_char_9 {
   0% {
     left: 0px;
   }
