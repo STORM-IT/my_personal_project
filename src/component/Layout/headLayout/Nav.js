@@ -40,7 +40,7 @@ export default function Nav() {
                         </div>
                         ):null}
                     </div>
-                    <p><span>S</span><span>T</span><span>O</span><span>O</span><span>O</span><span>R</span><span>M</span><span>I</span><span>X</span></p>
+                    <div><span>S</span><span>T</span><span>O</span><span>O</span><span>O</span><span>R</span><span>M</span><span>I</span><span>X</span></div>
                 </nav>
             </div>
         </Fragment>

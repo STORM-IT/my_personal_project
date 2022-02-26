@@ -255,37 +255,112 @@ main {
             }
         }
 
-        p {
+        div {
             position: fixed;
             top: 6px;
+            // width: 100px;
             width: 100%;
-            height: 50px;
+            height: 200px;
             text-align: center;
             color: $color_light;
             z-index: 10000;
             span {
+                // width: 20px;
+                // height: 100%;
+                overflow: hidden;
                 font-family: MacLemon;
                 font-size: 40px;
             }
-            // @for $i from 1 to 10 {
-            span:nth-child(3) {
-                // position: relative;
-                // display: none;
-                // opacity: 0.5;
-                // left: 500;
-                // z-index: 100000;
-
-                animation: text_head_animatin 1s ease alternate forwards;
+            @for $i from 1 to 10 {
+            span:nth-child(#{$i}) {
+                position: relative;
+                animation: text_head_#{$i} 2s ease alternate forwards;
             }
-            // }
+
+            }
         }
     }
 }
-@keyframes text_head_animatin {
+@keyframes text_head_1 {
     0% {
+        left: 0px;
     }
     100% {
-        display: none !important;
+        left: 48px;
+    }
+}
+@keyframes text_head_2 {
+    0% {
+        opacity: 1;
+        left: 0px;
+    }
+    100% {
+        opacity: 0;
+        left: 48px;
+    }
+}
+@keyframes text_head_3 {
+    0% {
+        opacity: 1;
+        left: 0px;
+    }
+    100%{
+        opacity: 0;
+        left: 32px;
+    }
+}
+@keyframes text_head_4 {
+    0% {
+        left: 0px;
+        opacity: 1;
+    }
+    100%{
+        left: 16px;
+        opacity: 0;
+    }
+}
+@keyframes text_head_5 {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes text_head_6 {
+    0% {
+        left: 0px;
+        opacity: 1;
+    }
+    100% {
+        left: -16px;
+        opacity: 0;
+    }
+}
+@keyframes text_head_7 {
+    0% {
+        left: 0px;
+    }
+    100%{
+        left: -32px;
+    }
+}
+@keyframes text_head_8 {
+    0% {
+        opacity: 1;
+        left: 0px;
+    }
+    100%{
+        opacity: 0;
+        left: -64px;
+    }
+}
+@keyframes text_head_9 {
+    0% {
+        left: 0px;
+    }
+    100%{
+        left: -40px;
     }
 }
 .header {
@@ -488,13 +563,12 @@ main {
     background-color: $color_black;
     // background-color: $color_gray;
 }
-.project {
+
+    .project {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 800px;
     background-color: $color_gray;
     overflow: hidden;
     &-container {
@@ -568,11 +642,10 @@ main {
             $number: $number + 6;
         }
     }
-    img {
-        width: 400px;
-        height: 100%;
-    }
+
 }
+
+
 .animation_socialNetwork_line {
     animation: rotateLine 2s ease 1s alternate forwards;
 }

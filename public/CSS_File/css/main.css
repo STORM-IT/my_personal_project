@@ -198,26 +198,137 @@ main {
 .nav-container .select-option a:hover {
   color: white;
 }
-.nav-container p {
+.nav-container div {
   position: fixed;
   top: 6px;
   width: 100%;
-  height: 50px;
+  height: 200px;
   text-align: center;
   color: #eeeeee;
   z-index: 10000;
 }
-.nav-container p span {
+.nav-container div span {
+  overflow: hidden;
   font-family: MacLemon;
   font-size: 40px;
 }
-.nav-container p span:nth-child(3) {
-  animation: text_head_animatin 1s ease alternate forwards;
+.nav-container div span:nth-child(1) {
+  position: relative;
+  animation: text_head_1 2s ease alternate forwards;
+}
+.nav-container div span:nth-child(2) {
+  position: relative;
+  animation: text_head_2 2s ease alternate forwards;
+}
+.nav-container div span:nth-child(3) {
+  position: relative;
+  animation: text_head_3 2s ease alternate forwards;
+}
+.nav-container div span:nth-child(4) {
+  position: relative;
+  animation: text_head_4 2s ease alternate forwards;
+}
+.nav-container div span:nth-child(5) {
+  position: relative;
+  animation: text_head_5 2s ease alternate forwards;
+}
+.nav-container div span:nth-child(6) {
+  position: relative;
+  animation: text_head_6 2s ease alternate forwards;
+}
+.nav-container div span:nth-child(7) {
+  position: relative;
+  animation: text_head_7 2s ease alternate forwards;
+}
+.nav-container div span:nth-child(8) {
+  position: relative;
+  animation: text_head_8 2s ease alternate forwards;
+}
+.nav-container div span:nth-child(9) {
+  position: relative;
+  animation: text_head_9 2s ease alternate forwards;
 }
 
-@keyframes text_head_animatin {
+@keyframes text_head_1 {
+  0% {
+    left: 0px;
+  }
   100% {
-    display: none !important;
+    left: 48px;
+  }
+}
+@keyframes text_head_2 {
+  0% {
+    opacity: 1;
+    left: 0px;
+  }
+  100% {
+    opacity: 0;
+    left: 48px;
+  }
+}
+@keyframes text_head_3 {
+  0% {
+    opacity: 1;
+    left: 0px;
+  }
+  100% {
+    opacity: 0;
+    left: 32px;
+  }
+}
+@keyframes text_head_4 {
+  0% {
+    left: 0px;
+    opacity: 1;
+  }
+  100% {
+    left: 16px;
+    opacity: 0;
+  }
+}
+@keyframes text_head_5 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes text_head_6 {
+  0% {
+    left: 0px;
+    opacity: 1;
+  }
+  100% {
+    left: -16px;
+    opacity: 0;
+  }
+}
+@keyframes text_head_7 {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: -32px;
+  }
+}
+@keyframes text_head_8 {
+  0% {
+    opacity: 1;
+    left: 0px;
+  }
+  100% {
+    opacity: 0;
+    left: -64px;
+  }
+}
+@keyframes text_head_9 {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: -40px;
   }
 }
 .header-short {
@@ -535,8 +646,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 800px;
   background-color: #393e46;
   overflow: hidden;
 }
@@ -883,10 +992,6 @@ main {
   font-size: 5vw;
   color: #eeeeee;
   content: "C#";
-}
-.project img {
-  width: 400px;
-  height: 100%;
 }
 
 .animation_socialNetwork_line {
