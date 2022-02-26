@@ -6,6 +6,7 @@ export default function Project() {
             <div id='project' className='nav-space'>
             </div>
             <section className='project'>
+<img src='./IMG/img_design/rainstorm.png'/>
                 <div className='project-container'>
 
                     <div className='project-container-project-1'>
@@ -39,7 +40,6 @@ export default function Project() {
                     </div>
 
                 </div>
-
             </section>
         </Fragment>
     )
