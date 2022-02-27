@@ -135,11 +135,11 @@ main {
   z-index: 10000;
 }
 .nav-container .select {
+  display: inline-block;
   position: fixed;
   width: 200px;
   height: 35px;
   right: 20px;
-  display: fixed;
   justify-content: center;
   align-items: center;
   z-index: 10005;
@@ -198,7 +198,8 @@ main {
 .nav-container .select-option a:hover {
   color: white;
 }
-.nav-container div {
+.nav-container .div_text_head {
+  display: block;
   position: fixed;
   top: 6px;
   width: 100%;
@@ -207,7 +208,7 @@ main {
   color: #eeeeee;
   z-index: 10000;
 }
-.nav-container div span {
+.nav-container .div_text_head span {
   overflow: hidden;
   font-family: MacLemon;
   font-size: 40px;
