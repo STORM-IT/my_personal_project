@@ -5,7 +5,6 @@ export const scroll_footer = (Scroll)=>{
         moveTopIcon.classList.add("showIconTop")
         moveTopIcon.classList.replace("hideIconTop", "showIconTop")
         
-        // main.classList.replace("hide_footer_animation", "show_footer_animation")
         main.classList.add("show_footer_animation")
         main.classList.replace("hide_footer_animation","show_footer_animation" )
         
@@ -13,11 +12,7 @@ export const scroll_footer = (Scroll)=>{
         if(main.classList.contains("show_footer_animation")){
             main.classList.add("hide_footer_animation")
             main.classList.replace("show_footer_animation","hide_footer_animation" )
-
-            // main.classList.replace("show_footer_animation", "hide_footer_animation")
         }
-
-
 
         moveTopIcon.classList.add("hideIconTop")
         moveTopIcon.classList.replace("showIconTop", "hideIconTop")

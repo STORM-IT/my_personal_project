@@ -135,7 +135,6 @@ main {
   z-index: 10000;
 }
 .nav-container .select {
-  display: inline-block;
   position: fixed;
   width: 200px;
   height: 35px;
@@ -181,17 +180,19 @@ main {
   outline: none;
 }
 .nav-container .select-option {
-  position: absolute;
-  width: 200px;
+  position: relative;
+  width: 0px;
   background-color: #3c3c3c;
-  border-radius: 10px;
+  border-radius: 5px;
   margin: 25px 20px 0px 0px;
   text-align: center;
-  z-index: 10005;
+  opacity: 0.8;
+  z-index: -10000;
+  overflow: hidden;
 }
 .nav-container .select-option a {
   display: block;
-  color: #d5d5d5;
+  color: #e1e1e1;
   padding: 20px 20px;
   font-family: Yekan;
 }
@@ -199,7 +200,6 @@ main {
   color: white;
 }
 .nav-container .div_text_head {
-  display: block;
   position: fixed;
   top: 6px;
   width: 100%;
@@ -214,6 +214,42 @@ main {
   font-size: 40px;
 }
 
+.show_option_select_nav {
+  width: 200px !important;
+  animation: show_hover_select_nav 500ms ease alternate forwards;
+}
+
+.hide_option_select_nav {
+  width: 200px !important;
+  visibility: visible;
+  animation: hide_hover_select_nav 500ms ease 200ms alternate forwards;
+}
+
+.visible {
+  width: 200px !important;
+}
+
+@keyframes show_hover_select_nav {
+  0% {
+    opacity: 0;
+    right: -200px;
+  }
+  100% {
+    opacity: 0.8;
+    right: 0px;
+  }
+}
+@keyframes hide_hover_select_nav {
+  0% {
+    opacity: 0.8;
+    right: 0px;
+  }
+  100% {
+    opacity: 0;
+    right: -200px;
+    visibility: hidden !important;
+  }
+}
 .minimizing_text_head {
   color: #222831;
 }
