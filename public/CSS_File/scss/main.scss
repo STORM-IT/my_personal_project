@@ -241,18 +241,13 @@ main {
                 }
             }
             &-option {
-                // display: none;
                 position: relative;
                 width:0px;
-                // height: 300px;
-                // visibility: hidden;
-                // right: -500px;
                 background-color: darken($color: $color_light, $amount: 70);
                 border-radius: 5px;
                 margin: 25px 20px 0px 0px;
                 text-align: center;
                 opacity: 0.8;
-                // animation: show_hover_select_nav 600ms ease alternate forwards;
                 z-index: -10000;
                 overflow: hidden;
                 a {
@@ -268,8 +263,6 @@ main {
         }
 
         .div_text_head {
-            // display: block;
-            // visibility: hidden;
             position: fixed;
             top: 6px;
             width: 100%;
@@ -287,28 +280,23 @@ main {
 }
 
 .show_option_select_nav{
-    // visibility: visible ;
-    // display: block !important;
     width: 200px!important;
-    animation: show_hover_select_nav 500ms ease alternate forwards;
+    animation: show_hover_select_nav 600ms ease alternate forwards;
 }
 .hide_option_select_nav{
-    // visibility: hidden !important;
     width: 200px!important;
-    visibility: visible ;
-    animation: hide_hover_select_nav 500ms ease 200ms alternate forwards;
-    // display: none !important;
+    animation: hide_hover_select_nav 600ms ease 200ms alternate forwards;
 }
 .visible{
     width: 200px!important;
 }
 @keyframes show_hover_select_nav {
-    0%{ opacity: 0; right: -200px;}
+    0%{ opacity: 0; right: -240px;}
     100%{ opacity: 0.8;  right: 0px;}
 }
 @keyframes hide_hover_select_nav {
     0%{ opacity: 0.8; right: 0px; }
-    100%{ opacity: 0;  right: -200px; visibility: hidden!important;}
+    100%{ opacity: 0.5;  right: -240px;  }
 }
 .minimizing_text_head {
     color: $color_black;

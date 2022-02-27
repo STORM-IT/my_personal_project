@@ -216,13 +216,12 @@ main {
 
 .show_option_select_nav {
   width: 200px !important;
-  animation: show_hover_select_nav 500ms ease alternate forwards;
+  animation: show_hover_select_nav 600ms ease alternate forwards;
 }
 
 .hide_option_select_nav {
   width: 200px !important;
-  visibility: visible;
-  animation: hide_hover_select_nav 500ms ease 200ms alternate forwards;
+  animation: hide_hover_select_nav 600ms ease 200ms alternate forwards;
 }
 
 .visible {
@@ -232,7 +231,7 @@ main {
 @keyframes show_hover_select_nav {
   0% {
     opacity: 0;
-    right: -200px;
+    right: -240px;
   }
   100% {
     opacity: 0.8;
@@ -245,9 +244,8 @@ main {
     right: 0px;
   }
   100% {
-    opacity: 0;
-    right: -200px;
-    visibility: hidden !important;
+    opacity: 0.5;
+    right: -240px;
   }
 }
 .minimizing_text_head {
