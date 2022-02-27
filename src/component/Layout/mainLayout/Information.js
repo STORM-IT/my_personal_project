@@ -5,9 +5,9 @@ export default function Information() {
     <Fragment>
         <div id='information' className='nav-space'>
         </div>
-        <section className='main-information'>
-          <img className='main-information-picture' src='./IMG/information/final/IMG_20220210_180308.jpg' />
-          <div className='main-information-text-container'>
+        <section className='information'>
+          <img src='./IMG/information/final/IMG_20220210_180308.jpg' />
+          <div className='text_img_container'>
             <h3 className=''>اطلاعات کلی درباره من</h3><hr /><br />
             <p className=''>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
               و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با

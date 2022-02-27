@@ -30,6 +30,41 @@
   font-family: NavineDemo;
   src: url("../../Font/ENGLISH/NavineDemo-SemiCondensed.ttf");
 }
+.information_project, .information {
+  display: flex;
+  position: relative;
+  background-color: #393e46;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+}
+.information_project img, .information img {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  width: 350px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: black -5px 5px 10px;
+}
+.information_project .text_img_container, .information .text_img_container {
+  position: absolute;
+  width: 60vw;
+  right: 0px;
+  font-size: 2em;
+  direction: rtl;
+  padding: 50px;
+  color: #eeeeee;
+}
+.information_project .text_img_container h3, .information .text_img_container h3 {
+  text-align: right;
+  font-family: Yekan;
+  margin-bottom: 10px;
+}
+.information_project .text_img_container p, .information .text_img_container p {
+  font-family: RoyaBold;
+}
+
 .display-none {
   display: none !important;
   z-index: -10 !important;
@@ -531,41 +566,6 @@ main {
   height: 300px;
   bottom: 0px;
   object-fit: fill;
-}
-
-.main-information {
-  display: flex;
-  position: relative;
-  background-color: #393e46;
-  width: 100%;
-  height: 800px;
-  overflow: hidden;
-}
-.main-information img {
-  position: absolute;
-  top: 20px;
-  left: 50px;
-  width: 350px;
-  height: 500px;
-  border-radius: 10px;
-  box-shadow: black -5px 5px 10px;
-}
-.main-information-text-container {
-  position: absolute;
-  width: 60vw;
-  right: 0px;
-  font-size: 2em;
-  direction: rtl;
-  padding: 50px;
-  color: #eeeeee;
-}
-.main-information-text-container h3 {
-  text-align: right;
-  font-family: Yekan;
-  margin-bottom: 10px;
-}
-.main-information-text-container p {
-  font-family: RoyaBold;
 }
 
 .card {
