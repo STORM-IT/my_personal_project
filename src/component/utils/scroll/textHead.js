@@ -14,9 +14,9 @@ export const scroll_text_head = (Scroll, LastScroll) => {
 
         }
     }
-    else {
-        div_text_head.classList.add("maximizing_text_head")
-        div_text_head.classList.replace("minimizing_text_head", "maximizing_text_head")
+    // else {
+    //     div_text_head.classList.add("maximizing_text_head")
+    //     div_text_head.classList.replace("minimizing_text_head", "maximizing_text_head")
 
-    }
+    // }
 }
