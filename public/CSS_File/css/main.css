@@ -142,6 +142,15 @@ main #push_left {
   height: 100%;
   z-index: 250;
 }
+main #push_right {
+  background-color: #222831;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 200px;
+  height: 100%;
+  z-index: 250;
+}
 
 @keyframes showIconTop {
   0% {

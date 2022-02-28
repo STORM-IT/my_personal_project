@@ -195,7 +195,15 @@ main {
         height: 100%;
         z-index: 250;
     }
-
+    #push_right{
+        background-color: $color_black;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 200px;
+        height: 100%;
+        z-index: 250;
+    }
 }
 
 @keyframes showIconTop {

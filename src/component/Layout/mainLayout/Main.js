@@ -12,7 +12,7 @@ export default function Main() {
         <Expertise/>
         <Project/>
         <SocialNetwork/>
-      
+      <div id='push_right'> </div>
 
     </main>
   )
