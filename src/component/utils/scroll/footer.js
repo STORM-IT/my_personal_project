@@ -1,7 +1,7 @@
 export const scroll_footer = (Scroll)=>{
     const main = document.querySelector("main")
     const moveTopIcon = document.querySelector(".move-top")
-    if ( Scroll >= 5300 ) {
+    if ( Scroll >= 6300 ) {
         moveTopIcon.classList.add("showIconTop")
         moveTopIcon.classList.replace("hideIconTop", "showIconTop")
         
