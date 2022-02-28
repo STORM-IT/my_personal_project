@@ -7,10 +7,12 @@ import SocialNetwork from './SocialNetwork'
 export default function Main() {
   return (
     <main>
+      <div id='push_left'> </div>
         <Information/>
         <Expertise/>
         <Project/>
         <SocialNetwork/>
+      
 
     </main>
   )

@@ -10,6 +10,7 @@ window.addEventListener('scroll', () => { scroll_utils(window.pageYOffset) });
 var LastScroll=0;
 export const scroll_utils = (Scroll) => {
     
+    // console.log(document.body.scrollHeight)
     scroll_nav(Scroll); // Scroll >= 600
     scroll_text_head(Scroll,LastScroll); //
     scroll_img_background(Scroll);// Scroll <= 1300 || 3900 <= Scroll
