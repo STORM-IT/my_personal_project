@@ -6,6 +6,7 @@
     scroll-behavior: smooth;
 }
 $color_black: #222831;
+// $color_gray: #222831;
 $color_gray: #393e46;
 $color_blue: #0092ca;
 $color_light: #eeeeee;
@@ -43,6 +44,33 @@ $footerRightInfoSite: "version", "create", "update", "brand";
 @function card_item_style() {
     @return ();
 }
+@mixin push_site($value) {
+
+    // background-color: $color_light;
+    background-color: $color_gray;
+    // background-color: darken($color:$color_gray, $amount: 0);
+    // background-image: url("../../IMG/img_design/push_site.png");
+    background-size: 100%;
+    // background-position: right;
+    // opacity: 0.5;
+    // background-clip: padding-box;
+    // background-repeat:repeat-y;
+    // background-color: darken($color:$color_gray, $amount: 10);
+    position: absolute;
+    @if ($value=="right") {
+        right: 0px;
+        // border-radius: 200px 0px 0px 200px;
+        
+    }@else{
+        left: 0px;
+        // border-radius: 0px 200px 200px 0px ;
+        
+    }
+    top: 0px;
+    width: 13vw;
+    height: 90%;
+    z-index: 250;
+}
 %card_item_style {
     display: flex;
     position: absolute;
@@ -60,7 +88,8 @@ $footerRightInfoSite: "version", "create", "update", "brand";
     // .information {
     display: flex;
     position: relative;
-    background-color: $color_gray;
+    // background-color: darken($color: $color_gray, $amount: 10);
+    background-color: $color_black;
     width: 100%;
     height: 800px;
     overflow: hidden;
@@ -94,6 +123,15 @@ $footerRightInfoSite: "version", "create", "update", "brand";
     }
     // }
 }
+// %push_site{
+//     background-color: $color_light;
+//     position: absolute;
+//     right: 0px;
+//     top: 0px;
+//     width: 200px;
+//     height: 100%;
+//     z-index: 250;
+// }
 @mixin style($value) {
     display: flex;
     position: absolute;
@@ -180,29 +218,20 @@ main {
     // width: 100%;
     // height: 500px;
     border-radius: 0 0 70px 70px;
+    // box-shadow: #222831 0px 50px 0px;
     z-index: 300;
     margin: auto;
     // animation: showFooter 700ms linear alternate forwards;
     margin-bottom: -900px;
     text-align: center;
-    padding: 0px 10vw;
+    padding: 0px 13vw;
     #push_left{
-        background-color: $color_black;
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        width: 200px;
-        height: 100%;
-        z-index: 250;
+        // background-color: $color_black;
+ @include push_site("left")
     }
     #push_right{
-        background-color: $color_black;
-        position: absolute;
-        right: 0px;
-        top: 0px;
-        width: 200px;
-        height: 100%;
-        z-index: 250;
+        // background-color: $color_black;
+        @include push_site("right")
     }
 }
 
@@ -639,12 +668,15 @@ main {
 .card {
     width: 100%;
     // height: 1400px;
-    background-color: $color_gray;
+    background-color: $color_black;
+    // background-color: darken($color: $color_gray, $amount: 10);
     z-index: 100;
     display: flex;
     justify-content: center;
     margin-bottom: 300px;
     overflow: hidden;
+    // box-sizing:content-box;
+    // padding-bottom: 100px;
     &-text {
         display: flex;
         justify-content: center;
@@ -668,7 +700,7 @@ main {
         border-radius: 50px;
         overflow: hidden;
         flex-direction: column;
-        background-color: $color_black;
+        background-color: lighten($color: $color_black, $amount: 5);
         margin-bottom: 70px;
     }
     &-expertise {
@@ -744,8 +776,8 @@ main {
 .nav-space {
     width: 100%;
     height: 100px;
-    background-color: $color_black;
-    // background-color: $color_gray;
+    // background-color: $color_black;
+    background-color: $color_gray;
 }
 
 .information_project {
@@ -757,7 +789,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $color_gray;
+    background-color: $color_black;
+    // background-color: darken($color: $color_gray, $amount: 10);
     overflow: hidden;
     &-container {
         display: flex;
@@ -853,7 +886,7 @@ main {
     margin-bottom: -20px;
     background-color: $color_black;
     border-radius: 0 0 70px 70px;
-
+    box-shadow: darken($color:$color_black, $amount: 10) 0px 6px 3px;
     .line {
         position: absolute;
         background-color: $color_light;
