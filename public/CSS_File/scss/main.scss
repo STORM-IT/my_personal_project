@@ -196,12 +196,13 @@ $footerRightInfoSite: "version", "create", "update", "brand";
     background-color: $color_gray;
     z-index: -51;
     // padding: 0px 200px;
+    overflow: hidden;
 }
 body {
     position: relative;
     background-color: $color_gray;
     z-index: -10000;
-    // overflow: hidden;
+    
 }
 
 .show_footer_animation {
@@ -222,7 +223,7 @@ main {
     position: relative;
     // background-color: $color_light;
     // width: 100%;
-    // height: 500px;
+    // height: max-content;
     border-radius: 0 0 70px 70px;
     // box-shadow: #222831 0px 50px 0px;
     z-index: 300;
@@ -231,6 +232,7 @@ main {
     margin-bottom: -900px;
     text-align: center;
     padding: 0px 13vw;
+    // overflow: hidden;
     #push_left{
         // background-color: $color_black;
  @include push_site("left")
@@ -907,7 +909,7 @@ main {
     height: 600px;
     top: 280px;
     z-index: 1;
-    // margin-bottom: -100px;
+    // margin-bottom: 400px;
     // background-color: $color_black;
     background-color: darken($color: $color_gray, $amount: 10);
     border-radius: 70px;
@@ -938,12 +940,14 @@ main {
             // animation: showLogoGit 2s ease 2s alternate forwards;
         }
         div {
+            // overflow: hidden;
             display: block;
             position: absolute;
             bottom: 0px;
             direction: rtl;
             overflow: hidden;
             width: 0px;
+            // height: 50px;
             right: 65px;
             z-index: 10;
             transform: rotate(-90deg);
