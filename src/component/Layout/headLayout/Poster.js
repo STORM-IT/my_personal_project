@@ -34,19 +34,45 @@ export default function Poster() {
           
             await sleep(1000);
             node.innerText = "";
-            await node.type("سلام, ");
+            // await node.type("سلام, ");
           
             while (true) {
-              await node.type("خوش آمدید!");
+              await node.type("سلام");
               await sleep(2000);
-              await node.delete("خوش آمدید!");
+              await node.delete("سلام");
+              
+              await node.delete("به وبسایت شخصی من خوش آمدید");
+
               await node.type(
-                "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ"
+                "به وبسایت شخصی من خوش آمدید"
               );
               await sleep(2000);
               await node.delete(
-                "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ"
+                "به وبسایت شخصی من خوش آمدید "
               );
+
+              await node.type(
+                "من اینجا یک سری اطلاعاتی خیلی کلی درباره خودم رو میگم"
+              );
+              await sleep(2000);
+              await node.delete(
+                "من اینجا یک سری اطلاعاتی خیلی کلی درباره خودم رو میگم "
+              );
+
+              await node.type(
+                "امید وارم مشکلی در کارکردن با سایت نداشته باشین"
+              );
+              await sleep(2000);
+              await node.delete(
+                "امید وارم مشکلی در کارکردن با سایت نداشته باشین "
+              );
+              
+              await node.type(
+                "منتظر ایمیل ایده ها و یا مشکلاتی که از سایت پیدا میکنین هستم 😉"
+              );
+              await sleep(2000);
+              await node.delete(
+                "منتظر ایمیل ایده ها و یا مشکلاتی که از سایت پیدا میکنین هستم 😉"              );
             }
           }
           
@@ -90,7 +116,7 @@ export default function Poster() {
                 {/* <video id='short-video_head' className='header-short-video' src={url} onEnded={() => next_video()} ref={vidRef} muted poster='./IMG/poster/picture.jpg' /> */}
                 <div id='effect_text_head_container'>
                 <span is="type-async" id="type-text">...</span>
-                <span className='blinking-cursor'>_</span>
+                <span className='blinking-cursor'>|</span>
                 </div>
                 {/* <span className='blinking-cursor'>به وبساخت شخصی من خوش آمدید</span> */}
                 {/* <svg className='header-short-footer' xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 1440 200">

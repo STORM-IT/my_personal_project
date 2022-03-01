@@ -580,6 +580,7 @@ main #push_right {
   color: #eeeeee;
   vertical-align: middle;
   font-size: 40px;
+  direction: rtl;
   font-family: RoyaBold;
 }
 .header-short #effect_text_head_container .blinking-cursor {

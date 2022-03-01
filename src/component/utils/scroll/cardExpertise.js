@@ -6,12 +6,12 @@ export const scroll_card_expertise=(Scroll)=>{
                 setTimeout(() => {
 
                     card[i].classList.add("moveExpertiseLeft");
-                }, 700 * i);
+                }, 600 * i);
             } else {
                 setTimeout(() => {
 
                     card[i].classList.add("moveExpertiseRight");
-                }, 700 * i);
+                }, 600 * i);
             }
         }
 
