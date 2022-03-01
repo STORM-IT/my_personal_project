@@ -3,8 +3,8 @@ import React, { Fragment } from 'react'
 export default function SocialNetwork() {
   return (
     <Fragment>
-      <div className='nav-space'>
-      </div>
+      {/* <div className='nav-space'>
+      </div> */}
       <div className='SocialNetwork'>
         <div className='line'>
           <img id='659' src='./IMG/logo_lessen/github.svg' />
