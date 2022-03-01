@@ -1,17 +1,17 @@
 export const scroll_footer = (Scroll)=>{
-    const main = document.querySelector("main")
+    const main = document.querySelector(".SocialNetwork")
     const moveTopIcon = document.querySelector(".move-top")
-    if ( Scroll >= 6300 ) {
+    if ( Scroll >= 5300 ) {
         moveTopIcon.classList.add("showIconTop")
         moveTopIcon.classList.replace("hideIconTop", "showIconTop")
         
-        main.classList.add("show_footer_animation")
-        main.classList.replace("hide_footer_animation","show_footer_animation" )
+        main.classList.add("socialNetwork_move_top_class")
+        main.classList.replace("socialNetwork_move_bottom_class","socialNetwork_move_top_class" )
         
     } else {
-        if(main.classList.contains("show_footer_animation")){
-            main.classList.add("hide_footer_animation")
-            main.classList.replace("show_footer_animation","hide_footer_animation" )
+        if(main.classList.contains("socialNetwork_move_top_class")){
+            main.classList.add("socialNetwork_move_bottom_class")
+            main.classList.replace("socialNetwork_move_top_class","socialNetwork_move_bottom_class" )
         }
 
         moveTopIcon.classList.add("hideIconTop")

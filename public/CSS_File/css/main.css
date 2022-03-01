@@ -1204,7 +1204,7 @@ main #push_right {
   animation: gitUsername 2s ease 3s alternate forwards;
 }
 
-@keyframes socialNetwork_width {
+@keyframes socialNetwork_move_top {
   0% {
     top: 280px;
     box-shadow: #0d0f13 0px 0px 0px;
@@ -1214,6 +1214,24 @@ main #push_right {
     box-shadow: #0d0f13 0px 10px 10px;
   }
 }
+@keyframes socialNetwork_move_bottom {
+  0% {
+    top: 10px;
+    box-shadow: #0d0f13 0px 0px 0px;
+  }
+  100% {
+    top: 280px;
+    box-shadow: #0d0f13 0px 10px 10px;
+  }
+}
+.socialNetwork_move_top_class {
+  animation: socialNetwork_move_top 2s ease alternate forwards;
+}
+
+.socialNetwork_move_bottom_class {
+  animation: socialNetwork_move_bottom 2s ease alternate forwards;
+}
+
 .SocialNetwork {
   position: relative;
   display: flex;
@@ -1226,8 +1244,6 @@ main #push_right {
   z-index: 1;
   background-color: #22252a;
   border-radius: 70px;
-  animation: socialNetwork_width 2s ease 1s alternate forwards;
-  overflow: hidden;
 }
 .SocialNetwork .line {
   position: absolute;
