@@ -46,8 +46,8 @@ $footerRightInfoSite: "version", "create", "update", "brand";
 }
 @mixin push_site($value) {
 
-    // background-color: $color_light;
-    background-color: $color_gray;
+    background-color: #002331;
+    // background-color: $color_gray;
     // background-color: darken($color:$color_gray, $amount: 0);
     // background-image: url("../../IMG/img_design/push_site.png");
     background-size: 100%;
@@ -88,10 +88,13 @@ $footerRightInfoSite: "version", "create", "update", "brand";
     // .information {
     display: flex;
     position: relative;
-    // background-color: darken($color: $color_gray, $amount: 10);
-    background-color: $color_black;
+    background-color: darken($color: $color_gray, $amount: 10);
+    // background-color: darken($color: $color_blue, $amount: 20);
+    // background-color: darken($color: #90E0EF, $amount: 40);
+    // background-color: #90E0EF;
+    // background-color: $color_black;
     width: 100%;
-    height: 800px;
+    height: 700px;
     overflow: hidden;
     // border-radius: 30px;
     // z-index: 1000000;
@@ -108,7 +111,7 @@ $footerRightInfoSite: "version", "create", "update", "brand";
     }
     .text_img_container {
         position: absolute;
-        width: 50vw;
+        width: 45vw;
         right: 0px;
         font-size: 2em;
         direction: rtl;
@@ -658,7 +661,7 @@ main {
             display: block;
             width: 100%;
             height: 300px;
-            bottom: 0px;
+            // bottom: 0px;
             object-fit: fill;
         }
     }
@@ -672,8 +675,8 @@ main {
     width: 100%;
     // border-radius: 0px 0px 30px 30px;
     // height: 1400px;
-    background-color: $color_black;
-    // background-color: darken($color: $color_gray, $amount: 10);
+    // background-color: $color_black;
+    background-color: darken($color: $color_gray, $amount: 10);
     z-index: 100;
     display: flex;
     justify-content: center;
@@ -780,8 +783,8 @@ main {
 .nav-space {
     width: 100%;
     height: 100px;
-    // background-color: $color_black;
-    background-color: $color_gray;
+    // background-color: $color_gray;
+    background-color:#002331;
 }
 
 .information_project {
@@ -793,7 +796,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $color_black;
+    // background-color: $color_black;
+    background-color: darken($color: $color_gray, $amount: 10);
     border-radius: 0px 0px 30px 30px;
     // background-color: darken($color: $color_gray, $amount: 10);
     overflow: hidden;
@@ -880,8 +884,8 @@ main {
     animation: gitUsername 2s ease 3s alternate forwards;
 }
 @keyframes socialNetwork_width {
-    0%{top: 250px; box-shadow: darken($color:$color_black, $amount: 10) 0px 0px 0px;}
-    100%{top: 0px; box-shadow: darken($color:$color_black, $amount: 10) 0px 10px 10px;}
+    0%{top: 280px; box-shadow: darken($color:$color_black, $amount: 10) 0px 0px 0px;}
+    100%{top: 10px; box-shadow: darken($color:$color_black, $amount: 10) 0px 10px 10px;}
 }
 .SocialNetwork {
     position: relative;
@@ -891,10 +895,11 @@ main {
     text-align: center;
     width: 100%;
     height: 600px;
-    top: 250px;
+    top: 280px;
     z-index: 1;
     // margin-bottom: -100px;
-    background-color: $color_black;
+    // background-color: $color_black;
+    background-color: darken($color: $color_gray, $amount: 10);
     border-radius: 70px;
     animation: socialNetwork_width 2s ease 1s alternate forwards;
     // border-radius: 0 0 70px 70px;
@@ -993,16 +998,18 @@ main {
     // position: relative;
     position: relative;
     width: 100%;
-    height: 1200px;
+    height: 1230px;
     // margin-top: 300px;
-    background-color: $color_gray;
+    // background-color: $color_gray;
+    background-color: #002331;
+
     z-index: -10;
     &-head {
         display: flex;
         justify-content: space-around;
         align-items: flex-end;
         // bottom: 50px;
-        height: 1200px;
+        height: 1230px;
         &-left {
             position: relative;
             width: 500px;
