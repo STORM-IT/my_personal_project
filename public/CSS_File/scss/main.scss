@@ -45,7 +45,6 @@ $footerRightInfoSite: "version", "create", "update", "brand";
     @return ();
 }
 @mixin push_site($value) {
-
     background-color: #002331;
     // background-color: $color_gray;
     // background-color: darken($color:$color_gray, $amount: 0);
@@ -57,14 +56,12 @@ $footerRightInfoSite: "version", "create", "update", "brand";
     // background-repeat:repeat-y;
     // background-color: darken($color:$color_gray, $amount: 10);
     position: absolute;
-    @if ($value=="right") {
+    @if ($value== "right") {
         right: 0px;
         // border-radius: 200px 0px 0px 200px;
-        
-    }@else{
+    } @else {
         left: 0px;
         // border-radius: 0px 200px 200px 0px ;
-        
     }
     top: 0px;
     width: 13vw;
@@ -160,24 +157,24 @@ $footerRightInfoSite: "version", "create", "update", "brand";
 }
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px rgb(255, 255, 255); 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(255, 255, 255);
     border-radius: 5px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: $color_blue; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $color_blue;
     border-radius: 5px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: darken($color: $color_blue, $amount: 10); 
-  }
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: darken($color: $color_blue, $amount: 10);
+}
 .display-none {
     // object-fit:cover !important;
     // opacity: 0 !important;
@@ -202,7 +199,6 @@ body {
     position: relative;
     background-color: $color_gray;
     z-index: -10000;
-    
 }
 
 .show_footer_animation {
@@ -233,13 +229,13 @@ main {
     text-align: center;
     padding: 0px 13vw;
     // overflow: hidden;
-    #push_left{
+    #push_left {
         // background-color: $color_black;
- @include push_site("left")
+        @include push_site("left");
     }
-    #push_right{
+    #push_right {
         // background-color: $color_black;
-        @include push_site("right")
+        @include push_site("right");
     }
 }
 
@@ -626,13 +622,26 @@ main {
         overflow: hidden;
         justify-content: center;
         align-items: center;
-        span {
+        #effect_text_head_container{
+
             position: absolute;
             justify-self: center;
             color: $color_light;
             vertical-align: middle;
-            font-family: RoyaBold;
             font-size: 40px;
+            font-family: RoyaBold;
+            .blinking-cursor {
+    
+                direction: rtl;
+                user-select: none;
+                animation: blink 1s steps(2, start) infinite;
+    
+                @keyframes blink {
+                    to {
+                        visibility: hidden;
+                    }
+                }
+            }
         }
 
         &-video {
@@ -786,7 +795,7 @@ main {
     width: 100%;
     height: 100px;
     // background-color: $color_gray;
-    background-color:#002331;
+    background-color: #002331;
 }
 
 .information_project {
@@ -886,17 +895,29 @@ main {
     animation: gitUsername 2s ease 3s alternate forwards;
 }
 @keyframes socialNetwork_move_top {
-    0%{top: 280px; box-shadow: darken($color:$color_black, $amount: 10) 0px 0px 0px;}
-    100%{top: 10px; box-shadow: darken($color:$color_black, $amount: 10) 0px 10px 10px;}
+    0% {
+        top: 280px;
+        box-shadow: darken($color: $color_black, $amount: 10) 0px 0px 0px;
+    }
+    100% {
+        top: 10px;
+        box-shadow: darken($color: $color_black, $amount: 10) 0px 10px 10px;
+    }
 }
 @keyframes socialNetwork_move_bottom {
-    0%{top: 10px; box-shadow: darken($color:$color_black, $amount: 10) 0px 0px 0px;}
-    100%{top: 280px; box-shadow: darken($color:$color_black, $amount: 10) 0px 10px 10px;}
+    0% {
+        top: 10px;
+        box-shadow: darken($color: $color_black, $amount: 10) 0px 0px 0px;
+    }
+    100% {
+        top: 280px;
+        box-shadow: darken($color: $color_black, $amount: 10) 0px 10px 10px;
+    }
 }
-.socialNetwork_move_top_class{
+.socialNetwork_move_top_class {
     animation: socialNetwork_move_top 2s ease alternate forwards;
 }
-.socialNetwork_move_bottom_class{
+.socialNetwork_move_bottom_class {
     animation: socialNetwork_move_bottom 2s ease alternate forwards;
 }
 .SocialNetwork {
@@ -916,7 +937,7 @@ main {
     // animation: socialNetwork_move_top 2s ease 1s alternate forwards;
     // border-radius: 0 0 70px 70px;
     // box-shadow: darken($color:$color_black, $amount: 10) 0px 10px 10px;
-    
+
     // overflow: hidden;
     .line {
         position: absolute;

@@ -18,23 +18,68 @@ export default function Poster() {
     useEffect(() => {
         // dispatch(set_url_video())
         require("../../../JS/script");
+        // effect_text_head();
         // vidRef.current.play();
+        effect_text_head();
     }, [])
-
+    
     // useEffect(() => {
     //     vidRef.current.play();
     // }, [url])
 
 
-    // const next_video = () => {
-    //     if (currentVideo === videos.length) {
-    //         setCurrentVideo(0);
-    //         setUrl(videos[0])
-    //     } else {
-    //         setCurrentVideo(currentVideo + 1)
-    //         setUrl(videos[currentVideo])
-    //     }
-    // }
+    const effect_text_head = () => {
+        async function init() {
+            const node = document.querySelector("#type-text");
+          
+            await sleep(1000);
+            node.innerText = "";
+            await node.type("سلام, ");
+          
+            while (true) {
+              await node.type("خوش آمدید!");
+              await sleep(2000);
+              await node.delete("خوش آمدید!");
+              await node.type(
+                "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ"
+              );
+              await sleep(2000);
+              await node.delete(
+                "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ"
+              );
+            }
+          }
+          
+          // Source code 🚩
+          
+          const sleep = (time) => new Promise((resolve) => setTimeout(resolve, time));
+          
+          class TypeAsync extends HTMLSpanElement {
+            get typeInterval() {
+              const randomMs = 100 * Math.random();
+              return randomMs < 50 ? 10 : randomMs;
+            }
+          
+            async type(text) {
+              for (let character of text) {
+                this.innerText += character;
+                await sleep(this.typeInterval);
+              }
+            }
+          
+            async delete(text) {
+              for (let character of text) {
+                this.innerText = this.innerText.slice(0, this.innerText.length - 1);
+                await sleep(this.typeInterval);
+              }
+            }
+          }
+          
+          customElements.define("type-async", TypeAsync, { extends: "span" });
+          
+          init();
+          
+    }
     return (
         <Fragment>
             <div className='header-short'>
@@ -43,7 +88,11 @@ export default function Poster() {
                 <img className='header-short-img' src="../../IMG/poster/picture_2.jpg" />
                 {/* </div> */}
                 {/* <video id='short-video_head' className='header-short-video' src={url} onEnded={() => next_video()} ref={vidRef} muted poster='./IMG/poster/picture.jpg' /> */}
-                <span>به وبساخت شخصی من خوش آمدید</span>
+                <div id='effect_text_head_container'>
+                <span is="type-async" id="type-text">...</span>
+                <span className='blinking-cursor'>_</span>
+                </div>
+                {/* <span className='blinking-cursor'>به وبساخت شخصی من خوش آمدید</span> */}
                 {/* <svg className='header-short-footer' xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 1440 200">
                     <path fill="#393e46" fill-opacity="1" d="M0,96L80,90.7C160,85,320,75,480,90.7C640,107,800,149,960,149.3C1120,149,1280,107,1360,85.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
                 </svg> */}

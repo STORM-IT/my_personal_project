@@ -574,13 +574,23 @@ main #push_right {
   justify-content: center;
   align-items: center;
 }
-.header-short span {
+.header-short #effect_text_head_container {
   position: absolute;
   justify-self: center;
   color: #eeeeee;
   vertical-align: middle;
-  font-family: RoyaBold;
   font-size: 40px;
+  font-family: RoyaBold;
+}
+.header-short #effect_text_head_container .blinking-cursor {
+  direction: rtl;
+  user-select: none;
+  animation: blink 1s steps(2, start) infinite;
+}
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
 }
 .header-short-video {
   position: fixed;
