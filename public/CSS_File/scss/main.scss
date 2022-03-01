@@ -213,10 +213,10 @@ body {
 }
 
 .showIconTop {
-    animation: showIconTop 500ms linear alternate forwards;
+    animation: showIconTop 600ms linear 1s alternate forwards;
 }
 .hideIconTop {
-    animation: hideIconTop 500ms linear alternate forwards;
+    animation: hideIconTop 600ms linear 1s alternate forwards;
 }
 
 main {
@@ -622,7 +622,7 @@ main {
         display: flex;
         position: relative;
         width: 100%;
-        height: 40vw;
+        height: 45vw;
         overflow: hidden;
         justify-content: center;
         align-items: center;
@@ -641,7 +641,7 @@ main {
             width: 100%;
             object-fit: fill;
             // height: 40vw;
-            height: 750px;
+            height: 800px;
             opacity: 0.6;
             z-index: -10;
         }
@@ -961,8 +961,8 @@ main {
     }
     .move-top {
         position: absolute;
-        width: 60px;
-        height: 60px;
+        // width: 60px;
+        // height: 60px;
         border-radius: 50%;
         bottom: -25px;
         font-size: 30px;
