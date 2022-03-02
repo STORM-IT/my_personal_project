@@ -22,4 +22,14 @@ export const set_effect_glowIn = (Scroll) => {
             show_text_information("expertise")
         }
     }
+    if (Scroll > 3700 && Scroll < 4500) {
+        // alert("start")
+        let find=List_Information.find(e=>e=="project")
+        if(!find){
+            let img=document.querySelector("#img_project")
+            img.classList.add("img_brightness_lamp_class")
+            List_Information.push("project")
+            show_text_information("project")
+        }
+    }
 }

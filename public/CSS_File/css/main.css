@@ -71,15 +71,33 @@
 }
 
 .img_brightness_class {
-  animation: img_brightness 1s linear 7500ms alternate forwards;
+  animation: img_brightness 2s linear 7500ms alternate forwards;
 }
 
+.img_brightness_lamp_class {
+  animation: img_brightness_lamp 2s linear infinite alternate;
+}
+
+@keyframes img_brightness_lamp {
+  0% {
+    filter: brightness(60%);
+  }
+  50% {
+    filter: brightness(140%);
+  }
+  100% {
+    filter: brightness(60%);
+  }
+}
 @keyframes img_brightness {
   0% {
     filter: brightness(0%);
   }
+  50% {
+    filter: brightness(140%);
+  }
   100% {
-    filter: brightness(90%);
+    filter: brightness(80%);
   }
 }
 @keyframes glow-in {
