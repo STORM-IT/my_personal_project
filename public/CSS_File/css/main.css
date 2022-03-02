@@ -45,6 +45,7 @@
   width: 350px;
   height: 500px;
   border-radius: 10px;
+  filter: brightness(0%);
   box-shadow: black -5px 5px 10px;
 }
 .information_project .text_img_container, .info_layout_css .text_img_container {
@@ -69,6 +70,18 @@
   animation: glow-in 0.8s both;
 }
 
+.img_brightness_class {
+  animation: img_brightness 1s linear 7500ms alternate forwards;
+}
+
+@keyframes img_brightness {
+  0% {
+    filter: brightness(0%);
+  }
+  100% {
+    filter: brightness(90%);
+  }
+}
 @keyframes glow-in {
   from {
     opacity: 0;

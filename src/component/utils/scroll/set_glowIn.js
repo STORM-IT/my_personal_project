@@ -7,6 +7,8 @@ export const set_effect_glowIn = (Scroll) => {
         // alert("start")
         let find=List_Information.find(e=>e=="info")
         if(!find){
+            let img=document.querySelector("#img_info")
+            img.classList.add("img_brightness_class")
             List_Information.push("info")
             show_text_information("info")
         }
