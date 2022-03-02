@@ -137,10 +137,10 @@ $footerRightInfoSite: "version", "create", "update", "brand";
 }
 .img_brightness_lamp_class{
     // animation: img_brightness 2s linear 7500ms alternate forwards;
-    animation: img_brightness_lamp 2s linear infinite alternate;
+    animation: img_brightness_lamp 2s linear 7500ms infinite alternate;
 }
 @keyframes img_brightness_lamp {
-    0%{filter:brightness(60%);}
+    0%{filter:brightness(0%);}
     50%{filter:brightness(140%);}
     100%{filter:brightness(60%);}
 }
@@ -862,11 +862,9 @@ main {
                 // width: 100%;
                 // top: 50px;
                 left: $number;
-                span {
+                .badge-file {
                     position: absolute;
                     display: block;
-                    // top: 30px;
-                    // left: $number;
                     width: 90px;
                     height: 30px;
                     color: $color_light;

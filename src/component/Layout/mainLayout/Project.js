@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Project() {
     return (
@@ -18,38 +19,36 @@ export default function Project() {
                     <img id='img_project' src='./IMG/img_design/pngwing.com.png' />
                 </div>
                 <section className='project'>
-                    {/* <img src='./IMG/img_design/rainstorm.png' /> */}
-                    {/* <img src="https://www.transparentpng.com/thumb/rain/PjzFVL-rain-png-images.png" alt="Heavy rain clipart free download, storm @transparentpng.com"></img> */}
 
                     <div className='project-container'>
 
                         <div className='project-container-project-1'>
-                            <span>HTML CSS</span>
+                            <Link className='badge-file' to={"/project"}>HTML CSS</Link>
                             <div></div>
                         </div>
 
                         <div className='project-container-project-2'>
-                            <span>JAVASCTIPT</span>
+                            <Link className='badge-file' to={"/project"}>JAVASCTIPT</Link>
                             <div></div>
                         </div>
                         <div className='project-container-project-3'>
-                            <span>BOOTSTRAP</span>
+                            <Link className='badge-file' to={"/project"}>BOOTSTRAP</Link>
                             <div></div>
                         </div>
                         <div className='project-container-project-4'>
-                            <span>JQUERY</span>
+                            <Link className='badge-file' to={"/project"}>JQUERY</Link>
                             <div></div>
                         </div>
                         <div className='project-container-project-5'>
-                            <span>SASS</span>
+                            <Link className='badge-file' to={"/project"}>SASS</Link>
                             <div></div>
                         </div>
                         <div className='project-container-project-6'>
-                            <span>REACT</span>
+                            <Link className='badge-file' to={"/project"}>REACT</Link>
                             <div></div>
                         </div>
                         <div className='project-container-project-7'>
-                            <span>C#</span>
+                            <Link className='badge-file' to={"/project"}>C#</Link>
                             <div></div>
                         </div>
 

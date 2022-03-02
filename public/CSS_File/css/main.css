@@ -75,12 +75,12 @@
 }
 
 .img_brightness_lamp_class {
-  animation: img_brightness_lamp 2s linear infinite alternate;
+  animation: img_brightness_lamp 2s linear 7500ms infinite alternate;
 }
 
 @keyframes img_brightness_lamp {
   0% {
-    filter: brightness(60%);
+    filter: brightness(0%);
   }
   50% {
     filter: brightness(140%);
@@ -924,7 +924,7 @@ main #push_right {
   top: 50px;
   left: 0vw;
 }
-.project-container-project-1 span {
+.project-container-project-1 .badge-file {
   position: absolute;
   display: block;
   width: 90px;
@@ -939,12 +939,12 @@ main #push_right {
   overflow: hidden;
   cursor: pointer;
 }
-.project-container-project-1 span:hover {
+.project-container-project-1 .badge-file:hover {
   top: -10px;
   z-index: 3;
   border-bottom: 1px solid #008ec5;
 }
-.project-container-project-1 span:hover + div {
+.project-container-project-1 .badge-file:hover + div {
   top: 20px;
   z-index: 2;
 }
@@ -972,7 +972,7 @@ main #push_right {
   top: 50px;
   left: 6vw;
 }
-.project-container-project-2 span {
+.project-container-project-2 .badge-file {
   position: absolute;
   display: block;
   width: 90px;
@@ -987,12 +987,12 @@ main #push_right {
   overflow: hidden;
   cursor: pointer;
 }
-.project-container-project-2 span:hover {
+.project-container-project-2 .badge-file:hover {
   top: -10px;
   z-index: 3;
   border-bottom: 1px solid #008bc0;
 }
-.project-container-project-2 span:hover + div {
+.project-container-project-2 .badge-file:hover + div {
   top: 20px;
   z-index: 2;
 }
@@ -1020,7 +1020,7 @@ main #push_right {
   top: 50px;
   left: 12vw;
 }
-.project-container-project-3 span {
+.project-container-project-3 .badge-file {
   position: absolute;
   display: block;
   width: 90px;
@@ -1035,12 +1035,12 @@ main #push_right {
   overflow: hidden;
   cursor: pointer;
 }
-.project-container-project-3 span:hover {
+.project-container-project-3 .badge-file:hover {
   top: -10px;
   z-index: 3;
   border-bottom: 1px solid #0087bb;
 }
-.project-container-project-3 span:hover + div {
+.project-container-project-3 .badge-file:hover + div {
   top: 20px;
   z-index: 2;
 }
@@ -1068,7 +1068,7 @@ main #push_right {
   top: 50px;
   left: 18vw;
 }
-.project-container-project-4 span {
+.project-container-project-4 .badge-file {
   position: absolute;
   display: block;
   width: 90px;
@@ -1083,12 +1083,12 @@ main #push_right {
   overflow: hidden;
   cursor: pointer;
 }
-.project-container-project-4 span:hover {
+.project-container-project-4 .badge-file:hover {
   top: -10px;
   z-index: 3;
   border-bottom: 1px solid #0083b6;
 }
-.project-container-project-4 span:hover + div {
+.project-container-project-4 .badge-file:hover + div {
   top: 20px;
   z-index: 2;
 }
@@ -1116,7 +1116,7 @@ main #push_right {
   top: 50px;
   left: 24vw;
 }
-.project-container-project-5 span {
+.project-container-project-5 .badge-file {
   position: absolute;
   display: block;
   width: 90px;
@@ -1131,12 +1131,12 @@ main #push_right {
   overflow: hidden;
   cursor: pointer;
 }
-.project-container-project-5 span:hover {
+.project-container-project-5 .badge-file:hover {
   top: -10px;
   z-index: 3;
   border-bottom: 1px solid #0080b1;
 }
-.project-container-project-5 span:hover + div {
+.project-container-project-5 .badge-file:hover + div {
   top: 20px;
   z-index: 2;
 }
@@ -1164,7 +1164,7 @@ main #push_right {
   top: 50px;
   left: 30vw;
 }
-.project-container-project-6 span {
+.project-container-project-6 .badge-file {
   position: absolute;
   display: block;
   width: 90px;
@@ -1179,12 +1179,12 @@ main #push_right {
   overflow: hidden;
   cursor: pointer;
 }
-.project-container-project-6 span:hover {
+.project-container-project-6 .badge-file:hover {
   top: -10px;
   z-index: 3;
   border-bottom: 1px solid #007cab;
 }
-.project-container-project-6 span:hover + div {
+.project-container-project-6 .badge-file:hover + div {
   top: 20px;
   z-index: 2;
 }
@@ -1212,7 +1212,7 @@ main #push_right {
   top: 50px;
   left: 36vw;
 }
-.project-container-project-7 span {
+.project-container-project-7 .badge-file {
   position: absolute;
   display: block;
   width: 90px;
@@ -1227,12 +1227,12 @@ main #push_right {
   overflow: hidden;
   cursor: pointer;
 }
-.project-container-project-7 span:hover {
+.project-container-project-7 .badge-file:hover {
   top: -10px;
   z-index: 3;
   border-bottom: 1px solid #0078a6;
 }
-.project-container-project-7 span:hover + div {
+.project-container-project-7 .badge-file:hover + div {
   top: 20px;
   z-index: 2;
 }
