@@ -61,10 +61,28 @@
   font-family: Yekan;
   margin-bottom: 10px;
 }
-.information_project .text_img_container p, .information .text_img_container p {
+.information_project .text_img_container .glowIn, .information .text_img_container .glowIn {
   font-family: RoyaBold;
 }
+.information_project .text_img_container .glowIn span, .information .text_img_container .glowIn span {
+  animation: glow-in 0.8s both;
+}
 
+@keyframes glow-in {
+  from {
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+    text-shadow: 0 0 25px white;
+  }
+  75% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.7;
+  }
+}
 ::-webkit-scrollbar {
   width: 10px;
 }

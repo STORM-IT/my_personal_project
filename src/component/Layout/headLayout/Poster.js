@@ -22,7 +22,7 @@ export default function Poster() {
         // vidRef.current.play();
         effect_text_head();
     }, [])
-    
+
     // useEffect(() => {
     //     vidRef.current.play();
     // }, [url])
@@ -31,80 +31,79 @@ export default function Poster() {
     const effect_text_head = () => {
         async function init() {
             const node = document.querySelector("#type-text");
-          
+
             await sleep(1000);
             node.innerText = "";
             // await node.type("سلام, ");
-          
+
             while (true) {
-              await node.type("سلام");
-              await sleep(2000);
-              await node.delete("سلام");
-              
-              await node.delete("به وبسایت شخصی من خوش آمدید");
+                await node.type("سلام");
+                await sleep(2000);
+                await node.delete("سلام");
 
-              await node.type(
-                "به وبسایت شخصی من خوش آمدید"
-              );
-              await sleep(2000);
-              await node.delete(
-                "به وبسایت شخصی من خوش آمدید "
-              );
 
-              await node.type(
-                "من اینجا یک سری اطلاعاتی خیلی کلی درباره خودم رو میگم"
-              );
-              await sleep(2000);
-              await node.delete(
-                "من اینجا یک سری اطلاعاتی خیلی کلی درباره خودم رو میگم "
-              );
+                await node.type(
+                    "به وبسایت شخصی من خوش آمدید"
+                );
+                await sleep(2000);
+                await node.delete(
+                    "به وبسایت شخصی من خوش آمدید "
+                );
 
-              await node.type(
-                "امید وارم مشکلی در کارکردن با سایت نداشته باشین"
-              );
-              await sleep(2000);
-              await node.delete(
-                "امید وارم مشکلی در کارکردن با سایت نداشته باشین "
-              );
-              
-              await node.type(
-                "منتظر ایمیل ایده ها و یا مشکلاتی که از سایت پیدا میکنین هستم 😉"
-              );
-              await sleep(2000);
-              await node.delete(
-                "منتظر ایمیل ایده ها و یا مشکلاتی که از سایت پیدا میکنین هستم 😉"              );
+                await node.type(
+                    "من اینجا یک سری اطلاعاتی خیلی کلی درباره خودم رو میگم"
+                );
+                await sleep(2000);
+                await node.delete(
+                    "من اینجا یک سری اطلاعاتی خیلی کلی درباره خودم رو میگم "
+                );
+
+                await node.type(
+                    "امید وارم مشکلی در کارکردن با سایت نداشته باشین"
+                );
+                await sleep(2000);
+                await node.delete(
+                    "امید وارم مشکلی در کارکردن با سایت نداشته باشین "
+                );
+
+                await node.type(
+                    "منتظر ایمیل ایده ها و یا مشکلاتی که از سایت پیدا میکنین هستم"
+                );
+                await sleep(2000);
+                await node.delete(
+                    "منتظر ایمیل ایده ها و یا مشکلاتی که از سایت پیدا میکنین هستم");
             }
-          }
-          
-          // Source code 🚩
-          
-          const sleep = (time) => new Promise((resolve) => setTimeout(resolve, time));
-          
-          class TypeAsync extends HTMLSpanElement {
+        }
+
+        // Source code 🚩
+
+        const sleep = (time) => new Promise((resolve) => setTimeout(resolve, time));
+
+        class TypeAsync extends HTMLSpanElement {
             get typeInterval() {
-              const randomMs = 100 * Math.random();
-              return randomMs < 50 ? 10 : randomMs;
+                const randomMs = 100 * Math.random();
+                return randomMs < 50 ? 10 : randomMs;
             }
-          
+
             async type(text) {
-              for (let character of text) {
-                this.innerText += character;
-                await sleep(this.typeInterval);
-              }
+                for (let character of text) {
+                    this.innerText += character;
+                    await sleep(this.typeInterval);
+                }
             }
-          
+
             async delete(text) {
-              for (let character of text) {
-                this.innerText = this.innerText.slice(0, this.innerText.length - 1);
-                await sleep(this.typeInterval);
-              }
+                for (let character of text) {
+                    this.innerText = this.innerText.slice(0, this.innerText.length - 1);
+                    await sleep(this.typeInterval);
+                }
             }
-          }
-          
-          customElements.define("type-async", TypeAsync, { extends: "span" });
-          
-          init();
-          
+        }
+
+        customElements.define("type-async", TypeAsync, { extends: "span" });
+
+        init();
+
     }
     return (
         <Fragment>
@@ -115,15 +114,15 @@ export default function Poster() {
                 {/* </div> */}
                 {/* <video id='short-video_head' className='header-short-video' src={url} onEnded={() => next_video()} ref={vidRef} muted poster='./IMG/poster/picture.jpg' /> */}
                 <div id='effect_text_head_container'>
-                <span is="type-async" id="type-text">...</span>
-                <span className='blinking-cursor'>|</span>
+                    <span is="type-async" id="type-text">...</span>
+                    <span className='blinking-cursor'>|</span>
                 </div>
                 {/* <span className='blinking-cursor'>به وبساخت شخصی من خوش آمدید</span> */}
                 {/* <svg className='header-short-footer' xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 1440 200">
                     <path fill="#393e46" fill-opacity="1" d="M0,96L80,90.7C160,85,320,75,480,90.7C640,107,800,149,960,149.3C1120,149,1280,107,1360,85.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
                 </svg> */}
 
-                <img className='header-short-footer' src='./IMG/img_design/wave_head_bottom.png'/>
+                <img className='header-short-footer' src='./IMG/img_design/wave_head_bottom.png' />
             </div>
         </Fragment>
     )

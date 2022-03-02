@@ -119,12 +119,30 @@ $footerRightInfoSite: "version", "create", "update", "brand";
             font-family: Yekan;
             margin-bottom: 10px;
         }
-        p {
+        .glowIn {
             font-family: RoyaBold;
+            span {
+                animation: glow-in 0.8s both;
+              }
         }
     }
     // }
 }
+@keyframes glow-in {
+    from {
+      opacity: 0;
+    }
+    65% {
+      opacity: 1;
+      text-shadow: 0 0 25px white;
+    }
+    75% {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.7;
+    }
+  }
 // %push_site{
 //     background-color: $color_light;
 //     position: absolute;
@@ -622,8 +640,7 @@ main {
         overflow: hidden;
         justify-content: center;
         align-items: center;
-        #effect_text_head_container{
-
+        #effect_text_head_container {
             position: absolute;
             justify-self: center;
             color: $color_light;
@@ -632,11 +649,10 @@ main {
             direction: rtl;
             font-family: RoyaBold;
             .blinking-cursor {
-    
                 direction: rtl;
                 user-select: none;
                 animation: blink 1s steps(2, start) infinite;
-    
+
                 @keyframes blink {
                     to {
                         visibility: hidden;
