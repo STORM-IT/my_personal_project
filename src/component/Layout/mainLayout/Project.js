@@ -6,7 +6,7 @@ export default function Project() {
             <div id='project' className='nav-space'>
             </div>
             <div className='img_project_container'>
-                <div className='information'>
+                <div className='info_layout_css'>
 
 
                     <div className='text_img_container'>

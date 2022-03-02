@@ -6,7 +6,7 @@ export default function Expertise() {
     <Fragment>
       <div id='expertise' className='nav-space'>
       </div>
-      <div className='information'>
+      <div className='info_layout_css'>
 
 
         <div className='text_img_container'>

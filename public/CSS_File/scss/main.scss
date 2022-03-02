@@ -119,7 +119,8 @@ $footerRightInfoSite: "version", "create", "update", "brand";
             font-family: Yekan;
             margin-bottom: 10px;
         }
-        .glowIn {
+        p {
+            text-align: right;
             font-family: RoyaBold;
             span {
                 animation: glow-in 0.8s both;
@@ -143,15 +144,7 @@ $footerRightInfoSite: "version", "create", "update", "brand";
       opacity: 0.7;
     }
   }
-// %push_site{
-//     background-color: $color_light;
-//     position: absolute;
-//     right: 0px;
-//     top: 0px;
-//     width: 200px;
-//     height: 100%;
-//     z-index: 250;
-// }
+
 @mixin style($value) {
     display: flex;
     position: absolute;
@@ -695,7 +688,7 @@ main {
     }
 }
 
-.information {
+.info_layout_css {
     @extend %information_layout_css;
 }
 

@@ -3,6 +3,7 @@ import { scroll_card_expertise } from "./cardExpertise";
 import { scroll_footer } from "./footer";
 import { scroll_img_background } from "./imgBackground";
 import { scroll_nav } from "./nav";
+import { set_effect_glowIn } from "./set_glowIn";
 import { scroll_sociaNetwork } from "./socialNetwork";
 import { scroll_text_head } from "./textHead";
 
@@ -10,7 +11,8 @@ window.addEventListener('scroll', () => { scroll_utils(window.pageYOffset) });
 var LastScroll=0;
 export const scroll_utils = (Scroll) => {
     
-    // console.log(document.body.scrollHeight)
+    console.log(Scroll)
+    set_effect_glowIn(Scroll)
     scroll_nav(Scroll); // Scroll >= 600
     scroll_text_head(Scroll,LastScroll); //
     scroll_img_background(Scroll);// Scroll <= 1300 || 3900 <= Scroll

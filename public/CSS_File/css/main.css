@@ -30,7 +30,7 @@
   font-family: NavineDemo;
   src: url("../../Font/ENGLISH/NavineDemo-SemiCondensed.ttf");
 }
-.information_project, .information {
+.information_project, .info_layout_css {
   display: flex;
   position: relative;
   background-color: #22252a;
@@ -38,7 +38,7 @@
   height: 700px;
   overflow: hidden;
 }
-.information_project img, .information img {
+.information_project img, .info_layout_css img {
   position: absolute;
   top: 100px;
   left: 50px;
@@ -47,7 +47,7 @@
   border-radius: 10px;
   box-shadow: black -5px 5px 10px;
 }
-.information_project .text_img_container, .information .text_img_container {
+.information_project .text_img_container, .info_layout_css .text_img_container {
   position: absolute;
   width: 45vw;
   right: 0px;
@@ -56,15 +56,16 @@
   padding: 50px;
   color: #eeeeee;
 }
-.information_project .text_img_container h3, .information .text_img_container h3 {
+.information_project .text_img_container h3, .info_layout_css .text_img_container h3 {
   text-align: right;
   font-family: Yekan;
   margin-bottom: 10px;
 }
-.information_project .text_img_container .glowIn, .information .text_img_container .glowIn {
+.information_project .text_img_container p, .info_layout_css .text_img_container p {
+  text-align: right;
   font-family: RoyaBold;
 }
-.information_project .text_img_container .glowIn span, .information .text_img_container .glowIn span {
+.information_project .text_img_container p span, .info_layout_css .text_img_container p span {
   animation: glow-in 0.8s both;
 }
 
