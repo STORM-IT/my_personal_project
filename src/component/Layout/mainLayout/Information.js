@@ -1,34 +1,21 @@
 import React, { Fragment, useEffect } from 'react'
+import { show_text_information } from '../../utils/glowIn_text'
 
 export default function Information() {
 
   useEffect(() => {
-    show_text_information()
+    // show_text_information("info")
   }, [])
 
-  const show_text_information = () => {
-    let glowInTexts = document.querySelectorAll(".glowIn");
-    glowInTexts.forEach(glowInText => {
-      let letters = glowInText.textContent.split("");
-      glowInText.textContent = "";
-      letters.forEach((letter, i) => {
-        let span = document.createElement("span");
-        span.textContent = letter;
-        span.style.animationDelay = `${i * 0.01}s`;
-        glowInText.append(span);
-      });
-    });
-
-  }
   return (
     <Fragment>
       <div id='information' className='nav-space'>
       </div>
-      <section className='information'>
+      <section className='info_layout_css'>
         <img src='./IMG/information/final/IMG_20220210_180308.jpg' />
         <div className='text_img_container'>
           <h3 className=''>اطلاعات کلی درباره من</h3><hr /><br />
-          <p className='glowIn'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
+          <p className='glowIn_text_info'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
             و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با
             هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
             جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
