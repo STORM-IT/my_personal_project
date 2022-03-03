@@ -1,0 +1,129 @@
+*{
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+#container-bodey{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    
+}
+#div-container{
+    width: 300px;
+    
+}
+#input-show{
+    width: 100%;
+}
+.div-button{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    
+    
+}
+.btn{
+
+    border: 0px;
+    border-radius: 10px;
+    flex-grow: 1;
+    height: 50px;
+    margin: 5px;
+    background-color: rgba(110, 114, 108, 0.363);
+    width: 25%;
+    font-size: 17px;
+    
+    
+}
+.number-key{
+    background-color: rgb(138, 163, 180);
+    box-shadow: rgba(0, 0, 0, 0.795) 2px 2px;
+}
+.number-key:hover{
+    background-color: rgb(117, 140, 155);
+}
+.number-key:active{
+    position: relative;
+    box-shadow: none;
+    top: 3px;
+    left: 3px;
+}
+
+
+.math-key{
+    background-color: rgba(68, 138, 185, 0.432);
+    box-shadow: rgba(0, 0, 0, 0.795) 2px 2px;
+}
+.math-key:hover{
+    background-color: rgba(59, 120, 160, 0.603);
+}
+.math-key:active{
+    position: relative;
+    box-shadow: none;
+    top: 3px;
+    left: 3px;
+}
+
+footer button{
+    display: block;
+    margin-top: 10px;
+    width: 93%;
+    height: 30px;
+    border: 0;
+    color: aliceblue;
+    border-radius: 5px;
+    box-shadow: rgb(151, 151, 151) 3px 4px ;
+    background-color: rgb(60, 122, 163);
+}
+footer button:active{
+    position: relative;
+    box-shadow: rgb(66, 64, 64) 0px 0px;
+    top: 3px;
+    left: 4px;
+    background-color: rgba(60, 122, 163, 0.747);
+}
+footer button:hover{
+    background-color: rgb(54, 109, 146);
+}
+input[type='text']{
+background-color: rgb(213, 224, 222);
+width: 100%;
+height: 50px;
+border-radius: 10px;
+border: 1px solid rgb(161, 153, 153);
+box-shadow: gray 0px 0px 3px;
+font-size: 30px;
+direction: rtl;
+padding: 5px;
+}
+header{
+    display: flex;
+    align-items: center;
+}
+#marks{
+    position: relative;
+   /* left: 105%; */
+   /* justify-self: center; */
+   width:6%;
+   font-size:30px;
+   left: 2%;
+   
+}
+#First_number{
+    position: relative;
+    right: 10%;
+    top: -1vh;
+    direction: rtl;
+    color: rgb(97, 100, 102);
+    height: 20px;
+   
+}
