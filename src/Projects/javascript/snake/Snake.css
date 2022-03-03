@@ -1,0 +1,80 @@
+#container_first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:50% ;
+}
+#Map{
+    position: relative;
+    width: 900px;
+    height: 400px;
+    background-color: rgb(228, 217, 203);
+    border: 10px solid black;
+    direction: rtl;
+    font-size: 100%;
+}
+.Snake{
+    
+    position: absolute; 
+    color: rgb(37, 146, 241); 
+    font-size: 50px; 
+    
+    height: 0px;
+    
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+#Rank-info{
+    align-self: flex-start;
+    color: rgb(73, 72, 72);
+    font-size: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.Rank-p{
+    background-color: rgb(197, 205, 209);
+    padding: 6px;
+    border-radius: 10px;
+    position: relative;
+    
+    
+    
+}
+.Rank{
+    color: rgb(74, 112, 112);
+}
+#option{
+    position: absolute;
+    top: 80%;
+    right: 80%;
+}
+.Rank-p:nth-child(2){
+    width: 13%;
+}
+
+.animated_gift{
+    position: absolute; 
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    
+}
+
+/* @keyframes gift{
+    0%{width:30px; height: 30px; top: 47px; left: 48px;}
+    25%{width:25px; height: 25px; top: 50px; left: 50px;}
+    75%{width:25px; height: 25px; top: 50px; left: 50px;}
+    100%{width:30px; height: 30px; top: 47px; left: 48px;}
+} */

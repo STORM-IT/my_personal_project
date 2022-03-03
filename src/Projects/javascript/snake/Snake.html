@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Snake.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<div id="container_first" onload="btn_hidden()">
+    <div id="container">
+        <div id="Rank-info">
+            <p class="Rank-p">Score:<span id="Score" class="Rank"> 0</span></p>
+            <p class="Rank-p">Time:<span id="Time" class="Rank"> 00:00</span></p>
+            <p class="Rank-p">Record:<span id="record" class="Rank"> 0</span></p>
+        </div>
+        <div id="Map" class="position-relative">
+            
+            
+            <span class="snake" id="S_baby">o</span>
+            <span class="snake" id="S_baby">o</span>
+            <span class="snake text-success" id="Snake">o</span>
+        </div>
+        
+        <div class="d-flex justify-content-around w-100 mt-2" id="container-button">
+            <button onclick="get_random_location()" class="btn btn-success" id="Start">Start</button>
+            <button onclick="get_random_location()" class="btn btn-warning" id="Restart">Restart</button>
+            <button onclick="Stop_timer()"  class="btn btn-danger" id="Stop">Stop-Game</button>
+        </div>
+        <div class="d-flex justify-content-around flex-column align-items-center mt-3">
+            <div class="m-1">
+                <button onclick="move_snake('top')" class="btn btn-info">^</button>
+            </div>
+            <div class="m-1">
+                <button onclick="move_snake('left')" class="btn btn-info me-4"><</button>
+                <button onclick="move_snake('right')" class="btn btn-info ms-4">></button>
+            </div>
+            <div class="m-1">
+                <button onclick="move_snake('bottom')" class="btn btn-info">v</button>
+            </div>
+        </div>
+    </div>
+    <p id="option">ll</p>
+        
+    
+    
+</div>
+<script src="Snake.js"></script>
+</html>
