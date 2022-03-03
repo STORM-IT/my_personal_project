@@ -111,6 +111,7 @@ export default function Poster() {
                 {/* <div> */}
                 <video id='short-video_head' className='header-short-video' src={url} onEnded={() => dispatch(Set_url_video())} ref={vidRef} muted poster="../../IMG/poster/picture.jpg" />
                 <img className='header-short-img' src="../../IMG/poster/picture_2.jpg" />
+                {/* <img className='header-short-img' src="../../IMG/poster/picture_2.jpg" /> */}
                 {/* </div> */}
                 {/* <video id='short-video_head' className='header-short-video' src={url} onEnded={() => next_video()} ref={vidRef} muted poster='./IMG/poster/picture.jpg' /> */}
                 <div id='effect_text_head_container'>
