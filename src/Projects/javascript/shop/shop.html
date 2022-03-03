@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="java.css">
+    <title>Document</title>
+</head>
+<body id="body">
+   <div>
+       <section id="Basketball" class="section">
+           <head>
+               <h3>H+ Basketball Sneakers</h3>
+               <small>Run faster, jump higher.</small>
+           </head>
+           <br>
+           <br>
+           <br>
+           <main>
+               <small>Price: <span>$90</span></small>
+           </main>
+           <footer>
+               <p>Quantity desired: <span><input type="number" name="" id="input-Basketball" value="" placeholder="0" class="design "></span></p>
+           </footer>
+       </section>
+       <section id="Jersey" class="section">
+           <head>
+               <h3>H+ ACTIVE Jersey</h3>
+               <p>Sweat harder, wick better</p>
+           </head>
+           <main>
+               <p>Price: <span>$25</span></p>
+           </main>
+           <footer>
+               <p>Quantity desired: <span><input type="number" name="" id="input-Jersey" placeholder="0" class="design "></span></p>
+           </footer>
+       </section>
+       <br>
+       <section id="Supplements" class="section">
+           <head>
+               <h3>H+ Power Supplements</h3>
+               <p>Get healthier, get smarter.</p>
+           </head>
+           <main>
+               <p>Price: <span>$30</span></p>
+           </main>
+           <footer>
+               <p>Quantity desired: <span><input type="number" name="" id="input-supplements" placeholder="0" class="design "></span></p>
+           </footer>
+       </section>
+   </div>
+   <hr>
+   <div>
+       <h2>Estimate Order</h2>
+       <div class="flex">
+           <section id="flex-1">
+               <p>state (required): </p>
+                   
+
+                    <select name="" id="select-state">
+                        <option value="NU">-select-</option>
+                        <option value="CF">California (7.5% tax)</option>
+                        <option value="LI">llinois</option>
+                        <option value="NH">new Hampshire</option>
+                        <option value="PL">Pennsylvania</option>
+                    </select>
+               
+            
+           </section>
+           <section id="flex-2">
+               <p>Shipping and Handing:</p>
+               <span><input type="radio" name="r-Shipping" id="" value="0"> Pickup (free)</span>
+               <span><input type="radio" name="r-Shipping" id="" value="2"> US Mail ($2/item)</span>
+               <span><input type="radio" name="r-Shipping" id="" value="3"> UPS ($3/item)</span>
+           </section>
+           <section id="flex-3">
+               <p>Special:</p>
+               <span><input type="checkbox" name="" id="">This is a gift (include a card)</span>
+               <span><input type="checkbox" name="" id="">sign up for the H+ mailing list</span>
+               <span><input type="checkbox" name="" id="">Include H+ recipes (free!)</span>
+           </section>
+       </div>
+       <div class="flex" id="estimate">
+           <section id="txt-flex">
+            <p style="margin-bottom: 0px;">Other notes:</p>
+            <textarea name="" id="textarea" cols="30" rows="10" placeholder="Any other comments (does not affect estimate"></textarea>
+           </section>
+
+
+           <section id="estimate-flex">
+
+            <p style="margin-bottom: 5px;">click to estimate:</p>
+            <input type="button" value="Estimate Total" id="btn-estimate" onclick="estimate()">
+            <input type="text" name="" id="text-estimate" readonly placeholder="$0.00">
+           
+           </section>
+       </div>
+   </div>
+</body>
+<script src="java.js"></script>
+</html>
