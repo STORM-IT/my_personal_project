@@ -1,21 +1,56 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        #b-check{
+        #b-check {
             margin-top: 10px;
         }
     </style>
 </head>
+
 <body>
-    <p>your effort is: <span id="effort"></span></p>
-    <hr>
-    <div id="container-number"></div>
-    <button id="b-check" onclick="get_number()">start game</button>
-    <p id="math-container-text"></p>
+    <div id="container">
+        <p id="paragraph-effort ">your effort is: <span id="effort">0</span></p>
+        <hr>
+        <div id="container-number">
+            <div class="container-input">
+                <input class="span-input-up" type="button" value="up">
+                <input class="input-number" type="text" name="" id="">
+                <input class="span-input-down" type="button" value="down">
+            </div>
+            <div class="container-input">
+                <input class="span-input-up" type="button" value="up">
+                <input class="input-number" type="text" name="" id="">
+                <input class="span-input-down" type="button" value="down">
+                <span class="math-text"></span>
+            </div>
+            <div class="container-input">
+                <input class="span-input-up" type="button" value="up">
+                <input class="input-number" type="text" name="" id="">
+                <input class="span-input-down" type="button" value="down">
+            </div>
+            <div class="container-input">
+                <input class="span-input-up" type="button" value="up">
+                <input class="input-number" type="text" name="" id="">
+                <input class="span-input-down" type="button" value="down">
+            </div>
+            <div class="container-input">
+                <input class="span-input-up" type="button" value="up">
+                <input class="input-number" type="text" name="" id="">
+                <input class="span-input-down" type="button" value="down">
+            </div>
+            
+        </div>
+        <hr>
+        <button id="b-check" onclick="get_number()">start game</button>
+        <!-- <p id="math-container-text"></p> -->
+    </div>
 </body>
-<script src="CHN-JAVA.JS"></script>
+<script src="javascript.js"></script>
+
 </html>
