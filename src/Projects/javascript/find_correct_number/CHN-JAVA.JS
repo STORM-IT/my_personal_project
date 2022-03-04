@@ -1,9 +1,25 @@
 var check_start=false;
 var button =document.getElementById('b-check');
+var math_container_text =document.getElementById('math-container-text');
 var container1=document.getElementById('container-number');
+const list_input=document.querySelectorAll(".input-number")
+const list_text_math=document.querySelectorAll(".math-text")
 var list_number =[];
 var effort=document.getElementById('effort');
 var effort_check=0;
+
+
+const list_operator_math=[" + "," - "," * "]
+var list_math=[]
+for (let i = 0; i < 5; i++) {
+    const length_math=Math.floor(Math.random()*2+1)
+    var number=Math.floor(Math.random()*9+1);
+    
+    for (let i = 0; i < length_math; i++) {
+        number+=`${list_operator_math[Math.floor(Math.random()*3)]} ${Math.floor(Math.random()*10)}`
+    }
+    list_math.push(number);
+}
 
 function get_number() {
     
