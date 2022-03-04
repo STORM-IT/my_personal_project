@@ -25,40 +25,25 @@ function get_number() {
     
     if(check_start===false)
     {
-        container1.innerHTML="";
-        for (let index = 0; index < 5; index++) {
-            let element=document.createElement('input');
-            element.type='number';
-            element.style.width='50px';
-            element.style.height='50px';
-            element.style.marginTop='2px';
-            element.style.fontSize='30px';
-            element.min=0;
-            element.max=10;
-            element.value=0;
-            element.ali=Math.floor(Math.random()*10);
-            //list_number.push(Math.floor(Math.random()*10));
-            
-            container1.appendChild(element);
-            
+        for (let i = 0; i < 5; i++) {
+            list_text_math[i].innerHTML=list_math[i].replaceAll(" * ", " x ");
+            list_text_math[i].classList.add("animation_text_math")
+            list_input[i].correct=eval(list_math[i]);
         }
         check_start=true;
         button.innerHTML='check number';
     }
     else
     {
-        
-        var number_all=document.querySelectorAll('input');
+        var number_all=document.querySelectorAll('.input-number');
         var win=0;
-        //effort_check++;
         effort.innerHTML=++effort_check;
-        //console.log(number_all);
         for (let i = 0; i < 5; i++) {
             debugger
-            if (number_all[i].value > number_all[i].ali) {
+            if (number_all[i].value > number_all[i].correct) {
                 number_all[i].style.background='red';
             }
-            else if (number_all[i].value < number_all[i].ali)
+            else if (number_all[i].value < number_all[i].correct)
             {
                 number_all[i].style.background='blue';
             }
@@ -71,9 +56,8 @@ function get_number() {
         if(win===5){
             button.innerHTML='start game';
             check_start=false;
+            list_math=[];
             win=0;
-            
-            
         }
 
     }
