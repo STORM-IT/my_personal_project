@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useRef, useState } from 'react'
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
-import { Set_url_video } from '../../Redux/Action/url_short_top_video/top_video';
+import { Set_url_video } from '../../../Redux/Action/url_short_top_video/top_video';
 
 export default function Poster() {
 
