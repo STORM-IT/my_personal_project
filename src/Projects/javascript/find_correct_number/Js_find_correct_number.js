@@ -1,3 +1,4 @@
+// import { useEffect } from "react";
 
 var check_start = false;
 var button;
@@ -6,12 +7,16 @@ var list_text_math;
 var effort;
 var effort_check = 0;
 
-button = document.getElementById('b-check');
-list_input = document.querySelectorAll(".input-number");
-list_text_math = document.querySelectorAll(".math-text");
-effort = document.getElementById('effort');
 
-export const get_number = () => {
+// useEffect(() => {
+    
+    // }, [])
+    
+    export const get_number = () => {
+    button = document.getElementById('b-check');
+    list_input = document.querySelectorAll(".input-number");
+    list_text_math = document.querySelectorAll(".math-text");
+    effort = document.getElementById('effort');
     const list_operator_math = [" + ", " - ", " * "]
     var list_math = []
     for (let i = 0; i < 5; i++) {
