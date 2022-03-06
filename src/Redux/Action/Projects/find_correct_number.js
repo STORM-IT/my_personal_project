@@ -1,8 +1,7 @@
 
 export const increment = (index) => {
     return (dispatch, getState) => {
-        // debugger
-        var state_correctNumber = {...getState().correctNumber};
+        let state_correctNumber = {...getState().correctNumber};
         var numbers = [...state_correctNumber.num_input];
         numbers[index]++;
         state_correctNumber.num_input=numbers;
@@ -11,20 +10,23 @@ export const increment = (index) => {
 }
 
 
-
 export const decrement = (index) => {
     return (dispatch, getState) => {
-        var numbers = [...getState().correctNumber];
-        numbers[index] -= 1;
-        dispatch({ type: "DECREMENT", payload: numbers });
+        let state_correctNumber = {...getState().correctNumber};
+        var numbers = [...state_correctNumber.num_input];
+        numbers[index]--;
+        state_correctNumber.num_input=numbers;
+        dispatch({ type: "DECREMENT", payload:state_correctNumber });
     }
 }
 
 export const setValueWithWrite = (index, value) => {
     return (dispatch, getState) => {
-        var numbers = [...getState().correctNumber];
+        var state_correctNumber = {...getState().correctNumber};
+        var numbers = [...state_correctNumber.num_input];
         numbers[index] = value == "" ? value : value == "-" ? "-" : parseInt(value);
-        dispatch({ type: "INCREMENT", payload: numbers });
+        state_correctNumber.num_input=numbers;
+        dispatch({ type: "SET_VALUE", payload:state_correctNumber });
     }
 }
 // export const clearValueWithWrite = () => {

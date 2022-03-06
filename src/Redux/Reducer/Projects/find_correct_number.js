@@ -5,11 +5,11 @@ export const findCorrectNumber = (state = {num_input:[0, 0, 0, 0, 0], check_star
     case "SET_VALUE":
       return {...action.payload};
       case "CLEAR":
-        return [...action.payload];
+        return {...action.payload};
     case "INCREMENT":
       return {...action.payload};
     case "DECREMENT":
-      return [...action.payload];
+      return {...action.payload};
 
     default: return state;
   }
