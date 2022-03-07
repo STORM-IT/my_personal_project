@@ -68,10 +68,10 @@ export const get_number = () => {
         if (check_start === false) {
 
             for (let i = 0; i < 5; i++) {
-                list_text_math[i].innerHTML = list_math[i].replaceAll(" * ", " x ");
                 list_text_math[i].classList.add("show_animation_text_math")
                 list_text_math[i].classList.replace("hide_animation_text_math", "show_animation_text_math");
                 list_input[i].correct = eval(list_math[i]);
+                correctNumber.list_text_math[i] = list_math[i].replaceAll(" * ", " x ");
             }
             correctNumber.check_start=true;
             correctNumber.button_text="check number";
@@ -94,7 +94,7 @@ export const get_number = () => {
                 
                 dispatch({ type: "EFFORT" , payload:correctNumber});
             }
-            if (win === 2) {
+            if (win === 1) {
                 // button.innerHTML = 'start game';
                 for (let i = 0; i < 5; i++) {
                     list_text_math[i].classList.add("hide_animation_text_math");
@@ -103,11 +103,13 @@ export const get_number = () => {
 
                 }
                 
-                alert(`your effort is : ${correctNumber.effort++}`)
+                alert(`win your effort is : ${correctNumber.effort++}`)
                 check_start = false;
                 list_math = [];
                 win = 0;
-                dispatch({ type: "CLEAR" });
+                setTimeout(() => {
+                    dispatch({ type: "CLEAR" });
+                }, 600);
             }
 
         }
