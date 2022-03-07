@@ -29,7 +29,7 @@ export default function Footer() {
           <p className='brand'>brand : <span> STOORMIX</span></p>
         </div>
       </div>
-      <div className='footer-creator'>این سایت متعلق به علی پارسامنش میباشد  </div>
+      
     </div>
   )
 }

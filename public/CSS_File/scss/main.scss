@@ -1067,8 +1067,8 @@ main {
     // background-color: $color_gray;
     background-color: #002331;
 
-    z-index: -10;
     &-head {
+        z-index: -10;
         display: flex;
         justify-content: space-around;
         align-items: flex-end;
@@ -1133,5 +1133,7 @@ main {
         direction: ltr;
         text-align: center;
         font-family: RoyaBold;
+        // z-index: 100000;
     }
+    // z-index: 10000!important;
 }

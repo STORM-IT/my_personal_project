@@ -20,7 +20,7 @@ export default function Find_correct_number() {
     const dispatch = useDispatch();
     const num = useSelector(state => state.correctNumber)
     const { button_text, effort, list_text_math } = num;
-    debugger
+    // debugger
     return (
         <div>
             <div id="container">

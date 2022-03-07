@@ -12,19 +12,25 @@ export default function App() {
   //   }
   return (
     <Fragment>
-      {/* <Head /> */}
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <Routes>
           <Route path={'project'}>
-            <Route path={"a"} element={<Find_correct_number/>} />
+            <Route path={'find-correct-number'} element={<Find_correct_number/>} />
           </Route>
-          <Route path={'/'}>
-            <Route path={"home"} element={<Main />} />
+          <Route path={''}>
+            <Route path={"home"} 
+            element={
+              <Fragment>
+                <Head />
+                <Main />
+                <Footer />
+              </Fragment>
+            } />
           </Route>
         </Routes>
-      </BrowserRouter> */}
-      <Find_correct_number/>
-      {/* <Footer /> */}
+      </BrowserRouter>
+      <div className='footer-creator'>این سایت متعلق به علی پارسامنش میباشد  </div>
+      {/* <Find_correct_number/> */}
       {/* {scroll_utils} */}
     </Fragment>
   )

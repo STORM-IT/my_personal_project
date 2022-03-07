@@ -19,16 +19,22 @@
   src: url("../../Font/Far.Nazanin.ttf");
 }
 @font-face {
-  font-family: Ye;
-  src: url("../../Font/Far.Roya.ttf");
-}
-@font-face {
   font-family: MacLemon;
   src: url("../../Font/ENGLISH/Hey.ttf");
 }
 @font-face {
   font-family: NavineDemo;
   src: url("../../Font/ENGLISH/NavineDemo-SemiCondensed.ttf");
+}
+
+
+
+
+
+
+@font-face {
+  font-family: Ye;
+  src: url("../../Font/Far.Roya.ttf");
 }
 .information_project, .info_layout_css {
   display: flex;
