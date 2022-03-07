@@ -94,7 +94,7 @@ export const get_number = () => {
                 
                 dispatch({ type: "EFFORT" , payload:correctNumber});
             }
-            if (win === 1) {
+            if (win === 5) {
                 // button.innerHTML = 'start game';
                 for (let i = 0; i < 5; i++) {
                     list_text_math[i].classList.add("hide_animation_text_math");

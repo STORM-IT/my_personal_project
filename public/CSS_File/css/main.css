@@ -148,7 +148,6 @@
 
 #root {
   position: relative;
-  background-color: #393e46;
   z-index: -51;
   overflow: hidden;
 }
