@@ -19,22 +19,16 @@
   src: url("../../Font/Far.Nazanin.ttf");
 }
 @font-face {
+  font-family: Ye;
+  src: url("../../Font/Far.Roya.ttf");
+}
+@font-face {
   font-family: MacLemon;
   src: url("../../Font/ENGLISH/Hey.ttf");
 }
 @font-face {
   font-family: NavineDemo;
   src: url("../../Font/ENGLISH/NavineDemo-SemiCondensed.ttf");
-}
-
-
-
-
-
-
-@font-face {
-  font-family: Ye;
-  src: url("../../Font/Far.Roya.ttf");
 }
 .information_project, .info_layout_css {
   display: flex;
@@ -1396,9 +1390,9 @@ main #push_right {
   width: 100%;
   height: 1230px;
   background-color: #002331;
-  z-index: -10;
 }
 .footer-head {
+  z-index: -10;
   display: flex;
   justify-content: space-around;
   align-items: flex-end;

@@ -8,7 +8,7 @@ export default function Expertise() {
       </div>
       <div className='info_layout_css'>
 
-
+          
         <div className='text_img_container'>
           <h3>پروژه ها</h3>
           <hr />

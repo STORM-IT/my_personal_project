@@ -53,11 +53,12 @@ body {
     border-radius: 5px 5px 0px 0px;
     border: none;
     cursor: pointer;
+    
 }
 .span-input-down {
     z-index: 2;
     background-color: rgba(255, 0, 0, 0.7);
-
+    
     border-radius: 0px 0px 5px 5px;
     border: none;
     cursor: pointer;
@@ -78,7 +79,7 @@ input[type="text"] {
 }
 input[type="text"]:focus {
     background-color: rgb(129, 188, 255);
-
+    
 }
 .math-text {
     position: absolute;
@@ -114,10 +115,10 @@ input[type="text"]:focus {
 /* .input-number{
     color: #FFF1F1;
     background-color: #382039;
-
+    
 } */
 #b-check {
-    /* position: relative; */
+    position: relative;
     font-family: sans-serif;
     font-size: 20px;
     padding: 15px 40px;
@@ -126,5 +127,14 @@ input[type="text"]:focus {
     background-color: #38f668;
     margin-top: 30px;
     cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.5) 3px 3px 1px;
+    /* box-shadow: rgb(62, 114, 160) 10px 10px; */
     /* z-index: 1000; */
+}
+#b-check:active{
+    right: -2px;
+    bottom: -2px;
+    box-shadow: none;
+    /* box-shadow: rgba(255, 255, 255, 0.705) 5px -5px 0px; */
+    
 }
