@@ -46,7 +46,7 @@
   width: 30%;
   height: 100%;
   border-radius: 0px 10px 10px 0px;
-  filter: brightness(0%);
+  filter: brightness(90%);
   box-shadow: black -5px 5px 10px;
 }
 .information_project .text_img_container, .info_layout_css .text_img_container {
@@ -59,6 +59,9 @@
   color: #eeeeee;
 }
 .information_project .text_img_container h3, .info_layout_css .text_img_container h3 {
+  position: relative;
+  left: -140px;
+  bottom: -130px;
   text-align: right;
   font-family: Yekan;
   margin-bottom: 10px;
@@ -66,19 +69,8 @@
 .information_project .text_img_container p, .info_layout_css .text_img_container p {
   text-align: right;
   font-family: RoyaBold;
+  visibility: hidden;
 }
-.information_project .text_img_container p span, .info_layout_css .text_img_container p span {
-  animation: glow-in 0.8s both;
-}
-
-.img_brightness_class {
-  animation: img_brightness 2s linear 7500ms alternate forwards;
-}
-
-.img_brightness_lamp_class {
-  animation: img_brightness_lamp 2s linear 7500ms infinite alternate;
-}
-
 @keyframes img_brightness_lamp {
   0% {
     filter: brightness(0%);
