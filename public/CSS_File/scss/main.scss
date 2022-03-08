@@ -93,7 +93,7 @@ $footerRightInfoSite: "version", "create", "update", "brand";
     width: 700px;
     height: 300px;
     overflow: hidden;
-    border-radius: 7px;
+    border-radius: 5px;
     // z-index: 1000000;
     img {
         // position: absolute;
@@ -112,25 +112,27 @@ $footerRightInfoSite: "version", "create", "update", "brand";
     .text_img_container {
         position: absolute;
         // position: relative;
-        width: 60%;
+        width: 65%;
         right: 0px;
         font-size: 1em;
         direction: rtl;
-        padding: 2% 3%;
+        padding: 2% 3% 0px 0px;
         color: $color_light;
         h3 {
             // position: absolute;
-            position: relative;
-            left: -140px;
-            bottom: -130px;
+            // position: relative;
+            // left: -100px;
+            // bottom: -130px;
             text-align: right;
             font-family: Yekan;
+            font-size: 25px;
             margin-bottom: 10px;
         }
         p {
             text-align: right;
             font-family: RoyaBold;
-            visibility: hidden;
+            font-size: 20px;
+            // visibility: hidden;
             span {
                 // animation: glow-in 0.7s both;
               }
