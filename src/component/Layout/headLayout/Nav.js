@@ -18,7 +18,7 @@ export default function Nav() {
         console.log(showNavOption)
     }
     useEffect(() => {
-        hover_option();
+        // hover_option();
 
     }, [])
     
@@ -30,11 +30,10 @@ export default function Nav() {
         <Fragment>
             <div id="head-nav" className='nav'>
                 <nav className='nav-container'>
-                    <div className='select'>
+                    {/* <div className='select'>
                         <div className='select-input' >
                             <input id='Input_Select' onClick={() => show_select_option_nav()} value={showNavOption ? inputHeadMove : "بخش های سایت"} readOnly></input>
                         </div>
-                        {/* {showNavOption ? ( */}
                             <div className='select-option'>
                                 <a href='#head-nav' onClick={() => setInputHeadMove("خانه")}>خانه</a>
                                 <a href='#information' onClick={() => setInputHeadMove("اطلاعات کلی")}>اطلاعات کلی</a>
@@ -42,8 +41,7 @@ export default function Nav() {
                                 <a href='#project' onClick={() => setInputHeadMove("پروژه ها")}>پروژه ها</a>
                                 <a href='#SocialNetwork' onClick={() => setInputHeadMove("شبکه های اجتماعی")}>شبکه های اجتماعی</a>
                             </div>
-                        {/* ) : null} */}
-                    </div>
+                    </div> */}
                     <div className='div_text_head'><span>S</span><span>T</span><span>O</span><span>O</span><span>O</span><span>R</span><span>M</span><span>I</span><span>X</span></div>
                 </nav>
             
