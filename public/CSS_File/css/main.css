@@ -233,8 +233,9 @@ main {
   position: fixed;
   top: 0px;
   width: 10%;
-  height: 60px;
-  padding: 5px 10px;
+  height: 40px;
+  text-align: center;
+  padding: 5px 0px;
   border-radius: 0px 0px 10px 10px;
   color: #eeeeee;
   z-index: 10000;
@@ -245,10 +246,9 @@ main {
   top: 0px;
   overflow: hidden;
   font-family: MacLemon;
-  font-size: 40px;
+  font-size: 35px;
   text-align: center;
-  width: 20px;
-  background-color: #0092ca;
+  width: 18px;
 }
 
 .show_option_select_nav {
@@ -370,7 +370,7 @@ main {
     left: 0px;
   }
   100% {
-    left: 48px;
+    left: 54px;
   }
 }
 @keyframes show_text_head_char_2 {
@@ -380,7 +380,7 @@ main {
   }
   100% {
     opacity: 0;
-    left: 48px;
+    left: 54px;
   }
 }
 @keyframes show_text_head_char_3 {
@@ -390,7 +390,7 @@ main {
   }
   100% {
     opacity: 0;
-    left: 32px;
+    left: 36px;
   }
 }
 @keyframes show_text_head_char_4 {
@@ -399,7 +399,7 @@ main {
     opacity: 1;
   }
   100% {
-    left: 16px;
+    left: 18px;
     opacity: 0;
   }
 }
@@ -417,7 +417,7 @@ main {
     opacity: 1;
   }
   100% {
-    left: -16px;
+    left: -18px;
     opacity: 0;
   }
 }
@@ -426,7 +426,7 @@ main {
     left: 0px;
   }
   100% {
-    left: -32px;
+    left: -36px;
   }
 }
 @keyframes show_text_head_char_8 {
@@ -436,7 +436,7 @@ main {
   }
   100% {
     opacity: 0;
-    left: -64px;
+    left: -54px;
   }
 }
 @keyframes show_text_head_char_9 {
@@ -444,12 +444,12 @@ main {
     left: 0px;
   }
   100% {
-    left: -40px;
+    left: -54px;
   }
 }
 @keyframes hide_text_head_char_1 {
   0% {
-    left: 48px;
+    left: 54px;
   }
   100% {
     left: 0px;
@@ -457,6 +457,7 @@ main {
 }
 @keyframes hide_text_head_char_2 {
   0% {
+    left: 54px;
     opacity: 0;
   }
   100% {
@@ -466,6 +467,7 @@ main {
 }
 @keyframes hide_text_head_char_3 {
   0% {
+    left: 36px;
     opacity: 0;
   }
   100% {
@@ -475,6 +477,7 @@ main {
 }
 @keyframes hide_text_head_char_4 {
   0% {
+    left: 18px;
     opacity: 0;
   }
   100% {
@@ -492,6 +495,7 @@ main {
 }
 @keyframes hide_text_head_char_6 {
   0% {
+    left: -18px;
     opacity: 0;
   }
   100% {
@@ -501,7 +505,7 @@ main {
 }
 @keyframes hide_text_head_char_7 {
   0% {
-    left: -32px;
+    left: -36px;
   }
   100% {
     left: 0px;
@@ -509,6 +513,7 @@ main {
 }
 @keyframes hide_text_head_char_8 {
   0% {
+    left: -54px;
     opacity: 0;
   }
   100% {
@@ -518,7 +523,7 @@ main {
 }
 @keyframes hide_text_head_char_9 {
   0% {
-    left: -40px;
+    left: -54px;
   }
   100% {
     left: 0px;
