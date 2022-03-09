@@ -7,12 +7,45 @@ import SocialNetwork from './SocialNetwork'
 export default function Main() {
   return (
     <main>
-      <div id='push_left'> </div>
-        <Information/>
-        <Expertise/>
-        <Project/>
-        <SocialNetwork/>
-      <div id='push_right'> </div>
+      {/* <div id='push_left'> </div> */}
+      <div id="leaves">
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+     
+  
+
+
+
+      </div>
+
+      <Information />
+      <Expertise />
+      <Project />
+      <SocialNetwork />
+      {/* <div id='push_right'> </div> */}
 
     </main>
   )
