@@ -232,10 +232,9 @@ main {
 .nav-container .div_text_head {
   position: fixed;
   top: 0px;
-  width: 10%;
   height: 40px;
   text-align: center;
-  padding: 5px 0px;
+  padding: 5px 10px;
   border-radius: 0px 0px 10px 10px;
   color: #eeeeee;
   z-index: 10000;
@@ -802,7 +801,7 @@ main {
     -webkit-transform: translate3d(3000, 0, 0) rotate(0deg);
   }
   100% {
-    -webkit-transform: translate3d(-3500px, 5000px, 0) rotate(0deg);
+    -webkit-transform: translate3d(-3000px, 5000px, 0) rotate(0deg);
     opacity: 1;
   }
 }
@@ -811,7 +810,7 @@ main {
     -webkit-transform: translate3d(0, 0, 0) rotate(-20deg);
   }
   100% {
-    -webkit-transform: translate3d(-2300px, 5000px, 0) rotate(-70deg);
+    -webkit-transform: translate3d(-1800px, 5000px, 0) rotate(-70deg);
     opacity: 1;
   }
 }
@@ -820,7 +819,7 @@ main {
     -webkit-transform: translate3d(0, 0, 0) rotate(90deg);
   }
   100% {
-    -webkit-transform: translate3d(-4000px, 5000px, 0) rotate(0deg);
+    -webkit-transform: translate3d(-3500px, 5000px, 0) rotate(0deg);
     opacity: 1;
   }
 }
@@ -831,6 +830,7 @@ main {
   justify-content: center;
   margin-bottom: 300px;
   overflow: hidden;
+  padding: 100px 0px;
 }
 .card-text {
   display: flex;
@@ -838,23 +838,24 @@ main {
   position: relative;
   width: 100%;
   height: 150px;
-  background-color: #006d97;
+  box-shadow: #6a6d72 0px 0px 20px;
+  background-color: #eeeeee;
   margin-bottom: 50px;
 }
 .card-text h3 {
   position: absolute;
   top: 40px;
-  color: #eeeeee;
+  color: #393e46;
   font-size: 40px;
   font-family: Yekan;
 }
 .card-container {
-  width: 60vw;
+  width: 900px;
   border-radius: 50px;
   overflow: hidden;
   flex-direction: column;
-  background-color: #2c3440;
   margin-bottom: 70px;
+  box-shadow: #6a6d72 0px 0px 20px;
 }
 .card-expertise {
   width: 100%;
@@ -875,7 +876,8 @@ main {
   height: 80px;
   border-radius: 30px;
   margin-bottom: 15px;
-  background-color: #0092ca;
+  background-color: #ddddddc9;
+  box-shadow: #6a6d72 0px 0px 20px;
   overflow: hidden;
   left: -300px;
 }
@@ -890,7 +892,8 @@ main {
   height: 80px;
   border-radius: 30px;
   margin-bottom: 15px;
-  background-color: #0092ca;
+  background-color: #ddddddc9;
+  box-shadow: #6a6d72 0px 0px 20px;
   overflow: hidden;
   right: -300px;
 }
@@ -905,7 +908,8 @@ main {
   height: 80px;
   border-radius: 30px;
   margin-bottom: 15px;
-  background-color: #0092ca;
+  background-color: #ddddddc9;
+  box-shadow: #6a6d72 0px 0px 20px;
   overflow: hidden;
   left: -300px;
 }
@@ -920,7 +924,8 @@ main {
   height: 80px;
   border-radius: 30px;
   margin-bottom: 15px;
-  background-color: #0092ca;
+  background-color: #ddddddc9;
+  box-shadow: #6a6d72 0px 0px 20px;
   overflow: hidden;
   right: -300px;
 }
@@ -935,7 +940,8 @@ main {
   height: 80px;
   border-radius: 30px;
   margin-bottom: 15px;
-  background-color: #0092ca;
+  background-color: #ddddddc9;
+  box-shadow: #6a6d72 0px 0px 20px;
   overflow: hidden;
   left: -300px;
 }
@@ -950,7 +956,8 @@ main {
   height: 80px;
   border-radius: 30px;
   margin-bottom: 15px;
-  background-color: #0092ca;
+  background-color: #ddddddc9;
+  box-shadow: #6a6d72 0px 0px 20px;
   overflow: hidden;
   right: -300px;
 }
@@ -965,7 +972,8 @@ main {
   height: 80px;
   border-radius: 30px;
   margin-bottom: 15px;
-  background-color: #0092ca;
+  background-color: #ddddddc9;
+  box-shadow: #6a6d72 0px 0px 20px;
   overflow: hidden;
   left: -300px;
 }
@@ -980,7 +988,8 @@ main {
   height: 80px;
   border-radius: 30px;
   margin-bottom: 15px;
-  background-color: #0092ca;
+  background-color: #ddddddc9;
+  box-shadow: #6a6d72 0px 0px 20px;
   overflow: hidden;
   right: -300px;
 }
@@ -995,7 +1004,8 @@ main {
   height: 80px;
   border-radius: 30px;
   margin-bottom: 15px;
-  background-color: #0092ca;
+  background-color: #ddddddc9;
+  box-shadow: #6a6d72 0px 0px 20px;
   overflow: hidden;
   left: -300px;
 }
@@ -1010,7 +1020,8 @@ main {
   height: 80px;
   border-radius: 30px;
   margin-bottom: 15px;
-  background-color: #0092ca;
+  background-color: #ddddddc9;
+  box-shadow: #6a6d72 0px 0px 20px;
   overflow: hidden;
   right: -300px;
 }
