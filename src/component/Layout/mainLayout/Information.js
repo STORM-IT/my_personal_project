@@ -9,8 +9,8 @@ export default function Information() {
 
   return (
     <Fragment>
-      <div id='information' className='nav-space'>
-      </div>
+      {/* <div id='information' className='nav-space'> */}
+      {/* </div> */}
       <section className='info_layout_css'>
         <img id='img_info' src='./IMG/information/final/IMG_20220210_180308.jpg' />
         <div className='text_img_container'>
