@@ -53,7 +53,19 @@ export default function Project() {
                         </div>
 
                     </div> */}
-                    {/* <img src="https://www.transparentpng.com/thumb/thunderstorm/thunder-light-thunderstorm-png-18.png" alt="thunder light thunderstorm png @transparentpng.com" /> */}
+                    {/* <div className='project'> */}
+                        <div className='project-container'>
+                            <header>
+                                <button className='project-btn-sort'>Sort</button>
+                                <span className='project-txt-header'>Projects</span>
+                                <button className='project-btn-openAll'>open All</button>
+                            </header>
+                            <div className='project-bodey'>
+                                <div className='project-filter'></div>
+                                <div className='project-projectList'></div>
+                            </div>
+                        </div>
+                    {/* </div> */}
                 </section>
             </div>
         </Fragment>
