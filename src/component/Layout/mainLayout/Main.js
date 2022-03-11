@@ -1,7 +1,7 @@
 import React from 'react'
 import Expertise from './Expertise'
 import Information from './Information'
-import Project from './Project'
+import Project from './project/Project'
 import SocialNetwork from './SocialNetwork'
 
 export default function Main() {

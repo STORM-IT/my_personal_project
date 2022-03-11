@@ -480,7 +480,8 @@ main {
     animation: hide_hover_select_nav 600ms ease 200ms alternate forwards;
 }
 .visible {
-    width: 200px !important;
+    visibility: visible !important;
+    // transform: ;
 }
 @keyframes show_hover_select_nav {
     0% {
@@ -1418,16 +1419,16 @@ main {
                 transform-origin: center bottom;
                 -webkit-transform: rotateX(0);
                 transform: rotateX(0);
-                animation: hide_list_sort_project alternate 1s ease forwards;
-                // transition: all 1s ease;
+                // animation: hide_list_sort_project alternate 1s ease forwards;
+                transition: all 1s ease;
                 // -webkit-transform: rotateX(-180deg);
                 // transform: rotateX(-180deg) scaleY(4);
                 //    transition: all 1s ease;
             }
             .project-btn-sort:hover:after {
+                // animation: show_list_sort_project alternate 1s ease forwards;
                 // -webkit-transform: rotateX(-180deg);
                 // transform: rotateX(-180deg) scaleY(4);
-                animation: show_list_sort_project alternate 1s ease forwards;
             }
             //end css btn open all project
             ul {
@@ -1441,6 +1442,7 @@ main {
                 top: 60px;
                 z-index: 100;
                 padding: 5px 0px;
+                visibility: hidden;
                 // background-color: #000;
             }
             li {
@@ -1449,6 +1451,16 @@ main {
             }
         }
     }
+}
+.project-container header .show_btn_sort_project:after{
+    // transition-delay: 1s;
+    transform: rotateX(-180deg) scaleY(4);
+    // animation: show_list_sort_project alternate 1s ease forwards;
+}
+.project-container header .hide_btn_sort_project:after{
+    // transition-delay: 1s;
+    transform: rotateX(0deg) scaleY(1);
+    // animation: hide_list_sort_project alternate 1s ease forwards;
 }
 @keyframes show_list_sort_project {
     // to{
