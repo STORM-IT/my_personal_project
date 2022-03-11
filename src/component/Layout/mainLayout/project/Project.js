@@ -1,7 +1,13 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { list_sort } from './Script'
 
 export default function Project() {
+
+    useEffect(() => {
+        list_sort()
+    }, [])
+    
     return (
         <Fragment>
             {/* <div id='project' className='nav-space'>
@@ -56,7 +62,7 @@ export default function Project() {
                     {/* <div className='project'> */}
                     <div className='project-container'>
                         <header>
-                            <ul>
+                            <ul id='project_list_sort'>
                                 <li>Line cod</li>
                                 <li>Date</li>
                                 <li>Chalenged</li>
@@ -74,6 +80,7 @@ export default function Project() {
                     {/* </div> */}
                 </section>
             </div>
+            
         </Fragment>
     )
 }
