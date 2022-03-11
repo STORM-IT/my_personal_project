@@ -1335,22 +1335,7 @@ main {
             background-color: $color_light;
             width: 100%;
             // height: 100px;
-            ul {
-                position: absolute;
-                list-style: none;
-                width: 126px;
-                // height: 160px;
-                // background-color: #005600;
-                color: $color_light;
-                left: 79px;
-                top: 60px;
-                z-index: 100;
-                padding: 5px 0px;
-                li {
-                    font-family: sans-serif;
-                    padding: 8px 0px;
-                }
-            }
+
             &-btn-sort {
             }
             span {
@@ -1433,15 +1418,55 @@ main {
                 transform-origin: center bottom;
                 -webkit-transform: rotateX(0);
                 transform: rotateX(0);
-                transition: all 1s ease;
+                animation: hide_list_sort_project alternate 1s ease forwards;
+                // transition: all 1s ease;
+                // -webkit-transform: rotateX(-180deg);
+                // transform: rotateX(-180deg) scaleY(4);
                 //    transition: all 1s ease;
             }
             .project-btn-sort:hover:after {
-                -webkit-transform: rotateX(-180deg);
-                transform: rotateX(-180deg) scaleY(4);
+                // -webkit-transform: rotateX(-180deg);
+                // transform: rotateX(-180deg) scaleY(4);
+                animation: show_list_sort_project alternate 1s ease forwards;
             }
             //end css btn open all project
+            ul {
+                position: absolute;
+                list-style: none;
+                width: 126px;
+                // height: 160px;
+                // background-color: #005600;
+                color: $color_light;
+                left: 79px;
+                top: 60px;
+                z-index: 100;
+                padding: 5px 0px;
+                // background-color: #000;
+            }
+            li {
+                font-family: sans-serif;
+                padding: 8px 0px;
+            }
         }
+    }
+}
+@keyframes show_list_sort_project {
+    // to{
+    //     transform: rotateX(-180deg) scaleY(4);
+    // }
+    0% {
+        transform: rotateX(0deg) scaleY(1);
+    }
+    100% {
+        transform: rotateX(-180deg) scaleY(4);
+    }
+}
+@keyframes hide_list_sort_project {
+    0% {
+        transform: rotateX(-180deg) scaleY(4);
+    }
+    100% {
+        transform: rotateX(0deg) scaleY(1);
     }
 }
 .animation_socialNetwork_line {
