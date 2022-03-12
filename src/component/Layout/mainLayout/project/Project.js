@@ -6,7 +6,7 @@ export default function Project() {
 
     useEffect(() => {
         list_sort()
-        
+
     }, [])
 
     return (
@@ -75,7 +75,7 @@ export default function Project() {
                         </header>
                         <div className='project-bodey'>
                             <div className='project-filter'>
-                                <div onClick={()=>show_filter_section()}>
+                                <div className='project-logo-container' onClick={() => show_filter_section()}>
                                     <img className='right_project_filter_icon' src='./IMG/Move_logo/projectFilter.svg' />
                                 </div>
                             </div>
@@ -84,6 +84,108 @@ export default function Project() {
                     </div>
                     {/* </div> */}
                 </section>
+            </div>
+
+            <div className='grid'>
+                <label className='card'>
+                    <input className='card__input' type="checkbox" />
+                    <div className='card__body'>
+                        <div className='card__body-cover'>
+                            <img className='card__body-cover-image' src='./IMG/logo_lessen/html.svg' />
+                            <span className='card__body-cover-checkbox'>
+                                <svg className='card__body-cover-checkbox--svg' viewBox='0 0 12 10'>
+                                    <polyline points='1.5 6 4.5 9 10.5 1' />
+                                </svg>
+                            </span>
+                        </div>
+                        <header className='card__body-header'>
+                            <h2 className='card__body-header-title' title=''>Category A</h2>
+                            <p className='card__body-header-subtitle'>Motorcycles</p>
+                        </header>
+                    </div>
+                </label>
+            </div>
+
+
+            <div class="grid">
+                <label class="card">
+                    <input class="card__input" type="checkbox" />
+                    <div class="card__body">
+                        <div class="card__body-cover"><img class="card__body-cover-image" src="https://i.ibb.co/zXmHzBk/category-a.png" /><span class="card__body-cover-checkbox">
+                            <svg class="card__body-cover-checkbox--svg" viewBox="0 0 12 10">
+                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                            </svg></span></div>
+                        <header class="card__body-header">
+                            <h2 class="card__body-header-title">Category A</h2>
+                            <p class="card__body-header-subtitle">Motorcycles</p>
+                        </header>
+                    </div>
+                </label>
+                <label class="card">
+                    <input class="card__input" type="checkbox" />
+                    <div class="card__body">
+                        <div class="card__body-cover"><img class="card__body-cover-image" src="https://i.ibb.co/cXjw2Gz/category-b.png" /><span class="card__body-cover-checkbox">
+                            <svg class="card__body-cover-checkbox--svg" viewBox="0 0 12 10">
+                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                            </svg></span></div>
+                        <header class="card__body-header">
+                            <h2 class="card__body-header-title">Category B</h2>
+                            <p class="card__body-header-subtitle">Cars and ATVs</p>
+                        </header>
+                    </div>
+                </label>
+                <label class="card">
+                    <input class="card__input" type="checkbox" />
+                    <div class="card__body">
+                        <div class="card__body-cover"><img class="card__body-cover-image" src="https://i.ibb.co/nDbfH9B/category-c.png" /><span class="card__body-cover-checkbox">
+                            <svg class="card__body-cover-checkbox--svg" viewBox="0 0 12 10">
+                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                            </svg></span></div>
+                        <header class="card__body-header">
+                            <h2 class="card__body-header-title">Category C</h2>
+                            <p class="card__body-header-subtitle">Large goods vehicle</p>
+                        </header>
+                    </div>
+                </label>
+                <label class="card">
+                    <input class="card__input" type="checkbox" />
+                    <div class="card__body">
+                        <div class="card__body-cover"><img class="card__body-cover-image" src="https://i.ibb.co/7gSQMmm/category-d.png" /><span class="card__body-cover-checkbox">
+                            <svg class="card__body-cover-checkbox--svg" viewBox="0 0 12 10">
+                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                            </svg></span></div>
+                        <header class="card__body-header">
+                            <h2 class="card__body-header-title">Category D</h2>
+                            <p class="card__body-header-subtitle">Buses</p>
+                        </header>
+                    </div>
+                </label>
+                <label class="card">
+                    <input class="card__input" type="checkbox" />
+                    <div class="card__body">
+                        <div class="card__body-cover"><img class="card__body-cover-image" src="https://i.ibb.co/0F3SdsX/category-t.png" /><span class="card__body-cover-checkbox">
+                            <svg class="card__body-cover-checkbox--svg" viewBox="0 0 12 10">
+                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                            </svg></span></div>
+                        <header class="card__body-header">
+                            <h2 class="card__body-header-title">Category T</h2>
+                            <p class="card__body-header-subtitle">Tractors and SMV</p>
+                        </header>
+                    </div>
+                </label>
+                <label class="card">
+                    <input class="card__input" type="checkbox" disabled="disabled" />
+                    <div class="card__body">
+                        <div class="card__body-cover"><img class="card__body-cover-image" src="https://i.ibb.co/WDwmPy5/other.png" /><span class="card__body-cover-checkbox">
+                            <svg class="card__body-cover-checkbox--svg" viewBox="0 0 12 10">
+                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                            </svg></span></div>
+                        <header class="card__body-header">
+                            <h2 class="card__body-header-title">Other</h2>
+                            <p class="card__body-header-subtitle">Additional categories</p>
+                        </header>
+                    </div>
+                </label>
             </div>
 
         </Fragment>
