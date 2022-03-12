@@ -1224,34 +1224,29 @@ main {
   height: 100%;
   width: 300px;
   background-color: #d5d5d5;
+  border-radius: 17px;
+  transition: all 1s ease;
 }
 .project-container .project-bodey .project-filter::after {
   position: relative;
-  z-index: -3;
+  z-index: 10;
 }
 .project-container .project-bodey .project-filter div {
   position: absolute;
-  background-color: black;
   right: -40px;
   width: 30px;
   padding: 5px 15px 25px 15px;
+  background-color: black;
   border-radius: 10px 10px 0px 0px;
   transform: rotate(90deg);
-  z-index: 200;
-  color: #000;
   cursor: pointer;
-  transition: all 1s ease;
   z-index: -5;
-}
-.project-container .project-bodey .project-filter div:hover {
-  transform: translate(15px, 0px) rotate(90deg);
+  transition: all 1s ease;
 }
 .project-container .project-bodey .project-filter div img {
+  background-color: black;
   width: 30px;
-  transition: all 200ms ease;
-}
-.project-container .project-bodey .project-filter div img:active {
-  transform: rotate(180deg);
+  transition: all 700ms ease;
 }
 .project-container .project-bodey .project-listProject {
   position: relative;
@@ -1269,6 +1264,44 @@ main {
   transform: rotateX(0deg) scaleY(1);
 }
 
+.show_project_filter_section {
+  animation: show_project_filter 500ms linear alternate forwards;
+}
+
+.hide_project_filter_section {
+  animation: hide_project_filter 500ms linear alternate forwards;
+}
+
+.right_project_filter_icon {
+  transform: rotate(0deg);
+}
+.right_project_filter_icon:hover {
+  transform: translate(0px, -5px);
+}
+
+.left_project_filter_icon {
+  transform: rotate(180deg);
+}
+.left_project_filter_icon:hover {
+  transform: rotate(180deg) translate(0px, -5px);
+}
+
+@keyframes show_project_filter {
+  0% {
+    right: 0px;
+  }
+  100% {
+    right: -250px;
+  }
+}
+@keyframes hide_project_filter {
+  0% {
+    right: -250px;
+  }
+  100% {
+    right: 0px;
+  }
+}
 @keyframes show_list_sort_project {
   0% {
     transform: rotateX(0deg) scaleY(1);

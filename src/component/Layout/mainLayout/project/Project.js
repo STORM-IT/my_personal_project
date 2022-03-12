@@ -76,7 +76,7 @@ export default function Project() {
                         <div className='project-bodey'>
                             <div className='project-filter'>
                                 <div onClick={()=>show_filter_section()}>
-                                    <img src='./IMG/Move_logo/projectFilter.svg' />
+                                    <img className='right_project_filter_icon' src='./IMG/Move_logo/projectFilter.svg' />
                                 </div>
                             </div>
                             <div className='project-listProject'></div>

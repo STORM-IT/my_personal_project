@@ -1339,8 +1339,7 @@ main {
             width: 100%;
             // height: 100px;
             z-index: 10;
-            &-btn-sort {
-            }
+
             span {
                 font-family: sans-serif;
                 font-size: 50px;
@@ -1427,11 +1426,7 @@ main {
                 // transform: rotateX(-180deg) scaleY(4);
                 //    transition: all 1s ease;
             }
-            .project-btn-sort:hover:after {
-                // animation: show_list_sort_project alternate 1s ease forwards;
-                // -webkit-transform: rotateX(-180deg);
-                // transform: rotateX(-180deg) scaleY(4);
-            }
+
             //end css btn open all project
             ul {
                 position: absolute;
@@ -1452,6 +1447,7 @@ main {
                 padding: 8px 0px;
             }
         }
+
         .project-bodey {
             position: relative;
             // width: 200px;
@@ -1467,46 +1463,59 @@ main {
                 height: 100%;
                 width: 300px;
                 background-color: darken($color: $color_light, $amount: 10);
+                // z-index: 1;
+                border-radius: 17px;
+                transition: all 1s ease;
+                    // transform: translate(250px, 0px);
                 &::after {
                     position: relative;
-                    z-index: -3;
+                    z-index: 10;
                 }
-                div{
-
+                // &:hover {
+                //     // position: relative;
+                //     position: absolute !important;
+                //     z-index: 20 !important;
+                // }
+                div {
                     position: absolute;
-                    background-color: rgb(0, 0, 0);
                     right: -40px;
                     width: 30px;
                     // height: 30px;
                     padding: 5px 15px 25px 15px;
+                    background-color: rgb(0, 0, 0);
                     border-radius: 10px 10px 0px 0px;
                     transform: rotate(90deg);
-                    z-index: 200;
-                    color: #000;
+                    // z-index: 200;
+                    // color: #000;
                     cursor: pointer;
                     // background-image:url("../../IMG/Move_logo/projectFilter.svg");
                     // background-position: center;
                     // background-repeat:no-repeat;
                     // background-clip: border-box;
                     // background-size: contain;
-                    transition: all 1s ease;
                     z-index: -5;
-                    &:hover {
-                        transform: translate(15px, 0px) rotate(90deg);
-                    }
-                    img {
-                        width: 30px;
-                        transition: all 200ms ease;
-                        // height: 30px;
-                        &:active{
-                        transform:  rotate(180deg);
+                    transition: all 1s ease;
+                    // &::after{
                         
-                    }
+                        // }
+                        // &:hover {
+                        //     transform: translate(7px, 0px) rotate(90deg);
+                        // }
+                        img {
+                           
+                            background-color: rgb(0, 0, 0);
+                        // border-radius: 10px 10px 0px 0px;
+                        width: 30px;
+                        transition: all 700ms ease;
+                        // height: 30px;
+                        // &:active {
+                        //     transform: rotate(180deg);
+                        // }
                     }
                 }
             }
 
-            .project-listProject{
+            .project-listProject {
                 position: relative;
                 // top: 0px;
                 width: 100%;
@@ -1518,19 +1527,50 @@ main {
     }
 }
 .project-container header .show_btn_sort_project:after {
-    // transition-delay: 1s;
     transform: rotateX(-180deg) scaleY(4);
-    // animation: show_list_sort_project alternate 1s ease forwards;
 }
 .project-container header .hide_btn_sort_project:after {
-    // transition-delay: 1s;
     transform: rotateX(0deg) scaleY(1);
-    // animation: hide_list_sort_project alternate 1s ease forwards;
+}
+.show_project_filter_section {
+    animation: show_project_filter 500ms linear  alternate forwards;
+}
+.hide_project_filter_section {
+    animation: hide_project_filter 500ms linear  alternate forwards;
+}
+.right_project_filter_icon {
+    transform: rotate(0deg);
+    &:hover {
+        transform: translate(0px, -5px);
+    }
+    // animation: show_project_filter 1s ease  alternate forwards;
+}
+.left_project_filter_icon {
+    transform: rotate(180deg);
+    &:hover {
+        transform: rotate(180deg) translate(0px, -5px);
+    }
+    // transform: translate(0px, 40px) rotate(-180deg);
+    // animation: hide_project_filter 1s ease  alternate forwards;
+}
+
+@keyframes show_project_filter {
+    0% {
+        right: 0px;
+    }
+    100% {
+        right: -250px;
+    }
+}
+@keyframes hide_project_filter {
+    0% {
+        right: -250px;
+    }
+    100% {
+        right: 0px;
+    }
 }
 @keyframes show_list_sort_project {
-    // to{
-    //     transform: rotateX(-180deg) scaleY(4);
-    // }
     0% {
         transform: rotateX(0deg) scaleY(1);
     }
