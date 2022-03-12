@@ -7,7 +7,7 @@ export default function Project() {
     useEffect(() => {
         list_sort()
     }, [])
-    
+
     return (
         <Fragment>
             {/* <div id='project' className='nav-space'>
@@ -73,14 +73,18 @@ export default function Project() {
                             <button className='project-btn-openAll'>open All </button>
                         </header>
                         <div className='project-bodey'>
-                            <div className='project-filter'></div>
-                            <div className='project-projectList'></div>
+                            <div className='project-filter'>
+                                <div>
+                                    <img src='./IMG/Move_logo/projectFilter.svg' />
+                                </div>
+                            </div>
+                            <div className='project-listProject'></div>
                         </div>
                     </div>
                     {/* </div> */}
                 </section>
             </div>
-            
+
         </Fragment>
     )
 }
