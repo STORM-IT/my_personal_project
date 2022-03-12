@@ -1,7 +1,7 @@
 export const list_sort = () => {
     const btn_sort = document.querySelector(".project-btn-sort")
     const list_sort = document.querySelector("#project_list_sort")
-
+    
     const time_show_list_sort =(check)=>{
         var time;
         if(check=="false"){
@@ -37,4 +37,29 @@ export const list_sort = () => {
     list_sort.addEventListener('mouseleave', () => {
         time_show_list_sort("false");
     })
+}
+
+export const show_filter_section=()=>{
+    const filter_section = document.querySelector(".project-filter")
+    const badge_move = document.querySelector(".project-filter div")
+    const logo_move = document.querySelector(".project-filter div img")
+
+    if(filter_section.classList.contains("show_project_filter_section")){
+
+        filter_section.classList.add("hide_project_filter_section")
+        filter_section.classList.replace("show_project_filter_section","hide_project_filter_section")
+
+
+        logo_move.classList.add("right_project_filter_icon")
+        logo_move.classList.replace("left_project_filter_icon","right_project_filter_icon")
+
+        
+    }else{
+        filter_section.classList.add("show_project_filter_section")
+        filter_section.classList.replace("hide_project_filter_section","show_project_filter_section")
+
+        logo_move.classList.add("left_project_filter_icon")
+        logo_move.classList.replace("right_project_filter_icon","left_project_filter_icon")
+    }
+
 }
