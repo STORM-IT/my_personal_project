@@ -1319,6 +1319,23 @@ main {
     transform: rotateX(0deg) scaleY(1);
   }
 }
+.grid {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  width: 99%;
+  height: 99%;
+  padding: 1% 1%;
+  column-gap: 2%;
+  flex-wrap: wrap;
+  background-color: #005600;
+  opacity: 0.7;
+}
+.grid button {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 100px;
+}
+
 .card {
   --background: #fff;
   --background-checkbox: #0082ff;
