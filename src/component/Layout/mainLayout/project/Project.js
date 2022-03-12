@@ -1,11 +1,12 @@
 import React, { Fragment, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { list_sort } from './Script'
+import { list_sort, show_filter_section } from './Script'
 
 export default function Project() {
 
     useEffect(() => {
         list_sort()
+        
     }, [])
 
     return (
@@ -74,7 +75,7 @@ export default function Project() {
                         </header>
                         <div className='project-bodey'>
                             <div className='project-filter'>
-                                <div>
+                                <div onClick={()=>show_filter_section()}>
                                     <img src='./IMG/Move_logo/projectFilter.svg' />
                                 </div>
                             </div>
