@@ -79,7 +79,7 @@ export default function Project() {
                                     <img className='right_project_filter_icon' src='./IMG/Move_logo/projectFilter.svg' />
                                 </div>
                                 <div className='grid'>
-                                    
+                                <p className='title_filter_expertise'>Filter Expertise</p>
                                     <label className='card'>
                                         <input className='card__input' type="checkbox" />
                                         <div className='card__body'>
