@@ -1456,17 +1456,17 @@ main {
             z-index: 5;
             .project-filter {
                 position: absolute;
-                display: flex;
+                // display: flex;
                 align-items: center;
-                right: -260px;
+                right: -230px;
                 // right: 0px;
                 height: 100%;
-                width: 250px;
+                width: 230px;
                 background-color: darken($color: $color_light, $amount: 10);
                 // z-index: 1;
-                border-radius:0px 17px 17px 0px;
+                border-radius: 0px 17px 17px 0px;
                 transition: all 1s ease;
-                    // transform: translate(250px, 0px);
+                // transform: translate(250px, 0px);
                 &::after {
                     position: relative;
                     display: block;
@@ -1481,6 +1481,7 @@ main {
                     position: absolute;
                     right: -40px;
                     width: 30px;
+                    top: 200px;
                     // height: 30px;
                     // margin: auto;
                     padding: 5px 15px 25px 15px;
@@ -1498,14 +1499,13 @@ main {
                     z-index: -5;
                     transition: all 1s ease;
                     // &::after{
-                        
-                        // }
-                        // &:hover {
-                        //     transform: translate(7px, 0px) rotate(90deg);
-                        // }
-                        img {
-                           
-                            background-color: rgb(0, 0, 0);
+
+                    // }
+                    // &:hover {
+                    //     transform: translate(7px, 0px) rotate(90deg);
+                    // }
+                    img {
+                        background-color: rgb(0, 0, 0);
                         // border-radius: 10px 10px 0px 0px;
                         width: 30px;
                         transition: all 700ms ease;
@@ -1535,10 +1535,10 @@ main {
     transform: rotateX(0deg) scaleY(1);
 }
 .show_project_filter_section {
-    animation: show_project_filter 500ms linear  alternate forwards;
+    animation: show_project_filter 500ms linear alternate forwards;
 }
 .hide_project_filter_section {
-    animation: hide_project_filter 500ms linear  alternate forwards;
+    animation: hide_project_filter 500ms linear alternate forwards;
 }
 .right_project_filter_icon {
     transform: rotate(0deg);
@@ -1561,12 +1561,12 @@ main {
         right: 0px;
     }
     100% {
-        right: -250px;
+        right: -230px;
     }
 }
 @keyframes hide_project_filter {
     0% {
-        right: -250px;
+        right: -230px;
     }
     100% {
         right: 0px;
@@ -1590,225 +1590,276 @@ main {
 }
 
 // filter item css
-.grid{
-    display: grid;
-    grid-template-columns: 48% 48%;
-    width: 99%;
-    height: 99%;
-    padding: 1% 1%;
-    column-gap: 2%;
+.grid {
+    // display: grid;
+    // grid-template-columns: auto ;
+    // width: 99%;
+    // height: 99%;
+    // padding: 1% 1%;
+    // column-gap: 2%;
     // row-gap: -10px;
     // display: flex;
     // justify-content: space-around;
     // align-items: center;
-    flex-wrap: wrap;
-    background-color: #005600;
+    // flex-wrap: wrap;
+    // background-color: #005600;
     opacity: 0.7;
-
-    button{
+    .title_filter_expertise{
+        background-color: $color_light;
+        padding: 10px 0px;
+        margin-bottom: 10px;
+    }
+    hr {
         grid-column-start: 1;
         grid-column-end: 3;
-        height: 100px;
+        margin: 5px 0px;
     }
 }
 .card {
     --background: #fff;
-    --background-checkbox: #0082ff;
+    // --background-checkbox: #0082ff;
+    --background-checkbox: #02af19;
+    // --background-image: #fff, #{rgba(#a3af00, 0.2)};
     --background-image: #fff, #{rgba(#006baf, 0.2)};
     --text-color: #666;
     --text-headline: #000;
-    --card-shadow: #0082ff;
-    --card-height: 90px;
-    --card-width: 100%;
+    --card-shadow: #6bc900;
+    // --card-shadow: #0082ff;
+    --card-width: 99%;
+    --card-height: 44px;
     --card-radius: 12px;
     --header-height: 47px;
     --blend-mode: overlay;
     --transition: 0.15s;
     user-select: none;
-    // display: block;
-    margin: 0px ;
-    padding: 0px;
+    display: inline-block;
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 3px 5px;
+    margin-bottom: -2px;
+    // padding-top: 5px;
     // height: fit-content;
     &:nth-child(odd) {
-      .card__body-cover-image {
-        --x-y1: 100% 90%;
-        --x-y2: 67% 83%;
-        --x-y3: 33% 90%;
-        --x-y4: 0% 85%;
-      }
+        .card__body-cover-image {
+            --x-y1: 100% 90%;
+            --x-y2: 67% 83%;
+            --x-y3: 33% 90%;
+            --x-y4: 0% 85%;
+        }
     }
-  
+
     &:nth-child(even) {
-      .card__body-cover-image {
-        --x-y1: 100% 85%;
-        --x-y2: 73% 93%;
-        --x-y3: 25% 85%;
-        --x-y4: 0% 90%;
-      }
+        .card__body-cover-image {
+            --x-y1: 100% 85%;
+            --x-y2: 73% 93%;
+            --x-y3: 25% 85%;
+            --x-y4: 0% 90%;
+        }
     }
-  
+
     &__input {
-      position: absolute;
-      display: block;
-      outline: none;
-      border: none;
-      background: none;
-      padding: 0;
-      margin: 0;
-      -webkit-appearance: none;
-  
-      &:checked {
-        & ~ .card__body {
-          --shadow: 0 0 0 3px var(--card-shadow);
-          .card__body {
-            &-cover-checkbox {
-              --check-bg: var(--background-checkbox);
-              --check-border: #fff;
-              --check-scale: 1;
-              --check-opacity: 1;
-              &--svg {
-                --stroke-color: #fff;
-                --stroke-dashoffset: 0;
-              }
+        position: absolute;
+        display: block;
+        outline: none;
+        border: none;
+        background: none;
+        padding: 0;
+        margin: 0;
+        -webkit-appearance: none;
+
+        &:checked {
+            & ~ .card__body {
+                --shadow: 0 0 0 3px var(--card-shadow);
+                .card__body {
+                    &-cover-checkbox {
+                        --check-bg: var(--background-checkbox);
+                        --check-border: #fff;
+                        --check-scale: 1;
+                        --check-opacity: 1;
+                        &--svg {
+                            --stroke-color: #fff;
+                            --stroke-dashoffset: 0;
+                        }
+                    }
+                    &-cover {
+                        &:after {
+                            --opacity-bg: 0;
+                        }
+                        &-image {
+                            --filter-bg: grayscale(0);
+                        }
+                    }
+                }
             }
-            &-cover {
-              &:after {
-                --opacity-bg: 0;
-              }
-              &-image {
-                --filter-bg: grayscale(0);
-              }
+        }
+
+        &:disabled {
+            & ~ .card__body {
+                cursor: not-allowed;
+                opacity: 0.5;
+                &:active {
+                    --scale: 1;
+                }
             }
-          }
         }
-      }
-  
-      &:disabled {
-        & ~ .card__body {
-          cursor: not-allowed;
-          opacity: 0.5;
-          &:active {
-            --scale: 1;
-          }
-        }
-      }
     }
-  
+
     &__body {
-      display:grid;
-      grid-auto-rows: calc(var(--card-height) - var(--header-height)) auto;
-      background: var(--background);
-      height: var(--card-height);
-      width: var(--card-width);
-      border-radius: var(--card-radius);
-      overflow: hidden;
-      position: relative;
-      cursor: pointer;
-    //   box-shadow: var(--shadow, 0 4px 4px 0 rgba(0, 0, 0, 0.02));
-    //   transition: transform var(--transition), box-shadow var(--transition);
-      transform: scale(var(--scale, 1)) translateZ(0);
-      &:active {
-        --scale: 0.97;
-      }
-  
-      &-cover {
-        --c-border: var(--card-radius) var(--card-radius) 0 0;
-        --c-width: 100%;
-        --c-height: 100%;
-        position: relative;
-        overflow: hidden;
-        &:after {
-          content: "";
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: var(--c-width);
-          height: var(--c-height);
-          border-radius: var(--c-border);
-          background: linear-gradient(to bottom right, var(--background-image));
-          mix-blend-mode: var(--blend-mode);
-          opacity: var(--opacity-bg, 1);
-          transition: opacity var(--transition) linear;
-        }
-        &-image {
-        //   width: var(--c-width);
-        //   height: var(--c-height);
-        //   object-fit: cover;
-        //   border-radius: var(--c-border);
-          filter: var(--filter-bg, grayscale(1));
-          // transition: filter var(--transition) linear; // not working properly in Chrome
-        //   clip-path: polygon(
-        //     0% 0%,
-        //     100% 0%,
-        //     var(--x-y1, 100% 90%),
-        //     var(--x-y2, 67% 83%),
-        //     var(--x-y3, 33% 90%),
-        //     var(--x-y4, 0% 85%)
-        //   );
-        }
-        &-checkbox {
-          background: var(--check-bg, var(--background-checkbox));
-          border: 2px solid var(--check-border, #fff);
-          position: absolute;
-          right: 10px;
-          top: 10px;
-          z-index: 1;
-          width: 28px;
-          height: 28px;
-          border-radius: 50%;
-          opacity: var(--check-opacity, 0);
-          transition: transform var(--transition),
-            opacity calc(var(--transition) * 1.2) linear,
-            -webkit-transform var(--transition) ease;
-          transform: scale(var(--check-scale, 0));
-          &--svg {
-            width: 13px;
-            height: 11px;
-            display: inline-block;
-            vertical-align: top;
-            fill: none;
-            margin: 7px 0 0 5px;
-            stroke: var(--stroke-color, #fff);
-            stroke-width: 2;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-            stroke-dasharray: 16px;
-            stroke-dashoffset: var(--stroke-dashoffset, 16px);
-            transition: stroke-dashoffset 0.4s ease var(--transition);
-          }
-        }
-      }
-  
-      &-header {
-        // height: var(--header-height);
+        display: grid;
+        //   grid-auto-rows: calc(var(--card-height) - var(--header-height)) auto;
+        //   grid-auto-columns: 100px 200px;
+        grid-template-columns: auto 80%;
         background: var(--background);
-        // padding: 0 10px 10px 10px;
-        &-title {
-          color: var(--text-headline);
-        //   font-weight: 700;
-          margin: 8px 0px;
+        height: var(--card-height);
+        width: var(--card-width);
+        border-radius: var(--card-radius);
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        box-shadow: var(--shadow, 0 4px 4px 0 rgba(0, 0, 0, 0.02));
+        transition: transform var(--transition), box-shadow var(--transition);
+        transform: scale(var(--scale, 1)) translateZ(0);
+        &:active {
+            --scale: 0.97;
         }
-        // &-subtitle {
-        //   color: var(--text-color);
-        //   font-weight: 500;
-        //   font-size: 13px;
-        // }
-      }
+
+        &-cover {
+            --c-border: var(--card-radius) var(--card-radius) 0 0;
+            --c-width: 100%;
+            --c-height: 100%;
+            position: relative;
+            overflow: hidden;
+            &:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: var(--c-width);
+                height: var(--c-height);
+                border-radius: var(--c-border);
+                background: linear-gradient(to bottom right, var(--background-image));
+                mix-blend-mode: var(--blend-mode);
+                opacity: var(--opacity-bg, 1);
+                transition: opacity var(--transition) linear;
+            }
+            &-image {
+                width: var(--c-width);
+                height: var(--c-height);
+                //   object-fit: cover;
+                //   border-radius: var(--c-border);
+                filter: var(--filter-bg, grayscale(1));
+                // transition: filter var(--transition) linear; // not working properly in Chrome
+                //   clip-path: polygon(
+                //     0% 0%,
+                //     100% 0%,
+                //     var(--x-y1, 100% 90%),
+                //     var(--x-y2, 67% 83%),
+                //     var(--x-y3, 33% 90%),
+                //     var(--x-y4, 0% 85%)
+                //   );
+            }
+            // &-checkbox {
+            //   background: var(--check-bg, var(--background-checkbox));
+            //   border: 2px solid var(--check-border, #fff);
+            //   position: absolute;
+            //   right: -5px;
+            //   top: 10px;
+            //   z-index: 1;
+            //   width: 28px;
+            //   height: 28px;
+            //   border-radius: 50%;
+            //   opacity: var(--check-opacity, 0);
+            //   transition: transform var(--transition),
+            //     opacity calc(var(--transition) * 1.2) linear,
+            //     -webkit-transform var(--transition) ease;
+            //   transform: scale(var(--check-scale, 0));
+            //   &--svg {
+            //     width: 13px;
+            //     height: 11px;
+            //     display: inline-block;
+            //     vertical-align: bottom;
+            //     // position: absolute;
+            //     fill: none;
+            //     margin: 7px 0 0 5px;
+            //     stroke: var(--stroke-color, #fff);
+            //     stroke-width: 2;
+            //     stroke-linecap: round;
+            //     stroke-linejoin: round;
+            //     stroke-dasharray: 16px;
+            //     stroke-dashoffset: var(--stroke-dashoffset, 16px);
+            //     transition: stroke-dashoffset 0.4s ease var(--transition);
+            //   }
+            // }
+        }
+
+        &-header {
+            // height: var(--header-height);
+            justify-content: baseline;
+            // text-align: center;
+            // background: var(--background);
+            // padding: 0 10px 10px 10px;
+            z-index: 1000;
+            box-shadow: #6a6d72 -10px 0px 10px;
+            background-color: $color_blue !important;
+            &-title {
+                // color: var(--text-headline);
+                color: white;
+                font-weight: 500;
+                font-size: 20px;
+                margin: 8px 0px;
+            }
+        }
     }
-  }
-  
-//   html {
-//     box-sizing: border-box;
-//     -webkit-font-smoothing: antialiased;
-//   }
-  
-//   * {
-//     box-sizing: inherit;
-  
-//     &:after {
-//       box-sizing: inherit;
-//     }
-//   }
+}
+.card__body-cover-checkbox {
+    background: var(--check-bg, var(--background-checkbox));
+    border: 2px solid var(--check-border, #fff);
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 1;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    opacity: var(--check-opacity, 0);
+    transition: transform var(--transition), opacity calc(var(--transition) * 1.2) linear,
+        -webkit-transform var(--transition) ease;
+    transform: scale(var(--check-scale, 0));
+    text-align: center;
+    padding: 0px !important;
+    .card__body-cover-checkbox--svg {
+        width: 23px;
+        height: 11px;
+        display: inline-block;
+        vertical-align: bottom;
+        position: absolute;
+        fill: none;
+        // right: 1px;
+        // top: -1px;
+        overflow: visible;
+        // margin-right: -10px;
+        // margin: 0px 15px 15px 0px;
+        stroke: var(--stroke-color, #fff);
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-dasharray: 16px;
+        stroke-dashoffset: var(--stroke-dashoffset, 16px);
+        transition: stroke-dashoffset 0.4s ease var(--transition);
+    }
+}
+
+html {
+    // box-sizing: border-box;
+    // -webkit-font-smoothing: antialiased;
+    // box-sizing: inherit;
+}
+
+* {
+    &:after {
+        //   box-sizing: border-box;
+    }
+}
 // end filter item css
 .animation_socialNetwork_line {
     animation: rotateLine 2s ease 1s alternate forwards;

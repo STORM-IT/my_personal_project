@@ -1218,11 +1218,10 @@ main {
 }
 .project-container .project-bodey .project-filter {
   position: absolute;
-  display: flex;
   align-items: center;
-  right: -260px;
+  right: -230px;
   height: 100%;
-  width: 250px;
+  width: 230px;
   background-color: #d5d5d5;
   border-radius: 0px 17px 17px 0px;
   transition: all 1s ease;
@@ -1236,6 +1235,7 @@ main {
   position: absolute;
   right: -40px;
   width: 30px;
+  top: 200px;
   padding: 5px 15px 25px 15px;
   background-color: black;
   border-radius: 10px 10px 0px 0px;
@@ -1292,12 +1292,12 @@ main {
     right: 0px;
   }
   100% {
-    right: -250px;
+    right: -230px;
   }
 }
 @keyframes hide_project_filter {
   0% {
-    right: -250px;
+    right: -230px;
   }
   100% {
     right: 0px;
@@ -1320,38 +1320,38 @@ main {
   }
 }
 .grid {
-  display: grid;
-  grid-template-columns: 48% 48%;
-  width: 99%;
-  height: 99%;
-  padding: 1% 1%;
-  column-gap: 2%;
-  flex-wrap: wrap;
-  background-color: #005600;
   opacity: 0.7;
 }
-.grid button {
+.grid .title_filter_expertise {
+  background-color: #eeeeee;
+  padding: 10px 0px;
+  margin-bottom: 10px;
+}
+.grid hr {
   grid-column-start: 1;
   grid-column-end: 3;
-  height: 100px;
+  margin: 5px 0px;
 }
 
 .card {
   --background: #fff;
-  --background-checkbox: #0082ff;
+  --background-checkbox: #02af19;
   --background-image: #fff, rgba(0, 107, 175, 0.2);
   --text-color: #666;
   --text-headline: #000;
-  --card-shadow: #0082ff;
-  --card-height: 90px;
-  --card-width: 100%;
+  --card-shadow: #6bc900;
+  --card-width: 99%;
+  --card-height: 44px;
   --card-radius: 12px;
   --header-height: 47px;
   --blend-mode: overlay;
   --transition: 0.15s;
   user-select: none;
+  display: inline-block;
   margin: 0px;
-  padding: 0px;
+  box-sizing: border-box;
+  padding: 3px 5px;
+  margin-bottom: -2px;
 }
 .card:nth-child(odd) .card__body-cover-image {
   --x-y1: 100% 90%;
@@ -1403,7 +1403,7 @@ main {
 }
 .card__body {
   display: grid;
-  grid-auto-rows: calc(var(--card-height) - var(--header-height)) auto;
+  grid-template-columns: auto 80%;
   background: var(--background);
   height: var(--card-height);
   width: var(--card-width);
@@ -1411,6 +1411,8 @@ main {
   overflow: hidden;
   position: relative;
   cursor: pointer;
+  box-shadow: var(--shadow, 0 4px 4px 0 rgba(0, 0, 0, 0.02));
+  transition: transform var(--transition), box-shadow var(--transition);
   transform: scale(var(--scale, 1)) translateZ(0);
 }
 .card__body:active {
@@ -1437,14 +1439,29 @@ main {
   transition: opacity var(--transition) linear;
 }
 .card__body-cover-image {
+  width: var(--c-width);
+  height: var(--c-height);
   filter: var(--filter-bg, grayscale(1));
 }
+.card__body-header {
+  justify-content: baseline;
+  z-index: 1000;
+  box-shadow: #6a6d72 -10px 0px 10px;
+  background-color: #0092ca !important;
+}
+.card__body-header-title {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 8px 0px;
+}
+
 .card__body-cover-checkbox {
   background: var(--check-bg, var(--background-checkbox));
   border: 2px solid var(--check-border, #fff);
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 5px;
+  top: 5px;
   z-index: 1;
   width: 28px;
   height: 28px;
@@ -1452,14 +1469,17 @@ main {
   opacity: var(--check-opacity, 0);
   transition: transform var(--transition), opacity calc(var(--transition) * 1.2) linear, -webkit-transform var(--transition) ease;
   transform: scale(var(--check-scale, 0));
+  text-align: center;
+  padding: 0px !important;
 }
-.card__body-cover-checkbox--svg {
-  width: 13px;
+.card__body-cover-checkbox .card__body-cover-checkbox--svg {
+  width: 23px;
   height: 11px;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: bottom;
+  position: absolute;
   fill: none;
-  margin: 7px 0 0 5px;
+  overflow: visible;
   stroke: var(--stroke-color, #fff);
   stroke-width: 2;
   stroke-linecap: round;
@@ -1467,13 +1487,6 @@ main {
   stroke-dasharray: 16px;
   stroke-dashoffset: var(--stroke-dashoffset, 16px);
   transition: stroke-dashoffset 0.4s ease var(--transition);
-}
-.card__body-header {
-  background: var(--background);
-}
-.card__body-header-title {
-  color: var(--text-headline);
-  margin: 8px 0px;
 }
 
 .animation_socialNetwork_line {

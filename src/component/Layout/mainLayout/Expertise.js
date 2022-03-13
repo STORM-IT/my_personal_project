@@ -80,7 +80,7 @@ export default function Expertise() {
             <div className='card-body'>
               <div className='card-expertise-sharp'>
                 <span>C#</span>
-                <img src='./IMG/logo_lessen/c_sharp_logo.svg' />
+                <img src='./IMG/logo_lessen/c_sharp.svg' />
               </div>
             </div>
           </div>
