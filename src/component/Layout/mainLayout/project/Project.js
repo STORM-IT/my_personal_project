@@ -79,7 +79,7 @@ export default function Project() {
                                     <img className='right_project_filter_icon' src='./IMG/Move_logo/projectFilter.svg' />
                                 </div>
                                 <div className='grid'>
-                                <p className='title_filter_expertise'>Filter Expertise</p>
+                                    <p className='title_filter_expertise'>Filter Expertise</p>
                                     <label className='card'>
                                         <input className='card__input' type="checkbox" />
                                         <div className='card__body'>
@@ -214,14 +214,33 @@ export default function Project() {
                                     </button> */}
                                 </div>
                             </div>
-                            <div className='project-listProject'></div>
+                            <div className='project-listProject'>
+                                <div className='card_project'>
+                                    <div className='card_project_contant'>
+                                        <div className='card_project_title'><h3>Title</h3></div>
+                                        <div className='card_project_description'><p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
+                                            و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با
+                                            هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان .</p></div>
+                                        <div className='card_project_expertise_badge'>
+                                            <div className='card_expertise_badge'>html</div>
+                                            <div className='card_expertise_badge'>javascript</div>
+                                        </div>
+                                    </div>
+                                    <div className='card_project_information'>
+                                        <p><span>490</span>تعداد خط کد:</p>
+                                        <p><span>490</span>تعداد خط کد:</p>
+                                        <p><span>490</span>تعداد خط کد:</p>
+                                        <p><span>490</span>تعداد خط کد:</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     {/* </div> */}
                 </section>
             </div>
 
-        
+
 
         </Fragment>
     )
