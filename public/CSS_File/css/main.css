@@ -1328,14 +1328,13 @@ main {
   position: relative;
   width: 100%;
   height: 150px;
-  background-color: #beffbe;
+  background-color: #222831;
   border-radius: 10px;
   overflow: hidden;
-  margin-bottom: 10px;
+  margin: 10px 0px;
 }
 .project-listProject .card_project_contant {
   position: absolute;
-  background-color: #e2ff3d;
   right: 0px;
   width: 85%;
   height: 100%;
@@ -1343,18 +1342,31 @@ main {
 .project-listProject .card_project_title {
   width: 100%;
   text-align: right;
-  background-color: #c9b12c;
+  background-color: #9BA4B4;
 }
 .project-listProject .card_project_title h3 {
-  padding: 5px 10px;
+  font-family: Yekan;
+  padding: 3px 10px;
 }
 .project-listProject .card_project_description {
   width: 100%;
   height: 80px;
   text-align: right;
   box-sizing: border-box;
-  padding: 5px 10px;
-  background-color: #b3714c;
+  direction: rtl;
+  padding: 0px 10px;
+  overflow: hidden;
+}
+.project-listProject .card_project_description p {
+  width: 100%;
+  height: 100%;
+  font-family: Yekan;
+  font-size: 17px;
+  font-weight: 600;
+  overflow: hidden;
+  white-space: wrap;
+  text-overflow: ellipsis;
+  color: white;
 }
 .project-listProject .card_project_expertise_badge {
   position: absolute;
@@ -1363,13 +1375,13 @@ main {
   text-align: right;
   box-sizing: border-box;
   padding: 5px 10px;
-  background-color: #4c64b3;
+  background-color: #9BA4B4;
 }
 .project-listProject .card_project_expertise_badge div {
   display: inline-block;
   margin-right: 5px;
   padding: 3px 10px;
-  background-color: #e72424;
+  background-color: #7dc5bc;
   border-radius: 10px;
 }
 .project-listProject .card_project_information {
@@ -1381,12 +1393,12 @@ main {
   height: 100%;
   text-align: right;
   box-sizing: border-box;
-  border-right: 2px solid black;
+  border-right: 1px solid black;
+  background-color: #9BA4B4;
 }
 .project-listProject .card_project_information p {
   direction: rtl;
   padding: 3px 5px;
-  background-color: #d8cbcb;
 }
 
 .grid {
