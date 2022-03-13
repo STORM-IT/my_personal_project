@@ -227,10 +227,68 @@ export default function Project() {
                                         </div>
                                     </div>
                                     <div className='card_project_information'>
-                                        <p><span>490</span>تعداد خط کد:</p>
-                                        <p><span>490</span>تعداد خط کد:</p>
-                                        <p><span>490</span>تعداد خط کد:</p>
-                                        <p><span>490</span>تعداد خط کد:</p>
+                                        <p>تعداد خط کد : <span>490</span></p>
+                                        <p>تعداد خط کد : <span>490</span></p>
+                                        <p>تعداد خط کد : <span>490</span></p>
+                                        <p>تعداد خط کد : <span>490</span></p>
+                                        {/* <p>تعداد خط کد : <span>490</span></p> */}
+                                    </div>
+                                </div>
+                                <div className='card_project'>
+                                    <div className='card_project_contant'>
+                                        <div className='card_project_title'><h3>Title</h3></div>
+                                        <div className='card_project_description'><p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
+                                            و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با
+                                            هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان .</p></div>
+                                        <div className='card_project_expertise_badge'>
+                                            <div className='card_expertise_badge'>html</div>
+                                            <div className='card_expertise_badge'>javascript</div>
+                                        </div>
+                                    </div>
+                                    <div className='card_project_information'>
+                                        <p>تعداد خط کد : <span>490</span></p>
+                                        <p>تعداد خط کد : <span>490</span></p>
+                                        <p>تعداد خط کد : <span>490</span></p>
+                                        <p>تعداد خط کد : <span>490</span></p>
+                                        {/* <p>تعداد خط کد : <span>490</span></p> */}
+                                    </div>
+                                </div>
+                                <div className='card_project'>
+                                    <div className='card_project_contant'>
+                                        <div className='card_project_title'><h3>Title</h3></div>
+                                        <div className='card_project_description'><p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
+                                            و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با
+                                            هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان .</p></div>
+                                        <div className='card_project_expertise_badge'>
+                                            <div className='card_expertise_badge'>html</div>
+                                            <div className='card_expertise_badge'>javascript</div>
+                                        </div>
+                                    </div>
+                                    <div className='card_project_information'>
+                                        <p>تعداد خط کد : <span>490</span></p>
+                                        <p>تعداد خط کد : <span>490</span></p>
+                                        <p>تعداد خط کد : <span>490</span></p>
+                                        <p>تعداد خط کد : <span>490</span></p>
+                                        {/* <p>تعداد خط کد : <span>490</span></p> */}
+                                    </div>
+                                </div>
+                                <div className='card_project'>
+                                    <div className='card_project_contant'>
+                                        <div className='card_project_title'><h3>Title</h3></div>
+                                        <div className='card_project_description'><p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
+                                            و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با
+                                            هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان .</p></div>
+                                        <div className='card_project_expertise_badge'>
+                                            <div className='card_expertise_badge'>html</div>
+                                            <div className='card_expertise_badge'>javascript</div>
+                                        </div>
+                                    </div>
+                                    <div className='card_project_information'>
+                                        <p>تعداد خط کد : <span>490</span></p>
+                                        <p>تعداد خط کد : <span>490</span></p>
+                                        <p>تعداد خط کد : <span>490</span></p>
+                                        <p>تعداد خط کد : <span>490</span></p>
+                                        {/* <p>تعداد خط کد : <span>490</span></p> */}
                                     </div>
                                 </div>
                             </div>
