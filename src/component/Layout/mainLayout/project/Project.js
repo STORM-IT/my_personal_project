@@ -79,110 +79,139 @@ export default function Project() {
                                     <img className='right_project_filter_icon' src='./IMG/Move_logo/projectFilter.svg' />
                                 </div>
                                 <div className='grid'>
+                                    
                                     <label className='card'>
                                         <input className='card__input' type="checkbox" />
                                         <div className='card__body'>
                                             <div className='card__body-cover'>
                                                 <img className='card__body-cover-image' src='./IMG/logo_lessen/html.svg' />
+                                            </div>
+                                            <header className='card__body-header'>
+                                                <h2 className='card__body-header-title' title=''>HTML/CSS</h2>
                                                 <span className='card__body-cover-checkbox'>
-                                                    <svg className='card__body-cover-checkbox--svg' viewBox='0 0 12 10'>
+                                                    <svg className='card__body-cover-checkbox--svg' viewBox='5 -8 20 10'>
                                                         <polyline points='1.5 6 4.5 9 10.5 1' />
                                                     </svg>
                                                 </span>
+                                            </header>
+                                        </div>
+                                    </label>
+                                    <label className='card'>
+                                        <input className='card__input' type="checkbox" />
+                                        <div className='card__body'>
+                                            <div className='card__body-cover'>
+                                                <img className='card__body-cover-image' src='./IMG/logo_lessen/bootstrap.svg' />
                                             </div>
                                             <header className='card__body-header'>
-                                                <h2 className='card__body-header-title' title=''>HTML</h2>
-
+                                                <h2 className='card__body-header-title' title=''>BOOTSTRAP</h2>
+                                                <span className='card__body-cover-checkbox'>
+                                                    <svg className='card__body-cover-checkbox--svg' viewBox='5 -8 20 10'>
+                                                        <polyline points='1.5 6 4.5 9 10.5 1' />
+                                                    </svg>
+                                                </span>
                                             </header>
                                         </div>
                                     </label>
-
-                                    <label class="card">
-                                        <input class="card__input" type="checkbox" />
-                                        <div class="card__body">
-                                            <div class="card__body-cover"><img class="card__body-cover-image" src="./IMG/logo_lessen/html.svg" /><span class="card__body-cover-checkbox">
-                                                <svg class="card__body-cover-checkbox--svg" viewBox="0 0 12 10">
-                                                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-                                                </svg></span></div>
-                                            <header class="card__body-header">
-                                                <h2 class="card__body-header-title">CSS</h2>
+                                    <label className='card'>
+                                        <input className='card__input' type="checkbox" />
+                                        <div className='card__body'>
+                                            <div className='card__body-cover'>
+                                                <img className='card__body-cover-image' src='./IMG/logo_lessen/javascript.svg' />
+                                            </div>
+                                            <header className='card__body-header'>
+                                                <h2 className='card__body-header-title' title=''>JAVASCTIPT</h2>
+                                                <span className='card__body-cover-checkbox'>
+                                                    <svg className='card__body-cover-checkbox--svg' viewBox='5 -8 20 10'>
+                                                        <polyline points='1.5 6 4.5 9 10.5 1' />
+                                                    </svg>
+                                                </span>
                                             </header>
                                         </div>
                                     </label>
-                                    <label class="card">
-                                        <input class="card__input" type="checkbox" />
-                                        <div class="card__body">
-                                            <div class="card__body-cover"><img class="card__body-cover-image" src="./IMG/logo_lessen/html.svg" /><span class="card__body-cover-checkbox">
-                                                <svg class="card__body-cover-checkbox--svg" viewBox="0 0 12 10">
-                                                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-                                                </svg></span></div>
-                                            <header class="card__body-header">
-                                                <h2 class="card__body-header-title">CSS</h2>
+                                    <label className='card'>
+                                        <input className='card__input' type="checkbox" />
+                                        <div className='card__body'>
+                                            <div className='card__body-cover'>
+                                                <img className='card__body-cover-image' src='./IMG/logo_lessen/jquery.svg' />
+                                            </div>
+                                            <header className='card__body-header'>
+                                                <h2 className='card__body-header-title' title=''>JQUERY</h2>
+                                                <span className='card__body-cover-checkbox'>
+                                                    <svg className='card__body-cover-checkbox--svg' viewBox='5 -8 20 10'>
+                                                        <polyline points='1.5 6 4.5 9 10.5 1' />
+                                                    </svg>
+                                                </span>
                                             </header>
                                         </div>
                                     </label>
-                                    <label class="card">
-                                        <input class="card__input" type="checkbox" />
-                                        <div class="card__body">
-                                            <div class="card__body-cover"><img class="card__body-cover-image" src="./IMG/logo_lessen/html.svg" /><span class="card__body-cover-checkbox">
-                                                <svg class="card__body-cover-checkbox--svg" viewBox="0 0 12 10">
-                                                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-                                                </svg></span></div>
-                                            <header class="card__body-header">
-                                                <h2 class="card__body-header-title">CSS</h2>
+                                    <label className='card'>
+                                        <input className='card__input' type="checkbox" />
+                                        <div className='card__body'>
+                                            <div className='card__body-cover'>
+                                                <img className='card__body-cover-image' src='./IMG/logo_lessen/sass.svg' />
+                                            </div>
+                                            <header className='card__body-header'>
+                                                <h2 className='card__body-header-title' title=''>SASS</h2>
+                                                <span className='card__body-cover-checkbox'>
+                                                    <svg className='card__body-cover-checkbox--svg' viewBox='5 -8 20 10'>
+                                                        <polyline points='1.5 6 4.5 9 10.5 1' />
+                                                    </svg>
+                                                </span>
                                             </header>
                                         </div>
                                     </label>
-                                    <label class="card">
-                                        <input class="card__input" type="checkbox" />
-                                        <div class="card__body">
-                                            <div class="card__body-cover"><img class="card__body-cover-image" src="./IMG/logo_lessen/html.svg" /><span class="card__body-cover-checkbox">
-                                                <svg class="card__body-cover-checkbox--svg" viewBox="0 0 12 10">
-                                                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-                                                </svg></span></div>
-                                            <header class="card__body-header">
-                                                <h2 class="card__body-header-title">CSS</h2>
+                                    <label className='card'>
+                                        <input className='card__input' type="checkbox" />
+                                        <div className='card__body'>
+                                            <div className='card__body-cover'>
+                                                <img className='card__body-cover-image' src='./IMG/logo_lessen/react.svg' />
+                                            </div>
+                                            <header className='card__body-header'>
+                                                <h2 className='card__body-header-title' title=''>REACT</h2>
+                                                <span className='card__body-cover-checkbox'>
+                                                    <svg className='card__body-cover-checkbox--svg' viewBox='5 -8 20 10'>
+                                                        <polyline points='1.5 6 4.5 9 10.5 1' />
+                                                    </svg>
+                                                </span>
                                             </header>
                                         </div>
                                     </label>
-                                    <label class="card">
-                                        <input class="card__input" type="checkbox" />
-                                        <div class="card__body">
-                                            <div class="card__body-cover"><img class="card__body-cover-image" src="./IMG/logo_lessen/html.svg" /><span class="card__body-cover-checkbox">
-                                                <svg class="card__body-cover-checkbox--svg" viewBox="0 0 12 10">
-                                                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-                                                </svg></span></div>
-                                            <header class="card__body-header">
-                                                <h2 class="card__body-header-title">CSS</h2>
+                                    <label className='card'>
+                                        <input className='card__input' type="checkbox" />
+                                        <div className='card__body'>
+                                            <div className='card__body-cover'>
+                                                <img className='card__body-cover-image' src='./IMG/logo_lessen/redux.svg' />
+                                            </div>
+                                            <header className='card__body-header'>
+                                                <h2 className='card__body-header-title' title=''>REDUX</h2>
+                                                <span className='card__body-cover-checkbox'>
+                                                    <svg className='card__body-cover-checkbox--svg' viewBox='5 -8 20 10'>
+                                                        <polyline points='1.5 6 4.5 9 10.5 1' />
+                                                    </svg>
+                                                </span>
                                             </header>
                                         </div>
                                     </label>
-                                    <label class="card">
-                                        <input class="card__input" type="checkbox" />
-                                        <div class="card__body">
-                                            <div class="card__body-cover"><img class="card__body-cover-image" src="./IMG/logo_lessen/html.svg" /><span class="card__body-cover-checkbox">
-                                                <svg class="card__body-cover-checkbox--svg" viewBox="0 0 12 10">
-                                                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-                                                </svg></span></div>
-                                            <header class="card__body-header">
-                                                <h2 class="card__body-header-title">CSS</h2>
+                                    <label className='card'>
+                                        <input className='card__input' type="checkbox" />
+                                        <div className='card__body'>
+                                            <div className='card__body-cover'>
+                                                <img className='card__body-cover-image' src='./IMG/logo_lessen/c_sharp.svg' />
+                                            </div>
+                                            <header className='card__body-header'>
+                                                <h2 className='card__body-header-title' title=''>C#</h2>
+                                                <span className='card__body-cover-checkbox'>
+                                                    <svg className='card__body-cover-checkbox--svg' viewBox='5 -8 20 10'>
+                                                        <polyline points='1.5 6 4.5 9 10.5 1' />
+                                                    </svg>
+                                                </span>
                                             </header>
                                         </div>
                                     </label>
-                                    <label class="card">
-                                        <input class="card__input" type="checkbox" />
-                                        <div class="card__body">
-                                            <div class="card__body-cover"><img class="card__body-cover-image" src="./IMG/logo_lessen/html.svg" /><span class="card__body-cover-checkbox">
-                                                <svg class="card__body-cover-checkbox--svg" viewBox="0 0 12 10">
-                                                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-                                                </svg></span></div>
-                                            <header class="card__body-header">
-                                                <h2 class="card__body-header-title">CSS</h2>
-                                            </header>
-                                        </div>
-                                    </label>
-
-                                    <button>filter</button>
+                                    {/* <hr/> */}
+                                    {/* <button>
+                                    <span>Show Results</span><span>Filter</span>
+                                    </button> */}
                                 </div>
                             </div>
                             <div className='project-listProject'></div>
