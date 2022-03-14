@@ -224,6 +224,11 @@ export default function Project() {
                                         <div className='card_project_expertise_badge'>
                                             <div className='card_expertise_badge'>html</div>
                                             <div className='card_expertise_badge'>javascript</div>
+                                            <div className='card_expertise_badge'>css</div>
+                                            <div className='card_expertise_badge'>bootstrap</div>
+                                            <div className='card_expertise_badge'>jquery</div>
+                                            <div className='card_expertise_badge'>react</div>
+                                            <div className='card_expertise_badge'>sass</div>
                                         </div>
                                     </div>
                                     <div className='card_project_information'>

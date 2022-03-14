@@ -1459,7 +1459,7 @@ main {
                 position: absolute;
                 // display: flex;
                 align-items: center;
-                right:  0px;
+                right: 0px;
                 // right: 0px;
                 height: 100%;
                 width: 230px;
@@ -1517,8 +1517,6 @@ main {
                     }
                 }
             }
-
-   
         }
     }
 }
@@ -1583,8 +1581,6 @@ main {
     }
 }
 
-
-
 // card expertise
 
 .project-listProject {
@@ -1592,7 +1588,8 @@ main {
     // top: 0px;
     width: 100%;
     height: 100%;
-    background-color: white;
+    background-color: rgba(100, 100, 100, 0.7);
+    // background-color: #9BA4B4;
     z-index: 10;
     // box-sizing: border-box;
     box-sizing: border-box;
@@ -1600,68 +1597,70 @@ main {
     overflow-x: hidden;
     overflow-y: scroll;
     // overflow: hidden;
-    .card_project{
+    .card_project {
         // display: flex;
         position: relative;
         width: 100%;
         height: 150px;
         // background-color: #394867;
-        background-color: $color_black;
+        box-shadow: white 0px 0px 5px;
+        border: 1px solid white;
+        // background-color: rgb(255, 255, 255);
         border-radius: 10px;
         overflow: hidden;
-        margin: 10px 0px;
-        &_contant{
+        margin: 15px 0px;
+        &_contant {
             position: absolute;
-            // background-color: #e2ff3d;
+            background-color: white;
             right: 0px;
             width: 85%;
             height: 100%;
         }
-        &_title{
+        &_title {
             width: 100%;
             // height: 30px;
             text-align: right;
-            // background-color: $color_light;
-            background-color: #9BA4B4;
+            background-color: $color_light;
+            // background-color: #9BA4B4;
             // background-color: darken($color: $color_light, $amount: 20);
-            h3{
+            h3 {
                 // font-family: RoyaBold;
+                // color: white;
                 font-family: Yekan;
                 // font-family: Nazanin;
                 padding: 3px 10px;
             }
-            
         }
-        &_description{
+        &_description {
             width: 100%;
             height: 80px;
             text-align: right;
             box-sizing: border-box;
             direction: rtl;
             padding: 0px 10px;
-            overflow:hidden;
-            // background-color: #b3714c;
+            overflow: hidden;
+            background-color: white;
             // overflow: hidden;
             // white-space: nowrap;
             // text-overflow:ellipsis;
-            p{
+            p {
                 width: 100%;
                 height: 100%;
                 font-family: Yekan;
                 font-size: 17px;
-                font-weight:600;
+                font-weight: 600;
                 overflow: hidden;
-                white-space:wrap;
-                text-overflow:ellipsis;
+                white-space: wrap;
+                text-overflow: ellipsis;
+                // color: white;
                 // background-color: #e0baa3;
                 // font-variant: 10px;
                 // background-color: #000;
-                color: white;
-                
+                // color: white;
             }
         }
-        
-        &_expertise_badge{
+
+        &_expertise_badge {
             position: absolute;
             bottom: 0px;
             width: 100%;
@@ -1669,19 +1668,22 @@ main {
             text-align: right;
             box-sizing: border-box;
             padding: 5px 10px;
-            // background-color: $color_light;
-            background-color: #9BA4B4;
-            
-            div{
+            background-color: $color_light;
+            // background-color: #9BA4B4;
+            // background-color: lighten($color: $color_blue, $amount: 45);
+
+            div {
                 display: inline-block;
-                margin-right: 5px;
+                margin: 0px 5px;
                 padding: 3px 10px;
-                background-color: #7dc5bc;
+                background-color: #3aff54;
                 border-radius: 10px;
             }
         }
-        
-        &_information{
+
+        &_information {
+            // background-color: lighten($color: $color_blue, $amount: 50);
+            // background-color: white;
             display: flex;
             justify-content: flex-end;
             align-items: center;
@@ -1691,22 +1693,22 @@ main {
             text-align: right;
             box-sizing: border-box;
             // background-color: darken($color: $color_light, $amount: 5);
-            border-right: 1px solid black;
-            background-color: #9BA4B4;
+            border-right: 1px solid rgb(187, 187, 187);
+            // background-color: #9BA4B4;
+            background-color: $color_light;
             // padding: 0px 5px;
-            p{
+            p {
+                font-family: Nazanin;
                 direction: rtl;
+                font-weight: 700;
                 padding: 3px 5px;
+                // color: white;
                 // background-color: #d8cbcb;
             }
         }
     }
 }
 // end card expertise
-
-
-
-
 
 // filter item css
 .grid {
@@ -1723,7 +1725,7 @@ main {
     // flex-wrap: wrap;
     // background-color: #005600;
     opacity: 0.7;
-    .title_filter_expertise{
+    .title_filter_expertise {
         background-color: $color_light;
         padding: 10px 0px;
         margin-bottom: 10px;
