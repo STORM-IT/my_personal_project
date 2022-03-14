@@ -1222,7 +1222,7 @@ main {
   align-items: center;
   right: 0px;
   height: 100%;
-  width: 230px;
+  width: 200px;
   background-color: #d5d5d5;
   border-radius: 0px 17px 17px 0px;
   transition: all 1s ease;
@@ -1286,12 +1286,12 @@ main {
     right: 0px;
   }
   100% {
-    right: -230px;
+    right: -200px;
   }
 }
 @keyframes hide_project_filter {
   0% {
-    right: -230px;
+    right: -200px;
   }
   100% {
     right: 0px;
@@ -1533,13 +1533,44 @@ main {
   justify-content: baseline;
   z-index: 1000;
   box-shadow: #6a6d72 -10px 0px 10px;
-  background-color: #0092ca !important;
 }
 .card__body-header-title {
   color: white;
   font-weight: 500;
   font-size: 20px;
   margin: 8px 0px;
+}
+
+.card:nth-child(2) .card__body-header {
+  background-color: #FF5733 !important;
+}
+
+.card:nth-child(3) .card__body-header {
+  background-color: #264de4 !important;
+}
+
+.card:nth-child(4) .card__body-header {
+  background-color: #e2c400 !important;
+}
+
+.card:nth-child(5) .card__body-header {
+  background-color: #131B28 !important;
+}
+
+.card:nth-child(6) .card__body-header {
+  background-color: #CD6799 !important;
+}
+
+.card:nth-child(7) .card__body-header {
+  background-color: #61DBFB !important;
+}
+
+.card:nth-child(8) .card__body-header {
+  background-color: #764abc !important;
+}
+
+.card:nth-child(9) .card__body-header {
+  background-color: #682876 !important;
 }
 
 .card__body-cover-checkbox {

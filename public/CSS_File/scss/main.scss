@@ -1459,10 +1459,10 @@ main {
                 position: absolute;
                 // display: flex;
                 align-items: center;
+                // right: -200px;
                 right: 0px;
-                // right: 0px;
                 height: 100%;
-                width: 230px;
+                width: 200px;
                 background-color: darken($color: $color_light, $amount: 10);
                 // z-index: 1;
                 border-radius: 0px 17px 17px 0px;
@@ -1553,12 +1553,12 @@ main {
         right: 0px;
     }
     100% {
-        right: -230px;
+        right: -200px;
     }
 }
 @keyframes hide_project_filter {
     0% {
-        right: -230px;
+        right: -200px;
     }
     100% {
         right: 0px;
@@ -1582,7 +1582,6 @@ main {
 }
 
 // card expertise
-
 .project-listProject {
     position: relative;
     // top: 0px;
@@ -1914,6 +1913,7 @@ main {
         }
 
         &-header {
+        // .card .card__body-header:nth-child(1) {
             // height: var(--header-height);
             justify-content: baseline;
             // text-align: center;
@@ -1921,7 +1921,9 @@ main {
             // padding: 0 10px 10px 10px;
             z-index: 1000;
             box-shadow: #6a6d72 -10px 0px 10px;
-            background-color: $color_blue !important;
+            // background-color: $color_blue !important;
+            // background-color: #FF5733 !important; html
+            // background-color: #264de4 !important;
             &-title {
                 // color: var(--text-headline);
                 color: white;
@@ -1932,6 +1934,125 @@ main {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$colors_logo_expertise:#FF5733,#264de4,#e2c400,#131B28,#CD6799,#61DBFB,#764abc,#682876;
+
+
+// list.append($list,$value)
+$d:2;
+@for $i from 2 through  9 {
+    // list.append($list, $val, $separator: auto)
+    
+    .card:nth-child(#{$i}) .card__body-header{
+        // background-color: nth($colors_logo_expertise,#{$i})!important;
+        $color:nth($colors_logo_expertise,($i+-1));
+        background-color: $color!important;
+        // background-color: red!important;
+    }
+}
+// .card:nth-child(3) .card__body-header{
+//     background-color: #264de4!important;
+// }
+// .card:nth-child(4) .card__body-header{
+//     background-color: #e2c400!important;
+// }
+// .card:nth-child(5) .card__body-header{
+//     background-color: #131B28!important;
+// }
+// .card:nth-child(6) .card__body-header{
+//     background-color: #CD6799!important;
+// }
+// .card:nth-child(7) .card__body-header{
+//     background-color: #61DBFB!important;
+// }
+// .card:nth-child(8) .card__body-header{
+//     background-color: #764abc!important;
+// }
+// .card:nth-child(9) .card__body-header{
+//     // background-color: #823085!important;
+//     background-color: #682876!important;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .card__body-cover-checkbox {
     background: var(--check-bg, var(--background-checkbox));
     border: 2px solid var(--check-border, #fff);
