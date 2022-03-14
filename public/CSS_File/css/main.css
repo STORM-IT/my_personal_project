@@ -863,16 +863,17 @@ main {
     opacity: 1;
   }
 }
-.card {
+.Card {
   width: 100%;
   z-index: 100;
   display: flex;
   justify-content: center;
   margin-bottom: 300px;
   overflow: hidden;
+  box-sizing: content-box;
   padding: 100px 0px;
 }
-.card-text {
+.Card-text {
   display: flex;
   justify-content: center;
   position: relative;
@@ -882,14 +883,14 @@ main {
   background-color: #eeeeee;
   margin-bottom: 50px;
 }
-.card-text h3 {
+.Card-text h3 {
   position: absolute;
   top: 40px;
   color: #393e46;
   font-size: 40px;
   font-family: Yekan;
 }
-.card-container {
+.Card-container {
   width: 900px;
   border-radius: 50px;
   overflow: hidden;
@@ -897,10 +898,10 @@ main {
   margin-bottom: 70px;
   box-shadow: #6a6d72 0px 0px 20px;
 }
-.card-expertise {
+.Card-expertise {
   width: 100%;
 }
-.card-body {
+.Card-body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -908,7 +909,7 @@ main {
   width: 100%;
   position: relative;
 }
-.card-expertise-html {
+.Card-expertise-html {
   display: flex;
   position: absolute;
   justify-content: space-around;
@@ -921,10 +922,10 @@ main {
   overflow: hidden;
   left: -300px;
 }
-.card-expertise-html span {
+.Card-expertise-html span {
   align-self: center;
 }
-.card-expertise-css {
+.Card-expertise-css {
   display: flex;
   position: absolute;
   justify-content: space-around;
@@ -937,10 +938,10 @@ main {
   overflow: hidden;
   right: -300px;
 }
-.card-expertise-css span {
+.Card-expertise-css span {
   align-self: center;
 }
-.card-expertise-javascript {
+.Card-expertise-javascript {
   display: flex;
   position: absolute;
   justify-content: space-around;
@@ -953,10 +954,10 @@ main {
   overflow: hidden;
   left: -300px;
 }
-.card-expertise-javascript span {
+.Card-expertise-javascript span {
   align-self: center;
 }
-.card-expertise-bootstrap {
+.Card-expertise-bootstrap {
   display: flex;
   position: absolute;
   justify-content: space-around;
@@ -969,10 +970,10 @@ main {
   overflow: hidden;
   right: -300px;
 }
-.card-expertise-bootstrap span {
+.Card-expertise-bootstrap span {
   align-self: center;
 }
-.card-expertise-jquery {
+.Card-expertise-jquery {
   display: flex;
   position: absolute;
   justify-content: space-around;
@@ -985,10 +986,10 @@ main {
   overflow: hidden;
   left: -300px;
 }
-.card-expertise-jquery span {
+.Card-expertise-jquery span {
   align-self: center;
 }
-.card-expertise-sass {
+.Card-expertise-sass {
   display: flex;
   position: absolute;
   justify-content: space-around;
@@ -1001,10 +1002,10 @@ main {
   overflow: hidden;
   right: -300px;
 }
-.card-expertise-sass span {
+.Card-expertise-sass span {
   align-self: center;
 }
-.card-expertise-react {
+.Card-expertise-react {
   display: flex;
   position: absolute;
   justify-content: space-around;
@@ -1017,10 +1018,10 @@ main {
   overflow: hidden;
   left: -300px;
 }
-.card-expertise-react span {
+.Card-expertise-react span {
   align-self: center;
 }
-.card-expertise-redux {
+.Card-expertise-redux {
   display: flex;
   position: absolute;
   justify-content: space-around;
@@ -1033,10 +1034,10 @@ main {
   overflow: hidden;
   right: -300px;
 }
-.card-expertise-redux span {
+.Card-expertise-redux span {
   align-self: center;
 }
-.card-expertise-git {
+.Card-expertise-git {
   display: flex;
   position: absolute;
   justify-content: space-around;
@@ -1049,10 +1050,10 @@ main {
   overflow: hidden;
   left: -300px;
 }
-.card-expertise-git span {
+.Card-expertise-git span {
   align-self: center;
 }
-.card-expertise-sharp {
+.Card-expertise-sharp {
   display: flex;
   position: absolute;
   justify-content: space-around;
@@ -1065,7 +1066,7 @@ main {
   overflow: hidden;
   right: -300px;
 }
-.card-expertise-sharp span {
+.Card-expertise-sharp span {
   align-self: center;
 }
 
@@ -1220,7 +1221,7 @@ main {
 .project-container .project-bodey .project-filter {
   position: absolute;
   align-items: center;
-  right: 0px;
+  right: -200px;
   height: 100%;
   width: 200px;
   background-color: #d5d5d5;
@@ -1438,6 +1439,7 @@ main {
   box-sizing: border-box;
   padding: 3px 5px;
   margin-bottom: -2px;
+  width: 100%;
 }
 .card:nth-child(odd) .card__body-cover-image {
   --x-y1: 100% 90%;
@@ -1533,12 +1535,15 @@ main {
   justify-content: baseline;
   z-index: 1000;
   box-shadow: #6a6d72 -10px 0px 10px;
+  margin: 7px 0px;
+  padding: 4px 0px;
+  box-sizing: border-box;
 }
 .card__body-header-title {
+  width: 100%;
   color: white;
   font-weight: 500;
   font-size: 20px;
-  margin: 8px 0px;
 }
 
 .card:nth-child(2) .card__body-header {
@@ -1577,12 +1582,13 @@ main {
   background: var(--check-bg, var(--background-checkbox));
   border: 2px solid var(--check-border, #fff);
   position: absolute;
-  right: 5px;
-  top: 5px;
+  right: 3px;
+  top: 1px;
   z-index: 1;
   width: 28px;
   height: 28px;
   border-radius: 50%;
+  box-sizing: border-box;
   opacity: var(--check-opacity, 0);
   transition: transform var(--transition), opacity calc(var(--transition) * 1.2) linear, -webkit-transform var(--transition) ease;
   transform: scale(var(--check-scale, 0));

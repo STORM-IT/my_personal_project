@@ -1108,7 +1108,7 @@ main {
     @extend %information_layout_css;
 }
 
-.card {
+.Card {
     width: 100%;
     // border-radius: 0px 0px 30px 30px;
     // height: 1400px;
@@ -1119,7 +1119,7 @@ main {
     justify-content: center;
     margin-bottom: 300px;
     overflow: hidden;
-    // box-sizing:content-box;
+    box-sizing:content-box;
     // padding-bottom: 100px;
     // margin-top: 50px;
     padding: 100px 0px;
@@ -1152,6 +1152,7 @@ main {
         // background-color: lighten($color: $color_black, $amount: 5);
         margin-bottom: 70px;
         box-shadow: #6a6d72 0px 0px 20px;
+        // margin: auto;
     }
     &-expertise {
         width: 100%;
@@ -1459,8 +1460,8 @@ main {
                 position: absolute;
                 // display: flex;
                 align-items: center;
-                // right: -200px;
-                right: 0px;
+                right: -200px;
+                // right: 0px;
                 height: 100%;
                 width: 200px;
                 background-color: darken($color: $color_light, $amount: 10);
@@ -1757,6 +1758,7 @@ main {
     box-sizing: border-box;
     padding: 3px 5px;
     margin-bottom: -2px;
+    width: 100%;
     // padding-top: 5px;
     // height: fit-content;
     &:nth-child(odd) {
@@ -1894,7 +1896,7 @@ main {
             //     -webkit-transform var(--transition) ease;
             //   transform: scale(var(--check-scale, 0));
             //   &--svg {
-            //     width: 13px;
+            //     width: 23px;
             //     height: 11px;
             //     display: inline-block;
             //     vertical-align: bottom;
@@ -1924,12 +1926,18 @@ main {
             // background-color: $color_blue !important;
             // background-color: #FF5733 !important; html
             // background-color: #264de4 !important;
+            // width: 100%;
+            margin: 7px 0px;
+            padding: 4px 0px;
+            box-sizing:border-box;
             &-title {
+                width: 100%;
+                // padding: 0px 100%;
                 // color: var(--text-headline);
                 color: white;
                 font-weight: 500;
                 font-size: 20px;
-                margin: 8px 0px;
+                // margin: 10px 0px;
             }
         }
     }
@@ -2057,12 +2065,13 @@ $d:2;
     background: var(--check-bg, var(--background-checkbox));
     border: 2px solid var(--check-border, #fff);
     position: absolute;
-    right: 5px;
-    top: 5px;
+    right: 3px;
+    top: 1px;
     z-index: 1;
     width: 28px;
     height: 28px;
     border-radius: 50%;
+    box-sizing: border-box;
     opacity: var(--check-opacity, 0);
     transition: transform var(--transition), opacity calc(var(--transition) * 1.2) linear,
         -webkit-transform var(--transition) ease;
