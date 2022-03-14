@@ -1,5 +1,5 @@
 export const scroll_card_expertise=(Scroll)=>{
-    const card = document.querySelectorAll(".card-body > div");
+    const card = document.querySelectorAll(".Card-body > div");
     if (Scroll >= 1800) {
         for (let i = 0; i < card.length; i++) {
             if (i % 2 == 1) {

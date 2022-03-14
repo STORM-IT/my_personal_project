@@ -2,6 +2,7 @@ import React from 'react'
 import Expertise from './Expertise'
 import Information from './Information'
 import Project from './project/Project'
+import Send_Email from './sendEmail/Send_Email'
 import SocialNetwork from './SocialNetwork'
 
 export default function Main() {
@@ -44,6 +45,7 @@ export default function Main() {
       <Information />
       <Expertise />
       <Project />
+      <Send_Email/>
       <SocialNetwork />
       {/* <div id='push_right'> </div> */}
 

@@ -10,7 +10,7 @@ export const list_sort = () => {
             time= time_show_list_sort = setTimeout(() => {
                 btn_sort.style.color = '#fff';
                 list_sort.classList.remove("visible")
-            }, 300);
+            }, 290);
         }else{
             btn_sort.classList.add("show_btn_sort_project")
         btn_sort.classList.replace("hide_btn_sort_project", "show_btn_sort_project")
@@ -18,7 +18,7 @@ export const list_sort = () => {
             time= setTimeout(() => {
                 btn_sort.style.color = '#000';
                 list_sort.classList.add("visible")
-            }, 300);
+            }, 400);
         }
     };
 
@@ -61,5 +61,4 @@ export const show_filter_section=()=>{
         logo_move.classList.add("left_project_filter_icon")
         logo_move.classList.replace("right_project_filter_icon","left_project_filter_icon")
     }
-
 }
