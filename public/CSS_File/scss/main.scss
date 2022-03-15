@@ -274,7 +274,7 @@ main {
     margin: auto;
     text-align: center;
     // animation: showFooter 700ms linear alternate forwards;
-    margin-bottom: -900px;
+    margin-bottom: -100px;
     text-align: center;
     // padding: 0px 13vw;
     // overflow: hidden;
@@ -2093,25 +2093,45 @@ h4 {
 
 /* ///// inputs /////*/
 .container{
-    box-sizing: content-box;
+    // box-sizing: border-box;
     width: 100vw;
-    height: 1000px;
+    height: 700px;
+    padding: 200px 0px;
     background-color: #006baf;
 }
 input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
-    font-size: 0.75em;
+    // font-size: 0.75em;
+    font-size: 0.900em;
     color: #999;
-    top: -5px;
+    top: -15px;
+    right: -10px;
     -webkit-transition: all 0.225s ease;
     transition: all 0.225s ease;
 }
 
 .styled-input {
-    float: left;
+    float: right;
+    // width: 293px;
     width: 293px;
     margin: 1rem 0;
     position: relative;
     border-radius: 4px;
+    // background-color: #000;
+
+    input{
+        // box-sizing: content-box;
+        width: 100%;
+        height: 70px;
+        // padding: 40px 40px;
+        padding-right: 40px;
+        direction: rtl;
+        font-size: 17px;
+        // border-bottom: 1px solid rgba(128, 128, 128, 0.342);
+        background-color: $color_light;
+        &:focus{
+            background-color: darken($color:$color_light, $amount: 3);
+        }
+    }
 }
 
 @media only screen and (max-width: 768px){
@@ -2124,11 +2144,12 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
     color: #999;
     padding: 1.3rem 30px 1rem 30px;
     position: absolute;
-    top: 10px;
-    left: 0;
+    top: -5px;
+    right: 0;
     -webkit-transition: all 0.25s ease;
     transition: all 0.25s ease;
     pointer-events: none;
+    font-size: 20px;
 }
 
 .styled-input.wide { 
@@ -2138,6 +2159,7 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
 
 input,
 textarea {
+    box-sizing: border-box;
     padding: 30px;
     border: 0;
     width: 100%;
@@ -2145,6 +2167,8 @@ textarea {
     background-color: #2d2d2d;
     color: white;
     border-radius: 4px;
+    resize:vertical;
+    max-height: 500px;
 }
 
 input:focus,
@@ -2160,6 +2184,13 @@ textarea:focus ~ span {
 textarea {
     width: 100%;
     min-height: 15em;
+    direction: rtl;
+    color: #000;
+    box-shadow: none;
+    background-color: $color_light;
+    &:focus{
+        background-color: darken($color:$color_light, $amount: 3);
+    }
 }
 
 .input-container {
@@ -2167,7 +2198,7 @@ textarea {
     height: 100%;
     max-width: 100%;
     margin: 20px auto 25px auto;
-    background-color: red!important;
+    // background-color: red!important;
 }
 
 .submit-btn {
@@ -2316,6 +2347,7 @@ input[type=checkbox]:checked + label {
     top: 300px;
     z-index: 1;
     text-align: center;
+    
     // margin-bottom: 400px;
     // background-color: $color_black;
     border-radius: 70px;
@@ -2422,7 +2454,9 @@ input[type=checkbox]:checked + label {
     // position: relative;
     position: relative;
     width: 100%;
-    height: 1230px;
+    // height: 1230px;
+    height: 430px;
+    // box-sizing: border-box;
     // margin-top: 300px;
     // background-color: $color_gray;
     background-color: #002331;
@@ -2432,8 +2466,8 @@ input[type=checkbox]:checked + label {
         display: flex;
         justify-content: space-around;
         align-items: flex-end;
-        // bottom: 50px;
-        height: 1230px;
+        bottom: 50px;
+        height: 100%;
         &-left {
             position: relative;
             width: 500px;

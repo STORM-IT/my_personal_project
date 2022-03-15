@@ -4,7 +4,7 @@ export default function Send_Email() {
     return (
         <div class="container">
             <div class="row">
-                <h1>contact us</h1>
+                <h1>ارتباط با من</h1>
             </div>
             <div class="row">
                 <h4 >We'd love to hear from you!</h4>
@@ -14,23 +14,23 @@ export default function Send_Email() {
                 <div class="col-xs-12">
                     <div class="styled-input wide">
                         <input name="name" type="text" required />
-                        <label>Name</label>
+                        <label>نام</label>
                     </div>
                 </div>
-                <div class="col-xs-12">
+                <div class="">
                     <div class="styled-input wide">
                         <input name="email" type="text" required />
-                        <label>Email</label>
+                        <label>ایمیل</label>
                     </div>
                 </div>
 
-                <div class="col-xs-12">
+                <div class="">
                     <div class="styled-input wide">
                         <textarea required></textarea>
-                        <label>Message</label>
+                        <label>پیام</label>
                     </div>
                 </div>
-                <div class="col-xs-12">
+                <div class="">
                     <div class="btn-lrg submit-btn">Send Message</div>
                 </div>
             </div>

@@ -189,7 +189,7 @@ main {
   z-index: 300;
   margin: auto;
   text-align: center;
-  margin-bottom: -900px;
+  margin-bottom: -100px;
   text-align: center;
 }
 
@@ -1637,26 +1637,38 @@ h4 {
 
 /* ///// inputs /////*/
 .container {
-  box-sizing: content-box;
   width: 100vw;
-  height: 1000px;
+  height: 700px;
+  padding: 200px 0px;
   background-color: #006baf;
 }
 
 input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
-  font-size: 0.75em;
+  font-size: 0.9em;
   color: #999;
-  top: -5px;
+  top: -15px;
+  right: -10px;
   -webkit-transition: all 0.225s ease;
   transition: all 0.225s ease;
 }
 
 .styled-input {
-  float: left;
+  float: right;
   width: 293px;
   margin: 1rem 0;
   position: relative;
   border-radius: 4px;
+}
+.styled-input input {
+  width: 100%;
+  height: 70px;
+  padding-right: 40px;
+  direction: rtl;
+  font-size: 17px;
+  background-color: #eeeeee;
+}
+.styled-input input:focus {
+  background-color: #e6e6e6;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1668,11 +1680,12 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
   color: #999;
   padding: 1.3rem 30px 1rem 30px;
   position: absolute;
-  top: 10px;
-  left: 0;
+  top: -5px;
+  right: 0;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   pointer-events: none;
+  font-size: 20px;
 }
 
 .styled-input.wide {
@@ -1682,6 +1695,7 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
 
 input,
 textarea {
+  box-sizing: border-box;
   padding: 30px;
   border: 0;
   width: 100%;
@@ -1689,6 +1703,8 @@ textarea {
   background-color: #2d2d2d;
   color: white;
   border-radius: 4px;
+  resize: vertical;
+  max-height: 500px;
 }
 
 input:focus,
@@ -1706,6 +1722,13 @@ textarea:focus ~ span {
 textarea {
   width: 100%;
   min-height: 15em;
+  direction: rtl;
+  color: #000;
+  box-shadow: none;
+  background-color: #eeeeee;
+}
+textarea:focus {
+  background-color: #e6e6e6;
 }
 
 .input-container {
@@ -1713,7 +1736,6 @@ textarea {
   height: 100%;
   max-width: 100%;
   margin: 20px auto 25px auto;
-  background-color: red !important;
 }
 
 .submit-btn {
@@ -1891,7 +1913,7 @@ input[type=checkbox]:checked + label {
 .footer {
   position: relative;
   width: 100%;
-  height: 1230px;
+  height: 430px;
   background-color: #002331;
 }
 .footer-head {
@@ -1899,7 +1921,8 @@ input[type=checkbox]:checked + label {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-  height: 1230px;
+  bottom: 50px;
+  height: 100%;
 }
 .footer-head-left {
   position: relative;
