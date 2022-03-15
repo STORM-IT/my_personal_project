@@ -10,6 +10,8 @@ export default function Main() {
     <main>
       {/* <div id='push_left'> </div> */}
       <div id="leaves">
+        <div>
+
         <i></i>
         <i></i>
         <i></i>
@@ -35,6 +37,7 @@ export default function Main() {
         <i></i>
         <i></i>
         <i></i>
+        </div>
      
   
 
