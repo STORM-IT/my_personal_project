@@ -662,8 +662,9 @@ main {
 /* leaf animations */
 #leaves {
   position: absolute;
-  top: -250px;
-  width: 135vw;
+  right: -720px;
+  top: -190px;
+  width: 130vw;
   height: 100px;
   text-align: right;
 }
@@ -678,15 +679,15 @@ main {
   box-shadow: inset 0px 0px 1px #222;
   border: 1px solid #333;
   z-index: -1;
-  -webkit-animation: falling 10s 0s infinite;
+  -webkit-animation: falling 40s 0s infinite;
 }
 
 #leaves i:nth-of-type(2n) {
-  -webkit-animation: falling2 10s 0s infinite;
+  -webkit-animation: falling2 30s 0s infinite;
 }
 
 #leaves i:nth-of-type(3n) {
-  -webkit-animation: falling3 15s 0s infinite;
+  -webkit-animation: falling3 35s 0s infinite;
 }
 
 #leaves i:before {
