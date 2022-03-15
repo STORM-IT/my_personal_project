@@ -123,7 +123,20 @@ export default function Poster() {
                     <path fill="#393e46" fill-opacity="1" d="M0,96L80,90.7C160,85,320,75,480,90.7C640,107,800,149,960,149.3C1120,149,1280,107,1360,85.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
                 </svg> */}
 
-                <img className='header-short-footer' src='./IMG/img_design/wave_head_bottom.png' />
+                {/* <img className='header-short-footer' src='./IMG/img_design/wave_head_bottom.png' /> */}
+                <div>
+                    <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                        <defs>
+                            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                        </defs>
+                        <g class="parallax">
+                            <use href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                            <use href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                            <use href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                            <use href="#gentle-wave" x="48" y="7" fill="#fff" />
+                        </g>
+                    </svg>
+                </div>
             </div>
         </Fragment>
     )

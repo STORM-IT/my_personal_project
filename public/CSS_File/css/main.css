@@ -184,7 +184,7 @@ body {
 
 main {
   position: relative;
-  background-color: #fbf8f1;
+  background-color: white;
   border-radius: 0 0 70px 70px;
   z-index: 300;
   margin: auto;
@@ -555,6 +555,7 @@ main {
   overflow: hidden;
   justify-content: center;
   align-items: center;
+  /*Shrinking for mobile*/
 }
 .header-short #effect_text_head_container {
   position: absolute;
@@ -602,6 +603,57 @@ main {
   object-fit: fill;
   bottom: 0vh;
   z-index: 500;
+}
+.header-short #gentle-wave {
+  background-color: red !important;
+  color: red !important;
+}
+.header-short .waves {
+  position: absolute;
+  width: 100%;
+  height: 25vh;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 1150px;
+  bottom: 0px;
+  left: 0px;
+}
+.header-short .parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.header-short .parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.header-short .parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.header-short .parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.header-short .parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+@media (max-width: 768px) {
+  .header-short .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  .header-short .content {
+    height: 30vh;
+  }
 }
 
 /* leaf animations */
