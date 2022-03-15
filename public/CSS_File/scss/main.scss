@@ -78,7 +78,9 @@ $footerRightInfoSite: "version", "create", "update", "brand";
     display: flex;
     position: relative;
     color: $color_black;
-    background-color: #e7e6e1dc;
+    // background-color: #e7e6e1dc;
+    // background-color: white;
+    background-color: $color_light;
     width: 700px;
     height: 300px;
     overflow: hidden;
@@ -204,7 +206,7 @@ $footerRightInfoSite: "version", "create", "update", "brand";
     }
 }
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 15px;
 }
 
 /* Track */
@@ -215,13 +217,14 @@ $footerRightInfoSite: "version", "create", "update", "brand";
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: $color_blue;
+    // background: $color_blue;
+    background: black;
     border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: darken($color: $color_blue, $amount: 10);
+    background: lighten($color: black, $amount: 20);
 }
 .display-none {
     // object-fit:cover !important;
@@ -241,11 +244,11 @@ $footerRightInfoSite: "version", "create", "update", "brand";
     // background-color: $color_gray;
     z-index: -51;
     // padding: 0px 200px;
-    overflow: hidden;overflow:visible;
+    overflow: hidden;
 }
 body {
     position: relative;
-    background-color: $color_gray;
+    // background-color: $color_gray;
     z-index: -10000;
     
 }

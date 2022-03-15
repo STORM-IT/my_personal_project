@@ -34,7 +34,7 @@
   display: flex;
   position: relative;
   color: #222831;
-  background-color: #e7e6e1dc;
+  background-color: #eeeeee;
   width: 700px;
   height: 300px;
   overflow: hidden;
@@ -124,7 +124,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 15px;
 }
 
 /* Track */
@@ -135,13 +135,13 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #0092ca;
+  background: black;
   border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #006d97;
+  background: #333333;
 }
 
 .display-none {
@@ -158,12 +158,10 @@
   position: relative;
   z-index: -51;
   overflow: hidden;
-  overflow: visible;
 }
 
 body {
   position: relative;
-  background-color: #393e46;
   z-index: -10000;
 }
 
