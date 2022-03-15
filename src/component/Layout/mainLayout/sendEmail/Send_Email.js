@@ -3,11 +3,11 @@ import React from 'react'
 export default function Send_Email() {
     return (
         <div class="container">
-            <div class="row">
-                <h1>ارتباط با من</h1>
+            <div>
+                <h1 className='container_head'>ارتباط با من</h1>
             </div>
-            <div class="row">
-                <h4 >We'd love to hear from you!</h4>
+            <div>
+                {/* <h4 className='container_head_text'></h4> */}
                 {/* text alighn center */}
             </div>
             <div class="row input-container">
