@@ -11,7 +11,7 @@ window.addEventListener('scroll', () => { scroll_utils(window.pageYOffset) });
 var LastScroll=0;
 export const scroll_utils = (Scroll) => {
     
-    console.log(Scroll)
+    // console.log(Scroll)
     set_effect_glowIn(Scroll)
     scroll_nav(Scroll); // Scroll >= 600
     scroll_text_head(Scroll,LastScroll); //

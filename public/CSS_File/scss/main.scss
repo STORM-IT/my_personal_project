@@ -2353,7 +2353,8 @@ input[type="checkbox"]:checked + label {
     // box-shadow: darken($color:$color_black, $amount: 10) 0px 10px 10px;
 
     // overflow: hidden;
-    background-color: darken($color: $color_gray, $amount: 10);
+    // background-color: darken($color: $color_gray, $amount: 10);
+    background-color: #393e46be;
     .line {
         position: absolute;
         background-color: $color_light;
@@ -2456,7 +2457,9 @@ input[type="checkbox"]:checked + label {
     // box-sizing: border-box;
     // margin-top: 300px;
     // background-color: $color_gray;
-    background-color: #002331;
+    // background-color: #002331;
+    background-color: $color_black;
+    // background-color: black;
 
     &-head {
         z-index: -10;

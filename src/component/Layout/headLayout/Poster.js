@@ -13,7 +13,7 @@ export default function Poster() {
     const url = useSelector(state => state.url)
     const dispatch = useDispatch();
 
-    console.log(url)
+    // console.log(url)
     const vidRef = useRef();
     useEffect(() => {
         // dispatch(set_url_video())
@@ -125,11 +125,11 @@ export default function Poster() {
 
                 {/* <img className='header-short-footer' src='./IMG/img_design/wave_head_bottom.png' /> */}
                 <div>
-                    <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <svg className="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
                         <defs>
                             <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
                         </defs>
-                        <g class="parallax">
+                        <g className="parallax">
                             <use href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
                             <use href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
                             <use href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />

@@ -1,13 +1,16 @@
 import React, { Fragment, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { list_sort, show_filter_section } from './Script'
-
+import project_json from "../../../JsonFiles/Project_details.json"
 export default function Project() {
 
     useEffect(() => {
         list_sort()
 
     }, [])
+
+
+    console.log(project_json.snake)
 
     return (
         <Fragment>
@@ -20,6 +23,7 @@ export default function Project() {
                     <div className='text_img_container'>
                         <h3>پروژه ها</h3>
                         <hr />
+
                         <p className='glowIn_text_project'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در سزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
 
                     </div>
@@ -215,7 +219,7 @@ export default function Project() {
                                 </div>
                             </div>
                             <div className='project-listProject'>
-                                <div className='card_project'>
+                            <div className='card_project'>
                                     <div className='card_project_contant'>
                                         <div className='card_project_title'><h3>مار بازی</h3></div>
                                         <div className='card_project_description'><p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
@@ -233,67 +237,9 @@ export default function Project() {
                                     </div>
                                     <div className='card_project_information'>
                                         <p>تعداد خط کد : <span>490</span></p>
-                                        <p>تعداد خط کد : <span>490</span></p>
-                                        <p>تعداد خط کد : <span>490</span></p>
-                                        <p>تعداد خط کد : <span>490</span></p>
-                                        {/* <p>تعداد خط کد : <span>490</span></p> */}
-                                    </div>
-                                </div>
-                                <div className='card_project'>
-                                    <div className='card_project_contant'>
-                                        <div className='card_project_title'><h3>Title</h3></div>
-                                        <div className='card_project_description'><p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
-                                            و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با
-                                            هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان .</p></div>
-                                        <div className='card_project_expertise_badge'>
-                                            <div className='card_expertise_badge'>html</div>
-                                            <div className='card_expertise_badge'>javascript</div>
-                                        </div>
-                                    </div>
-                                    <div className='card_project_information'>
-                                        <p>تعداد خط کد : <span>490</span></p>
-                                        <p>تعداد خط کد : <span>490</span></p>
-                                        <p>تعداد خط کد : <span>490</span></p>
-                                        <p>تعداد خط کد : <span>490</span></p>
-                                        {/* <p>تعداد خط کد : <span>490</span></p> */}
-                                    </div>
-                                </div>
-                                <div className='card_project'>
-                                    <div className='card_project_contant'>
-                                        <div className='card_project_title'><h3>Title</h3></div>
-                                        <div className='card_project_description'><p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
-                                            و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با
-                                            هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان .</p></div>
-                                        <div className='card_project_expertise_badge'>
-                                            <div className='card_expertise_badge'>html</div>
-                                            <div className='card_expertise_badge'>javascript</div>
-                                        </div>
-                                    </div>
-                                    <div className='card_project_information'>
-                                        <p>تعداد خط کد : <span>490</span></p>
-                                        <p>تعداد خط کد : <span>490</span></p>
-                                        <p>تعداد خط کد : <span>490</span></p>
-                                        <p>تعداد خط کد : <span>490</span></p>
-                                        {/* <p>تعداد خط کد : <span>490</span></p> */}
-                                    </div>
-                                </div>
-                                <div className='card_project'>
-                                    <div className='card_project_contant'>
-                                        <div className='card_project_title'><h3>Title</h3></div>
-                                        <div className='card_project_description'><p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
-                                            و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با
-                                            هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان .</p></div>
-                                        <div className='card_project_expertise_badge'>
-                                            <div className='card_expertise_badge'>html</div>
-                                            <div className='card_expertise_badge'>javascript</div>
-                                        </div>
-                                    </div>
-                                    <div className='card_project_information'>
-                                        <p>تعداد خط کد : <span>490</span></p>
-                                        <p>تعداد خط کد : <span>490</span></p>
-                                        <p>تعداد خط کد : <span>490</span></p>
-                                        <p>تعداد خط کد : <span>490</span></p>
-                                        {/* <p>تعداد خط کد : <span>490</span></p> */}
+                                        <p>ساخت : <span>1399/3</span></p>
+                                        <p>آپدیت : <span>1400/12/25</span></p>
+                                        <p>سختی : <span>normal</span></p>
                                     </div>
                                 </div>
                             </div>

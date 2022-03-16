@@ -29,7 +29,6 @@ var option = document.getElementById('option');
 
 function move_snake(move) {
 
-
     clearInterval(Time_game);
 
     if (game_Start === true) {
@@ -58,15 +57,11 @@ function move_snake(move) {
                 break;
         }
     }
-
 }
-
 
 function move_snake_right() {
 
-
     check_Loser();
-
 
     let left = snake.offsetLeft;
     let top = snake.offsetTop;
@@ -79,7 +74,6 @@ function move_snake_right() {
         'top:' + snake.offsetTop + '</br>' +
         'left:' + snake.offsetLeft;
 
-
     for (let i = 0; i < Snake_all.length; i++) {
         let now_left;
         let now_top;
@@ -95,21 +89,18 @@ function move_snake_right() {
         left = parseInt(now_left);
         top = parseInt(now_top);
     }
-
-
-
 }
+
 function move_snake_top() {
 
     check_Loser();
-
 
     let left = snake.offsetLeft;
     let top = snake.offsetTop;
 
     top_snake -= 20;
     snake.style.top = top_snake + 'px';
-    // Score.innerHTML=snake.offsetTop;
+
     offset_top = snake.offsetTop;
     option.innerHTML =
         'top:' + snake.offsetTop + '</br>' +
@@ -130,47 +121,22 @@ function move_snake_top() {
         left = parseInt(now_left);
         top = parseInt(now_top);
     }
-
-
-
 }
-
-
-
-
 
 function btn_hidden() {
     btn_Stop.style.display = 'none';
     btn_restart.style.display = 'none';
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 function move_snake_left() {
 
     check_Loser();
 
-
     let left = snake.offsetLeft;
     let top = snake.offsetTop;
 
-
     left_snake -= 20;
     snake.style.left = left_snake + 'px';
-    //Score.innerHTML=snake.offsetLeft;
     offset_left = snake.offsetLeft;
     option.innerHTML =
         'top:' + snake.offsetTop + '</br>' +
@@ -192,14 +158,13 @@ function move_snake_left() {
         top = parseInt(now_top);
     }
 }
+
 function move_snake_bottom() {
 
     check_Loser();
 
-
     let left = snake.offsetLeft;
     let top = snake.offsetTop;
-
 
     top_snake += 20;
     snake.style.top = top_snake + 'px';
@@ -208,9 +173,6 @@ function move_snake_bottom() {
     option.innerHTML =
         'top:' + snake.offsetTop + '</br>' +
         'left:' + snake.offsetLeft;
-
-
-
 
     for (let i = 0; i < Snake_all.length; i++) {
         let now_left;
@@ -227,14 +189,9 @@ function move_snake_bottom() {
         left = parseInt(now_left);
         top = parseInt(now_top);
     }
-
-
 }
 
-
-
 function get_random_location() {
-
 
     clear_map();
     {
@@ -290,12 +247,8 @@ var TIME;
 var second = 0;
 var minute = 0;
 function timer_start_game(check) {
-
-
     if (check === true) {
-
         TIME = setInterval(function () {
-
             second++;
             if (second == 60) {
                 second = 0;
@@ -303,9 +256,7 @@ function timer_start_game(check) {
             }
             view_time.innerHTML = ' ' + minute + ":" + second;
         }, 1000);
-
     }
-
     else {
         clearInterval(TIME);
         view_time.innerHTML = ' 00:00';
@@ -318,7 +269,6 @@ function timer_start_game(check) {
 function restart_game() {
     timer_start_game(false);
 }
-
 
 function walk_snake() {
 
@@ -343,8 +293,6 @@ function walk_snake() {
     }
 }
 
-
-
 function get_gift() {
     gift = document.querySelector(".animated_gift");
     let check_top = false;
@@ -360,9 +308,6 @@ function get_gift() {
         }
     }
     if (check_top === true && check_left === true) {
-
-
-
         for (let i = 0; i < 10; i++) {
             let left = Snake_all[Snake_all.length - 1].offsetLeft;
             let top = Snake_all[Snake_all.length - 1].offsetTop;
@@ -377,19 +322,11 @@ function get_gift() {
         }
         Score.innerHTML = ' ' + ++score_number;
 
-
-
-
-
-
-
         Snake_all = document.querySelectorAll("#S_baby");
         gift.remove();
         delay_gift = setTimeout(set_gift, 3000);
         clearInterval(check_get_gift);
-
     }
-    //console.log(left_snake+':'+ top_snake);
 }
 
 
@@ -481,14 +418,11 @@ function clear_map() {
         if (score_number != 0) {
             list_best_rank.push(score_number);
         }
-
         var best = 0;
         for (let i = 0; i < list_best_rank.length; i++) {
             if (best <= list_best_rank[i]) {
                 best = list_best_rank[i];
             }
-
-
         }
         record_score.innerHTML = best;
     }
@@ -497,8 +431,6 @@ function clear_map() {
     btn_start.style.display = 'none';
     btn_Stop.style.display = 'none';
     btn_restart.style.display = 'none';
-
-
     gift = document.querySelector(".animated_gift");
     clearInterval(check_get_gift);
     clearTimeout(delay_gift);
