@@ -1,342 +1,65 @@
-var first_number;
-var final;
-var text_box=document.getElementById('input-show');
-var marks=document.getElementById('marks');
-var First_number=document.getElementById('First_number');
-var key;
-function operation(keyword) {
+import React, { Fragment, useEffect } from 'react'
+import { Operation, Show_calculator_result } from './script_calculator'
+// import {Operation,Show_final_calculator} from './script_calculator'
+
+export default function Calculator() {
+    useEffect(() => {
+        require("./script_calculator")
+    }, [])
     
-
-    switch (keyword) {
-        case 1:
-        if (final===undefined) {
-            final=1;
-            text_box.value=1;
-        } else {
-            final+='1';
-        text_box.value=final;
-        }
-            break;
-        //
-        //
-        case 2:
-            if (final===undefined) {
-                final=2;
-                text_box.value=2;
-            } else {
-                final+='2';
-    
-            text_box.value=final;
-            }
-            break;
-            //
-            //
-        case 3:
-            if (final===undefined) {
-                final=3;
-                text_box.value=3;
-            } else {
-                final+='3';
-            text_box.value=final;
-            }
-            break;
-        case 4:
-        if (final===undefined) {
-            final=4;
-            text_box.value=4;
-        } else {
-            final+='4';
-        text_box.value=final;
-        }
-            break;
-        //
-        //
-        case 5:
-            if (final===undefined) {
-                final=5;
-                text_box.value=5;
-            } else {
-                final+='5';
-    
-            text_box.value=final;
-            }
-            break;
-            //
-            //
-        case 6:
-            if (final===undefined) {
-                final=6;
-                text_box.value=6;
-            } else {
-                final+='6';
-            text_box.value=final;
-            }
-            break;
-        case 7:
-        if (final===undefined) {
-            final=7;
-            text_box.value=7;
-        } else {
-            final+='7';
-        text_box.value=final;
-        }
-            break;
-        //
-        //
-        case 8:
-            if (final===undefined) {
-                final=8;
-                text_box.value=8;
-            } else {
-                final+='8';
-    
-            text_box.value=final;
-            }
-            break;
-            //
-            //
-        case 9:
-            if (final===undefined) {
-                final=9;
-                text_box.value=9;
-            } else {
-                final+='9';
-            text_box.value=final;
-            }
-            break;
-        case 0:
-        if (final===undefined) {
-            final=0;
-            text_box.value=0;
-        } else {
-            final+='0';
-        text_box.value=final;
-        }
-            break;
-        //
-        // ////////////////////////////////////////////////////////////////// //
-        //
-        //
-        //
-        //
-        case '.':
-            
-            if (final!=undefined || final !='') {
-                if (final.includes('.')==false) {
-                    console.log(final.includes('.'));
-                final+='.';
-                text_box.value=final;
-                }
-                
-            } 
-            break;
-            //
-            //
-        case '*':   
-           if (text_box.value != '') {
-          
-               if (first_number=='' || first_number===undefined) {
-                first_number=final;
-                First_number.innerHTML=final;
-                final='';
-                text_box.value='';
-               }
-            marks.innerHTML='x';
-            key='*';
-           }
-                
-            break;
-            //
-            //
-        case '+':   
-           if (text_box.value != '') {
-               if (first_number=='' || first_number===undefined) {
-                first_number=final;
-                First_number.innerHTML=final;
-                final='';
-                text_box.value='';
-               }
-            marks.innerHTML='+';
-            key='+';
-           }
-                
-            break;
-            //
-            //
-        case '-':   
-           if (text_box.value != '') {
-          debugger
-               if (first_number=='' || first_number===undefined) {
-                first_number=final;
-                First_number.innerHTML=final;
-                final='';
-                text_box.value='';
-               }
-            marks.innerHTML='-';
-            key='-';
-           }
-                
-            break;
-            //
-            //
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        case '%':
-            
-        if (marks !='' && first_number !='' && text_box.value != '') {
-            
-            debugger
-
-            let numbers=(1000/100)*20;
-            let number=(parseFloat(first_number)/100)*parseFloat(text_box.value);
-            text_box.value= eval(parseFloat(first_number) + key + number );
-         first_number='';
-         final=text_box.value;
-         marks.innerHTML='';
-         First_number.innerHTML='';
-        }
-            break;
-            //
-            //
-        case '/':   
-           if (text_box.value != '') {
-          debugger
-               if (first_number=='' || first_number===undefined) {
-                first_number=final;
-                First_number.innerHTML=final;
-                final='';
-                text_box.value='';
-               }
-            marks.innerHTML='/';
-            key='/';
-           }
-                
-            break;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            //
-            //
-        case '-/+':   
-           if (text_box.value != '') {
-debugger
-            if (text_box.value.includes('-') == true) {
-                text_box.value= text_box.value.replace('-','');
-                final= final.replace('-','');
-            } else {
-                text_box.value='-'+text_box.value;
-                final='-'+final;
-            }
-          
-           }
-                
-            break;
-    
-            //
-            //
-        case 'C':   
-        text_box.value='';
-        First_number.innerHTML='';
-        first_number='';
-        marks.innerHTML='';
-        final='';
-        key='';
-         break;
-            //
-            //
-        case '<--':   
-        debugger
-        text_box.value= text_box.value.slice(0,text_box.value.length-1);
-        final= final.slice(0,final.length-1)
-        
-         break;
-            //
-            //
-        
-        default:
-            break;
-    }
-    console.log(key);
-}
-
-function show_final() {
-    if(first_number != '')
-    {
-        text_box.value= eval(parseFloat(first_number) + key + parseFloat(text_box.value) );
-        first_number='';
-        final=text_box.value;
-        marks.innerHTML='';
-        First_number.innerHTML='';
-    }
-    
+    return (
+        <Fragment>
+            <div id="calculator">
+
+
+                <div id="calculator-container">
+                    <p id="text_up_textbox"></p>
+                    <header>
+
+                        <input type="text" name="" id="input-show" readOnly />
+                        <span id="math_mark"></span>
+                    </header>
+                    <div id='container_key'>
+                        <div className="div-button">
+                            <input type="button" value="%" onClick={()=>Operation('%')} className="btn math-key" id="1" />
+                            <input type="button" value="/" onClick={()=>Operation('/')} className="btn math-key" id="1" />
+                            <input type="button" value="C" onClick={()=>Operation('C')} className="btn math-key" id="1" />
+                            <input type="button" value="<--" onClick={()=>Operation('<--')} className="btn  math-key" id="1" />
+                        </div>
+                        <div className="div-button">
+                            <input type="button" value="7" onClick={()=>Operation(7)} className="btn number-key" id="1" />
+                            <input type="button" value="8" onClick={()=>Operation(8)} className="btn number-key" id="1" />
+                            <input type="button" value="9" onClick={()=>Operation(9)} className="btn number-key" id="1" />
+                            <input type="button" value="x" onClick={()=>Operation('*')} className="btn  math-key" id="1" />
+                        </div>
+                        <div className="div-button">
+                            <input type="button" value="4" onClick={()=>Operation(4)} className="btn number-key" id="1" />
+                            <input type="button" value="5" onClick={()=>Operation(5)} className="btn number-key" id="1" />
+                            <input type="button" value="6" onClick={()=>Operation(6)} className="btn number-key" id="1" />
+                            <input type="button" value="-" onClick={()=>Operation('-')} className="btn  math-key" id="1" />
+                        </div>
+                        <div className="div-button">
+                            <input type="button" value="1" onClick={()=>Operation(1)} className="btn number-key" id="1" />
+                            <input type="button" value="2" onClick={()=>Operation(2)} className="btn number-key" id="1" />
+                            <input type="button" value="3" onClick={()=>Operation(3)} className="btn number-key" id="1" />
+                            <input type="button" value="+" onClick={()=>Operation('+')} className="btn  math-key" id="1" />
+                        </div>
+                        <div className="div-button">
+                            <input type="button" value="- / +" onClick={()=>Operation('-/+')} className="btn  math-key" id="1" />
+                            <input type="button" value="0" onClick={()=>Operation(0)} className="btn number-key" id="1" />
+                            <input type="button" value="." onClick={()=>Operation('.')} className="btn math-key" id="1" />
+                            <input type="button" value="=" onClick={()=>Show_calculator_result()} className="btn math-key" id="1" />
+                        </div>
+
+
+                    </div>
+                    
+                        {/* <button id='calculator-btn' onClick={()=>Show_final_calculator()}>click</button> */}
+                    
+                </div>
+
+
+            </div>
+        </Fragment>
+    )
 }
