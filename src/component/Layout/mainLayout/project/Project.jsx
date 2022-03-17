@@ -1,21 +1,16 @@
 import React, { Fragment, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { list_sort, show_filter_section } from './Script'
-import project_json from "../../../JsonFiles/Project_details.json"
-export default function Project() {
+// import project_json from "../../../JsonFiles/Project_details.json"
+export default function Project({ list_projects }) {
 
     useEffect(() => {
         list_sort()
 
     }, [])
 
-
-    console.log(project_json.snake)
-
     return (
         <Fragment>
-            {/* <div id='project' className='nav-space'>
-            </div> */}
             <div className='img_project_container'>
                 <div className='info_layout_css'>
 
@@ -212,40 +207,40 @@ export default function Project() {
                                             </header>
                                         </div>
                                     </label>
-                                    {/* <hr/> */}
-                                    {/* <button>
-                                    <span>Show Results</span><span>Filter</span>
-                                    </button> */}
+                                
                                 </div>
                             </div>
                             <div className='project-listProject'>
-                            <div className='card_project'>
-                                    <div className='card_project_contant'>
-                                        <div className='card_project_title'><h3>مار بازی</h3></div>
-                                        <div className='card_project_description'><p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
-                                            و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با
-                                            هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیاددت و سه درصد گذشته حال و آینده، شناخت فراوان .</p></div>
-                                        <div className='card_project_expertise_badge'>
-                                            <div className='card_expertise_badge'>html</div>
-                                            <div className='card_expertise_badge'>javascript</div>
-                                            <div className='card_expertise_badge'>css</div>
-                                            <div className='card_expertise_badge'>bootstrap</div>
-                                            <div className='card_expertise_badge'>jquery</div>
-                                            <div className='card_expertise_badge'>react</div>
-                                            <div className='card_expertise_badge'>sass</div>
+                                {list_projects.map(project => (
+
+                                    <Fragment>
+                                        <div className='card_project'>
+
+                                            <div className='card_project_contant'>
+
+
+                                                <div className='card_project_title'><h3>{project.title}</h3></div>
+                                                <div className='card_project_description'><p>{project.description}</p></div>
+                                                <div className='card_project_expertise_badge'>
+                                                    {project.expertions.map(expertion => (
+
+                                                        <div className='card_expertise_badge'>{expertion}</div>
+                                                    ))}
+                                                </div>
+
+                                            </div>
+                                            <div className='card_project_information'>
+                                                <p>تعداد خط کد : <span>{project.line_code}</span></p>
+                                                <p>ساخت : <span>{project.create}</span></p>
+                                                <p>آپدیت : <span>{project.last_update}</span></p>
+                                                <p>سختی : <span>{project.mood}</span></p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className='card_project_information'>
-                                        <p>تعداد خط کد : <span>490</span></p>
-                                        <p>ساخت : <span>1399/3</span></p>
-                                        <p>آپدیت : <span>1400/12/25</span></p>
-                                        <p>سختی : <span>normal</span></p>
-                                    </div>
-                                </div>
+                                    </Fragment>
+                                ))}
                             </div>
                         </div>
                     </div>
-                    {/* </div> */}
                 </section>
             </div>
 

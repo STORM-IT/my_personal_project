@@ -1,7 +1,7 @@
 {
-
-    
-        "snake": {
+    "PROJECT": [
+        {
+            "title": "مار بازی",
             "description": "بازی مار بازی از معروف ترین گیم هایی هست که هر برنامه نویسه تازه کاری برایه تسلط بیشتر روی javascript سراق آن میرود",
             "expertions": [
                 "html",
@@ -9,9 +9,24 @@
                 "javascript"
             ],
             "line_code": 547,
-            "create": "1400/4",
+            "create": "1400/7",
             "last_update": "1400/12/25",
             "mood": "HARD "
         }
-    
+        ,
+        {
+            "title": "حل معادله ریاضی",
+            "description": "پنج معادل با ترکیبی از ضرب ، جمع ، تفریق به کاربر نمایش داده میشود و باید بتواند با کمترین حدث اعداد صحیح را پیدا کند",
+            "expertions": [
+                "html",
+                "css",
+                "javascript",
+                "redux"
+            ],
+            "line_code": 167,
+            "create": "1400/5",
+            "last_update": "1400/12/25",
+            "mood": "EASY"
+        }
+    ]
 }
