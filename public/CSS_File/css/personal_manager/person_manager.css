@@ -65,7 +65,7 @@
 }
 
 #Personal-manager #input_text_style {
-  width: 400px;
+  width: 10vw;
   display: inline-block;
   color: white;
   font-size: inherit;
@@ -75,7 +75,8 @@
   border: 1px solid transparent;
   transition: background-color 0.3s ease-in-out;
   border-radius: 4px;
-  max-height: 300px;
+  /* margin-top: 35px; */
+
 }
 #Personal-manager #input_text_style:focus {
   outline: none;
@@ -122,5 +123,12 @@
 
 #Personal-manager #input_text_style:focus ~ .left,   #input_text_style:focus ~ .right {
   transform: scaleY(1);
+}
+
+.description_program{
+width: 20vw!important;
+min-height: 100px;
+max-height: 200px;
+margin-top: 0px!important;
 }
 /* end style imput text in head */

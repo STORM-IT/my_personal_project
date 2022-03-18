@@ -11,6 +11,7 @@ import Calculator from './Projects/javascript/calculator/calculator';
 import Find_correct_text from './Projects/javascript/find_correct_text/find_correct_text';
 import Snake from './Projects/javascript/snake/snake';
 import Personal_manager from './Projects/javascript/calendar/containers/personal_manager';
+import Pc_site from './Projects/html_css/pc_site/pc_site';
 export default function App() {
 
   // const show_footer=(Scroll)=>{
@@ -27,6 +28,7 @@ export default function App() {
             <Route path={'find-correct-text'} element={<Find_correct_text/>} />
             <Route path={'snake'} element={<Snake/>} />
             <Route path={'personal-manager'} element={<Personal_manager/>} />
+            <Route path={'information-pc-site'} element={<Pc_site/>} />
           </Route>
           <Route path={''}>
             <Route path={""} 

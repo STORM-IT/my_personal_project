@@ -1,4 +1,5 @@
-$(document).ready(function () {
+// $(document).ready(function () {
+  import $ from 'jquery'
 
   var close = false;
   $(".ul-menu li").mouseenter(function () {
@@ -60,4 +61,4 @@ $(document).ready(function () {
 
     }
   });
-});
+// });
