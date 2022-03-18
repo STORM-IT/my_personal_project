@@ -1,0 +1,126 @@
+#Personal-manager .box_obj{
+    background-color: rgb(65, 91, 102);
+    text-align: center;
+}
+#Personal-manager .box_person{
+    width: 40vw;
+    background-color: hsla(237, 32%, 22%, 0.836);
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+#Personal-manager #container_person{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition:height 3s ease-in;
+}
+#Personal-manager .Height100{
+    height: max-content;
+}
+#Personal-manager #btn_submit {
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    background-color: hsl(236, 32%, 26%);
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+  }
+  
+  #Personal-manager  #btn_submit::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: #3cefff;
+    transform-origin: center;
+    transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
+    transition: transform 0.45s ease-in-out;
+  }
+  
+  #Personal-manager #btn_submit:hover {
+    cursor: pointer;
+    color: #161616;
+  }
+  
+  #Personal-manager #btn_submit:hover::before {
+    transform: translate3d(50%, -50%, 0) scale3d(16, 15, 15);
+  }
+/* style imput text in head */
+#Personal-manager #div_text_style {
+  margin-top: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+#Personal-manager #input_text_style {
+  width: 400px;
+  display: inline-block;
+  color: white;
+  font-size: inherit;
+  font-family: inherit;
+  background-color: hsl(236, 32%, 26%);
+  padding: 0.35em 0.45em;
+  border: 1px solid transparent;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 4px;
+  max-height: 300px;
+}
+#Personal-manager #input_text_style:focus {
+  outline: none;
+}
+#Personal-manager #input_text_style::placeholder {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+#Personal-manager .span_text_style {
+  position: absolute;
+  background-color: #3cefff;
+  transform-origin: center;
+  transition: transform 0.5s ease;
+}
+#Personal-manager .bottom,.top {
+  height: 1px;
+  left: 0;
+  right: 0;
+  transform: scaleX(0);
+}
+#Personal-manager .left,.right {
+  width: 1px;
+  top: 0;
+  bottom: 0;
+  transform: scaleY(0);
+}
+#Personal-manager .top {
+  top: 0;
+}
+#Personal-manager .bottom {
+  bottom: 0;
+}
+
+#Personal-manager .left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+#Personal-manager #input_text_style:focus ~ .top,   #input_text_style:focus ~ .bottom {
+  transform: scaleX(1);
+}
+
+#Personal-manager #input_text_style:focus ~ .left,   #input_text_style:focus ~ .right {
+  transform: scaleY(1);
+}
+/* end style imput text in head */

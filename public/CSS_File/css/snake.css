@@ -1,16 +1,16 @@
-#container_first{
+#Snake{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#container{
+#Snake #container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width:50% ;
 }
-#Map{
+#Snake #Map{
     position: relative;
     width: 900px;
     height: 400px;
@@ -19,7 +19,7 @@
     direction: rtl;
     font-size: 100%;
 }
-.Snake{
+#Snake .snake{
     
     position: absolute; 
     color: rgb(37, 146, 241); 
@@ -34,7 +34,7 @@
     
     
 }
-#Rank-info{
+#Snake #Rank-info{
     align-self: flex-start;
     color: rgb(73, 72, 72);
     font-size: 20px;
@@ -42,7 +42,7 @@
     width: 100%;
     justify-content: space-around;
 }
-.Rank-p{
+#Snake .Rank-p{
     background-color: rgb(197, 205, 209);
     padding: 6px;
     border-radius: 10px;
@@ -51,19 +51,19 @@
     
     
 }
-.Rank{
+#Snake .Rank{
     color: rgb(74, 112, 112);
 }
-#option{
+#Snake #option{
     position: absolute;
     top: 80%;
     right: 80%;
 }
-.Rank-p:nth-child(2){
+#Snake .Rank-p:nth-child(2){
     width: 13%;
 }
 
-.animated_gift{
+#Snake .animated_gift{
     position: absolute; 
     width: 50px;
     height: 50px;
