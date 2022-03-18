@@ -6,6 +6,8 @@ import Main from './component/Layout/mainLayout/Main';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Find_correct_number from './Projects/javascript/find_correct_number/Find_correct_number';
 import { scroll_utils } from './component/utils/scroll/check_scroll_length';
+import Calculator from './Projects/javascript/calculator/calculator';
+import Calendar from './Projects/javascript/calendar/calendarr';
 export default function App() {
 
   // const show_footer=(Scroll)=>{
@@ -17,6 +19,8 @@ export default function App() {
         <Routes>
           <Route path={'project'}>
             <Route path={'find-correct-number'} element={<Find_correct_number/>} />
+            <Route path={'calculator'} element={<Calculator/>} />
+            <Route path={'calendar'} element={<Calendar/>} />
           </Route>
           <Route path={''}>
             <Route path={""} 

@@ -222,11 +222,11 @@ function trying_math(mark) {
 export function Show_calculator_result() {
     if (check_up_textbox != '') {
         debugger
-        if (key) {
+        if (text_box.value) {
 
             text_box.value = eval(parseFloat(check_up_textbox) + key + parseFloat(text_box.value));
         } else {
-            text_box.value = eval(parseFloat(check_up_textbox) + key + parseFloat(text_box.value));
+            text_box.value = check_up_textbox;
 
         }
         check_up_textbox = '';

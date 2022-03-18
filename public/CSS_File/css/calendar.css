@@ -1,47 +1,42 @@
-body{
-    background-color: rgba(97, 149, 216, 0.719);
-    font-family: sans-serif;
-    color: rgb(43, 46, 48);
-}
-.container{
+#calendar .container{
     display: flex;
     justify-content: center;
 
 }
-.container_main{
+#calendar .container_main{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-kbd{
+#calendar kbd{
     border: 1px solid gray;
     padding: 10px 10px;
     border-radius: 5px;
     background-color: rgb(212, 220, 228);
     font-size: 16px;
 }
-strong{
+#calendar strong{
     background-color: rgb(223, 223, 100);
     padding: 5px 10px;
     border-radius: 5px;
     margin-left: 5px;
 }
-.info-top{
+#calendar .info-top{
     margin: 30px 10px;
     font-size: 20px;
 }
-.header{
+#calendar .header{
     background-color: rgb(191, 199, 206);
     padding: 10px 20px;
     border-radius: 5px;
     color: rgb(0, 0, 0);
 }
-.div-text-btn{
+#calendar .div-text-btn{
     display: flex;
     flex-direction: row-reverse;
 }
-#text_input{
+#calendar #text_input{
     /* width: 80%; */
     font-size: 23px;
     padding: 5px;
@@ -51,11 +46,11 @@ strong{
     flex-grow: 1;
     margin: 10px 10px 10px 5px;
 }
-#text_input:active{
+#calendar #text_input:active{
     animation: text_big 2s ease-in both;
 }
 
-.btn_Add{
+#calendar .btn_Add{
     color: rgb(57, 60, 61);
     padding: 5px 7px;
     border-radius: 4px;
@@ -67,11 +62,11 @@ strong{
     position: relative;
 
 }
-.btn_Add:active{
+#calendar .btn_Add:active{
     box-shadow: none;
     background-color: rgba(17, 196, 41, 0.911);
 }
-#container-calendar{
+#calendar #container-calendar{
 width: 100%;
 height: 63%;
 border-radius: 10px;
@@ -85,7 +80,7 @@ animation: view 1s ease-in both;
 /* position: absolute; */
 }
 
-.edit-text{
+#calendar .edit-text{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -98,35 +93,35 @@ animation: view 1s ease-in both;
     border-radius: 10px;
     border: 0px;
     background-color: rgba(153, 207, 253, 0.541);
-    animation: view 200ms ease-in both;
+    animation: change_opacity_up 200ms ease-in both;
 }
-@keyframes view{
+@keyframes change_opacity_up{
     0%{opacity: 0;}
     100%{opacity: 1;}
 }
-.edit-text:hover{
+#calendar .edit-text:hover{
     background-color: rgba(140, 187, 228, 0.596);
 }
-.edit-text:focus{
+#calendar .edit-text:focus{
     
     background-color: rgba(64, 255, 96, 0.719);
 }
-.delete_icon{
+#calendar .delete_icon{
     float: right;
     cursor: pointer;
     font-size: 30px;
     
 }
-.B{
+/* #calendar .B{
     background-color: rgba(140, 187, 228, 0.596);
 }
-.B:focus{
+#calendar .B:focus{
     background-color: rgba(64, 255, 96, 0.719);
+} */
+#calendar .view-remove{
+    animation: change_opacity_down 500ms ease-in-out both;
 }
-.view-remove{
-    animation: remove_tag 500ms ease-in-out both;
-}
-@keyframes remove_tag{
+@keyframes change_opacity_down{
     0%{opacity: 1;}
     100%{opacity: 0;}
 }
