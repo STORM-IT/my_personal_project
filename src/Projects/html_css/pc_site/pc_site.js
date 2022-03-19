@@ -132,17 +132,17 @@ export default function Pc_site() {
 
 
 
-                
-                {/* <header> */}
-                {/* <div id="container_nav_head">
+
+            {/* <header> */}
+            {/* <div id="container_nav_head">
                 </div> */}
 
-                {/* </header> */}
+            {/* </header> */}
             {/* </header> */}
 
 
             <div id="div-head-text">
-            <video id='short_video_head' src='/IMG/pc_site//video/short_video_head.mp4' alt="" autoPlay muted loop/>
+                <video id='short_video_head' src='/IMG/pc_site//video/short_video_head.mp4' alt="" autoPlay muted loop />
                 <h2 id="text-logo">STOOORMIX</h2>
                 {/* <p id="wellcome">wellcome</p> */}
             </div>
@@ -155,17 +155,17 @@ export default function Pc_site() {
 
             <main>
                 {/* <head> */}
-                <ul id="ul-head-main">
+                {/* <ul id="ul-head-main">
                     <li><i className="fas fa-hdd"><a href="">حافظه</a></i></li>
                     <li><i className="fas fa-desktop"><a href="">مانیتور</a></i></li>
                     <li><i className="fas fa-suitcase"><a href="">کیس</a></i></li>
                     <li><i className="fas fa-network-wired"><a href="">شبکه</a></i></li>
                     <li><i className="fas fa-mouse"></i><a href="">موس</a></li>
                     <li><i className="fas fa-keyboard"><a href=""> کیبورد </a></i></li>
-                </ul>
+                </ul> */}
                 {/* </head> */}
                 <main style={{ "overflow": "hidden" }}>
-                    <div id="div-main-right">
+                    {/* <div id="div-main-right">
                         <h4>فیلتر جزئیات محصول</h4>
                         <hr />
                         <h5 className="headers-main-right">برند</h5>
@@ -220,24 +220,129 @@ export default function Pc_site() {
                             <option value="">فتوشاپ</option>
                         </select>
 
-                    </div>
+                    </div> */}
 
 
                     <div id="div-main-center">
-                        <section className="section-main-center">
-                            {/* edite replace head with div for the all img */}
-                            <div>
-                                <img src="/IMG/pc_site/center-1.jpg" alt="" />
+                        {/* <section className="section-main-center"> */}
+                        {/* edite replace head with div for the all img */}
+                        <div id='container-card-movie'>
+                            <div className='right-section'>
+                                <div className='movie-cover'>
+                                    <img src='/IMG/pc_site/cover_movie/the_dropout.jfif' />
+                                </div>
+                                <div className='information-move'>
+                                    <h3>عنوان</h3>
+                                    <p>ژانر : <span>اکشن</span></p>
+                                    <p>کارگردان : <span>رضا</span></p>
+                                    <p>بازیگران : <span>علی و احمد</span></p>
+                                    <p>IMDb : <span>5.2</span></p>
+                                    <p>سریال تلویزیونی که به تلاش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
 
+                                </div>
                             </div>
-                            <main>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tempora itaque reiciendis quasi laborum repellat dolorum iste modi voluptatibus minus, officiis autem odio, nostrum aut unde. Amet dicta tempore velit eum consequatur. Ducimus quas vero laboriosam non veniam deserunt porro officia obcaecati, molestias inventore fugiat eaque sequi doloribus. Tempore ipsam porro id mollitia. Ipsa saepe tempore corrupti minima quibusdam quos!</p>
-                            </main>
-                            <footer>
-                                <a href="#">more information</a>
-                            </footer>
-                        </section>
-                        <section className="section-main-center">
+                            <div className='left-section'>
+                                <button>ادامه و دانلود</button>
+                            </div>
+                        </div>
+                        <div id='container-card-movie'>
+                            <div className='right-section'>
+                                <div className='movie-cover'>
+                                    <img src='/IMG/pc_site/cover_movie/the_dropout.jfif' />
+                                </div>
+                                <div className='information-move'>
+                                    <h3>عنوان</h3>
+                                    <p>ژانر : <span>اکشن</span></p>
+                                    <p>کارگردان : <span>رضا</span></p>
+                                    <p>بازیگران : <span>علی و احمد</span></p>
+                                    <p>IMDb : <span>5.2</span></p>
+                                    <p>سریال تلویزیونی که به تلاش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+
+                                </div>
+                            </div>
+                            <div className='left-section'>
+                                <button>ادامه و دانلود</button>
+                            </div>
+                        </div>
+                        <div id='container-card-movie'>
+                            <div className='right-section'>
+                                <div className='movie-cover'>
+                                    <img src='/IMG/pc_site/cover_movie/the_dropout.jfif' />
+                                </div>
+                                <div className='information-move'>
+                                    <h3>عنوان</h3>
+                                    <p>ژانر : <span>اکشن</span></p>
+                                    <p>کارگردان : <span>رضا</span></p>
+                                    <p>بازیگران : <span>علی و احمد</span></p>
+                                    <p>IMDb : <span>5.2</span></p>
+                                    <p>سریال تلویزیونی که به تلاش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+
+                                </div>
+                            </div>
+                            <div className='left-section'>
+                                <button>ادامه و دانلود</button>
+                            </div>
+                        </div>
+                        <div id='container-card-movie'>
+                            <div className='right-section'>
+                                <div className='movie-cover'>
+                                    <img src='/IMG/pc_site/cover_movie/the_dropout.jfif' />
+                                </div>
+                                <div className='information-move'>
+                                    <h3>عنوان</h3>
+                                    <p>ژانر : <span>اکشن</span></p>
+                                    <p>کارگردان : <span>رضا</span></p>
+                                    <p>بازیگران : <span>علی و احمد</span></p>
+                                    <p>IMDb : <span>5.2</span></p>
+                                    <p>سریال تلویزیونی که به تلاش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+
+                                </div>
+                            </div>
+                            <div className='left-section'>
+                                <button>ادامه و دانلود</button>
+                            </div>
+                        </div>
+                        <div id='container-card-movie'>
+                            <div className='right-section'>
+                                <div className='movie-cover'>
+                                    <img src='/IMG/pc_site/cover_movie/the_dropout.jfif' />
+                                </div>
+                                <div className='information-move'>
+                                    <h3>عنوان</h3>
+                                    <p>ژانر : <span>اکشن</span></p>
+                                    <p>کارگردان : <span>رضا</span></p>
+                                    <p>بازیگران : <span>علی و احمد</span></p>
+                                    <p>IMDb : <span>5.2</span></p>
+                                    <p>سریال تلویزیونی که به تلاش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+
+                                </div>
+                            </div>
+                            <div className='left-section'>
+                                <button>ادامه و دانلود</button>
+                            </div>
+                        </div>
+                        <div id='container-card-movie'>
+                            <div className='right-section'>
+                                <div className='movie-cover'>
+                                    <img src='/IMG/pc_site/cover_movie/the_dropout.jfif' />
+                                </div>
+                                <div className='information-move'>
+                                    <h3>عنوان</h3>
+                                    <p>ژانر : <span>اکشن</span></p>
+                                    <p>کارگردان : <span>رضا</span></p>
+                                    <p>بازیگران : <span>علی و احمد</span></p>
+                                    <p>IMDb : <span>5.2</span></p>
+                                    <p>سریال تلویزیونی که به تلاش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+
+                                </div>
+                            </div>
+                            <div className='left-section'>
+                                <button>ادامه و دانلود</button>
+                            </div>
+                        </div>
+                        {/* </section> */}
+
+                        {/* <section className="section-main-center">
                             <div>
                                 <img src="/IMG/pc_site/center-2.jpg" alt="" />
 
@@ -272,7 +377,7 @@ export default function Pc_site() {
                             <footer>
                                 <a href="#">more information</a>
                             </footer>
-                        </section>
+                        </section> */}
 
 
 

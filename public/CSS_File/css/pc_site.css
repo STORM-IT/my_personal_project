@@ -28,6 +28,84 @@ body
     object-fit:fill;
     z-index: -1;
 }
+#container-card-movie{
+    position: relative;
+    display: flex;
+    width: 800px;
+    height: 400px;
+    background-color: rgb(105, 105, 105);
+    margin-bottom: 70px;
+    /* z-index: 10000; */
+}
+#container-card-movie .right-section{
+    position: relative;
+    display: flex;
+    width: 80%;
+    height: 100%;
+    /* background-color: rgb(179, 131, 90); */
+    
+}
+#container-card-movie .right-section .movie-cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    /* background-color: rgb(90, 121, 179); */
+}
+#container-card-movie .right-section .movie-cover img{
+
+    border-radius: 10px;
+    object-fit: fill;
+    height: 80%;
+    width: 90%;
+
+}
+#container-card-movie .right-section .information-move{
+    width: 60%;
+    height: 100%;
+    /* background-color: rgb(123, 179, 90); */
+    padding: 5px 10px;
+}
+#container-card-movie .right-section .information-move h3{
+color: white;
+font-size: 35px;
+padding: 5px 10px;
+margin-bottom: 20px;
+
+}
+#container-card-movie .right-section .information-move p{
+font-size: 20px;
+color: rgb(235, 235, 235);
+padding: 0px 5px;
+}
+#container-card-movie .right-section .information-move p:last-child{
+font-size: 17px;
+color: rgb(235, 235, 235);
+padding: 0px 5px;
+}
+#container-card-movie .left-section{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: inherit;
+    width: 20%;
+    height: 100%;
+    /* background-color: rgb(150, 148, 37); */
+}
+#container-card-movie .left-section button{
+    position: absolute;
+    margin-bottom: 10px;
+    padding: 5px 20px;
+    font-size: 12px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgba(150, 197, 236, 0.781);
+}
+#container-card-movie .left-section button:hover{
+
+    background-color: rgb(150, 197, 236);
+}
 
 #USER{
     
