@@ -164,7 +164,7 @@ export default function Pc_site() {
                     <li><i className="fas fa-keyboard"><a href=""> کیبورد </a></i></li>
                 </ul> */}
                 {/* </head> */}
-                <main style={{ "overflow": "hidden" }}>
+                <main id='main-container' style={{ "overflow": "hidden" }}>
                     {/* <div id="div-main-right">
                         <h4>فیلتر جزئیات محصول</h4>
                         <hr />
