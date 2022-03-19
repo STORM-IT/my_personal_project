@@ -164,7 +164,7 @@ export default function Pc_site() {
                     <li><i className="fas fa-keyboard"><a href=""> کیبورد </a></i></li>
                 </ul> */}
                 {/* </head> */}
-                <main id='main-container' style={{ "overflow": "hidden" }}>
+                <main id='main-container'>
                     {/* <div id="div-main-right">
                         <h4>فیلتر جزئیات محصول</h4>
                         <hr />
@@ -387,15 +387,42 @@ export default function Pc_site() {
                         <div>
                             <h3>اخبار و اطلاعات</h3>
                             <section className="section-main-left">
-                                <div>
+                                    <p>ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
                                     <img src="/IMG/pc_site/tabligh-1.png" alt="" className="img-main-left" />
-                                </div>
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet,<br /> consectetur adipisicing elit.<br /> Quos dolores blanditiis quod<br /> reiciendis quis dolorem accusamus laboriosam aut sed consectetur, modi aperiam tempore, perferendis sapiente explicabo nihil excepturi quasi. Exercitationem!</p>
-
-                                </div>
                             </section>
                             <section className="section-main-left">
+                                    <p>ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+                                    <img src="/IMG/pc_site/tabligh-2.jpg" alt="" className="img-main-left" />
+                            </section>
+                            <section className="section-main-left">
+                                    <p>ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+                                    <img src="/IMG/pc_site/tabligh-3.jpg" alt="" className="img-main-left" />
+                            </section>
+                            <section className="section-main-left">
+                                    <p>ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+                                    <img src="/IMG/pc_site/tabligh-4.jpg" alt="" className="img-main-left" />
+                            </section>
+                            <section className="section-main-left">
+                                    <p>ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+                                    <img src="/IMG/pc_site/tabligh-1.png" alt="" className="img-main-left" />
+                            </section>
+                            <section className="section-main-left">
+                                    <p>ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+                                    <img src="/IMG/pc_site/tabligh-2.jpg" alt="" className="img-main-left" />
+                            </section>
+                            <section className="section-main-left">
+                                    <p>ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+                                    <img src="/IMG/pc_site/tabligh-3.jpg" alt="" className="img-main-left" />
+                            </section>
+                            <section className="section-main-left">
+                                    <p>ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+                                    <img src="/IMG/pc_site/tabligh-4.jpg" alt="" className="img-main-left" />
+                            </section>
+
+
+
+
+                            {/* <section className="section-main-left">
                                 <div>
                                     <img src="/IMG/pc_site/tabligh-2.jpg" alt="" className="img-main-left" />
                                 </div>
@@ -448,7 +475,7 @@ export default function Pc_site() {
                                     <p>Lorem ipsum dolor sit amet,<br /> consectetur adipisicing elit.<br /> Quos dolores blanditiis quod<br /> reiciendis quis dolorem accusamus laboriosam aut sed consectetur, modi aperiam tempore, perferendis sapiente explicabo nihil excepturi quasi. Exercitationem!</p>
 
                                 </div>
-                            </section>
+                            </section> */}
 
                         </div>
                     </div>

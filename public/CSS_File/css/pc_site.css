@@ -246,7 +246,7 @@ header img
     /* background-color: gray; */
     /* border: 1px solid rgb(87, 86, 86); */
     /* width: 55%; */
-    float: right;
+    /* float: right; */
     /* margin: 0px 20px; */
     
 }
@@ -279,6 +279,8 @@ header img
 }
 
 #main-container{
+    display: flex;
+    justify-content: space-around;
     padding: 0px 300px;
 }
 
@@ -321,41 +323,73 @@ header img
 
 
 #div-main-left{
+    
+    /* box-sizing: content-box; */
     background-color: gray;
     border: 1px solid rgb(87, 86, 86);
-    height: 720px;
-    width: 20%;
+    /* height: 720px; */
+    height: max-content;
+    width: 30%;
     float: left;
     margin-left: 5px;
-    overflow: hidden;
+    /* overflow: hidden; */
     border-radius: 5px;
-    
-}
-.section-main-left div p{
-    
-    height: 80px;
-    direction: ltr;
-    font-size: 15px;
-    -webkit-line-clamp: 3;
-    white-space:nowrap;
-    overflow: hidden;
-    text-overflow:ellipsis;
-    padding: 5px;
+    padding: 0px 10px;
     
 }
 .section-main-left{
     position: relative;
-    height: 80px;
-    width: 95%;
-    background-color: rgb(158, 176, 190);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* position: relative; */
+    height: 90px;
+    /* width: 95%; */
+    width: 100%;
+    background-color: rgb(185, 186, 187);
     border-radius: 5px;
-    margin: 10px 5px;
+    box-sizing: content-box;
+    margin: 10px 0px;
+    /* margin: auto; */
+    
+}
+@font-face {
+    font-family: Nazanin;
+    src: url("../../Font/Far.Nazanin Bold.ttf");
+  }
+  @font-face {
+    font-family: RoyaBold;
+    src: url("../../Font/Far.Roya Bold.ttf");
+  }
+  @font-face {
+    font-family: Yekan;
+    src: url("../../Font/Far.Nazanin.ttf");
+  }
+.section-main-left p{
+    /* position: absolute; */
+    /* top: 0px; */
+    /* right: 0px; */
+    /* height: 80px; */
+    direction: rtl;
+    font-size: 15px;
+    -webkit-line-clamp: 3;
+    font-size: 15px;
+    font-family: RoyaBold;
+    /* white-space:nowrap; */
+    /* overflow: hidden; */
+    line-height: 20px;
+    text-overflow:ellipsis;
+    padding: 5px 10px;
+    /* text-indent: 10px; */
+    font-weight: 700;
+    /* font-stretch: extra-condensed; */
+    
 }
 .img-main-left{
-    
-    left: 0px;
-    float: left;
-    margin-left: auto;
+    /* position: absolute; */
+    /* left: 0px; */
+    /* float: left; */
+    /* margin-left: auto; */
     width: 30%;
     height: 100%;
     border-radius: 5px 0px 0px 5px;
