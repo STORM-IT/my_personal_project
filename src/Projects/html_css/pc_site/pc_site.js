@@ -128,35 +128,23 @@ export default function Pc_site() {
 
                 </div>
             </div>
-            <header className="header">
+            {/* <header className="header"> */}
 
 
 
-                {/* <nav id="nav-header">
-
-                    <a href=""><i className="fas fa-home"></i></a>
-                    <a href=""><i className="fas fa-user-shield"></i></a>
-                    <a href=""><i className="fas fa-file-contract"></i></a>
-                    <a href=""><i className="fas fa-info"></i></a>
-                    <a href="">
-                        <div id="USER">
-                            <i className="fas fa-sign-in-alt  bv"></i>
-                            <i className="fas fa-user-plus"></i>
-                        </div>
-                    </a>
-                </nav> */}
+                
                 {/* <header> */}
-                <div id="container_nav_head">
-                </div>
+                {/* <div id="container_nav_head">
+                </div> */}
 
                 {/* </header> */}
-            </header>
+            {/* </header> */}
 
 
-            <img src={"/IMG/pc_site/web-head.jpg"} alt="" />
             <div id="div-head-text">
+            <video id='short_video_head' src='/IMG/pc_site//video/short_video_head.mp4' alt="" autoPlay muted loop/>
                 <h2 id="text-logo">STOOORMIX</h2>
-                <p id="wellcome">wellcome</p>
+                {/* <p id="wellcome">wellcome</p> */}
             </div>
 
 
