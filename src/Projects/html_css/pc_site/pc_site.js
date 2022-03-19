@@ -232,11 +232,11 @@ export default function Pc_site() {
                                     <img src='/IMG/pc_site/cover_movie/the_dropout.jfif' />
                                 </div>
                                 <div className='information-move'>
-                                    <h3>عنوان</h3>
+                                    <h3>the Dropout</h3>
                                     <p>ژانر : <span>اکشن</span></p>
                                     <p>کارگردان : <span>رضا</span></p>
                                     <p>بازیگران : <span>علی و احمد</span></p>
-                                    <p>IMDb : <span>5.2</span></p>
+                                    <p> <span>5.2</span> :IMDb</p>
                                     <p>سریال تلویزیونی که به تلاش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
 
                                 </div>

@@ -1,3 +1,15 @@
+@font-face {
+    font-family: Nazanin;
+    src: url("../../Font/Far.Nazanin Bold.ttf");
+  }
+  @font-face {
+    font-family: RoyaBold;
+    src: url("../../Font/Far.Roya Bold.ttf");
+  }
+  @font-face {
+    font-family: Yekan;
+    src: url("../../Font/Far.Nazanin.ttf");
+  }
 *{
     margin: 0px;
     padding: 0px;
@@ -68,18 +80,49 @@ body
     /* background-color: rgb(123, 179, 90); */
     padding: 5px 10px;
 }
+@font-face {
+    font-family: MacLemon;
+    src: url("../../Font/ENGLISH/Hey.ttf");
+  }
+  @font-face {
+    font-family: NavineDemo;
+    src: url("../../Font/ENGLISH/NavineDemo-SemiCondensed.ttf");
+  }
 #container-card-movie .right-section .information-move h3{
+    font-family: MacLemon;
 color: white;
-font-size: 35px;
-padding: 5px 10px;
-margin-bottom: 20px;
+font-size: 45px;
+padding: 25px 10px 10px 0px;
+/* margin-bottom: 20px; */
 
 }
 #container-card-movie .right-section .information-move p{
+    direction: rtl;
+    font-family: RoyaBold;
 font-size: 20px;
 color: rgb(235, 235, 235);
 padding: 0px 5px;
 }
+#container-card-movie .right-section .information-move p:nth-child(5){
+    direction: ltr;
+    text-align: right;
+    font-family: sans-serif;
+font-size: 20px;
+color: rgb(235, 235, 235);
+padding: 0px 5px;
+}
+#container-card-movie .right-section .information-move p:last-child{
+    font-family: Yekan;
+font-size: 20px;
+color: rgb(235, 235, 235);
+padding: 0px 5px;
+}
+/* #container-card-movie .right-section .information-move p span{
+    font-family: Yekan;
+font-size: 20px;
+color: rgb(235, 235, 235);
+padding: 0px 5px;
+} */
 #container-card-movie .right-section .information-move p:last-child{
 font-size: 17px;
 color: rgb(235, 235, 235);
@@ -102,6 +145,8 @@ padding: 0px 5px;
     border-radius: 50px;
     border: none;
     background-color: rgba(150, 197, 236, 0.781);
+    font-family: Nazanin;
+    font-size: 15px;
 }
 #container-card-movie .left-section button:hover{
 
@@ -353,18 +398,7 @@ header img
     /* margin: auto; */
     
 }
-@font-face {
-    font-family: Nazanin;
-    src: url("../../Font/Far.Nazanin Bold.ttf");
-  }
-  @font-face {
-    font-family: RoyaBold;
-    src: url("../../Font/Far.Roya Bold.ttf");
-  }
-  @font-face {
-    font-family: Yekan;
-    src: url("../../Font/Far.Nazanin.ttf");
-  }
+
 .section-main-left p{
     /* position: absolute; */
     /* top: 0px; */
