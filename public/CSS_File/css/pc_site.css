@@ -13,6 +13,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: RoyaBold;
     
 }
 body
@@ -370,16 +371,25 @@ header img
 #div-main-left{
     
     /* box-sizing: content-box; */
-    background-color: gray;
-    border: 1px solid rgb(87, 86, 86);
+    /* background-color: gray; */
+    /* border: 1px solid rgb(87, 86, 86); */
     /* height: 720px; */
     height: max-content;
     width: 30%;
-    float: left;
-    margin-left: 5px;
+    /* float: left; */
+    /* margin-bottom: 5px; */
     /* overflow: hidden; */
+    
+}
+#div-main-left div:first-of-type{
+    
+    background-color: gray;
+    border: 1px solid rgb(87, 86, 86);
+    height: 720px;
+    height: max-content;
     border-radius: 5px;
-    padding: 0px 10px;
+    padding: 10px 10px;
+    /* width: 30%; */
     
 }
 .section-main-left{
@@ -437,11 +447,13 @@ header img
     clear: both;
     background-color: gray;
     border: 1px solid rgb(87, 86, 86);
-    height: 320px;
+    /* height: 420px; */
     margin-top: 10px;
     display: flex;
     overflow: hidden;
     flex-direction:row;
+    padding: 5px 0px;
+    scroll-behavior: smooth;
     
 }
 
@@ -453,7 +465,8 @@ header img
     padding: 20px 0px;
 }
 #section-div-footer-1{
-    overflow: hidden;
+    /* overflow: hidden; */
+    direction: rtl;
     width: 250px;
     height: 310px;
     background-color: rgb(211, 211, 211);
@@ -466,23 +479,35 @@ header img
     margin: 5px 20px;
 }
 #section-div-footer-1 img{
+    border-radius: 10px;
     width: 100%;
-    height: 70%;
+    height: 67%;
 }
 #section-div-footer-1 button a{
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
 .text-margin{
+    direction: rtl;
     margin: 2px 3px;
 }
 .button-footer-up{
+    font-family: sans-serif;
     display: inline-block;
     background-color: rgb(64, 110, 76);
     border-radius: 5px;
-    position: absolute;
-    right: 3px;
+    /* position: absolute; */
+    /* left: 3px; */
+    box-sizing: border-box;
+    float: left;
+    margin: 0px 10px;
+    padding: 3px 5px;
     box-shadow: rgb(113, 179, 52) 2px 3px 3px;
+}
+.button-footer-up a{
+    font-family: sans-serif;
+  
+   
 }
 #section-div-footer-1 img:hover{
     
@@ -494,7 +519,59 @@ header img
 
 
 
-
+/* picture dialog */
+.div-picture-dialog-container{
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    box-sizing: content-box;
+    padding: 100px 0px;
+    /* box-shadow: black 0px 1px ; */
+    /* box-shadow: black 0px 1px ; */
+    /* overflow: hidden; */
+}
+#container-img{
+    direction: ltr;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    overflow: hidden;
+    /* border: 1px solid black; */
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 10px;
+}
+.picture_edit{
+    width: 300px;
+    height: 400px;
+    position: relative;
+    /* animation: next 2s ease 2s both infinite; */
+}
+.next{
+  animation: next 2s ease 2s both;
+}
+.next1{
+  animation: next1 2s ease 2s both;
+}
+.next2{
+  animation: next2 2s ease 2s both;
+}
+@keyframes next {
+    0%   { left:0px; }
+    100% {left: 300px; animation-play-state: paused;}
+  }
+@keyframes next1 {
+    0%   { left:300px; }
+    100% {left: 600px; animation-play-state: paused;}
+  }
+@keyframes next2 {
+    0%   { left:600px; }
+    100% {left: 0px; }
+  }
+/* end picture dialog */
 
 
 

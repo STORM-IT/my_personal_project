@@ -3,7 +3,8 @@ import React, { Fragment, useEffect } from 'react'
 export default function Pc_site() {
 
     useEffect(() => {
-        require("./site_move")
+        require("./site_movie")
+        require("./picture_dialog")
     }, [])
 
     return (
@@ -387,36 +388,36 @@ export default function Pc_site() {
                         <div>
                             <h3>اخبار و اطلاعات</h3>
                             <section className="section-main-left">
-                                    <p>ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
-                                    <img src="/IMG/pc_site/tabligh-1.png" alt="" className="img-main-left" />
+                                <p>ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+                                <img src="/IMG/pc_site/tabligh-1.png" alt="" className="img-main-left" />
                             </section>
                             <section className="section-main-left">
-                                    <p>ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
-                                    <img src="/IMG/pc_site/tabligh-2.jpg" alt="" className="img-main-left" />
+                                <p>ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+                                <img src="/IMG/pc_site/tabligh-2.jpg" alt="" className="img-main-left" />
                             </section>
                             <section className="section-main-left">
-                                    <p>ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
-                                    <img src="/IMG/pc_site/tabligh-3.jpg" alt="" className="img-main-left" />
+                                <p>ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+                                <img src="/IMG/pc_site/tabligh-3.jpg" alt="" className="img-main-left" />
                             </section>
                             <section className="section-main-left">
-                                    <p>ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
-                                    <img src="/IMG/pc_site/tabligh-4.jpg" alt="" className="img-main-left" />
+                                <p>ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+                                <img src="/IMG/pc_site/tabligh-4.jpg" alt="" className="img-main-left" />
                             </section>
                             <section className="section-main-left">
-                                    <p>ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
-                                    <img src="/IMG/pc_site/tabligh-1.png" alt="" className="img-main-left" />
+                                <p>ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+                                <img src="/IMG/pc_site/tabligh-1.png" alt="" className="img-main-left" />
                             </section>
                             <section className="section-main-left">
-                                    <p>ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
-                                    <img src="/IMG/pc_site/tabligh-2.jpg" alt="" className="img-main-left" />
+                                <p>ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+                                <img src="/IMG/pc_site/tabligh-2.jpg" alt="" className="img-main-left" />
                             </section>
                             <section className="section-main-left">
-                                    <p>ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
-                                    <img src="/IMG/pc_site/tabligh-3.jpg" alt="" className="img-main-left" />
+                                <p>ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+                                <img src="/IMG/pc_site/tabligh-3.jpg" alt="" className="img-main-left" />
                             </section>
                             <section className="section-main-left">
-                                    <p>ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
-                                    <img src="/IMG/pc_site/tabligh-4.jpg" alt="" className="img-main-left" />
+                                <p>ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+                                <img src="/IMG/pc_site/tabligh-4.jpg" alt="" className="img-main-left" />
                             </section>
 
 
@@ -478,25 +479,111 @@ export default function Pc_site() {
                             </section> */}
 
                         </div>
+                        <div className="div-picture-dialog-container">
+                            <section id="container-img">
+                                <img className="pic-1 picture_edit" src="/IMG/pc_site/picture_dialog/man.jpg" alt="" />
+                                <img className="pic-1 picture_edit" src="/IMG/pc_site/pc-1.jpg" alt="" />
+                                <img className="pic-1 picture_edit" src="/IMG/pc_site/pc-1.jpg" alt="" />
+                            </section>
+                        </div>
+                        <div className="div-picture-dialog-container">
+                            <section id="container-img">
+                                <img className="pic-1 picture_edit" src="/IMG/pc_site/picture_dialog/man.jpg" alt="" />
+                                <img className="pic-1 picture_edit" src="/IMG/pc_site/pc-1.jpg" alt="" />
+                                <img className="pic-1 picture_edit" src="/IMG/pc_site/pc-1.jpg" alt="" />
+                            </section>
+                        </div>
+                        <div className="div-picture-dialog-container">
+                            <section id="container-img">
+                                <img className="pic-1 picture_edit" src="/IMG/pc_site/picture_dialog/man.jpg" alt="" />
+                                <img className="pic-1 picture_edit" src="/IMG/pc_site/pc-1.jpg" alt="" />
+                                <img className="pic-1 picture_edit" src="/IMG/pc_site/pc-1.jpg" alt="" />
+                            </section>
+                        </div>
+                        
                     </div>
                     <div id="div-main-footer">
 
                     </div>
                 </main>
 
+
                 <footer>
                     <div id="div-footer-top">
                         <section>
                             <section id="section-div-footer-1">
-                                <div><img src="/IMG/pc_site/pc-1.jpg" alt="" /></div>
-                                <div className="text-margin">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At temporibus possimus expedita. Eligendi sit ex consequatur eveniet aliquam possimus iusto.</div>
+                                <img src="/IMG/pc_site/pc-1.jpg" alt="" />
+                                <p className="text-margin">ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+                                <div>
+                                    <button className="button-footer-up" type="button"><a href="#htdocx">view information</a></button>
+                                </div>
+                            </section>
+                        </section>
+                        <section>
+                            <section id="section-div-footer-1">
+                                <img src="/IMG/pc_site/pc-1.jpg" alt="" />
+                                <p className="text-margin">ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+                                <div>
+                                    <button className="button-footer-up" type="button"><a href="">view information</a></button>
+                                </div>
+                            </section>
+                        </section>
+                        <section>
+                            <section id="section-div-footer-1">
+                                <img src="/IMG/pc_site/pc-1.jpg" alt="" />
+                                <p className="text-margin">ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+                                <div>
+                                    <button className="button-footer-up" type="button"><a href="">view information</a></button>
+                                </div>
+                            </section>
+                        </section>
+                        <section>
+                            <section id="section-div-footer-1">
+                                <img src="/IMG/pc_site/pc-1.jpg" alt="" />
+                                <p className="text-margin">ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+                                <div>
+                                    <button className="button-footer-up" type="button"><a href="">view information</a></button>
+                                </div>
+                            </section>
+                        </section>
+                        <section>
+                            <section id="section-div-footer-1">
+                                <img src="/IMG/pc_site/pc-1.jpg" alt="" />
+                                <p className="text-margin">ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+                                <div>
+                                    <button className="button-footer-up" type="button"><a href="">view information</a></button>
+                                </div>
+                            </section>
+                        </section>
+                        <section>
+                            <section id="section-div-footer-1">
+                                <img src="/IMG/pc_site/pc-1.jpg" alt="" />
+                                <p className="text-margin">ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+                                <div>
+                                    <button className="button-footer-up" type="button"><a href="">view information</a></button>
+                                </div>
+                            </section>
+                        </section>
+                        <section>
+                            <section id="section-div-footer-1">
+                                <img src="/IMG/pc_site/pc-1.jpg" alt="" />
+                                <p className="text-margin">ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+                                <div>
+                                    <button className="button-footer-up" type="button"><a href="">view information</a></button>
+                                </div>
+                            </section>
+                        </section>
+                        <section id='htdocx'>
+                            <section id="section-div-footer-1">
+                                <img src="/IMG/pc_site/pc-1.jpg" alt="" />
+                                <p className="text-margin">ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
                                 <div>
                                     <button className="button-footer-up" type="button"><a href="">view information</a></button>
                                 </div>
                             </section>
                         </section>
 
-                        <section>
+                        {/* <section>
                             <section id="section-div-footer-1">
                                 <div><img src="/IMG/pc_site/pc-2.jpg" alt="" /></div>
                                 <div className="text-margin">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At temporibus possimus expedita. Eligendi sit ex consequatur eveniet aliquam possimus iusto.</div>
@@ -549,7 +636,7 @@ export default function Pc_site() {
                                     <button className="button-footer-up" type="button"><a href="">view information</a></button>
                                 </div>
                             </section>
-                        </section>
+                        </section> */}
 
                     </div>
                 </footer>
