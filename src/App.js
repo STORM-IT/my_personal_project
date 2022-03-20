@@ -24,7 +24,7 @@ export default function App() {
             {/* <Route path={'calendar'} element={<Calendar/>} /> */}
             <Route path={'find-correct-text'} element={<Find_correct_text/>} />
             <Route path={'snake'} element={<Snake/>} />
-            <Route path={'personal-manager'} element={<Personal_manager/>} />
+            <Route path={'calendar'} element={<Personal_manager/>} />
             <Route path={'move-site'} element={<Pc_site/>} />
           </Route>
           <Route path={''}>

@@ -8,8 +8,8 @@ export default function Pesron_Create({ id, name, age, edit_person, delete_perso
     return (
         <Fragment>
             <div className="box_person">
-                <p className='text-white'>your name is = {name}</p>
-                <p className='text-white'>your age is = {age}</p>
+                <p className='text-white'>title is = {name}</p>
+                <p className='text-white'>program is = {age}</p>
                 <InputGroup>
                     <FormControl onChange={event => Name = event.target.value} className="Clear" placeholder={name} />
                     <Button variant='primary' onClick={() => edit_person(Name, Age, id)} className="btn  w-25">Edite</Button>

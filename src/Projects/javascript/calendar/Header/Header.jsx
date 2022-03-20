@@ -48,7 +48,7 @@ const Header = () => {
                     </div>
                 </div>
                 <br />
-                <Button type='submit' id='btn_submit' onClick={context.add_persons} className=" mb-5 mt-2">Add persons</Button>
+                <Button type='submit' id='btn_submit' onClick={context.add_persons} className=" mb-5 mt-2">Add My Program</Button>
                 <br />
                 <br />
                 <Button onClick={context.show_or_hiden} className={context.showList ? "btn-warning" : "btn-info"}>

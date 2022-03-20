@@ -15,25 +15,41 @@ export default function GlobalState(props) {
 
         const name = getName;
         const age = getAge;
+        if(name!=""&&age!=""){
 
-        const List_P = getListPersons.slice()
-        const person = { name: name, age: age, id: Math.floor(Math.random() * 1000) };
-
-        List_P.push(person)
-
-        toast.success('success to add 🤞', {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: 'dark'
-        });
-
-        setListPersons(List_P);
-        clear_input();
+            const List_P = getListPersons.slice()
+            const person = { name: name, age: age, id: Math.floor(Math.random() * 1000) };
+    
+            List_P.push(person)
+    
+            toast.success('success to add 🤞', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: 'dark'
+            });
+            
+            setListPersons(List_P);
+            setName("");
+            setAge("");
+            clear_input();
+        }else{
+            
+            toast.success('please write your program ✍', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: 'dark'
+            });
+        }
     }
 
     const delete_person = (id) => {
