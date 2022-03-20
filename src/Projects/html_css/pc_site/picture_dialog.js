@@ -40,3 +40,27 @@ function next() {
         }
     }
 }
+var mover_right;
+var mover_left;
+var scroller;
+export const scrool_list_move_left = () => {
+
+    scroller = document.getElementById("card-move-footer-container");
+    mover_right = document.getElementById("scroll-list-right");
+    mover_left = document.getElementById("scroll-list-left");
+
+    scroller.scrollTo(-1500, 0)
+    mover_left.style.visibility = 'hidden';
+    mover_right.style.visibility = 'visible';
+}
+
+export const scrool_list_move_right = () => {
+
+    scroller = document.getElementById("card-move-footer-container");
+    mover_left = document.getElementById("scroll-list-left");
+    mover_right = document.getElementById("scroll-list-right");
+
+    scroller.scrollTo(1500, 0)
+    mover_right.style.visibility = 'hidden';
+    mover_left.style.visibility = 'visible';
+}

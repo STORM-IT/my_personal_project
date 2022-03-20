@@ -1,4 +1,5 @@
 import React, { Fragment, useEffect } from 'react'
+import { scrool_list_move_left, scrool_list_move_right } from './picture_dialog'
 
 export default function Pc_site() {
 
@@ -225,9 +226,7 @@ export default function Pc_site() {
 
 
                     <div id="div-main-center">
-                        {/* <section className="section-main-center"> */}
-                        {/* edite replace head with div for the all img */}
-                        <div id='container-card-movie'>
+                        <div className='container-card-movie'>
                             <div className='right-section'>
                                 <div className='movie-cover'>
                                     <img src='/IMG/pc_site/cover_movie/the_dropout.jfif' />
@@ -235,29 +234,26 @@ export default function Pc_site() {
                                 <div className='information-move'>
                                     <h3>the Dropout</h3>
                                     <p>ژانر : <span>اکشن</span></p>
-                                    <p>کارگردان : <span>رضا</span></p>
                                     <p>بازیگران : <span>علی و احمد</span></p>
-                                    <p> <span>5.2</span> :IMDb</p>
+                                    <p> <span>5.2 :</span> IMDb</p>
                                     <p>سریال تلویزیونی که به تلاش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
-
                                 </div>
                             </div>
                             <div className='left-section'>
                                 <button>ادامه و دانلود</button>
                             </div>
                         </div>
-                        <div id='container-card-movie'>
+                        <div className='container-card-movie'>
                             <div className='right-section'>
                                 <div className='movie-cover'>
-                                    <img src='/IMG/pc_site/cover_movie/the_dropout.jfif' />
+                                    <img src='/IMG/pc_site/cover_movie/Walker.jpg' />
                                 </div>
                                 <div className='information-move'>
-                                    <h3>عنوان</h3>
-                                    <p>ژانر : <span>اکشن</span></p>
-                                    <p>کارگردان : <span>رضا</span></p>
-                                    <p>بازیگران : <span>علی و احمد</span></p>
-                                    <p>IMDb : <span>5.2</span></p>
-                                    <p>سریال تلویزیونی که به تلاش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+                                    <h3>Walker</h3>
+                                    <p>ژانر : <span>اکشن ، جنایی</span></p>
+                                    <p>بازیگران : <span>Jared Padalecki، Keegan Allen</span></p>
+                                    <p> <span>6.1 :</span> IMDb</p>
+                                    <p>داستان سریال درمورد پدر تنهایی است که پس از 2 سال پیش خانواده اش بر می گردد و سعی می کند با فرزندانش ارتباط برقرار کند و سر و سامانی به خانواده از هم فروپاشیده اش بدهد. در همین حین، به دنبال حل پرونده قتل همسر سابقش نیز هست.</p>
 
                                 </div>
                             </div>
@@ -265,18 +261,17 @@ export default function Pc_site() {
                                 <button>ادامه و دانلود</button>
                             </div>
                         </div>
-                        <div id='container-card-movie'>
+                        <div className='container-card-movie'>
                             <div className='right-section'>
                                 <div className='movie-cover'>
-                                    <img src='/IMG/pc_site/cover_movie/the_dropout.jfif' />
+                                    <img src='/IMG/pc_site/cover_movie/rudra.jpg' />
                                 </div>
                                 <div className='information-move'>
-                                    <h3>عنوان</h3>
-                                    <p>ژانر : <span>اکشن</span></p>
-                                    <p>کارگردان : <span>رضا</span></p>
-                                    <p>بازیگران : <span>علی و احمد</span></p>
-                                    <p>IMDb : <span>5.2</span></p>
-                                    <p>سریال تلویزیونی که به تلاش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+                                    <h3>Rudra: The Edge of Darkness</h3>
+                                    <p>ژانر : <span>جنایی ، درام</span></p>
+                                    <p>بازیگران : <span>Ajay Devgn، Esha Deol</span></p>
+                                    <p> <span>7.2 :</span> IMDb</p>
+                                    <p>در سریال رودرا لبه تاریکی در خیابان های پر از جنایت بمبئی ، یک افسر پلیس به نام رودرا ویر سینگ که با مشغله های ذهنی خود دست و پنجه نرم می کند باید با پرونده های جنایی نیز برخورد کند.</p>
 
                                 </div>
                             </div>
@@ -284,18 +279,17 @@ export default function Pc_site() {
                                 <button>ادامه و دانلود</button>
                             </div>
                         </div>
-                        <div id='container-card-movie'>
+                        <div className='container-card-movie'>
                             <div className='right-section'>
                                 <div className='movie-cover'>
-                                    <img src='/IMG/pc_site/cover_movie/the_dropout.jfif' />
+                                    <img src='/IMG/pc_site/cover_movie/Black-Crab.jpg' />
                                 </div>
                                 <div className='information-move'>
-                                    <h3>عنوان</h3>
-                                    <p>ژانر : <span>اکشن</span></p>
-                                    <p>کارگردان : <span>رضا</span></p>
-                                    <p>بازیگران : <span>علی و احمد</span></p>
-                                    <p>IMDb : <span>5.2</span></p>
-                                    <p>سریال تلویزیونی که به تلاش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+                                    <h3>Black Crad</h3>
+                                    <p>ژانر : <span>اکشن ، درام</span></p>
+                                    <p>بازیگران : <span>Aliette Opheim، Dar Salim</span></p>
+                                    <p> <span>6.6 :</span> IMDb</p>
+                                    <p>در فیلم خرچنگ سیاه : در دنیایی پسا آخرالزمانی، شش سرباز وظیفه دارند در ماموریتی مخفی، بسته ای مرموز را به آنسوی مجمع الجزایری یخ زده انتقال دهند.</p>
 
                                 </div>
                             </div>
@@ -303,18 +297,17 @@ export default function Pc_site() {
                                 <button>ادامه و دانلود</button>
                             </div>
                         </div>
-                        <div id='container-card-movie'>
+                        <div className='container-card-movie'>
                             <div className='right-section'>
                                 <div className='movie-cover'>
-                                    <img src='/IMG/pc_site/cover_movie/the_dropout.jfif' />
+                                    <img src='/IMG/pc_site/cover_movie/Master.jpg' />
                                 </div>
                                 <div className='information-move'>
-                                    <h3>عنوان</h3>
-                                    <p>ژانر : <span>اکشن</span></p>
-                                    <p>کارگردان : <span>رضا</span></p>
-                                    <p>بازیگران : <span>علی و احمد</span></p>
-                                    <p>IMDb : <span>5.2</span></p>
-                                    <p>سریال تلویزیونی که به تلاش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+                                    <h3>Master</h3>
+                                    <p>ژانر : <span>ترسناک ، جنایی</span></p>
+                                    <p>بازیگران : <span>Julia Nightingale، Regina Hall</span></p>
+                                    <p> <span>5.8 :</span> IMDb</p>
+                                    <p>در فیلم ارباب : درباره دو زن سیاه پوست است که در کالجی با جمعیت غالب سفید پوست، تجربه های ترسناکی را پشت سر می گذارند...</p>
 
                                 </div>
                             </div>
@@ -322,18 +315,17 @@ export default function Pc_site() {
                                 <button>ادامه و دانلود</button>
                             </div>
                         </div>
-                        <div id='container-card-movie'>
+                        <div className='container-card-movie'>
                             <div className='right-section'>
                                 <div className='movie-cover'>
-                                    <img src='/IMG/pc_site/cover_movie/the_dropout.jfif' />
+                                    <img src='/IMG/pc_site/cover_movie/Windfall.jpg' />
                                 </div>
                                 <div className='information-move'>
-                                    <h3>عنوان</h3>
-                                    <p>ژانر : <span>اکشن</span></p>
-                                    <p>کارگردان : <span>رضا</span></p>
-                                    <p>بازیگران : <span>علی و احمد</span></p>
-                                    <p>IMDb : <span>5.2</span></p>
-                                    <p>سریال تلویزیونی که به تلاش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+                                    <h3>Windfall</h3>
+                                    <p>ژانر : <span>جنایی ، درام</span></p>
+                                    <p>بازیگران : <span>Jason Segel، Jesse Plemons</span></p>
+                                    <p> <span>6.1 :</span> IMDb</p>
+                                    <p>در فیلم باد آورده : مردی به صورت پنهانی وارد خانه تابستانی یک میلیاردر حوزه تکنولوژی می شود. اما زمانیکه صاحب خودشیفته خانه و همسرش برای سفری غیرمنتظره از راه می رسند، شرایط از کنترل خارج می شود و...</p>
 
                                 </div>
                             </div>
@@ -341,6 +333,8 @@ export default function Pc_site() {
                                 <button>ادامه و دانلود</button>
                             </div>
                         </div>
+                        
+                       
                         {/* </section> */}
 
                         {/* <section className="section-main-center">
@@ -481,35 +475,56 @@ export default function Pc_site() {
                         </div>
                         <div className="div-picture-dialog-container">
                             <section id="container-img">
-                                <img className="pic-1 picture_edit" src="/IMG/pc_site/picture_dialog/man.jpg" alt="" />
-                                <img className="pic-1 picture_edit" src="/IMG/pc_site/pc-1.jpg" alt="" />
-                                <img className="pic-1 picture_edit" src="/IMG/pc_site/pc-1.jpg" alt="" />
+                                <img className="pic-1 picture_edit" src="/IMG/pc_site/cover_movie/Windfall.jpg" alt="" />
+                                <img className="pic-1 picture_edit" src="/IMG/pc_site/cover_movie/Walker.jpg" alt="" />
+                                <img className="pic-1 picture_edit" src="/IMG/pc_site/cover_movie/rudra.jpg" alt="" />
                             </section>
                         </div>
                         <div className="div-picture-dialog-container">
                             <section id="container-img">
-                                <img className="pic-1 picture_edit" src="/IMG/pc_site/picture_dialog/man.jpg" alt="" />
-                                <img className="pic-1 picture_edit" src="/IMG/pc_site/pc-1.jpg" alt="" />
-                                <img className="pic-1 picture_edit" src="/IMG/pc_site/pc-1.jpg" alt="" />
+                                <img className="pic-1 picture_edit" src="/IMG/pc_site/cover_movie/Master.jpg" alt="" />
+                                <img className="pic-1 picture_edit" src="/IMG/pc_site/cover_movie/Black-Crab.jpg" alt="" />
+                                <img className="pic-1 picture_edit" src="/IMG/pc_site/cover_movie/Windfall.jpg" alt="" />
+                                
                             </section>
                         </div>
                         <div className="div-picture-dialog-container">
                             <section id="container-img">
-                                <img className="pic-1 picture_edit" src="/IMG/pc_site/picture_dialog/man.jpg" alt="" />
-                                <img className="pic-1 picture_edit" src="/IMG/pc_site/pc-1.jpg" alt="" />
-                                <img className="pic-1 picture_edit" src="/IMG/pc_site/pc-1.jpg" alt="" />
+                                <img className="pic-1 picture_edit" src="/IMG/pc_site/cover_movie/Walker.jpg" alt="" />
+                                <img className="pic-1 picture_edit" src="/IMG/pc_site/cover_movie/rudra.jpg" alt="" />
+                                <img className="pic-1 picture_edit" src="/IMG/pc_site/cover_movie/Master.jpg" alt="" />
                             </section>
                         </div>
-                        
                     </div>
-                    <div id="div-main-footer">
-
-                    </div>
+                
                 </main>
 
 
                 <footer>
                     <div id="div-footer-top">
+                        <div id="scroll-list-left" onClick={()=>scrool_list_move_left()} className='scroll_footer_style'>
+                        {")"}
+                        </div>
+                        <div id='card-move-footer-container'>
+
+                        <section>
+                            <section id="section-div-footer-1">
+                                <img src="/IMG/pc_site/pc-1.jpg" alt="" />
+                                <p className="text-margin">ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+                                <div>
+                                    <button className="button-footer-up" type="button"><a href="#htdocx">view information</a></button>
+                                </div>
+                            </section>
+                        </section>
+                        <section>
+                            <section id="section-div-footer-1">
+                                <img src="/IMG/pc_site/pc-1.jpg" alt="" />
+                                <p className="text-margin">ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
+                                <div>
+                                    <button className="button-footer-up" type="button"><a href="#htdocx">view information</a></button>
+                                </div>
+                            </section>
+                        </section>
                         <section>
                             <section id="section-div-footer-1">
                                 <img src="/IMG/pc_site/pc-1.jpg" alt="" />
@@ -564,80 +579,10 @@ export default function Pc_site() {
                                 </div>
                             </section>
                         </section>
-                        <section>
-                            <section id="section-div-footer-1">
-                                <img src="/IMG/pc_site/pc-1.jpg" alt="" />
-                                <p className="text-margin">ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
-                                <div>
-                                    <button className="button-footer-up" type="button"><a href="">view information</a></button>
-                                </div>
-                            </section>
-                        </section>
-                        <section id='htdocx'>
-                            <section id="section-div-footer-1">
-                                <img src="/IMG/pc_site/pc-1.jpg" alt="" />
-                                <p className="text-margin">ش الیزابت هولمز موسس Theranos برای متحول کردن صنعت مراقبت های بهداشتی پس از ترک دانشگاه و راه اندازی یک شرکت فناوری می پرداز…</p>
-                                <div>
-                                    <button className="button-footer-up" type="button"><a href="">view information</a></button>
-                                </div>
-                            </section>
-                        </section>
-
-                        {/* <section>
-                            <section id="section-div-footer-1">
-                                <div><img src="/IMG/pc_site/pc-2.jpg" alt="" /></div>
-                                <div className="text-margin">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At temporibus possimus expedita. Eligendi sit ex consequatur eveniet aliquam possimus iusto.</div>
-                                <div>
-                                    <button className="button-footer-up" type="button"><a href="">view information</a></button>
-                                </div>
-                            </section>
-                        </section>
-                        <section>
-                            <section id="section-div-footer-1">
-                                <div><img src="/IMG/pc_site/pc-3.jpg" alt="" /></div>
-                                <div className="text-margin">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At temporibus possimus expedita. Eligendi sit ex consequatur eveniet aliquam possimus iusto.</div>
-                                <div>
-                                    <button className="button-footer-up" type="button"><a href="">view information</a></button>
-                                </div>
-                            </section>
-                        </section>
-                        <section>
-                            <section id="section-div-footer-1">
-                                <div><img src="/IMG/pc_site/pc-4.jpg" alt="" /></div>
-                                <div className="text-margin">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At temporibus possimus expedita. Eligendi sit ex consequatur eveniet aliquam possimus iusto.</div>
-                                <div>
-                                    <button className="button-footer-up" type="button"><a href="">view information</a></button>
-                                </div>
-                            </section>
-                        </section>
-                        <section>
-                            <section id="section-div-footer-1">
-                                <div><img src="/IMG/pc_site/pc-5.jpg" alt="" /></div>
-                                <div className="text-margin">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At temporibus possimus expedita. Eligendi sit ex consequatur eveniet aliquam possimus iusto.</div>
-                                <div>
-                                    <button className="button-footer-up" type="button"><a href="">view information</a></button>
-                                </div>
-                            </section>
-                        </section>
-                        <section>
-                            <section id="section-div-footer-1">
-                                <div><img src="/IMG/pc_site/pc-3.jpg" alt="" /></div>
-                                <div className="text-margin">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At temporibus possimus expedita. Eligendi sit ex consequatur eveniet aliquam possimus iusto.</div>
-                                <div>
-                                    <button className="button-footer-up" type="button"><a href="">view information</a></button>
-                                </div>
-                            </section>
-                        </section>
-                        <section>
-                            <section id="section-div-footer-1">
-                                <div><img src="/IMG/pc_site/pc-4.jpg" alt="" /></div>
-                                <div className="text-margin">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At temporibus possimus expedita. Eligendi sit ex consequatur eveniet aliquam possimus iusto.</div>
-                                <div>
-                                    <button className="button-footer-up" type="button"><a href="">view information</a></button>
-                                </div>
-                            </section>
-                        </section> */}
-
+                        </div>
+                        <div id="scroll-list-right" onClick={()=>scrool_list_move_right()} className='scroll_footer_style'>
+                            {"("}
+                        </div>
                     </div>
                 </footer>
 
