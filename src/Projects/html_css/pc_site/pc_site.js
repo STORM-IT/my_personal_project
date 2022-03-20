@@ -10,6 +10,7 @@ export default function Pc_site() {
 
     return (
         <Fragment>
+            <div id='movie-site'>
             <div id="container_nav_header">
                 <div className='d-flex align-items-center '>
 
@@ -587,6 +588,7 @@ export default function Pc_site() {
                 </footer>
 
             </main>
+            </div>
         </Fragment>
     )
 }

@@ -20,7 +20,7 @@ const Header = () => {
         {context => (
             <form action='#' onSubmit={event => event.preventDefault()} className="box_obj">
                 <Alert className='' id='Close'>
-                    <p> Please write your information and click <kbd className="bg-success">Add Person</kbd></p>
+                    <p> Please write your information and click <kbd className="bg-success">Add My Program</kbd></p>
                 </Alert>
                 <br />
                 <Badge pill bg='light' text='dark' className='p-2 display-3 mb-5' >Youre lenght list program is <Badge bg={Color_Badge}>{context.ListPersons.length}</Badge> 👀</Badge>
