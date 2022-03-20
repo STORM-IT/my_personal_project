@@ -9,7 +9,7 @@ var effort = 0;
 var select = 0;
 
 export default function get_random_text() {
-    message = document.getElementById('txt-top');
+    message = document.getElementById('title');
     container = document.querySelector('#container-txt');
     button = document.getElementById('check');
     debugger
@@ -18,7 +18,8 @@ export default function get_random_text() {
         var element = document.createElement('p');
         element.innerHTML = list_name_Broken[select];
         element.style.fontSize = '30px';
-        container.appendChild(element);
+        // container.appendChild(element);
+        container.innerHTML=list_name_Broken[select];
         check_start = true;
         message.innerHTML = 'your effort is : ' + effort;
     }
@@ -59,7 +60,7 @@ export default function get_random_text() {
         button.innerHTML = 'start game';
     }
     function clear_color() {
-        document.getElementById('input-txt').style.backgroundColor = 'White';
+        document.getElementById('input-txt').style.backgroundColor = 'aliceblue';
     }
 
 }

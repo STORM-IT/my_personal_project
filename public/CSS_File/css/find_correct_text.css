@@ -1,0 +1,49 @@
+body{
+    /* background-color: aqua!important; */
+}
+#find_correct_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* font-family: sans-serif; */
+}
+#find_correct_text #title{
+    width: 500px;
+    text-align: center;
+padding: 50px;
+background-color: rgb(220, 239, 255);
+border-radius: 0px 0px 20px 20px;
+}
+#find_correct_text #container-txt{
+padding: 40px 0px;
+font-size: 30px;
+}
+#find_correct_text #container{
+padding: 50px;
+}
+#find_correct_text #input-txt{
+padding:3px 5px;
+outline: none;
+border: 1px rgb(161, 161, 161) solid;
+box-shadow: rgb(97, 97, 97) 0px 0px 5px;
+border-radius: 0px !important;
+background-color: aliceblue;
+}
+#find_correct_text #check{
+    padding: 7px 40px;
+    border: none;
+    box-shadow: black 0px 0px 5px;
+    border-radius: 10px;
+    background-color: rgb(100, 100, 100);
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    font-size: 18px;
+}
+#find_correct_text #check:hover{
+    background-color: rgb(73, 73, 73);
+
+}
+#find_correct_text #effore{
+padding: 50px;
+}
