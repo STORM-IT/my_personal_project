@@ -1,127 +1,134 @@
-#calendar .container{
-    display: flex;
-    justify-content: center;
-
+#calendar .box_obj{
+    background-color: rgb(65, 91, 102);
+    text-align: center;
 }
-#calendar .container_main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-#calendar kbd{
-    border: 1px solid gray;
-    padding: 10px 10px;
+#calendar .box_person{
+    width: 450px;
+    background-color: hsla(237, 32%, 22%, 0.836);
     border-radius: 5px;
-    background-color: rgb(212, 220, 228);
-    font-size: 16px;
-}
-#calendar strong{
-    background-color: rgb(223, 223, 100);
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin-left: 5px;
-}
-#calendar .info-top{
-    margin: 30px 10px;
-    font-size: 20px;
-}
-#calendar .header{
-    background-color: rgb(191, 199, 206);
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: rgb(0, 0, 0);
-}
-#calendar .div-text-btn{
-    display: flex;
-    flex-direction: row-reverse;
-}
-#calendar #text_input{
-    /* width: 80%; */
-    font-size: 23px;
     padding: 5px;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.637);
-    color: rgb(43, 46, 48);
-    flex-grow: 1;
-    margin: 10px 10px 10px 5px;
+    margin-top: 10px;
+    text-align: center;
 }
-#calendar #text_input:active{
-    animation: text_big 2s ease-in both;
-}
-
-#calendar .btn_Add{
-    color: rgb(57, 60, 61);
-    padding: 5px 7px;
-    border-radius: 4px;
-    background-color: rgba(13, 236, 42, 0.911);
-    height: 41px;
-    margin: 10px 0px 10px 10px;
-    border: 1px solid rgba(0, 0, 0, 0.438);
-    box-shadow: black -1px 1px 2px;
+#calendar #container_person{
     position: relative;
-
-}
-#calendar .btn_Add:active{
-    box-shadow: none;
-    background-color: rgba(17, 196, 41, 0.911);
-}
-#calendar #container-calendar{
-width: 100%;
-height: 63%;
-border-radius: 10px;
-border: 1px solid rgb(83, 73, 73);
-background-color: rgba(88, 143, 143, 0.733);
-display: flex;
-flex-direction: column;
-overflow-y: scroll;
-align-items: center;
-animation: view 1s ease-in both;
-/* position: absolute; */
-}
-
-#calendar .edit-text{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    transition:height 3s ease-in;
+}
+#calendar .Height100{
+    height: max-content;
+}
+#calendar #btn_submit {
+    z-index: 1;
     position: relative;
-    width: 98%;
-    /* height: 20px; */
-    font-size: 19px;
-    padding: 1% 1%;
-    margin: 10px 10px;
-    border-radius: 10px;
-    border: 0px;
-    background-color: rgba(153, 207, 253, 0.541);
-    animation: change_opacity_up 200ms ease-in both;
-}
-@keyframes change_opacity_up{
-    0%{opacity: 0;}
-    100%{opacity: 1;}
-}
-#calendar .edit-text:hover{
-    background-color: rgba(140, 187, 228, 0.596);
-}
-#calendar .edit-text:focus{
-    
-    background-color: rgba(64, 255, 96, 0.719);
-}
-#calendar .delete_icon{
-    float: right;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    background-color: hsl(236, 32%, 26%);
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+  }
+  
+  #calendar  #btn_submit::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: #3cefff;
+    transform-origin: center;
+    transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
+    transition: transform 0.45s ease-in-out;
+  }
+  
+  #calendar #btn_submit:hover {
     cursor: pointer;
-    font-size: 30px;
-    
+    color: #161616;
+  }
+  
+  #calendar #btn_submit:hover::before {
+    transform: translate3d(50%, -50%, 0) scale3d(16, 15, 15);
+  }
+/* style imput text in head */
+#calendar #div_text_style {
+  margin-top: 20px;
+  position: relative;
+  display: inline-block;
 }
-/* #calendar .B{
-    background-color: rgba(140, 187, 228, 0.596);
+
+#calendar #input_text_style {
+  width: 10vw;
+  display: inline-block;
+  color: white;
+  font-size: inherit;
+  font-family: inherit;
+  background-color: hsl(236, 32%, 26%);
+  padding: 0.35em 0.45em;
+  border: 1px solid transparent;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 4px;
+  /* margin-top: 35px; */
+
 }
-#calendar .B:focus{
-    background-color: rgba(64, 255, 96, 0.719);
-} */
-#calendar .view-remove{
-    animation: change_opacity_down 500ms ease-in-out both;
+#calendar #input_text_style:focus {
+  outline: none;
 }
-@keyframes change_opacity_down{
-    0%{opacity: 1;}
-    100%{opacity: 0;}
+#calendar #input_text_style::placeholder {
+  color: hsla(0, 0%, 100%, 0.6);
 }
+#calendar .span_text_style {
+  position: absolute;
+  background-color: #3cefff;
+  transform-origin: center;
+  transition: transform 0.5s ease;
+}
+#calendar .bottom,.top {
+  height: 1px;
+  left: 0;
+  right: 0;
+  transform: scaleX(0);
+}
+#calendar .left,.right {
+  width: 1px;
+  top: 0;
+  bottom: 0;
+  transform: scaleY(0);
+}
+#calendar .top {
+  top: 0;
+}
+#calendar .bottom {
+  bottom: 0;
+}
+
+#calendar .left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+#calendar #input_text_style:focus ~ .top,   #input_text_style:focus ~ .bottom {
+  transform: scaleX(1);
+}
+
+#calendar #input_text_style:focus ~ .left,   #input_text_style:focus ~ .right {
+  transform: scaleY(1);
+}
+
+.description_program{
+width: 20vw!important;
+min-height: 100px;
+max-height: 200px;
+margin-top: 0px!important;
+}
+/* end style imput text in head */

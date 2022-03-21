@@ -2,6 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(122, 155, 226);
+    width: 100vw;
+    height: 100vh;
 }
 #Snake #container{
     display: flex;
@@ -11,11 +14,13 @@
     width:50% ;
 }
 #Snake #Map{
+    box-sizing: border-box;
     position: relative;
-    width: 900px;
-    height: 400px;
-    background-color: rgb(228, 217, 203);
-    border: 10px solid black;
+    /* width: 900px; */
+    width: 800px;
+    height: 405px;
+    background-color: rgb(0, 0, 0);
+    border: 5px solid rgb(194, 186, 186);
     direction: rtl;
     font-size: 100%;
 }
@@ -31,7 +36,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    
     
 }
 #Snake #Rank-info{

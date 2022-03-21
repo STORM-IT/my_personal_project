@@ -49,22 +49,22 @@ export function Move_snake(move) {
         switch (move) {
             case 'top':
                 move_info = 0;
-                Time_game = setInterval(move_snake_top, 50)
+                Time_game = setInterval(move_snake_top, 150)
                 break;
 
             case 'right':
                 move_info = 1;
-                Time_game = setInterval(move_snake_right, 50)
+                Time_game = setInterval(move_snake_right, 150)
                 break;
 
             case 'bottom':
                 move_info = 2;
-                Time_game = setInterval(move_snake_bottom, 50)
+                Time_game = setInterval(move_snake_bottom, 150)
                 break;
 
             case 'left':
                 move_info = 3;
-                Time_game = setInterval(move_snake_left, 50)
+                Time_game = setInterval(move_snake_left, 150)
                 break;
 
             default:
@@ -222,7 +222,8 @@ export function Get_random_location() {
 
 
     snake.style.top = 150 + 'px';
-    snake.style.left = Math.floor(Math.random() * 800) + 'px';
+    // snake.style.left = Math.floor(Math.random() * 800) + 'px';
+    snake.style.left = Math.floor(Math.random() * 40)*20 + 'px';
     move_info = Math.floor(Math.random() * 4);
     console.log(move_info);
     top_snake = snake.offsetTop;
@@ -318,7 +319,7 @@ function get_gift() {
     gift = document.querySelector(".animated_gift");
     let check_top = false;
     let check_left = false;
-    for (let i = snake.offsetTop - 40; i < snake.offsetTop + 20; i++) {
+    for (let i = snake.offsetTop - 60; i < snake.offsetTop + 20; i++) {
         if (i == gift.offsetTop) {
             check_top = true;
         }
@@ -354,7 +355,6 @@ function get_gift() {
 
 function check_Loser() {
 
-
     for (let i = 0; i < Snake_all.length; i++) {
         let left = Snake_all[i].offsetLeft;
         let top = Snake_all[i].offsetTop;
@@ -365,21 +365,19 @@ function check_Loser() {
     if (left_snake >= 870) {
         Finish();
     }
-    if (top_snake <= 0) {
+    if (top_snake <= -10) {
         Finish();
     }
-    if (left_snake <= -4) {
+    // if (left_snake <= -4) {
+    if (left_snake <= -20) {
         Finish();
     }
     if (top_snake >= 373) {
         Finish();
     }
     function Finish() {
-
         alert('Game Over! ' + 'your score=' + score_number +
             ' your Time Ranking:' + view_time.innerHTML);
-
-
         clear_map();
         btn_start.style.display = 'inline-block';
         game_Start = false;

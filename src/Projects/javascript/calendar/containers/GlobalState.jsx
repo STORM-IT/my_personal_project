@@ -118,7 +118,7 @@ export default function GlobalState(props) {
                 set_name_age: set_name_age,
 
             }} >
-                <div id='Personal-manager'>
+                <div id='calendar'>
 
             {props.children}
             {Check_show_person}
