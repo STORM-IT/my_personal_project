@@ -1,27 +1,25 @@
-const score=[0,0];
-var select_pc=['shir','khat'];
-var time1;
-function check(point) {
-    debugger
-    var number_random=Math.floor(Math.random()*2);
-    
-    
-    if (point===select_pc[number_random]) {
-        clearTimeout(time1);
-       document.getElementById('p-top').innerHTML="your win";
-       score[0]++; 
-       document.getElementById('USER').innerHTML=score[0].toString();
-       document.getElementById('div-button').style.backgroundColor="green";
-       time1 = setTimeout(clear_1,2000);
-    } else {
-        clearTimeout(time1);
-        document.getElementById('p-top').innerHTML="your filed"; 
-        score[1]++;
-        document.getElementById('PC').innerHTML=score[1].toString(); 
-        document.getElementById('div-button').style.backgroundColor="red";
-        time1 = setTimeout(clear_1,2000);
-    }
-    function clear_1() {
-        document.getElementById('div-button').style.backgroundColor="white";
-    }
+import React, { Fragment } from 'react'
+import { Check } from './script_heads_or_tails'
+
+export default function Heads_or_tails() {
+    return (
+        <Fragment>
+
+            <div id='heads_or tails' className='text-center'>
+            <h3 id="p-top" className='mt-4'>please one select button</h3>
+            <div id="div-button">
+                <button onClick={()=>Check("shir")} className="btn btn-warning m-4">شیر</button>
+                <button id="B-khat" onClick={()=>Check("khat")} className="btn btn-info m-4">خط</button>
+            </div>
+            <div>
+                <hr />
+                <p>score</p>
+                <h5>computer : <span id="PC">0</span></h5>
+                <h5>user : <span id="USER">0</span></h5>
+            </div>
+
+            </div>
+        </Fragment>
+
+    )
 }

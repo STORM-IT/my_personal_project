@@ -12,6 +12,7 @@ import Find_correct_text from './Projects/javascript/find_correct_text/find_corr
 import Snake from './Projects/javascript/snake/snake';
 import Personal_manager from './Projects/javascript/calendar/containers/personal_manager';
 import Pc_site from './Projects/html_css/pc_site/pc_site';
+import Heads_or_tails from './Projects/javascript/heads_or_tails/heads_or_tails'
 export default function App() {
 
   return (
@@ -26,6 +27,7 @@ export default function App() {
             <Route path={'snake'} element={<Snake/>} />
             <Route path={'calendar'} element={<Personal_manager/>} />
             <Route path={'move-site'} element={<Pc_site/>} />
+            <Route path={'heads-tailsd'} element={<Heads_or_tails/>} />
           </Route>
           <Route path={''}>
             <Route path={""} 
