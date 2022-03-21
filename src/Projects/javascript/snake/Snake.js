@@ -20,21 +20,20 @@ export default function Snake() {
                     <span className="snake text-success" id="Snake_head">o</span>
                 </div>
                 <div className="d-flex justify-content-around w-100 mt-2" id="container-button">
-                    <button onClick={()=>Get_random_location()} className="btn btn-success" id="Start">Start</button>
+                    <button onClick={()=>Get_random_location()} className="btn btn-success w-25" id="Start">Start</button>
                     <button onClick={()=>Get_random_location()} className="btn btn-warning" id="Restart">Restart</button>
                     <button onClick={()=>Stop_timer()} className="btn btn-danger" id="Stop">Stop-Game</button>
                 </div>
                 <div className="d-flex justify-content-around flex-column align-items-center mt-3">
                     <div className="m-1">
-                        <button onClick={()=>Move_snake('top')} className="btn btn-info">^</button>
+                        <img src='/IMG/Project_snake/icon_move_snake.svg' onClick={()=>Move_snake('top')} className=" btn-move-snake btn_snake_move_top"/>
                     </div>
                     <div className="m-1">
-                        <button onClick={()=>Move_snake('left')} className="btn btn-info me-4">
-                            left</button>
-                        <button onClick={()=>Move_snake('right')} className="btn btn-info ms-4">right</button>
+                        <img src='/IMG/Project_snake/icon_move_snake.svg' onClick={()=>Move_snake('left')} className=" me-4 btn-move-snake btn_snake_move_left" />
+                        <img src='/IMG/Project_snake/icon_move_snake.svg' onClick={()=>Move_snake('right')} className=" ms-4 btn-move-snake btn_snake_move_right"/>
                     </div>
                     <div className="m-1">
-                        <button onClick={()=>Move_snake('bottom')} className="btn btn-info">v</button>
+                        <img src='/IMG/Project_snake/icon_move_snake.svg' onClick={()=>Move_snake('bottom')} className=" btn-move-snake btn_snake_move_bottom"/>
                     </div>
                 </div>
             </div>

@@ -338,9 +338,13 @@ function get_gift() {
             let tag_span = document.createElement('span');
             tag_span.innerHTML = 'o';
             tag_span.classList.add('snake', 'baby', 'snake_body');
+            // tag_span.style.visibility="hidden";
             // tag_span.setAttribute("id", "S_baby");
-            tag_span.style.top = top + 'px';
-            tag_span.style.left = left + 'px';
+            // tag_span.style.top = top + 'px';
+            // tag_span.style.position="relative"
+            // tag_span.style.left ='300px';
+            // tag_span.style.top = -200 + 'px';
+            // tag_span.style.left = left + 'px';
             div_container.appendChild(tag_span);
         }
         Score.innerHTML = ' ' + ++score_number;
@@ -362,7 +366,7 @@ function check_Loser() {
             Finish();
         }
     }
-    if (left_snake >= 870) {
+    if (left_snake >= 780) {
         Finish();
     }
     if (top_snake <= -10) {
@@ -392,7 +396,7 @@ function set_gift() {
     let tag_p = document.createElement('span');
     tag_p.classList.add("animated_gift");
     tag_p.style.top = Math.floor(Math.random() * 300) + 'px';
-    tag_p.style.left = Math.floor(Math.random() * 800) + 'px';
+    tag_p.style.left = Math.floor(Math.random() * 760) + 'px';
     div_container.appendChild(tag_p);
     check_get_gift = setInterval(get_gift, 100);
 }

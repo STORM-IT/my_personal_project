@@ -2,9 +2,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(122, 155, 226);
+    background-color: rgb(40, 48, 65);
     width: 100vw;
+    padding: 50px 0px;
     height: 100vh;
+    box-sizing: border-box;
 }
 #Snake #container{
     display: flex;
@@ -23,31 +25,35 @@
     border: 5px solid rgb(194, 186, 186);
     direction: rtl;
     font-size: 100%;
+    /* overflow: hidden; */
 }
 #Snake .snake{
     
     position: absolute; 
-    color: rgb(37, 146, 241); 
+    /* color: rgb(37, 146, 241);  */
+    color: rgb(41, 107, 21); 
     font-size: 50px; 
-    
+    /* background-color: aliceblue; */
     height: 0px;
     
     display: none;
     justify-content: center;
     align-items: center;
     text-align: center;
+    /* width: 30px; */
+    /* height:30px; */
     
 }
 #Snake #Rank-info{
     align-self: flex-start;
-    color: rgb(73, 72, 72);
+    color: rgb(202, 192, 192);
     font-size: 20px;
     display: flex;
     width: 100%;
     justify-content: space-around;
 }
 #Snake .Rank-p{
-    background-color: rgb(197, 205, 209);
+    /* background-color: rgb(197, 205, 209); */
     padding: 6px;
     border-radius: 10px;
     position: relative;
@@ -56,16 +62,16 @@
     
 }
 #Snake .Rank{
-    color: rgb(74, 112, 112);
+    color: rgb(132, 230, 230);
 }
 #Snake #option{
     position: absolute;
     top: 80%;
     right: 80%;
 }
-#Snake .Rank-p:nth-child(2){
+/* #Snake .Rank-p:nth-child(2){
     width: 13%;
-}
+} */
 
 #Snake .animated_gift{
     position: absolute; 
@@ -76,9 +82,26 @@
     
 }
 
-/* @keyframes gift{
-    0%{width:30px; height: 30px; top: 47px; left: 48px;}
-    25%{width:25px; height: 25px; top: 50px; left: 50px;}
-    75%{width:25px; height: 25px; top: 50px; left: 50px;}
-    100%{width:30px; height: 30px; top: 47px; left: 48px;}
-} */
+.btn_snake_move_top{
+    transform: rotate(180deg);
+}
+.btn_snake_move_right{
+    transform: rotate(270deg);
+}
+.btn_snake_move_bottom{
+    transform: rotate(0deg);
+}
+.btn_snake_move_left{
+    transform: rotate(90deg);
+}
+
+.btn-move-snake{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    cursor: pointer;
+    /* color: rgb(116, 127, 136); */
+    /* filter: brightness(5); */
+    filter: brightness(0);
+    /* box-shadow: rgb(107, 100, 100) 0px 0px 5px; */
+}
