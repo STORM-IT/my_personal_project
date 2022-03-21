@@ -5,25 +5,13 @@ import { decrement, get_number, increment, setValueWithWrite } from '../../../Re
 
 export default function Find_correct_number() {
 
-
-
-    // var check_start = false;
-    // var button = document.getElementById('b-check');
-    // var math_container_text = document.getElementById('math-container-text');
-    // var container1 = document.getElementById('container-number');
-    // const list_input = document.querySelectorAll(".input-number");
-    // const list_text_math = document.querySelectorAll(".math-text");
-    // var list_number = [];
-    // var effort = document.getElementById('effort');
-    // var effort_check = 0;
-
     const dispatch = useDispatch();
     const num = useSelector(state => state.correctNumber)
     const { button_text, effort, list_text_math } = num;
-    // debugger
+
     return (
-        <div>
-            <div id="container">
+        
+            <div id="find_correct_number">
                 <p id="paragraph-effort">your effort is : <span id="effort">{effort}</span></p>
                 <hr />
                 <div id="container-number">
@@ -63,6 +51,6 @@ export default function Find_correct_number() {
                 {/* <button id="b-check" onClick={() => dispatch(get_number())}>start</button> */}
                 <button id="b-check" onClick={() => dispatch(get_number())}>{button_text}</button>
             </div>
-        </div>
+        
     )
 }
