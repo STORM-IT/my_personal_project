@@ -5,6 +5,9 @@
     font-family: Nazanin, sans-serif;
     text-decoration: none;
     scroll-behavior: smooth;
+    // box-sizing: content-box !important;
+    text-decoration: none !important;
+    // position: absolute;
 }
 $color_black: #222831;
 // $color_gray: #222831;
@@ -186,7 +189,7 @@ $footerRightInfoSite: "version", "create", "update", "brand";
 @mixin style($value) {
     display: flex;
     position: absolute;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 0px;
     height: 80px;
     border-radius: 30px;
@@ -197,6 +200,15 @@ $footerRightInfoSite: "version", "create", "update", "brand";
     overflow: hidden;
     span {
         align-self: center;
+        font-family: MacLemon;
+        font-size: 2rem;
+        margin-left: 30px;
+    }
+    img{
+        position: absolute;
+        right: 20px;
+        height: 100%;
+        width: 100px;
     }
     @if $value%2==1 {
         right: -300px;
@@ -251,7 +263,7 @@ $footerRightInfoSite: "version", "create", "update", "brand";
 }
 body {
     position: relative;
-    background-color: black;
+    background-color: rgb(0, 0, 0) !important;
     z-index: -10000;
 }
 
@@ -448,21 +460,25 @@ main {
         //         }
         //     }
         // }
-        display: flex;
+        display: flex ;
         // text-align: center;
-        justify-content: center;
-        align-items: center;
+        justify-content: center ;
+        // align-items: center;
+        width: 100%;
         .div_text_head {
             position: fixed;
+
             top: 0px;
             // width: 10%;
             height: 40px;
             // align-content: center;
+            box-sizing: content-box ;
             text-align: center;
-            padding: 5px 10px;
+            padding: 0px 25px 10px 25px;
             border-radius: 0px 0px 10px 10px;
             color: $color_light;
             z-index: 10000;
+            // margin: auto;
             background-color: lighten($color: $color_blue, $amount: 20);
             span {
                 // position: absolute;
@@ -1469,7 +1485,7 @@ main {
             //css btn sort project
             .project-btn-sort {
                 @extend %project-section-btn;
-
+                box-sizing: content-box !important;
                 line-height: 40px;
                 padding: 0;
                 background: transparent;
