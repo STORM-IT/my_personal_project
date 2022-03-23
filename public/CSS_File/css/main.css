@@ -1385,6 +1385,7 @@ main {
 }
 .project-container .project-bodey .project-filter .project-logo-container {
   position: absolute;
+  box-sizing: content-box !important;
   right: -40px;
   width: 30px;
   top: 200px;
@@ -1703,8 +1704,11 @@ main {
   height: 25px;
 }
 .card__body-header-title {
+  box-sizing: content-box !important;
+  margin: 0px;
   height: 100%;
   width: 100%;
+  padding-top: 5px;
   color: white;
   font-weight: 300;
   font-size: 20px;

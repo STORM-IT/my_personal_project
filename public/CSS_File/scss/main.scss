@@ -1573,6 +1573,7 @@ main {
                 // }
                 .project-logo-container {
                     position: absolute;
+                    box-sizing: content-box !important;
                     right: -40px;
                     width: 30px;
                     top: 200px;
@@ -2042,10 +2043,11 @@ main {
             // margin: 7px 0px;
             height: 25px;
             &-title {
-                // box-sizing:border-box;
+                box-sizing:content-box !important;
+                margin: 0px;
                 height: 100%;
                 width: 100%;
-                // padding: 0px 100%;
+                padding-top: 5px;
                 // color: var(--text-headline);
                 color: white;
                 font-weight: 300;
