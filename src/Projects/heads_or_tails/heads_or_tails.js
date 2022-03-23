@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react'
 import { Check } from './script_heads_or_tails'
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Heads_or_tails() {
     return (
