@@ -2,13 +2,11 @@ import React from 'react'
 
 export default function Send_Email() {
     return (
-        <div className="container">
-            <div>
+        <div className="contact">
+            {/* <div>
                 <h1 className='container_head'>ارتباط با من</h1>
             </div>
             <div>
-                {/* <h4 classNameName='container_head_text'></h4> */}
-                {/* text alighn center */}
             </div>
             <div className="row input-container">
                 <div className="col-xs-12">
@@ -33,6 +31,27 @@ export default function Send_Email() {
                 <div className="">
                     <div className="btn-lrg submit-btn">Send Message</div>
                 </div>
+            </div> */}
+            <div className="wrapper">
+                <form>
+                    <h2>ارتباط با من</h2>
+                    <hr className="sep" />
+                    <div className="group">
+                        <input type="text" required="required" /><span className="highlight"></span><span className="bar"></span>
+                        <label>نام</label>
+                    </div>
+                    <div className="group">
+                        <input type="text" required="required" /><span className="highlight"></span><span className="bar"></span>
+                        <label>ایمیل</label>
+                    </div>
+                    <div className="group">
+                        <textarea type="textarea" rows="5" required="required"></textarea><span className="highlight"></span><span className="bar"></span>
+                        <label>پیام</label>
+                    </div>
+                    <div className="btn-box">
+                        <button className="btn btn-submit" type="submit">ارسال</button>
+                    </div>
+                </form>
             </div>
         </div>
 
