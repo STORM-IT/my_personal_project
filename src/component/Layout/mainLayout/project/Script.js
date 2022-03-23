@@ -24,7 +24,7 @@
 export const list_sort = () => {
     const btn_sort = document.querySelector(".project-btn-sort")
     const list_sort = document.querySelector("#project_list_sort")
-    debugger
+    // debugger
 
     var time;
     const time_show_list_sort = (check) => {
