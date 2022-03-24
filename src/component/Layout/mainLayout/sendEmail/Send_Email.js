@@ -1,59 +1,64 @@
-import React from 'react'
+import React, { useRef } from 'react'
+// import { Send_email } from './script'
+import emailjs,{init} from '@emailjs/browser';
 
 export default function Send_Email() {
-    return (
-        <div className="contact">
-            {/* <div>
-                <h1 className='container_head'>ارتباط با من</h1>
-            </div>
-            <div>
-            </div>
-            <div className="row input-container">
-                <div className="col-xs-12">
-                    <div className="styled-input wide">
-                        <input name="name" type="text" required />
-                        <label>نام</label>
-                    </div>
-                </div>
-                <div className="">
-                    <div className="styled-input wide">
-                        <input name="email" type="text" required />
-                        <label>ایمیل</label>
-                    </div>
-                </div>
 
-                <div className="">
-                    <div className="styled-input wide">
-                        <textarea required></textarea>
-                        <label>پیام</label>
-                    </div>
-                </div>
-                <div className="">
-                    <div className="btn-lrg submit-btn">Send Message</div>
-                </div>
-            </div> */}
-            <div className="wrapper">
-                <form>
-                    <h2>ارتباط با من</h2>
-                    <hr className="sep" />
-                    <div className="group">
-                        <input type="text" required="required" /><span className="highlight"></span><span className="bar"></span>
-                        <label>نام</label>
-                    </div>
-                    <div className="group">
-                        <input type="text" required="required" /><span className="highlight"></span><span className="bar"></span>
-                        <label>ایمیل</label>
-                    </div>
-                    <div className="group">
-                        <textarea type="textarea" rows="5" required="required"></textarea><span className="highlight"></span><span className="bar"></span>
-                        <label>پیام</label>
-                    </div>
-                    <div className="btn-box">
-                        <button className="btn btn-submit" type="submit">ارسال</button>
-                    </div>
-                </form>
-            </div>
-        </div>
+    // import React, { useRef } from 'react';
+
+
+
+
+
+
+    // import emailjs from '@emailjs/browser';
+    init("wrH_j_HcwnmuzdiaR");
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_nkmcypx', 'template_bqvvosr', form.current, 'wrH_j_HcwnmuzdiaR')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
+
+    return (
+        <form ref={form} onSubmit={sendEmail}>
+            <label>Name</label>
+            <input type="text" name="user_name" />
+            <label>Email</label>
+            <input type="email" name="user_email" />
+            <label>Message</label>
+            <textarea name="message" />
+            <input type="submit" value="Send" />
+        </form>
+        // <div className="contact">
+        //     <div className="wrapper">
+        //         <form>
+        //             <h2>ارتباط با من</h2>
+        //             <hr className="sep" />
+        //             <div className="group">
+        //                 <input type="text" required="required" /><span className="highlight"></span><span className="bar"></span>
+        //                 <label>نام</label>
+        //             </div>
+        //             <div className="group">
+        //                 <input type="text" required="required" /><span className="highlight"></span><span className="bar"></span>
+        //                 <label>ایمیل</label>
+        //             </div>
+        //             <div className="group">
+        //                 <textarea type="textarea" rows="5" required="required"></textarea><span className="highlight"></span><span className="bar"></span>
+        //                 <label>پیام</label>
+        //             </div>
+        //             <div className="btn-box">
+        //                 <button className="btn btn-submit" type="submit" >ارسال</button>
+        //             </div>
+        //         </form>
+        //     </div>
+        // </div>
 
     )
 }

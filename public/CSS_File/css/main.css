@@ -1791,8 +1791,8 @@ main {
 /* ///// inputs /////*/
 .contact {
   width: 100vw;
-  height: 600px;
-  padding: 200px 0px;
+  height: 900px;
+  padding: 100px 0px;
   margin: 300px 0px;
   background: linear-gradient(180deg, #0092ca 0%, white 100%);
 }
@@ -1819,7 +1819,7 @@ main {
   font-family: Nazanin;
 }
 .contact form hr.sep {
-  background: #2196f3;
+  background: rgba(0, 0, 0, 0);
   box-shadow: none;
   border: none;
   height: 2px;

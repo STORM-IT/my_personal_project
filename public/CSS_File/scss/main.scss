@@ -2171,8 +2171,8 @@ $d: 2;
 .contact {
     // box-sizing: border-box;
     width: 100vw;
-    height: 600px;
-    padding: 200px 0px;
+    height: 900px;
+    padding: 100px 0px;
     margin: 300px 0px;
     // background-color: #006baf;
     // background-color: rgb(0, 217, 255);
@@ -2216,7 +2216,7 @@ $d: 2;
             font-family: Nazanin;
         }
         hr.sep {
-            background: $hl-color;
+            background: rgba(0, 0, 0, 0);
             box-shadow: none;
             border: none;
             height: 2px;
