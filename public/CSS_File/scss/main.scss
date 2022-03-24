@@ -2239,8 +2239,9 @@ $d: 2;
     input,
     textarea {
         background: none;
-        color: $muted-color;
-        font-size: 18px;
+        // color: $muted-color;
+        color: rgb(22, 22, 22);
+        font-size: 1.3rem;
         padding: 10px 10px 10px 5px;
         display: block;
         width: $width;
@@ -2253,9 +2254,10 @@ $d: 2;
         }
         &:focus ~ label,
         &:valid ~ label {
-            top: -14px;
-            font-size: 12px;
-            color: $hl-color;
+            top: -20px;
+            font-size: 1rem;
+            // color: $hl-color;
+            color: rgba(0, 0, 0, 0.938);
         }
         &:focus ~ .bar:before {
             position: absolute;
@@ -2264,13 +2266,18 @@ $d: 2;
         }
     }
 
-    input[type="password"] {
-        letter-spacing: 0.3em;
-    }
+    // input[type=text] {
+        input[type=text]:-webkit-autofill,
+        input[type=text]:-webkit-autofill:hover,
+        input[type=text]:-webkit-autofill:focus,
+        input[type=text]:-webkit-autofill:active {
+            transition: background-color 50000s ease-in-out 0s, color 5000s ease-in-out 0s;
+        }
+    // }
 
     label {
         color: $muted-color;
-        font-size: 16px;
+        font-size: 1.3rem;
         font-weight: normal;
         position: absolute;
         pointer-events: none;
