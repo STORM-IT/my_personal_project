@@ -28,5 +28,4 @@ const Persons = () => {
         </SimpleContext.Consumer>
     )
 }
-
 export default ERadium(Persons, "container_person");

@@ -18,13 +18,11 @@ export default function get_random_text() {
         var element = document.createElement('p');
         element.innerHTML = list_name_Broken[select];
         element.style.fontSize = '30px';
-        // container.appendChild(element);
         container.innerHTML=list_name_Broken[select];
         check_start = true;
         message.innerHTML = 'your effort is : ' + effort;
     }
     else {
-
         //effort++;
         message.innerHTML = 'your effort is : ' + ++effort;
 
@@ -35,20 +33,16 @@ export default function get_random_text() {
             message.innerHTML = 'your win in ' + effort + ' effort';
             list_effort.push('name is :' + list_name[select] + '<br>' + 'your effort is :' + effort + '<hr>');
 
-
             let txt = document.createElement('p');
             txt.innerHTML = 'name is :' + list_name[select] + '<br>' + 'your effort is :' + effort + '<hr>';
 
             container.appendChild(txt);
             clear();
             setTimeout(clear_color, 3000);
-
-
         } else {
             document.getElementById('input-txt').style.backgroundColor = 'red';
             setTimeout(clear_color, 2000);
         }
-
     }
 
     function clear() {
@@ -62,5 +56,4 @@ export default function get_random_text() {
     function clear_color() {
         document.getElementById('input-txt').style.backgroundColor = 'aliceblue';
     }
-
 }

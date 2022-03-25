@@ -38,9 +38,7 @@ const Header = () => {
                 <div >
                     <div id='div_text_style'>
                         <textarea id='input_text_style' className="Clear description_program" onChange={event => { context.set_name_age({ age: event.target.value }) }} placeholder="please type your program" >
-
                         </textarea>
-                        {/* <input id='input_text_style' className="Clear" type="text" onChange={event => { context.set_name_age({ age: event.target.value }) }} placeholder="please type your age" /> */}
                         <span className="span_text_style bottom"></span>
                         <span className="span_text_style right"></span>
                         <span className="span_text_style top"></span>
@@ -61,5 +59,3 @@ const Header = () => {
     )
 }
 export default Header
-
-

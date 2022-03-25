@@ -41,13 +41,13 @@
 }
 .information_project .text_img_container h3, .info_layout_css .text_img_container h3 {
   text-align: right;
-  font-family: Yekan;
+  font-family: Yekan !important;
   font-size: 25px;
   margin-bottom: 10px;
 }
 .information_project .text_img_container p, .info_layout_css .text_img_container p {
   text-align: right;
-  font-family: RoyaBold;
+  font-family: RoyaBold !important;
   font-size: 20px;
 }
 
@@ -548,7 +548,7 @@ main {
   vertical-align: middle;
   font-size: 40px;
   direction: rtl;
-  font-family: RoyaBold;
+  font-family: RoyaBold !important;
 }
 .header-short #effect_text_head_container .blinking-cursor {
   direction: rtl;
@@ -961,7 +961,7 @@ main {
 }
 .Card-expertise-html span {
   align-self: center;
-  font-family: MacLemon;
+  font-family: MacLemon !important;
   font-size: 2rem;
   margin-left: 30px;
 }
@@ -986,7 +986,7 @@ main {
 }
 .Card-expertise-css span {
   align-self: center;
-  font-family: MacLemon;
+  font-family: MacLemon !important;
   font-size: 2rem;
   margin-left: 30px;
 }
@@ -1011,7 +1011,7 @@ main {
 }
 .Card-expertise-javascript span {
   align-self: center;
-  font-family: MacLemon;
+  font-family: MacLemon !important;
   font-size: 2rem;
   margin-left: 30px;
 }
@@ -1036,7 +1036,7 @@ main {
 }
 .Card-expertise-bootstrap span {
   align-self: center;
-  font-family: MacLemon;
+  font-family: MacLemon !important;
   font-size: 2rem;
   margin-left: 30px;
 }
@@ -1061,7 +1061,7 @@ main {
 }
 .Card-expertise-jquery span {
   align-self: center;
-  font-family: MacLemon;
+  font-family: MacLemon !important;
   font-size: 2rem;
   margin-left: 30px;
 }
@@ -1086,7 +1086,7 @@ main {
 }
 .Card-expertise-sass span {
   align-self: center;
-  font-family: MacLemon;
+  font-family: MacLemon !important;
   font-size: 2rem;
   margin-left: 30px;
 }
@@ -1111,7 +1111,7 @@ main {
 }
 .Card-expertise-react span {
   align-self: center;
-  font-family: MacLemon;
+  font-family: MacLemon !important;
   font-size: 2rem;
   margin-left: 30px;
 }
@@ -1136,7 +1136,7 @@ main {
 }
 .Card-expertise-redux span {
   align-self: center;
-  font-family: MacLemon;
+  font-family: MacLemon !important;
   font-size: 2rem;
   margin-left: 30px;
 }
@@ -1161,7 +1161,7 @@ main {
 }
 .Card-expertise-git span {
   align-self: center;
-  font-family: MacLemon;
+  font-family: MacLemon !important;
   font-size: 2rem;
   margin-left: 30px;
 }
@@ -1186,7 +1186,7 @@ main {
 }
 .Card-expertise-sharp span {
   align-self: center;
-  font-family: MacLemon;
+  font-family: MacLemon !important;
   font-size: 2rem;
   margin-left: 30px;
 }
@@ -1476,8 +1476,8 @@ main {
   text-align: right;
   background-color: gainsboro;
 }
-.project-listProject .card_project_title h3 {
-  font-family: Yekan;
+.project-listProject .card_project_title a {
+  font-family: Yekan !important;
   font-size: 1.4rem;
   font-weight: 800;
   padding: 3px 10px;
@@ -1495,7 +1495,7 @@ main {
 .project-listProject .card_project_description p {
   width: 100%;
   height: 100%;
-  font-family: Yekan;
+  font-family: Yekan !important;
   font-size: 1.1rem;
   line-height: 23px;
   font-weight: 600;
@@ -1539,7 +1539,7 @@ main {
   overflow: visible !important;
 }
 .project-listProject .card_project_information p {
-  font-family: Nazanin;
+  font-family: Nazanin !important;
   direction: rtl;
   font-weight: 700;
   padding: 3px 5px;
@@ -1795,7 +1795,7 @@ main {
   text-align: center;
   text-transform: uppercase;
   color: #636363cb;
-  font-family: Nazanin;
+  font-family: Nazanin !important;
 }
 .contact form hr.sep {
   background: rgba(0, 0, 0, 0);
@@ -1823,7 +1823,7 @@ main {
   border: none;
   border-radius: 0;
   border-bottom: 1px solid #636363cb;
-  font-family: Nazanin, NavineDemo;
+  font-family: Nazanin, NavineDemo !important;
 }
 .contact input:focus,
 .contact textarea:focus {
@@ -1857,7 +1857,7 @@ main {
   right: 5px;
   top: 10px;
   transition: 300ms ease all;
-  font-family: Nazanin;
+  font-family: Nazanin !important;
 }
 .contact .bar {
   position: relative;
@@ -1892,7 +1892,7 @@ main {
   background: #2196f3;
   color: #bce0fb;
   width: 180px;
-  font-family: Nazanin;
+  font-family: Nazanin !important;
   font-size: 1.2rem;
 }
 .contact .btn.btn-submit:hover {
@@ -1999,7 +1999,7 @@ main {
 .SocialNetwork-container .line div a {
   color: #eeeeee;
   font-size: 50px;
-  font-family: MacLemon;
+  font-family: MacLemon !important;
 }
 .SocialNetwork-container .move-top {
   position: absolute;
@@ -2217,7 +2217,7 @@ main {
   color: #eeeeee;
   direction: ltr;
   text-align: center;
-  font-family: RoyaBold;
+  font-family: RoyaBold !important;
 }
 
 /*# sourceMappingURL=main.css.map */

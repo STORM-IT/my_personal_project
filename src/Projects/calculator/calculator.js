@@ -1,20 +1,13 @@
-import React, { Fragment, useEffect } from 'react'
+import React, { Fragment} from 'react'
 import { Operation, Show_calculator_result } from "./script_calculator"
 
 export default function Calculator() {
-    // useEffect(() => {
-    // require("./script_calculator")
-    // }, [])
-
     return (
         <Fragment>
             <div id="calculator">
-
-
                 <div id="calculator-container">
                     <p id="text_up_textbox"></p>
                     <header>
-
                         <input type="text" name="" id="input-show" readOnly />
                         <span id="math_mark"></span>
                     </header>
@@ -49,17 +42,9 @@ export default function Calculator() {
                             <input type="button" value="." onClick={() => Operation('.')} className="btn math-key" id="1" />
                             <input type="button" value="=" onClick={() => Show_calculator_result()} className="btn math-key" id="1" />
                         </div>
-
-
                     </div>
-
-                    {/* <button id='calculator-btn' onClick={()=>Show_final_calculator()}>click</button> */}
-
                 </div>
-
-
             </div>
         </Fragment>
     )
 }
-

@@ -2,9 +2,7 @@ const score=[0,0];
 var select_pc=['shir','khat'];
 var time1;
 export function Check(point) {
-
     var number_random=Math.floor(Math.random()*2);
-    
     if (point===select_pc[number_random]) {
         clearTimeout(time1);
        document.getElementById('p-top').innerHTML="your win";

@@ -15,43 +15,35 @@ import Pc_site from './Projects/pc_site/pc_site';
 import Heads_or_tails from './Projects/heads_or_tails/heads_or_tails'
 export default function App() {
 
+  console.log(window.location.pathname)
   return (
     <Fragment>
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <Routes>
           <Route path={'project'}>
-            <Route path={'find-correct-number'} element={<Find_correct_number/>} />
-            <Route path={'calculator'} element={<Calculator/>} />
-            <Route path={'find-correct-text'} element={<Find_correct_text/>} />
-            <Route path={'snake'} element={<Snake/>} />
-            <Route path={'calendar'} element={<Personal_manager/>} />
-            <Route path={'move-site'} element={<Pc_site/>} />
-            <Route path={'heads-tailsd'} element={<Heads_or_tails/>} />
-            <Route path={'heads-tailsd'} element={<Heads_or_tails/>} />
-            </Route>
+            <Route path={'%D8%AD%D9%84%20%D9%85%D8%B9%D8%A7%D8%AF%D9%84%D9%87%20%D8%B1%DB%8C%D8%A7%D8%B6%DB%8C'} element={<Find_correct_number />} />
+            <Route path={'calculator'} element={<Calculator />} />
+            <Route path={'find-correct-text'} element={<Find_correct_text />} />
+            <Route path={'%D9%85%D8%A7%D8%B1%20%D8%A8%D8%A7%D8%B2%DB%8C'} element={<Snake />} />
+            <Route path={'calendar'} element={<Personal_manager />} />
+            <Route path={'move-site'} element={<Pc_site />} />
+            <Route path={'heads-tailsd'} element={<Heads_or_tails />} />
+            <Route path={'heads-tailsd'} element={<Heads_or_tails />} />
+          </Route>
           <Route path={''}>
-            <Route path={""} 
-            element={
-              <Fragment>
-              
-              
-                <Head />
-                <Main />
-                <Footer />
-                
-              </Fragment>
-            } />
+            <Route path={""}
+              element={
+                <Fragment>
+                  <Head />
+                  <Main />
+                  <Footer />
+                </Fragment>
+              } />
           </Route>
         </Routes>
-      </BrowserRouter> */}
-      {/* <Head /> */}
-      {/* <Main /> */}
-      {/* <Footer /> */}
-      <Head />
-                <Main />
-              <Footer />
-              {/* <Heads_or_tails/> */}
-          
+      </BrowserRouter>
+      {/* <Heads_or_tails/> */}
+
       <div className='footer-creator'>این سایت متعلق به علی پارسامنش میباشد  </div>
       {scroll_utils}
     </Fragment>
