@@ -1,8 +1,11 @@
+@import "../css/Utils/toolTip.css";
+@import "../css/Utils/fonts.css";
+
 * {
     margin: 0px;
     padding: 0px;
     // font-family: sans-serif;
-    font-family: Nazanin, sans-serif;
+    font-family: Nazanin, sans-serif !important;
     text-decoration: none;
     scroll-behavior: smooth;
     // box-sizing: content-box !important;
@@ -18,33 +21,7 @@ $color_light: #eeeeee;
 $expertise: "Html & css", "JavaScript", "Bootstrap", "Jquery", "Sass", "React", "C#";
 $socialNetwork: "telegram", "whatsApp", "instagram", "call", "location";
 $footerRightInfoSite: "version", "create", "update", "brand";
-@font-face {
-    font-family: Nazanin;
-    src: url("../../Font/Far.Nazanin\ Bold.ttf");
-}
-@font-face {
-    font-family: RoyaBold;
-    src: url("../../Font/Far.Roya\ Bold.ttf");
-}
-@font-face {
-    font-family: Yekan;
-    // src: url("../../Font/Far.Yekan.ttf");
-    // src: url("../../Font/Far.Yekan.ttf");
-    src: url("../../Font/Far.Nazanin.ttf");
-}
-@font-face {
-    font-family: Ye;
-    src: url("../../Font/Far.Roya.ttf");
-    // src: url("../../Font/Far.Nazanin.ttf");
-}
-@font-face {
-    font-family: MacLemon;
-    src: url("../../Font/ENGLISH/Hey.ttf");
-}
-@font-face {
-    font-family: NavineDemo;
-    src: url("../../Font/ENGLISH/NavineDemo-SemiCondensed.ttf");
-}
+
 @function card_item_style() {
     @return ();
 }
@@ -485,7 +462,7 @@ main {
                 display: inline-block;
                 top: 0px;
                 overflow: hidden;
-                font-family: MacLemon;
+                font-family: MacLemon !important;
                 font-size: 35px;
                 text-align: center;
                 width: 18px;
@@ -1448,7 +1425,7 @@ main {
                 color: #fff;
                 line-height: 42px;
                 padding: 0;
-                border: none;
+                border: 0.5px solid rgba(128, 128, 128, 0.4);
                 z-index: 1;
                 -webkit-transition: all 0.3s linear;
                 transition: all 0.3s linear;
@@ -1518,6 +1495,7 @@ main {
                 // -webkit-transform: rotateX(-180deg);
                 // transform: rotateX(-180deg) scaleY(4);
                 //    transition: all 1s ease;
+                
             }
 
             //end css btn open all project
@@ -1713,9 +1691,9 @@ main {
             width: 100%;
             // height: 30px;
             text-align: right;
-            background-color: $color_light;
+            // background-color: $color_light;
             // background-color: #9BA4B4;
-            // background-color: darken($color: $color_light, $amount: 20);
+            background-color: darken($color: $color_light, $amount: 7);
             h3 {
                 // font-family: RoyaBold;
                 // color: white;
@@ -1766,7 +1744,8 @@ main {
             text-align: right;
             box-sizing: border-box;
             padding: 3px 0px;
-            background-color: $color_light;
+            // background-color: $color_light;
+            background-color: darken($color: $color_light, $amount: 7);
             // background-color: #9BA4B4;
             // background-color: lighten($color: $color_blue, $amount: 45);
 
@@ -1803,7 +1782,8 @@ main {
             // background-color: darken($color: $color_light, $amount: 5);
             border-right: 1px solid rgb(187, 187, 187);
             // background-color: #9BA4B4;
-            background-color: $color_light;
+            // background-color: $color_light;
+            background-color: darken($color: $color_light, $amount: 7);
             // padding: 0px 5px;
             overflow: visible !important;
             p {
@@ -1826,11 +1806,12 @@ main {
 .grid {
     display: grid;
     grid-template-columns: auto;
-    width: 99%;
-    height: 99%;
-    padding: 1% 1%;
+    width: 100%;
+    height: 100%;
+    // padding: 0% 10%;
+    box-sizing: border-box !important;
     // column-gap: 22px;
-    row-gap: 10px;
+    row-gap: 6px;
     // display: flex;
     // justify-content: space-around;
     // align-items: center;
@@ -1838,15 +1819,17 @@ main {
     // background-color: #005600;
     opacity: 0.7;
     .title_filter_expertise {
+        box-sizing: content-box !important;
         background-color: $color_light;
         padding: 10px 0px;
-        margin-bottom: 10px;
+        margin-top: none !important;
+        margin-bottom: 5px;
     }
-    hr {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        margin: 5px 0px;
-    }
+    // hr {
+    //     grid-column-start: 1;
+    //     grid-column-end: 3;
+    //     // margin: 5px 0px;
+    // }
 }
 .card {
     --background: #fff;
@@ -1866,11 +1849,17 @@ main {
     --transition: 0.15s;
     user-select: none;
     display: inline-block;
+    background-color: transparent !important;
+    padding: none !important;
+    border: none !important;
     // margin:5px 0px;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
+    // border-radius: 10px;
     // padding: 3px 5px;
     // margin-bottom: -2px;
     width: 100%;
+    padding: 0px 7px;
+    // border-radius: 10px!important;
     // padding-top: 5px;
     // height: fit-content;
     &:nth-child(odd) {
@@ -1944,15 +1933,19 @@ main {
         //   grid-auto-columns: 100px 200px;
         grid-template-columns: auto 80%;
         background: var(--background);
+        // background-color: #000;
+        border-radius: 10px !important;
         height: var(--card-height);
         width: var(--card-width);
-        border-radius: var(--card-radius);
+        // border-radius: var(--card-radius);
+        // border-radius: 10px;
         overflow: hidden;
         position: relative;
         cursor: pointer;
         box-shadow: var(--shadow, 0 4px 4px 0 rgba(0, 0, 0, 0.02));
         transition: transform var(--transition), box-shadow var(--transition);
         transform: scale(var(--scale, 1)) translateZ(0);
+
         &:active {
             --scale: 0.97;
         }
@@ -2029,6 +2022,7 @@ main {
         &-header {
             // .card .card__body-header:nth-child(1) {
             // height: var(--header-height);
+            box-sizing: border-box !important;
             justify-content: baseline;
             // text-align: center;
             // background: var(--background);
@@ -2043,11 +2037,17 @@ main {
             // margin: 7px 0px;
             height: 25px;
             &-title {
-                box-sizing: content-box !important;
-                margin: 0px;
+                // // box-sizing: content-box !important;
+                // position: absolute;
+                // right: 0px;
+                // // box-sizing: content-box !important;
+                // position: absolute;
+                // right: 0px;
+                margin: 0px !important;
                 height: 100%;
                 width: 100%;
-                padding-top: 5px;
+                padding-top: 4px;
+
                 // color: var(--text-headline);
                 color: white;
                 font-weight: 300;
@@ -2183,7 +2183,7 @@ $d: 2;
     $bg-color: #424242;
     $hl-color: #2196f3;
     // $muted-color: mix(white, $bg-color, 70%);
-    $muted-color:#636363cb;
+    $muted-color: #636363cb;
     $trans-time: 300ms;
     $width: 420px;
 
@@ -2223,7 +2223,6 @@ $d: 2;
             width: 25%;
             margin: 0px auto 45px auto;
         }
-   
     }
 
     .group {
@@ -2248,7 +2247,7 @@ $d: 2;
         border: none;
         border-radius: 0;
         border-bottom: 1px solid $muted-color;
-        font-family: Nazanin,NavineDemo;
+        font-family: Nazanin, NavineDemo;
         &:focus {
             outline: none;
         }
@@ -2267,12 +2266,12 @@ $d: 2;
     }
 
     // input[type=text] {
-        input[type=text]:-webkit-autofill,
-        input[type=text]:-webkit-autofill:hover,
-        input[type=text]:-webkit-autofill:focus,
-        input[type=text]:-webkit-autofill:active {
-            transition: background-color 50000s ease-in-out 0s, color 5000s ease-in-out 0s;
-        }
+    input[type="text"]:-webkit-autofill,
+    input[type="text"]:-webkit-autofill:hover,
+    input[type="text"]:-webkit-autofill:focus,
+    input[type="text"]:-webkit-autofill:active {
+        transition: background-color 50000s ease-in-out 0s, color 5000s ease-in-out 0s;
+    }
     // }
 
     label {

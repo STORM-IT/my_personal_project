@@ -70,7 +70,10 @@ export default function Project({ list_projects }) {
                             </ul>
                             <button className='project-btn-sort'>Sort</button>
                             <span className='project-txt-header'>Projects</span>
-                            <button className='project-btn-openAll'>open All </button>
+                            <div data-tooltip="بازکردن  5  پروژه" data-tooltip-location="left">
+
+                            <button className='project-btn-openAll' >open All </button>
+                            </div>
                         </header>
                         <div className='project-bodey'>
                             <div className='project-filter'>
@@ -207,7 +210,7 @@ export default function Project({ list_projects }) {
                                             </header>
                                         </div>
                                     </label>
-                                
+
                                 </div>
                             </div>
                             <div className='project-listProject'>
@@ -243,8 +246,6 @@ export default function Project({ list_projects }) {
                     </div>
                 </section>
             </div>
-
-
 
         </Fragment>
     )

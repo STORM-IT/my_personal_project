@@ -1,36 +1,14 @@
+@import "../css/Utils/toolTip.css";
+@import "../css/Utils/fonts.css";
 * {
   margin: 0px;
   padding: 0px;
-  font-family: Nazanin, sans-serif;
+  font-family: Nazanin, sans-serif !important;
   text-decoration: none;
   scroll-behavior: smooth;
   text-decoration: none !important;
 }
 
-@font-face {
-  font-family: Nazanin;
-  src: url("../../Font/Far.Nazanin Bold.ttf");
-}
-@font-face {
-  font-family: RoyaBold;
-  src: url("../../Font/Far.Roya Bold.ttf");
-}
-@font-face {
-  font-family: Yekan;
-  src: url("../../Font/Far.Nazanin.ttf");
-}
-@font-face {
-  font-family: Ye;
-  src: url("../../Font/Far.Roya.ttf");
-}
-@font-face {
-  font-family: MacLemon;
-  src: url("../../Font/ENGLISH/Hey.ttf");
-}
-@font-face {
-  font-family: NavineDemo;
-  src: url("../../Font/ENGLISH/NavineDemo-SemiCondensed.ttf");
-}
 .information_project, .info_layout_css {
   display: flex;
   position: relative;
@@ -264,7 +242,7 @@ main {
   display: inline-block;
   top: 0px;
   overflow: hidden;
-  font-family: MacLemon;
+  font-family: MacLemon !important;
   font-size: 35px;
   text-align: center;
   width: 18px;
@@ -1285,7 +1263,7 @@ main {
   color: #fff;
   line-height: 42px;
   padding: 0;
-  border: none;
+  border: 0.5px solid rgba(128, 128, 128, 0.4);
   z-index: 1;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
@@ -1496,7 +1474,7 @@ main {
 .project-listProject .card_project_title {
   width: 100%;
   text-align: right;
-  background-color: #eeeeee;
+  background-color: gainsboro;
 }
 .project-listProject .card_project_title h3 {
   font-family: Yekan;
@@ -1533,7 +1511,7 @@ main {
   text-align: right;
   box-sizing: border-box;
   padding: 3px 0px;
-  background-color: #eeeeee;
+  background-color: gainsboro;
 }
 .project-listProject .card_project_expertise_badge div {
   box-sizing: content-box !important;
@@ -1557,7 +1535,7 @@ main {
   text-align: right;
   box-sizing: border-box !important;
   border-right: 1px solid #bbbbbb;
-  background-color: #eeeeee;
+  background-color: gainsboro;
   overflow: visible !important;
 }
 .project-listProject .card_project_information p {
@@ -1572,21 +1550,18 @@ main {
 .grid {
   display: grid;
   grid-template-columns: auto;
-  width: 99%;
-  height: 99%;
-  padding: 1% 1%;
-  row-gap: 10px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box !important;
+  row-gap: 6px;
   opacity: 0.7;
 }
 .grid .title_filter_expertise {
+  box-sizing: content-box !important;
   background-color: #eeeeee;
   padding: 10px 0px;
-  margin-bottom: 10px;
-}
-.grid hr {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  margin: 5px 0px;
+  margin-top: none !important;
+  margin-bottom: 5px;
 }
 
 .card {
@@ -1604,8 +1579,12 @@ main {
   --transition: 0.15s;
   user-select: none;
   display: inline-block;
-  box-sizing: border-box;
+  background-color: transparent !important;
+  padding: none !important;
+  border: none !important;
+  box-sizing: border-box !important;
   width: 100%;
+  padding: 0px 7px;
 }
 .card:nth-child(odd) .card__body-cover-image {
   --x-y1: 100% 90%;
@@ -1659,9 +1638,9 @@ main {
   display: grid;
   grid-template-columns: auto 80%;
   background: var(--background);
+  border-radius: 10px !important;
   height: var(--card-height);
   width: var(--card-width);
-  border-radius: var(--card-radius);
   overflow: hidden;
   position: relative;
   cursor: pointer;
@@ -1698,17 +1677,17 @@ main {
   filter: var(--filter-bg, grayscale(1));
 }
 .card__body-header {
+  box-sizing: border-box !important;
   justify-content: baseline;
   z-index: 1000;
   box-shadow: #6a6d72 -10px 0px 10px;
   height: 25px;
 }
 .card__body-header-title {
-  box-sizing: content-box !important;
-  margin: 0px;
+  margin: 0px !important;
   height: 100%;
   width: 100%;
-  padding-top: 5px;
+  padding-top: 4px;
   color: white;
   font-weight: 300;
   font-size: 20px;
