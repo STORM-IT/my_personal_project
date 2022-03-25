@@ -1,0 +1,29 @@
+@font-face {
+    font-family: Nazanin ;
+    src: url("../../../Font/Far.Nazanin\ Bold.ttf");
+    /* src: url("../../Font/Far.Nazanin\ Bold.ttf"); */
+}
+@font-face {
+    font-family: RoyaBold;
+    src: url("../../../Font/Far.Roya\ Bold.ttf");
+    /* src: url("../../Font/Far.Roya\ Bold.ttf"); */
+}
+@font-face {
+    font-family: Yekan;
+    src: url("../../../Font/Far.Nazanin.ttf");
+    /* src: url("../../Font/Far.Nazanin.ttf"); */
+}
+@font-face {
+    font-family: Ye;
+    src: url("../../../Font/Far.Roya.ttf");
+    /* src: url("../../Font/Far.Roya.ttf"); */
+}
+@font-face {
+    font-family: MacLemon;
+    src: url("../../../Font/ENGLISH/Hey.ttf");
+}
+@font-face {
+    font-family: NavineDemo;
+    src: url("../../../Font/ENGLISH/NavineDemo-SemiCondensed.ttf");
+    /* src: url("../../Font/ENGLISH/NavineDemo-SemiCondensed.ttf"); */
+}
