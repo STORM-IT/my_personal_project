@@ -10,7 +10,7 @@ export default function Project() {
         list_sort()
 
     }, [])
-    const list_projects=useSelector(state=>state.projects.PROJECT)
+    const list_projects=useSelector(state=>state.projects)
     const dispatch = useDispatch();
     return (
         <Fragment>
