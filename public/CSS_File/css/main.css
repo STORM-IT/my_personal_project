@@ -1495,7 +1495,7 @@ main {
 .project-listProject .card_project_description p {
   width: 100%;
   height: 100%;
-  font-family: Yekan !important;
+  font-family: Yekan, sans-serif !important;
   font-size: 1.1rem;
   line-height: 23px;
   font-weight: 600;
@@ -1518,7 +1518,8 @@ main {
   display: inline-block;
   margin-right: 10px;
   padding: 1px 10px;
-  background-color: #3aff54;
+  background-color: #3aff54bb;
+  box-shadow: #000 1px 1px 3px;
   border-radius: 10px;
   font-size: 0.9rem;
   font-weight: 600;

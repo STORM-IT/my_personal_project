@@ -1,14 +1,17 @@
 import React, { Fragment, useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import { Link, NavLink } from 'react-router-dom'
+import { filterExpertise, list_all_project } from '../../../../Redux/Action/filter_project'
 import { list_sort, show_filter_section } from './Script'
 // import project_json from "../../../JsonFiles/Project_details.json"
-export default function Project({ list_projects }) {
+export default function Project() {
 
     useEffect(() => {
         list_sort()
 
     }, [])
-
+    const list_projects=useSelector(state=>state.projects.PROJECT)
+    const dispatch = useDispatch();
     return (
         <Fragment>
             
@@ -85,7 +88,7 @@ export default function Project({ list_projects }) {
                                     <div className='grid'>
                                         <p className='title_filter_expertise'>Filter Expertise</p>
                                         <label className='card'>
-                                            <input className='card__input' type="checkbox" />
+                                            <input className='card__input' type="checkbox" onChange={e=>dispatch(filterExpertise("html/css",e.target.checked))}/>
                                             <div className='card__body'>
                                                 <div className='card__body-cover'>
                                                     <img className='card__body-cover-image' src='./IMG/logo_lessen/html.svg' />
@@ -101,7 +104,7 @@ export default function Project({ list_projects }) {
                                             </div>
                                         </label>
                                         <label className='card'>
-                                            <input className='card__input' type="checkbox" />
+                                            <input className='card__input' type="checkbox" onChange={e=>dispatch(filterExpertise("bootstrap",e.target.checked))}/>
                                             <div className='card__body'>
                                                 <div className='card__body-cover'>
                                                     <img className='card__body-cover-image' src='./IMG/logo_lessen/bootstrap.svg' />
@@ -117,7 +120,7 @@ export default function Project({ list_projects }) {
                                             </div>
                                         </label>
                                         <label className='card'>
-                                            <input className='card__input' type="checkbox" />
+                                            <input className='card__input' type="checkbox" onChange={e=>dispatch(filterExpertise("javascript",e.target.checked))}/>
                                             <div className='card__body'>
                                                 <div className='card__body-cover'>
                                                     <img className='card__body-cover-image' src='./IMG/logo_lessen/javascript.svg' />
@@ -133,7 +136,7 @@ export default function Project({ list_projects }) {
                                             </div>
                                         </label>
                                         <label className='card'>
-                                            <input className='card__input' type="checkbox" />
+                                            <input className='card__input' type="checkbox" onChange={e=>dispatch(filterExpertise("jquery",e.target.checked))}/>
                                             <div className='card__body'>
                                                 <div className='card__body-cover'>
                                                     <img className='card__body-cover-image' src='./IMG/logo_lessen/jquery.svg' />
@@ -149,7 +152,7 @@ export default function Project({ list_projects }) {
                                             </div>
                                         </label>
                                         <label className='card'>
-                                            <input className='card__input' type="checkbox" />
+                                            <input className='card__input' type="checkbox" onChange={e=>dispatch(filterExpertise("sass",e.target.checked))}/>
                                             <div className='card__body'>
                                                 <div className='card__body-cover'>
                                                     <img className='card__body-cover-image' src='./IMG/logo_lessen/sass.svg' />
@@ -165,7 +168,7 @@ export default function Project({ list_projects }) {
                                             </div>
                                         </label>
                                         <label className='card'>
-                                            <input className='card__input' type="checkbox" />
+                                            <input className='card__input' type="checkbox" onChange={e=>dispatch(filterExpertise("react",e.target.checked))}/>
                                             <div className='card__body'>
                                                 <div className='card__body-cover'>
                                                     <img className='card__body-cover-image' src='./IMG/logo_lessen/react.svg' />
@@ -181,7 +184,7 @@ export default function Project({ list_projects }) {
                                             </div>
                                         </label>
                                         <label className='card'>
-                                            <input className='card__input' type="checkbox" />
+                                            <input className='card__input' type="checkbox" onChange={e=>dispatch(filterExpertise("redux",e.target.checked))}/>
                                             <div className='card__body'>
                                                 <div className='card__body-cover'>
                                                     <img className='card__body-cover-image' src='./IMG/logo_lessen/redux.svg' />
@@ -197,7 +200,7 @@ export default function Project({ list_projects }) {
                                             </div>
                                         </label>
                                         <label className='card'>
-                                            <input className='card__input' type="checkbox" />
+                                            <input className='card__input' type="checkbox" onChange={e=>dispatch(filterExpertise("c#",e.target.checked))}/>
                                             <div className='card__body'>
                                                 <div className='card__body-cover'>
                                                     <img className='card__body-cover-image' src='./IMG/logo_lessen/c_sharp.svg' />
