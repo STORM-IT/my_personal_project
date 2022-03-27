@@ -9,6 +9,8 @@ export const my_projects = (state="", action) => {
       return action.payload;
     case "SORT_DATE":
       return action.payload;
+    case "SORT_CHALENGED":
+      return action.payload;
 
     default: return state;
   }
