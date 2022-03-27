@@ -69,3 +69,20 @@ export const sort_chalenged = () => {
         dispatch({ type: "SORT_CHALENGED", payload: state_project });
     }
 }
+export const open_all_projects_state = () => {
+    return (dispatch, getState) => {
+        const state_project = { ...getState().projects };
+        // debugger
+        // for (let i = 0; i < state_project.PROJECT.length; i++) {
+        //     window.open(`http://localhost:3000/project/${state_project.PROJECT[i].title}`);
+        // }
+        debugger
+        for (let i = 0; i < 2; i++) {
+            
+            window.open(`http://localhost:3000/${i}`);
+            window.location.href="/d"
+            window.location.href="/"
+        }
+            // window.open(`http://localhost:3000/project/b}`);
+    }
+}

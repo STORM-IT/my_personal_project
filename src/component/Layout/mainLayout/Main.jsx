@@ -39,19 +39,12 @@ export default function Main() {
         <i></i>
         <i></i>
         </div>
-     
-  
-
-
-
       </div>
-
       <Information />
       <Expertise />
       <Project list_projects={json_File.PROJECT}/>
       <Send_Email/>
       <SocialNetwork />
-
     </main>
   )
 }

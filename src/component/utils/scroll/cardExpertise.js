@@ -14,6 +14,5 @@ export const scroll_card_expertise=(Scroll)=>{
                 }, 600 * i);
             }
         }
-
     }  
 }

@@ -36,7 +36,7 @@ export const list_sort = () => {
             time = setTimeout(() => {
                 btn_sort.style.color = '#fff';
                 list_sort.classList.remove("visible")
-            }, 400);
+            }, 200);
             // }, 290);
         } else {
             clearTimeout(time);
@@ -45,7 +45,7 @@ export const list_sort = () => {
             time = setTimeout(() => {
                 btn_sort.style.color = '#000';
                 list_sort.classList.add("visible")
-            }, 500);
+            }, 350);
             // }, 400);
         }
     };

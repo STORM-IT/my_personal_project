@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, NavLink } from 'react-router-dom'
-import { filterExpertise, sort_chalenged, sort_date, sort_lineCode } from '../../../../Redux/Action/filter_project'
+import { filterExpertise, open_all_projects_state, sort_chalenged, sort_date, sort_lineCode } from '../../../../Redux/Action/filter_project'
 import { list_sort, show_filter_section } from './Script'
 export default function Project() {
 
@@ -76,9 +76,9 @@ export default function Project() {
                                 </ul>
                                 <button className='project-btn-sort'>Sort</button>
                                 <span className='project-txt-header'>Projects</span>
-                                <div data-tooltip={`بازکردن ${list_projects.length} پروژه`} data-tooltip-location="left">
+                                <div data-tooltip={``} data-tooltip-location="left">
 
-                                    <button className='project-btn-openAll' >open All </button>
+                                    <button className='project-btn-openAll' onClick={()=>dispatch(open_all_projects_state())}>Info</button>
                                 </div>
                             </header>
                             <div className='project-bodey'>
@@ -224,19 +224,14 @@ export default function Project() {
 
                                         <Fragment>
                                             <div className='card_project' key={project.title}>
-
                                                 <div className='card_project_contant'>
-
-
-                                                    <div className='card_project_title'><Link to={`/project/${project.title}`} data-tooltip="باز کردن پروژه" data-tooltip-location="left">{project.title}</Link></div>
+                                                    <div className='card_project_title'><Link to={project.title=="سایت شخصی"?"/":`/project/${project.title}` } onClick={project.title=="سایت شخصی"?()=>alert("شما در حال حاظر در سایت شخصی هستین"):""} data-tooltip={`باز کردن پروژه ${project.title}`} data-tooltip-location="left">{project.title}</Link></div>
                                                     <div className='card_project_description'><p>{project.description}</p></div>
                                                     <div className='card_project_expertise_badge'>
                                                         {project.expertions.map(expertion => (
-
                                                             <div className='card_expertise_badge'>{expertion}</div>
                                                         ))}
                                                     </div>
-
                                                 </div>
                                                 <div className='card_project_information'>
                                                     <p>تعداد خط کد : <span>{project.line_code}</span></p>
@@ -252,8 +247,6 @@ export default function Project() {
                         </div>
                     </section>
                 </div>
-                {/* {force_update?"":""} */}
-            
         </Fragment>
     )
 }
