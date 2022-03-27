@@ -1332,14 +1332,21 @@ main {
   width: 126px;
   color: #eeeeee;
   left: 79px;
-  top: 60px;
-  z-index: 100;
+  top: 70px;
+  z-index: 1000;
   padding: 5px 0px;
   visibility: hidden;
 }
-.project-container header li {
+.project-container header ul li p {
   font-family: sans-serif;
   padding: 8px 0px;
+  text-shadow: white 0px 0px 2px;
+  color: white;
+  cursor: pointer !important;
+}
+.project-container header ul li p:hover {
+  text-shadow: none;
+  color: #e6e6e6;
 }
 .project-container .project-bodey {
   position: relative;

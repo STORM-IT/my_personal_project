@@ -12,8 +12,6 @@ export default function Project() {
     // debugger
     const state=useSelector(state=>state.projects)
     const list_projects =state.PROJECT;
-    // const force_update=state.force;
-    // console.log(state);
     const dispatch = useDispatch();
     return (
         <Fragment>
@@ -71,10 +69,10 @@ export default function Project() {
                         <div className='project-container'>
                             <header>
                                 <ul id='project_list_sort'>
-                                    <li onClick={()=>dispatch(sort_lineCode())}>Line cod</li>
-                                    <li onClick={()=>dispatch(sort_date())}>Date</li>
-                                    <li onClick={()=>dispatch(sort_chalenged())}>Chalenged</li>
-                                    <li>fdg</li>
+                                    <li><p className='pe-auto' onClick={()=>dispatch(sort_lineCode())}>Line cod</p></li>
+                                    <li><p className='pe-auto' onClick={()=>dispatch(sort_date())}>Date</p></li>
+                                    <li><p className='pe-auto' onClick={()=>dispatch(sort_chalenged())}>Chalenged</p></li>
+                                    {/* <li>fdg</li> */}
                                 </ul>
                                 <button className='project-btn-sort'>Sort</button>
                                 <span className='project-txt-header'>Projects</span>
@@ -231,7 +229,6 @@ export default function Project() {
 
 
                                                     <div className='card_project_title'><Link to={`/project/${project.title}`} data-tooltip="باز کردن پروژه" data-tooltip-location="left">{project.title}</Link></div>
-                                                    {/* <Link to={`/${project.title}`}>d</Link> */}
                                                     <div className='card_project_description'><p>{project.description}</p></div>
                                                     <div className='card_project_expertise_badge'>
                                                         {project.expertions.map(expertion => (
