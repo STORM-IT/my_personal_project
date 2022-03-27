@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, NavLink } from 'react-router-dom'
-import { filterExpertise, list_all_project } from '../../../../Redux/Action/filter_project'
+import { filterExpertise, list_all_project, sort_lineCode } from '../../../../Redux/Action/filter_project'
 import { list_sort, show_filter_section } from './Script'
 // import project_json from "../../../JsonFiles/Project_details.json"
 export default function Project() {
@@ -10,7 +10,11 @@ export default function Project() {
         list_sort()
 
     }, [])
-    const list_projects=useSelector(state=>state.projects)
+    debugger
+    const state=useSelector(state=>state.projects)
+    const list_projects =state.PROJECT;
+    const force_update=state.force;
+    console.log(state);
     const dispatch = useDispatch();
     return (
         <Fragment>
@@ -68,7 +72,7 @@ export default function Project() {
                         <div className='project-container'>
                             <header>
                                 <ul id='project_list_sort'>
-                                    <li>Line cod</li>
+                                    <li onClick={()=>dispatch(sort_lineCode())}>Line cod</li>
                                     <li>Date</li>
                                     <li>Chalenged</li>
                                     <li>fdg</li>
@@ -252,7 +256,7 @@ export default function Project() {
                         </div>
                     </section>
                 </div>
-
+                {force_update?"":""}
             
         </Fragment>
     )

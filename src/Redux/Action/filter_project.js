@@ -3,7 +3,8 @@ import json_project_file from '../../component/JsonFiles/Project_details.json'
 export const getAllProjects = () => {
     console.log(json_project_file)
     return (dispatch, getState) => {
-        dispatch({ type: "ALL_PROJECTS", payload: json_project_file.PROJECT });
+        // debugger
+        dispatch({ type: "ALL_PROJECTS", payload: json_project_file });
     }
 }
 
@@ -11,9 +12,10 @@ var expertise_check= [];
 export const filterExpertise = (expertise,checked) => {
     console.log(json_project_file)
     return (dispatch, getState) => {
+        // debugger
+        const State={...getState().projects};
         const projects=json_project_file;
         let list_filter_project=[];
-
         const find_index_expertise=expertise_check.findIndex(prop=>prop.expertise===expertise)
         if (find_index_expertise!=-1) {
             expertise_check[find_index_expertise]={expertise,checked}
@@ -29,7 +31,18 @@ export const filterExpertise = (expertise,checked) => {
                 }
             }
         })
-        debugger
-        dispatch({ type: "FILTER_EXPERTISE", payload: list_filter_project.length===0?projects.PROJECT:list_filter_project});
+        // debugger
+        // State.projects.PROJECT=list_filter_project.length===0?projects.PROJECT:list_filter_project;
+        State.PROJECT=list_filter_project;
+        dispatch({ type: "FILTER_EXPERTISE", payload:State });
+    }
+}
+export const sort_lineCode = () => {
+    return (dispatch, getState) => {
+        // const list_project=getState().projects;
+        const list_project=json_project_file.PROJECT;
+        var sorting_list_project=list_project.sort(function(a, b){return a.line_code - b.line_code});
+        // debugger
+        dispatch({ type: "SORT_LINE", payload: sorting_list_project });
     }
 }
