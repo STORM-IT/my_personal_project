@@ -10,11 +10,11 @@ export default function Project() {
         list_sort()
 
     }, [])
-    debugger
+    // debugger
     const state=useSelector(state=>state.projects)
     const list_projects =state.PROJECT;
-    const force_update=state.force;
-    console.log(state);
+    // const force_update=state.force;
+    // console.log(state);
     const dispatch = useDispatch();
     return (
         <Fragment>
@@ -256,7 +256,7 @@ export default function Project() {
                         </div>
                     </section>
                 </div>
-                {force_update?"":""}
+                {/* {force_update?"":""} */}
             
         </Fragment>
     )

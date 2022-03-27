@@ -39,10 +39,19 @@ export const filterExpertise = (expertise,checked) => {
 }
 export const sort_lineCode = () => {
     return (dispatch, getState) => {
-        // const list_project=getState().projects;
-        const list_project=json_project_file.PROJECT;
-        var sorting_list_project=list_project.sort(function(a, b){return a.line_code - b.line_code});
         // debugger
-        dispatch({ type: "SORT_LINE", payload: sorting_list_project });
+        const state_project={...getState().projects};
+        const list_project=json_project_file.PROJECT;
+        state_project.PROJECT=list_project.sort(function(a, b){return a.line_code + b.line_code});
+        dispatch({ type: "SORT_LINE", payload: state_project });
+    }
+}
+export const sort_date = () => {
+    return (dispatch, getState) => {
+        // debugger
+        const state_project={...getState().projects};
+        const list_project=json_project_file.PROJECT;
+        state_project.PROJECT=list_project.sort(function(a, b){return a.line_code.replace('/', '') + b.line_code.replace('/', '')});
+        dispatch({ type: "SORT_DATE", payload: state_project });
     }
 }

@@ -6,7 +6,8 @@ export const my_projects = (state="", action) => {
     case "FILTER_EXPERTISE":
       return action.payload;
     case "SORT_LINE":
-      debugger
+      return action.payload;
+    case "SORT_LINE":
       return action.payload;
 
     default: return state;
