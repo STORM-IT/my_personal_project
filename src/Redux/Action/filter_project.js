@@ -42,16 +42,16 @@ export const sort_lineCode = () => {
         // debugger
         const state_project={...getState().projects};
         const list_project=json_project_file.PROJECT;
-        state_project.PROJECT=list_project.sort(function(a, b){return a.line_code + b.line_code});
+        state_project.PROJECT=list_project.sort(function(a, b){return  b.line_code-a.line_code });
         dispatch({ type: "SORT_LINE", payload: state_project });
     }
 }
 export const sort_date = () => {
     return (dispatch, getState) => {
-        // debugger
+        debugger
         const state_project={...getState().projects};
         const list_project=json_project_file.PROJECT;
-        state_project.PROJECT=list_project.sort(function(a, b){return a.line_code.replace('/', '') + b.line_code.replace('/', '')});
+        state_project.PROJECT=list_project.sort(function(a, b){return  b.create.replace('/', '')-a.create.replace('/', '') });
         dispatch({ type: "SORT_DATE", payload: state_project });
     }
 }

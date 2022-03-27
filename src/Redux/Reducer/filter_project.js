@@ -7,7 +7,7 @@ export const my_projects = (state="", action) => {
       return action.payload;
     case "SORT_LINE":
       return action.payload;
-    case "SORT_LINE":
+    case "SORT_DATE":
       return action.payload;
 
     default: return state;

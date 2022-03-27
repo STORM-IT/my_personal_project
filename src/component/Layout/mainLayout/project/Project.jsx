@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, NavLink } from 'react-router-dom'
-import { filterExpertise, list_all_project, sort_lineCode } from '../../../../Redux/Action/filter_project'
+import { filterExpertise, list_all_project, sort_date, sort_lineCode } from '../../../../Redux/Action/filter_project'
 import { list_sort, show_filter_section } from './Script'
 // import project_json from "../../../JsonFiles/Project_details.json"
 export default function Project() {
@@ -73,7 +73,7 @@ export default function Project() {
                             <header>
                                 <ul id='project_list_sort'>
                                     <li onClick={()=>dispatch(sort_lineCode())}>Line cod</li>
-                                    <li>Date</li>
+                                    <li onClick={()=>dispatch(sort_date())}>Date</li>
                                     <li>Chalenged</li>
                                     <li>fdg</li>
                                 </ul>
