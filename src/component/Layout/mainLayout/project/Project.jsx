@@ -1,9 +1,8 @@
 import React, { Fragment, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, NavLink } from 'react-router-dom'
-import { filterExpertise, list_all_project, sort_chalenged, sort_date, sort_lineCode } from '../../../../Redux/Action/filter_project'
+import { filterExpertise, sort_chalenged, sort_date, sort_lineCode } from '../../../../Redux/Action/filter_project'
 import { list_sort, show_filter_section } from './Script'
-// import project_json from "../../../JsonFiles/Project_details.json"
 export default function Project() {
 
     useEffect(() => {
@@ -79,7 +78,7 @@ export default function Project() {
                                 </ul>
                                 <button className='project-btn-sort'>Sort</button>
                                 <span className='project-txt-header'>Projects</span>
-                                <div data-tooltip="بازکردن  5  پروژه" data-tooltip-location="left">
+                                <div data-tooltip={`بازکردن ${list_projects.length} پروژه`} data-tooltip-location="left">
 
                                     <button className='project-btn-openAll' >open All </button>
                                 </div>
