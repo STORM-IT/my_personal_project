@@ -1,5 +1,5 @@
 export const scroll_sociaNetwork=(Scroll)=>{
-    if ( Scroll >= 6800 ) {
+    if ( Scroll >= 5700 ) {
         let line = document.querySelector(".line")
         let logo = document.querySelector(".line img")
         let userName = document.querySelector(".line div")

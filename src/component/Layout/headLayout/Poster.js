@@ -37,10 +37,17 @@ export default function Poster() {
             // await node.type("سلام, ");
 
             while (true) {
-                await node.type("سلام");
-                await sleep(2000);
-                await node.delete("سلام");
+                // await node.type("سلام");
+                // await sleep(2000);
+                // await node.delete("سلام");
 
+                await node.type(
+                    "امید وارم روز خوبی داشته باشین"
+                );
+                await sleep(2000);
+                await node.delete(
+                    "امید وارم روز خوبی داشته باشین "
+                );
 
                 await node.type(
                     "به وبسایت شخصی من خوش آمدید"
@@ -50,6 +57,7 @@ export default function Poster() {
                     "به وبسایت شخصی من خوش آمدید "
                 );
 
+
                 await node.type(
                     "من اینجا یک سری اطلاعاتی خیلی کلی درباره خودم رو میگم"
                 );
@@ -58,20 +66,15 @@ export default function Poster() {
                     "من اینجا یک سری اطلاعاتی خیلی کلی درباره خودم رو میگم "
                 );
 
-                await node.type(
-                    "امید وارم مشکلی در کارکردن با سایت نداشته باشین"
-                );
-                await sleep(2000);
-                await node.delete(
-                    "امید وارم مشکلی در کارکردن با سایت نداشته باشین "
-                );
+                // await node.type(
+                //     "امید وارم مشکلی در کارکردن با سایت نداشته باشین"
+                // );
+                // await sleep(2000);
+                // await node.delete(
+                //     "امید وارم مشکلی در کارکردن با سایت نداشته باشین "
+                // );
 
-                await node.type(
-                    "منتظر ایمیل ایده ها و یا مشکلاتی که از سایت پیدا میکنین هستم"
-                );
-                await sleep(2000);
-                await node.delete(
-                    "منتظر ایمیل ایده ها و یا مشکلاتی که از سایت پیدا میکنین هستم");
+               
             }
         }
 

@@ -10,6 +10,7 @@
     scroll-behavior: smooth;
     // box-sizing: content-box !important;
     text-decoration: none !important;
+    cursor:default;
     // position: absolute;
 }
 $color_black: #222831;
@@ -168,9 +169,9 @@ $footerRightInfoSite: "version", "create", "update", "brand";
     position: absolute;
     justify-content: space-between;
     width: 0px;
-    height: 80px;
+    height: 75px;
     border-radius: 30px;
-    margin-bottom: 15px;
+    // margin-bottom: 100px !important;
     // background-color: $color_light;
     background-color: #ddddddc9;
     box-shadow: #6a6d72 0px 0px 20px;
@@ -178,14 +179,14 @@ $footerRightInfoSite: "version", "create", "update", "brand";
     span {
         align-self: center;
         font-family: MacLemon!important;
-        font-size: 2rem;
+        font-size: 1.7rem;
         margin-left: 30px;
     }
     img {
         position: absolute;
         right: 20px;
         height: 100%;
-        width: 100px;
+        width: 70px;
     }
     @if $value%2==1 {
         right: -300px;
@@ -837,6 +838,9 @@ main {
             // opacity: 0;
             z-index: -11;
         }
+        #type-text{
+            // cursor:default;
+        }
         &-footer {
             position: absolute;
             align-self: flex-end;
@@ -1229,7 +1233,8 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 130px;
+        // height: 130px;
+        height: 120px;
         width: 100%;
         position: relative;
     }
@@ -1716,6 +1721,7 @@ main {
                 font-weight: 800;
                 // font-family: Nazanin;
                 padding: 3px 10px;
+                cursor: pointer ;
             }
         }
         &_description {
@@ -1960,7 +1966,7 @@ main {
         box-shadow: var(--shadow, 0 4px 4px 0 rgba(0, 0, 0, 0.02));
         transition: transform var(--transition), box-shadow var(--transition);
         transform: scale(var(--scale, 1)) translateZ(0);
-
+        // cursor: pointer;
         &:active {
             --scale: 0.97;
         }
@@ -1971,6 +1977,7 @@ main {
             --c-height: 100%;
             position: relative;
             overflow: hidden;
+            cursor: pointer;
             &:after {
                 content: "";
                 position: absolute;
@@ -1987,6 +1994,7 @@ main {
             &-image {
                 width: var(--c-width);
                 height: var(--c-height);
+                cursor: pointer;
                 //   object-fit: cover;
                 //   border-radius: var(--c-border);
                 filter: var(--filter-bg, grayscale(1));
@@ -2052,6 +2060,7 @@ main {
             // margin: 7px 0px;
             height: 25px;
             &-title {
+                cursor: pointer;
                 // // box-sizing: content-box !important;
                 // position: absolute;
                 // right: 0px;
@@ -2187,8 +2196,8 @@ $d: 2;
     // box-sizing: border-box;
     width: 100vw;
     height: 900px;
-    padding: 100px 0px;
-    margin: 300px 0px;
+    padding: 200px 0px 150px 0px;
+    margin: 250px 0px 150px 0px;
     // background-color: #006baf;
     // background-color: rgb(0, 217, 255);
     // background-color: $color_blue;
@@ -2263,6 +2272,7 @@ $d: 2;
         border-radius: 0;
         border-bottom: 1px solid $muted-color;
         font-family: Nazanin, NavineDemo!important;
+        cursor: text;
         &:focus {
             outline: none;
         }
@@ -2474,6 +2484,10 @@ $d: 2;
         color: $color_light;
         background-color: darken($color: $color_light, $amount: 100);
         overflow: hidden;
+        img{
+            cursor: pointer;
+
+        }
     }
 }
 

@@ -22,7 +22,7 @@ export default function Project() {
 
 
             <div className='img_project_container'>
-                <div className='info_layout_css'>
+                {/* <div className='info_layout_css'>
 
 
                     <div className='text_img_container'>
@@ -33,7 +33,7 @@ export default function Project() {
 
                     </div>
                     <img id='img_project' src='./IMG/img_design/pngwing.com.png' />
-                </div>
+                </div> */}
                 <section className='project'>
 
                     {/* <div className='project-container'>
@@ -270,9 +270,9 @@ export default function Project() {
                     <h5>ساخت</h5>
                     <p>به دلیل استفاده نکردن از گیت در زمان شروع پروژه ها اطلاعات تخمینی از زمان شروع پروژه قرار داده شده است.</p>
                     <h5>آپدیت</h5>
-                    <p>تاریخ آخرین تقییراتی که روی پروژه اعمال شده.</p>
+                    <p>تاریخ آخرین تغییراتی که روی پروژه اعمال شده.</p>
                     <h5>سختی</h5>
-                    <p>میزان سختی هر پروژه مربوط به ضعف من در تشریح آن پروژه بوده و این مسئله به این معنا نیست که ساخت آن پروژه برایه همه به این مقدار تعیین شده دشوار است</p>
+                    <p>میزان سختی هر پروژه مربوط به ضعف من در تشریح آن پروژه بوده و این مسئله به این معنا نیست که ساخت آن پروژه برایه همه به این مقدار تعیین شده دشوار است.</p>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button onClick={()=>setShowModal(false)} >متوجه شدم</Button>

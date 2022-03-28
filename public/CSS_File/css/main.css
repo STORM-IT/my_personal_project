@@ -7,6 +7,7 @@
   text-decoration: none;
   scroll-behavior: smooth;
   text-decoration: none !important;
+  cursor: default;
 }
 
 .information_project, .info_layout_css {
@@ -942,7 +943,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 130px;
+  height: 120px;
   width: 100%;
   position: relative;
 }
@@ -951,9 +952,8 @@ main {
   position: absolute;
   justify-content: space-between;
   width: 0px;
-  height: 80px;
+  height: 75px;
   border-radius: 30px;
-  margin-bottom: 15px;
   background-color: #ddddddc9;
   box-shadow: #6a6d72 0px 0px 20px;
   overflow: hidden;
@@ -962,23 +962,22 @@ main {
 .Card-expertise-html span {
   align-self: center;
   font-family: MacLemon !important;
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-left: 30px;
 }
 .Card-expertise-html img {
   position: absolute;
   right: 20px;
   height: 100%;
-  width: 100px;
+  width: 70px;
 }
 .Card-expertise-css {
   display: flex;
   position: absolute;
   justify-content: space-between;
   width: 0px;
-  height: 80px;
+  height: 75px;
   border-radius: 30px;
-  margin-bottom: 15px;
   background-color: #ddddddc9;
   box-shadow: #6a6d72 0px 0px 20px;
   overflow: hidden;
@@ -987,23 +986,22 @@ main {
 .Card-expertise-css span {
   align-self: center;
   font-family: MacLemon !important;
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-left: 30px;
 }
 .Card-expertise-css img {
   position: absolute;
   right: 20px;
   height: 100%;
-  width: 100px;
+  width: 70px;
 }
 .Card-expertise-javascript {
   display: flex;
   position: absolute;
   justify-content: space-between;
   width: 0px;
-  height: 80px;
+  height: 75px;
   border-radius: 30px;
-  margin-bottom: 15px;
   background-color: #ddddddc9;
   box-shadow: #6a6d72 0px 0px 20px;
   overflow: hidden;
@@ -1012,23 +1010,22 @@ main {
 .Card-expertise-javascript span {
   align-self: center;
   font-family: MacLemon !important;
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-left: 30px;
 }
 .Card-expertise-javascript img {
   position: absolute;
   right: 20px;
   height: 100%;
-  width: 100px;
+  width: 70px;
 }
 .Card-expertise-bootstrap {
   display: flex;
   position: absolute;
   justify-content: space-between;
   width: 0px;
-  height: 80px;
+  height: 75px;
   border-radius: 30px;
-  margin-bottom: 15px;
   background-color: #ddddddc9;
   box-shadow: #6a6d72 0px 0px 20px;
   overflow: hidden;
@@ -1037,23 +1034,22 @@ main {
 .Card-expertise-bootstrap span {
   align-self: center;
   font-family: MacLemon !important;
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-left: 30px;
 }
 .Card-expertise-bootstrap img {
   position: absolute;
   right: 20px;
   height: 100%;
-  width: 100px;
+  width: 70px;
 }
 .Card-expertise-jquery {
   display: flex;
   position: absolute;
   justify-content: space-between;
   width: 0px;
-  height: 80px;
+  height: 75px;
   border-radius: 30px;
-  margin-bottom: 15px;
   background-color: #ddddddc9;
   box-shadow: #6a6d72 0px 0px 20px;
   overflow: hidden;
@@ -1062,23 +1058,22 @@ main {
 .Card-expertise-jquery span {
   align-self: center;
   font-family: MacLemon !important;
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-left: 30px;
 }
 .Card-expertise-jquery img {
   position: absolute;
   right: 20px;
   height: 100%;
-  width: 100px;
+  width: 70px;
 }
 .Card-expertise-sass {
   display: flex;
   position: absolute;
   justify-content: space-between;
   width: 0px;
-  height: 80px;
+  height: 75px;
   border-radius: 30px;
-  margin-bottom: 15px;
   background-color: #ddddddc9;
   box-shadow: #6a6d72 0px 0px 20px;
   overflow: hidden;
@@ -1087,23 +1082,22 @@ main {
 .Card-expertise-sass span {
   align-self: center;
   font-family: MacLemon !important;
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-left: 30px;
 }
 .Card-expertise-sass img {
   position: absolute;
   right: 20px;
   height: 100%;
-  width: 100px;
+  width: 70px;
 }
 .Card-expertise-react {
   display: flex;
   position: absolute;
   justify-content: space-between;
   width: 0px;
-  height: 80px;
+  height: 75px;
   border-radius: 30px;
-  margin-bottom: 15px;
   background-color: #ddddddc9;
   box-shadow: #6a6d72 0px 0px 20px;
   overflow: hidden;
@@ -1112,23 +1106,22 @@ main {
 .Card-expertise-react span {
   align-self: center;
   font-family: MacLemon !important;
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-left: 30px;
 }
 .Card-expertise-react img {
   position: absolute;
   right: 20px;
   height: 100%;
-  width: 100px;
+  width: 70px;
 }
 .Card-expertise-redux {
   display: flex;
   position: absolute;
   justify-content: space-between;
   width: 0px;
-  height: 80px;
+  height: 75px;
   border-radius: 30px;
-  margin-bottom: 15px;
   background-color: #ddddddc9;
   box-shadow: #6a6d72 0px 0px 20px;
   overflow: hidden;
@@ -1137,23 +1130,22 @@ main {
 .Card-expertise-redux span {
   align-self: center;
   font-family: MacLemon !important;
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-left: 30px;
 }
 .Card-expertise-redux img {
   position: absolute;
   right: 20px;
   height: 100%;
-  width: 100px;
+  width: 70px;
 }
 .Card-expertise-git {
   display: flex;
   position: absolute;
   justify-content: space-between;
   width: 0px;
-  height: 80px;
+  height: 75px;
   border-radius: 30px;
-  margin-bottom: 15px;
   background-color: #ddddddc9;
   box-shadow: #6a6d72 0px 0px 20px;
   overflow: hidden;
@@ -1162,23 +1154,22 @@ main {
 .Card-expertise-git span {
   align-self: center;
   font-family: MacLemon !important;
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-left: 30px;
 }
 .Card-expertise-git img {
   position: absolute;
   right: 20px;
   height: 100%;
-  width: 100px;
+  width: 70px;
 }
 .Card-expertise-sharp {
   display: flex;
   position: absolute;
   justify-content: space-between;
   width: 0px;
-  height: 80px;
+  height: 75px;
   border-radius: 30px;
-  margin-bottom: 15px;
   background-color: #ddddddc9;
   box-shadow: #6a6d72 0px 0px 20px;
   overflow: hidden;
@@ -1187,14 +1178,14 @@ main {
 .Card-expertise-sharp span {
   align-self: center;
   font-family: MacLemon !important;
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-left: 30px;
 }
 .Card-expertise-sharp img {
   position: absolute;
   right: 20px;
   height: 100%;
-  width: 100px;
+  width: 70px;
 }
 
 .moveExpertiseLeft {
@@ -1488,6 +1479,7 @@ main {
   font-size: 1.4rem;
   font-weight: 800;
   padding: 3px 10px;
+  cursor: pointer;
 }
 .project-listProject .card_project_description {
   width: 100%;
@@ -1665,6 +1657,7 @@ main {
   --c-height: 100%;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 .card__body-cover:after {
   content: "";
@@ -1682,6 +1675,7 @@ main {
 .card__body-cover-image {
   width: var(--c-width);
   height: var(--c-height);
+  cursor: pointer;
   filter: var(--filter-bg, grayscale(1));
 }
 .card__body-header {
@@ -1692,6 +1686,7 @@ main {
   height: 25px;
 }
 .card__body-header-title {
+  cursor: pointer;
   margin: 0px !important;
   height: 100%;
   width: 100%;
@@ -1779,8 +1774,8 @@ main {
 .contact {
   width: 100vw;
   height: 900px;
-  padding: 100px 0px;
-  margin: 300px 0px;
+  padding: 200px 0px 150px 0px;
+  margin: 250px 0px 150px 0px;
   background: linear-gradient(180deg, #0092ca 0%, white 100%);
 }
 .contact *,
@@ -1832,6 +1827,7 @@ main {
   border-radius: 0;
   border-bottom: 1px solid #636363cb;
   font-family: Nazanin, NavineDemo !important;
+  cursor: text;
 }
 .contact input:focus,
 .contact textarea:focus {
@@ -2017,6 +2013,9 @@ main {
   color: #eeeeee;
   background-color: black;
   overflow: hidden;
+}
+.SocialNetwork-container .move-top img {
+  cursor: pointer;
 }
 
 @keyframes gitUsername {

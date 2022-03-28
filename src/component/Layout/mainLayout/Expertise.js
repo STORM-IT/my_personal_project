@@ -6,17 +6,17 @@ export default function Expertise() {
     <Fragment>
       <div id='expertise' className='nav-space'>
       </div>
-      <div className='info_layout_css'>
+      {/* <div className='info_layout_css'>
 
-          
+
         <div className='text_img_container'>
-          <h3>پروژه ها</h3>
+          <h3>تخصص ها</h3>
           <hr />
-          <p className='glowIn_text_expertise'>تفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد .</p>
+          <p className='glowIn_text_expertise'></p>
 
         </div>
         <img id='img_expertise' src='./IMG/img_design/expertise_img.png' />
-      </div>
+      </div> */}
       <section className='Card'>
         <div className='Card-container' >
           <div className='Card-text'>
@@ -86,7 +86,7 @@ export default function Expertise() {
           </div>
         </div>
       </section>
- 
+
     </Fragment>
   )
 }
