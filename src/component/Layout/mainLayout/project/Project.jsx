@@ -7,7 +7,7 @@ import { filterExpertise, open_all_projects_state, sort_chalenged, sort_date, so
 import { list_sort, show_filter_section } from './Script'
 export default function Project() {
 
-    const [showModal,setShowModal]=useState(true)
+    const [showModal,setShowModal]=useState(false)
 
     useEffect(() => {
         list_sort()
