@@ -33,7 +33,8 @@ export const filterExpertise = (expertise, checked) => {
         })
         // debugger
         // State.projects.PROJECT=list_filter_project.length===0?projects.PROJECT:list_filter_project;
-        State.PROJECT = list_filter_project;
+        // State.PROJECT = list_filter_project;
+        State.PROJECT = list_filter_project.length===0?projects.PROJECT:list_filter_project;
         dispatch({ type: "FILTER_EXPERTISE", payload: State });
     }
 }
