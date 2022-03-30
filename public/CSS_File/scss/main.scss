@@ -2632,24 +2632,30 @@ $fontsize:30px;
 @media screen and (max-width:1000px) {
     #type-text{
         // cursor:default;
-        font-size: 1.7rem !important;
+        // font-size: 1.7rem !important;
+    }
+}
+@media screen and (max-width:1000px) {
+    #type-text{
+        // cursor:default;
+        // font-size: 1.7rem !important;
     }
 }
 @media screen and (max-width:768px) {
     #type-text{
         // cursor:default;
-        font-size: 1rem !important;
+        font-size: 1.4rem !important;
     }
-    .header-short{
-        height: 30%;
+    .header{
+        height: 60vh;
     }
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:490px) {
     #type-text{
         // cursor:default;
         font-size: 1rem !important;
     }
-    .header-short{
-        height: 30%;
+    .header{
+        height: 40vh;
     }
 }
