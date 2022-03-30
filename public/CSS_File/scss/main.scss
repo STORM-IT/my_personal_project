@@ -10,7 +10,7 @@
     scroll-behavior: smooth;
     // box-sizing: content-box !important;
     text-decoration: none !important;
-    cursor:default;
+    cursor: default;
     // position: absolute;
 }
 $color_black: #222831;
@@ -90,17 +90,13 @@ $footerRightInfoSite: "version", "create", "update", "brand";
             text-align: right;
             font-family: Yekan !important;
             font-size: 1.6em;
-            font-weight:900;
+            font-weight: 900;
             margin-bottom: 10px;
         }
         p {
             text-align: right;
-            font-family: RoyaBold!important;
+            font-family: RoyaBold !important;
             font-size: 20px;
-            // visibility: hidden;
-            // span {
-            // animation: glow-in 0.7s both;
-            // }
         }
     }
     // }
@@ -179,7 +175,7 @@ $footerRightInfoSite: "version", "create", "update", "brand";
     overflow: hidden;
     span {
         align-self: center;
-        font-family: MacLemon!important;
+        font-family: MacLemon !important;
         font-size: 1.7em;
         margin-left: 30px;
     }
@@ -806,7 +802,7 @@ main {
             vertical-align: middle;
             font-size: 40px;
             direction: rtl;
-            font-family: RoyaBold!important;
+            font-family: RoyaBold !important;
             .blinking-cursor {
                 direction: rtl;
                 user-select: none;
@@ -827,7 +823,7 @@ main {
             width: 100%;
             object-fit: fill;
             // height: 40vw;
-            height:100%;
+            height: 100%;
             opacity: 0.6;
             z-index: -10;
         }
@@ -844,7 +840,7 @@ main {
             // opacity: 0;
             z-index: -11;
         }
-        #type-text{
+        #type-text {
             // cursor:default;
             font-size: 2.3rem;
         }
@@ -1508,7 +1504,6 @@ main {
                 // -webkit-transform: rotateX(-180deg);
                 // transform: rotateX(-180deg) scaleY(4);
                 //    transition: all 1s ease;
-                
             }
 
             //end css btn open all project
@@ -1529,16 +1524,16 @@ main {
                     // z-index: 10000;
                     // cursor: pointer;
                     // background-color: #002331;
-                    p{
+                    p {
                         font-family: sans-serif;
                         padding: 8px 0px;
                         text-shadow: white 0px 0px 2px;
                         // z-index: 100000;
-                        color:white;
+                        color: white;
                         cursor: pointer !important;
-                        &:hover{
+                        &:hover {
                             text-shadow: none;
-                            color: darken($color: rgb(255, 255, 255) , $amount: 10);
+                            color: darken($color: rgb(255, 255, 255), $amount: 10);
                         }
                     }
                 }
@@ -1723,13 +1718,13 @@ main {
             a {
                 // font-family: RoyaBold;
                 // color: white;
-                font-family: Yekan!important;
+                font-family: Yekan !important;
                 // height: 30px;
                 font-size: 1.4rem;
                 font-weight: 800;
                 // font-family: Nazanin;
                 padding: 3px 10px;
-                cursor: pointer ;
+                cursor: pointer;
             }
         }
         &_description {
@@ -1747,7 +1742,7 @@ main {
             p {
                 width: 100%;
                 height: 100%;
-                font-family: Yekan,sans-serif!important;
+                font-family: Yekan, sans-serif !important;
                 font-size: 1.1rem;
                 line-height: 23px;
                 font-weight: 600;
@@ -1816,7 +1811,7 @@ main {
             // padding: 0px 5px;
             overflow: visible !important;
             p {
-                font-family: Nazanin!important;
+                font-family: Nazanin !important;
                 direction: rtl;
                 font-weight: 700;
                 padding: 3px 5px;
@@ -2245,8 +2240,7 @@ $d: 2;
             text-align: center;
             text-transform: uppercase;
             color: $muted-color;
-            font-family: Nazanin!important;
-        
+            font-family: Nazanin !important;
         }
         hr.sep {
             background: rgba(0, 0, 0, 0);
@@ -2280,7 +2274,7 @@ $d: 2;
         border: none;
         border-radius: 0;
         border-bottom: 1px solid $muted-color;
-        font-family: Nazanin, NavineDemo!important;
+        font-family: Nazanin, NavineDemo !important;
         cursor: text;
         &:focus {
             outline: none;
@@ -2317,7 +2311,7 @@ $d: 2;
         right: 5px;
         top: 10px;
         transition: $trans-time ease all;
-        font-family: Nazanin!important;
+        font-family: Nazanin !important;
     }
 
     .bar {
@@ -2354,7 +2348,7 @@ $d: 2;
             background: $hl-color;
             color: mix(white, $hl-color, 70%);
             width: 180px;
-            font-family: Nazanin!important;
+            font-family: Nazanin !important;
             font-size: 1.2rem;
             &:hover {
                 background: darken($hl-color, 5%);
@@ -2479,7 +2473,7 @@ $d: 2;
             a {
                 color: $color_light;
                 font-size: 50px;
-                font-family: MacLemon!important;
+                font-family: MacLemon !important;
             }
         }
     }
@@ -2493,9 +2487,8 @@ $d: 2;
         color: $color_light;
         background-color: darken($color: $color_light, $amount: 100);
         overflow: hidden;
-        img{
+        img {
             cursor: pointer;
-
         }
     }
 }
@@ -2619,43 +2612,85 @@ $d: 2;
         color: $color_light;
         direction: ltr;
         text-align: center;
-        font-family: RoyaBold!important;
+        font-family: RoyaBold !important;
         font-size: 1.3em !important;
         // z-index: 100000;
     }
     // z-index: 10000!important;
 }
 
-
 // --dd:20px;
-$fontsize:30px;
-@media screen and (max-width:1000px) {
-    #type-text{
-        // cursor:default;
-        // font-size: 1.7rem !important;
-    }
-}
-@media screen and (max-width:1000px) {
-    #type-text{
-        // cursor:default;
-        // font-size: 1.7rem !important;
-    }
-}
-@media screen and (max-width:768px) {
-    #type-text{
-        // cursor:default;
+$fontsize: 30px;
+
+@media screen and (max-width: 768px) {
+    #type-text {
         font-size: 1.4rem !important;
     }
-    .header{
+    .header {
         height: 60vh;
     }
+    .info_layout_css {
+        width: 500px; //700
+        height: 250px;
+        border-radius: 3px;
+        img {
+            top: 0px;
+            left: 0px;
+            width: 35%;
+            height: 100%;
+            border-radius: 0px 7px 7px 0px;
+        }
+        .text_img_container {
+            width: 60%;
+            font-size: 17px;
+            padding: 2% 3% 0px 0px;
+            h3 {
+                font-size: 1.3em;
+            }
+            hr {
+                margin: 10px 0px;
+            }
+            p {
+                font-size: 1.1em;
+            }
+        }
+    }
 }
-@media screen and (max-width:490px) {
-    #type-text{
+@media screen and (max-width: 600px) {
+    .info_layout_css {
+        width: 360px; //700
+        height: 250px;
+        border-radius: 3px;
+        img {
+            top: 0px;
+            left: 0px;
+            width: 0%;
+            height: 100%;
+            border-radius: 0px 7px 7px 0px;
+        }
+        .text_img_container {
+            width: 90%;
+            font-size: 17px;
+            padding: 2% 3% 0px 0px;
+            h3 {
+                font-size: 1.3em;
+            }
+            hr {
+                margin: 10px 0px;
+            }
+            p {
+                font-size: 1.1em;
+            }
+        }
+    }
+}
+@media screen and (max-width: 490px) {
+    #type-text {
         // cursor:default;
         font-size: 1rem !important;
     }
-    .header{
+    .header {
         height: 40vh;
     }
+    
 }

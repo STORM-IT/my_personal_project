@@ -2252,6 +2252,61 @@ main {
   .header {
     height: 60vh;
   }
+
+  .info_layout_css {
+    width: 500px;
+    height: 250px;
+    border-radius: 3px;
+  }
+  .info_layout_css img {
+    top: 0px;
+    left: 0px;
+    width: 35%;
+    height: 100%;
+    border-radius: 0px 7px 7px 0px;
+  }
+  .info_layout_css .text_img_container {
+    width: 60%;
+    font-size: 17px;
+    padding: 2% 3% 0px 0px;
+  }
+  .info_layout_css .text_img_container h3 {
+    font-size: 1.3em;
+  }
+  .info_layout_css .text_img_container hr {
+    margin: 10px 0px;
+  }
+  .info_layout_css .text_img_container p {
+    font-size: 1.1em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .info_layout_css {
+    width: 360px;
+    height: 250px;
+    border-radius: 3px;
+  }
+  .info_layout_css img {
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 100%;
+    border-radius: 0px 7px 7px 0px;
+  }
+  .info_layout_css .text_img_container {
+    width: 90%;
+    font-size: 17px;
+    padding: 2% 3% 0px 0px;
+  }
+  .info_layout_css .text_img_container h3 {
+    font-size: 1.3em;
+  }
+  .info_layout_css .text_img_container hr {
+    margin: 10px 0px;
+  }
+  .info_layout_css .text_img_container p {
+    font-size: 1.1em;
+  }
 }
 @media screen and (max-width: 490px) {
   #type-text {
