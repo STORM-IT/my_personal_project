@@ -106,7 +106,7 @@
 
 ::-webkit-scrollbar {
   background-color: white;
-  width: 15px;
+  width: 12px;
 }
 
 /* Track */
@@ -119,7 +119,7 @@
 ::-webkit-scrollbar-thumb {
   background: black;
   background: #131b28;
-  border-radius: 5px;
+  border-radius: 7px;
 }
 
 /* Handle on hover */
@@ -1442,10 +1442,13 @@ main {
   height: 470px;
   z-index: 5;
 }
+.project-container .project-bodey ::-webkit-scrollbar {
+  background-color: white;
+  width: 8px;
+}
 .project-container .project-bodey .project-filter {
   position: absolute;
   align-items: center;
-  right: 0px;
   height: 100%;
   width: 200px;
   background-color: #d5d5d5;
@@ -1455,26 +1458,23 @@ main {
 .project-container .project-bodey .project-filter::after {
   position: relative;
   display: block;
-  z-index: 10;
 }
 .project-container .project-bodey .project-filter .project-logo-container {
   position: absolute;
   box-sizing: content-box !important;
-  right: -40px;
+  right: -50px;
   width: 30px;
   top: 200px;
-  padding: 5px 15px 25px 15px;
+  padding: 5px 15px 5px 15px;
   background-color: black;
   border-radius: 10px 10px 0px 0px;
   transform: rotate(90deg);
   cursor: pointer;
-  z-index: -5;
   transition: all 1s ease;
 }
 .project-container .project-bodey .project-filter .project-logo-container img {
-  background-color: black;
   width: 30px;
-  transition: all 700ms ease;
+  transition: all 500ms linear;
 }
 
 .project-container header .show_btn_sort_project:after {
@@ -1485,12 +1485,26 @@ main {
   transform: rotateX(0deg) scaleY(1);
 }
 
-.show_project_filter_section {
-  animation: show_project_filter 500ms linear alternate forwards;
+@media screen and (min-width: 1400px) {
+  .show_project_filter_section {
+    animation: show_project_filter_right 500ms linear alternate forwards;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .show_project_filter_section {
+    animation: show_project_filter_left 500ms linear alternate forwards;
+  }
 }
 
-.hide_project_filter_section {
-  animation: hide_project_filter 500ms linear alternate forwards;
+@media screen and (min-width: 1400px) {
+  .hide_project_filter_section {
+    animation: hide_project_filter_right 500ms linear alternate forwards;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .hide_project_filter_section {
+    animation: hide_project_filter_left 500ms linear alternate forwards;
+  }
 }
 
 .right_project_filter_icon {
@@ -1507,7 +1521,7 @@ main {
   transform: rotate(180deg) translate(0px, -5px);
 }
 
-@keyframes show_project_filter {
+@keyframes show_project_filter_right {
   0% {
     right: 0px;
   }
@@ -1515,12 +1529,28 @@ main {
     right: -200px;
   }
 }
-@keyframes hide_project_filter {
+@keyframes hide_project_filter_right {
   0% {
     right: -200px;
   }
   100% {
     right: 0px;
+  }
+}
+@keyframes show_project_filter_left {
+  0% {
+    right: -200px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+@keyframes hide_project_filter_left {
+  0% {
+    right: 0px;
+  }
+  100% {
+    right: -200px;
   }
 }
 @keyframes show_list_sort_project {
@@ -1618,7 +1648,7 @@ main {
   background-color: #3aff54bb;
   box-shadow: #000 1px 1px 3px;
   border-radius: 10px;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   font-weight: 600;
   font-family: sans-serif;
 }
@@ -1627,8 +1657,9 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
+  flex-wrap: nowrap;
   flex-direction: column;
-  width: 15%;
+  width: 125px;
   height: 100%;
   text-align: right;
   box-sizing: border-box !important;
@@ -1643,6 +1674,13 @@ main {
   padding: 3px 5px;
   font-size: 1rem;
   margin: 0px;
+}
+.project-listProject .card_project_information p span {
+  font-size: 1rem;
+}
+.project-listProject .card_project_information p:last-of-type span {
+  font-weight: 600;
+  font-size: 0.9rem;
 }
 
 .grid {
@@ -2334,6 +2372,31 @@ main {
   font-size: 1.3em !important;
 }
 
+@media screen and (max-width: 1400px) {
+  .project-bodey {
+    clip-path: inset(0 0 0 0);
+  }
+  .project-bodey .project-filter {
+    right: -200px;
+    background-color: #bbbbbb !important;
+    border-radius: 17px 0px 0px 17px !important;
+    z-index: 50 !important;
+  }
+  .project-bodey .project-filter .project-logo-container {
+    left: -50px;
+    width: 30px;
+    padding: 5px 15px 5px 15px !important;
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    border-radius: 0px 17px 17px 0px;
+    transform: rotate(270deg) !important;
+    z-index: 5000 !important;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .project-filter {
+    right: 0px;
+  }
+}
 @media screen and (max-width: 1000px) {
   .Card-text {
     height: 120px;

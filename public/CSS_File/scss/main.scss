@@ -219,7 +219,7 @@ $footerRightInfoSite: "version", "create", "update", "brand";
 }
 ::-webkit-scrollbar {
     background-color: white;
-    width: 15px;
+    width: 12px;
 }
 
 /* Track */
@@ -233,7 +233,7 @@ $footerRightInfoSite: "version", "create", "update", "brand";
     // background: $color_blue;
     background: black;
     background: #131b28;
-    border-radius: 5px;
+    border-radius: 7px;
 }
 
 /* Handle on hover */
@@ -1402,16 +1402,12 @@ main {
 // }
 
 .project {
-    // position: relative;
     width: 100%;
-    // height: 800px;
     padding: 100px 0px;
     text-align: center;
-    // background-color: $color_light;
     &-container {
-        // position: relative;
         width: 900px;
-        // height: 600px;
+        // width: 95vw;
         z-index: 10;
         background-color: white;
         margin: auto;
@@ -1423,9 +1419,7 @@ main {
             align-items: center;
             background-color: $color_light;
             width: 100%;
-            // height: 100px;
             z-index: 10;
-
             box-shadow: #000 0px 3px 10px;
             span {
                 font-family: sans-serif;
@@ -1507,11 +1501,7 @@ main {
                 transform-origin: center bottom;
                 -webkit-transform: rotateX(0);
                 transform: rotateX(0);
-                // animation: hide_list_sort_project alternate 1s ease forwards;
                 transition: all 1s ease;
-                // -webkit-transform: rotateX(-180deg);
-                // transform: rotateX(-180deg) scaleY(4);
-                //    transition: all 1s ease;
             }
 
             //end css btn open all project
@@ -1519,24 +1509,17 @@ main {
                 position: absolute;
                 list-style: none;
                 width: 126px;
-                // height: 160px;
-                // background-color: #005600;
                 color: $color_light;
                 left: 79px;
                 top: 70px;
                 z-index: 1000;
                 padding: 5px 0px;
                 visibility: hidden;
-                // background-color: #000;
                 li {
-                    // z-index: 10000;
-                    // cursor: pointer;
-                    // background-color: #002331;
                     p {
                         font-family: sans-serif;
                         padding: 8px 0px;
                         text-shadow: white 0px 0px 2px;
-                        // z-index: 100000;
                         color: white;
                         cursor: pointer !important;
                         &:hover {
@@ -1550,70 +1533,43 @@ main {
 
         .project-bodey {
             position: relative;
-            // width: 200px;
             height: 470px;
-            // background-color: #000;
             z-index: 5;
+            // clip-path: inset(0 0 0 0);
+            ::-webkit-scrollbar {
+                background-color: white;
+                width: 8px;
+            }
             .project-filter {
+                // display: none;
                 position: absolute;
-                // display: flex;
                 align-items: center;
-                // right: -200px;
-                right: 0px;
+                // right: 0px;
                 height: 100%;
                 width: 200px;
                 background-color: darken($color: $color_light, $amount: 10);
-                // z-index: 1;
                 border-radius: 0px 17px 17px 0px;
                 transition: all 1s ease;
-                // transform: translate(250px, 0px);
+                // z-index: 1;
                 &::after {
                     position: relative;
                     display: block;
-                    z-index: 10;
                 }
-                // &:hover {
-                //     // position: relative;
-                //     position: absolute !important;
-                //     z-index: 20 !important;
-                // }
                 .project-logo-container {
                     position: absolute;
                     box-sizing: content-box !important;
-                    right: -40px;
+                    right: -50px;
                     width: 30px;
                     top: 200px;
-                    // height: 30px;
-                    // margin: auto;
-                    padding: 5px 15px 25px 15px;
-                    background-color: rgb(0, 0, 0);
+                    padding: 5px 15px 5px 15px;
+                    background-color: rgba(0, 0, 0);
                     border-radius: 10px 10px 0px 0px;
                     transform: rotate(90deg);
-                    // z-index: 200;
-                    // color: #000;
                     cursor: pointer;
-                    // background-image:url("../../IMG/Move_logo/projectFilter.svg");
-                    // background-position: center;
-                    // background-repeat:no-repeat;
-                    // background-clip: border-box;
-                    // background-size: contain;
-                    z-index: -5;
                     transition: all 1s ease;
-                    // &::after{
-
-                    // }
-                    // &:hover {
-                    //     transform: translate(7px, 0px) rotate(90deg);
-                    // }
                     img {
-                        background-color: rgb(0, 0, 0);
-                        // border-radius: 10px 10px 0px 0px;
                         width: 30px;
-                        transition: all 700ms ease;
-                        // height: 30px;
-                        // &:active {
-                        //     transform: rotate(180deg);
-                        // }
+                        transition: all 500ms linear;
                     }
                 }
             }
@@ -1627,10 +1583,20 @@ main {
     transform: rotateX(0deg) scaleY(1);
 }
 .show_project_filter_section {
-    animation: show_project_filter 500ms linear alternate forwards;
+    @media screen and (min-width: 1400px) {
+        animation: show_project_filter_right 500ms linear alternate forwards;
+    }
+    @media screen and (max-width: 1400px) {
+        animation: show_project_filter_left 500ms linear alternate forwards;
+    }
 }
 .hide_project_filter_section {
-    animation: hide_project_filter 500ms linear alternate forwards;
+    @media screen and (min-width: 1400px) {
+        animation: hide_project_filter_right 500ms linear alternate forwards;
+    }
+    @media screen and (max-width: 1400px) {
+        animation: hide_project_filter_left 500ms linear alternate forwards;
+    }
 }
 .right_project_filter_icon {
     transform: rotate(0deg);
@@ -1648,7 +1614,7 @@ main {
     // animation: hide_project_filter 1s ease  alternate forwards;
 }
 
-@keyframes show_project_filter {
+@keyframes show_project_filter_right {
     0% {
         right: 0px;
     }
@@ -1656,12 +1622,28 @@ main {
         right: -200px;
     }
 }
-@keyframes hide_project_filter {
+@keyframes hide_project_filter_right {
     0% {
         right: -200px;
     }
     100% {
         right: 0px;
+    }
+}
+@keyframes show_project_filter_left {
+    0% {
+        right: -200px;
+    }
+    100% {
+        right: 0px;
+    }
+}
+@keyframes hide_project_filter_left {
+    0% {
+        right: 0px;
+    }
+    100% {
+        right: -200px;
     }
 }
 @keyframes show_list_sort_project {
@@ -1788,7 +1770,7 @@ main {
                 // background-color: rgb(135, 255, 56);
                 box-shadow: #000 1px 1px 3px;
                 border-radius: 10px;
-                font-size: 0.9rem;
+                font-size: 0.7rem;
                 font-weight: 600;
                 font-family: sans-serif;
                 // font-family: NavineDemo;
@@ -1797,26 +1779,19 @@ main {
         }
 
         &_information {
-            // background-color: lighten($color: $color_blue, $amount: 50);
-            // background-color: white;
-            // box-sizing: content-box !important;
             position: relative;
             display: flex;
             justify-content: space-around;
             align-items: flex-end;
-            // flex-wrap: wrap;
+            flex-wrap: nowrap;
             flex-direction: column;
-            width: 15%;
+            // width: 15%;
+            width: 125px;
             height: 100%;
-            // padding: 0px 5px;
             text-align: right;
             box-sizing: border-box !important;
-            // background-color: darken($color: $color_light, $amount: 5);
             border-right: 1px solid rgb(187, 187, 187);
-            // background-color: #9BA4B4;
-            // background-color: $color_light;
             background-color: darken($color: $color_light, $amount: 7);
-            // padding: 0px 5px;
             overflow: visible !important;
             p {
                 font-family: Nazanin !important;
@@ -1828,6 +1803,13 @@ main {
                 // display: block;
                 // color: white;
                 // background-color: #d8cbcb;
+                span {
+                    font-size: 1rem;
+                }
+            }
+            p:last-of-type span {
+                font-weight: 600;
+                font-size: 0.9rem;
             }
         }
     }
@@ -2630,6 +2612,35 @@ $d: 2;
 // --dd:20px;
 $fontsize: 30px;
 
+@media screen and (max-width: 1400px) {
+    .project-bodey {
+        clip-path: inset(0 0 0 0);
+
+        .project-filter {
+            right: -200px;
+            // height: 100%;
+            // width: 200px;
+            background-color: darken($color: $color_light, $amount: 20) !important;
+            border-radius: 17px 0px 0px 17px !important;
+            z-index: 50 !important;
+            .project-logo-container {
+                left: -50px;
+                width: 30px;
+                padding: 5px 15px 5px 15px !important;
+                background-color: rgba(0, 0, 0, 0.6) !important;
+                border-radius: 0px 17px 17px 0px;
+                transform: rotate(270deg) !important ;
+                z-index: 5000 !important;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1400px) {
+    .project-filter {
+        // display: block !important;
+        right: 0px;
+    }
+}
 @media screen and (max-width: 1000px) {
     .Card {
         &-text {
