@@ -91,9 +91,7 @@
   }
 }
 .project-container header .project-btn-sort, .project-container header .project-btn-openAll {
-  width: 130px;
-  height: 40px;
-  padding: 10px 25px;
+  padding: 0px 45px;
   border: 2px solid #000;
   font-family: "Lato", sans-serif;
   font-weight: 500;
@@ -1343,7 +1341,7 @@ main {
 }
 .project-container header span {
   font-family: sans-serif;
-  font-size: 50px;
+  font-size: 3rem;
   color: #393e46;
   padding: 10px 0px;
 }
@@ -1351,7 +1349,6 @@ main {
   background: #000;
   color: #fff;
   line-height: 42px;
-  padding: 0;
   border: 0.5px solid rgba(128, 128, 128, 0.4);
   z-index: 1;
   -webkit-transition: all 0.3s linear;
@@ -1387,7 +1384,6 @@ main {
 .project-container header .project-btn-sort {
   box-sizing: content-box !important;
   line-height: 40px;
-  padding: 0;
   background: transparent;
   position: relative;
   z-index: 2;
@@ -1477,8 +1473,15 @@ main {
   transition: all 500ms linear;
 }
 
-.project-container header .show_btn_sort_project:after {
-  transform: rotateX(-180deg) scaleY(4);
+@media screen and (max-width: 1000px) {
+  .project-container header .show_btn_sort_project:after {
+    transform: rotateX(-180deg) scaleY(3);
+  }
+}
+@media screen and (min-width: 1000px) {
+  .project-container header .show_btn_sort_project:after {
+    transform: rotateX(-180deg) scaleY(4);
+  }
 }
 
 .project-container header .hide_btn_sort_project:after {
@@ -1495,6 +1498,11 @@ main {
     animation: show_project_filter_left 500ms linear alternate forwards;
   }
 }
+@media screen and (max-width: 1000px) {
+  .show_project_filter_section {
+    animation: show_project_filter_left_mini 500ms linear alternate forwards;
+  }
+}
 
 @media screen and (min-width: 1400px) {
   .hide_project_filter_section {
@@ -1504,6 +1512,11 @@ main {
 @media screen and (max-width: 1400px) {
   .hide_project_filter_section {
     animation: hide_project_filter_left 500ms linear alternate forwards;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .hide_project_filter_section {
+    animation: hide_project_filter_left_mini 500ms linear alternate forwards;
   }
 }
 
@@ -1551,6 +1564,22 @@ main {
   }
   100% {
     right: -200px;
+  }
+}
+@keyframes show_project_filter_left_mini {
+  0% {
+    right: -170px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+@keyframes hide_project_filter_left_mini {
+  0% {
+    right: 0px;
+  }
+  100% {
+    right: -170px;
   }
 }
 @keyframes show_list_sort_project {
@@ -1659,7 +1688,7 @@ main {
   align-items: flex-end;
   flex-wrap: nowrap;
   flex-direction: column;
-  width: 125px;
+  width: 17%;
   height: 100%;
   text-align: right;
   box-sizing: border-box !important;
@@ -2391,6 +2420,9 @@ main {
     transform: rotate(270deg) !important;
     z-index: 5000 !important;
   }
+  .project-bodey .project-filter .card__body-header-title {
+    font-size: 1rem;
+  }
 }
 @media screen and (min-width: 1400px) {
   .project-filter {
@@ -2398,24 +2430,41 @@ main {
   }
 }
 @media screen and (max-width: 1000px) {
-  .Card-text {
-    height: 120px;
+  .project-container header span {
+    font-size: 2rem !important;
   }
-  .Card-text h3 {
-    top: 30px;
-    font-size: 2rem;
+  .project-container header .project-btn-openAll {
+    padding: 0px 25px;
+    font-size: 0.9rem;
+    font-weight: 100;
   }
-  .Card-container {
-    width: 85vw;
-    border-radius: 50px;
-    margin-bottom: 70px;
+  .project-container header .project-btn-sort {
+    padding: 0px 25px;
+    font-size: 0.9rem;
+    font-weight: 100;
   }
-  .Card-expertise {
-    width: 100%;
+  .project-container header ul {
+    width: 80px;
+    left: 55px;
+    top: 58px;
   }
-  .Card-body {
-    height: 110px;
-    width: 100%;
+  .project-container header ul li p {
+    padding: 4px 0px;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+    text-shadow: none;
+    font-weight: 100 !important;
+  }
+  .project-container .project-filter {
+    right: -170px;
+    width: 170px !important;
+  }
+
+  .project-container {
+    width: 600px;
+  }
+  .project-container header:first {
+    height: 70px;
   }
 }
 @media screen and (max-width: 768px) {
