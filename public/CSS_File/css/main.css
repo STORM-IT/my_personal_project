@@ -2147,10 +2147,21 @@ main {
   animation: showLogoGit 2s ease 2s alternate forwards;
 }
 
-.animation_socialNetwork_userName {
-  animation: gitUsername 2s ease 3s alternate forwards;
+@media screen and (min-width: 1000px) {
+  .animation_socialNetwork_userName {
+    animation: gitUsername_socialNetwork_up_1000px 2s ease 3s alternate forwards;
+  }
 }
-
+@media screen and (max-width: 768px) {
+  .animation_socialNetwork_userName {
+    animation: gitUsername_socialNetwork_down_768px 2s ease 3s alternate forwards;
+  }
+}
+@media screen and (max-width: 600px) {
+  .animation_socialNetwork_userName {
+    animation: gitUsername_socialNetwork_down_600px 2s ease 3s alternate forwards;
+  }
+}
 @keyframes socialNetwork_move_top {
   0% {
     top: 300px;
@@ -2241,7 +2252,7 @@ main {
   cursor: pointer;
 }
 
-@keyframes gitUsername {
+@keyframes gitUsername_socialNetwork_up_1000px {
   0% {
     display: block;
     width: 0px;
@@ -2252,6 +2263,32 @@ main {
     width: 300px;
     height: 300px;
     right: -245px;
+  }
+}
+@keyframes gitUsername_socialNetwork_down_768px {
+  0% {
+    display: block;
+    width: 0px;
+    height: 0px;
+    right: 35px;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    right: -265px;
+  }
+}
+@keyframes gitUsername_socialNetwork_down_600px {
+  0% {
+    display: block;
+    width: 0px;
+    height: 0px;
+    right: 35px;
+  }
+  100% {
+    width: 200px;
+    height: 200px;
+    right: -165px;
   }
 }
 @keyframes showLogoGit {
