@@ -2408,7 +2408,26 @@ $d: 2;
 // end contact form layout
 
 .animation_socialNetwork_line {
-    animation: rotateLine 2s ease 1s alternate forwards;
+    @media screen and (min-width: 1000px) {
+        animation: rotateLine_socialNetworl_up_1000px 2s ease 1s alternate forwards;
+    }
+    @media screen and (max-width: 1000px) {
+        animation: rotateLine_socialNetworl_down_1000px 2s ease 1s alternate forwards;
+    }
+    @media screen and (max-width: 768px) {
+        animation: rotateLine_socialNetworl_down_768px 2s ease 1s alternate forwards;
+    }
+
+    @media screen and (max-width: 600px) {
+        animation: rotateLine_socialNetworl_down_600px 2s ease 1s alternate forwards;
+    }
+    @media screen and (max-width: 376px) {
+        animation: rotateLine_socialNetworl_down_376px 2s ease 1s alternate forwards;
+    }
+
+    // @media screen and (max-width: 1000px) {
+    //     animation: rotateLine_socialNetworl_down_1000px 2s ease 1s alternate forwards;
+    // }
 }
 .animation_socialNetwork_logo {
     animation: showLogoGit 2s ease 2s alternate forwards;
@@ -2553,14 +2572,54 @@ $d: 2;
         object-position: 0px 0;
     }
 }
-@keyframes rotateLine {
+@keyframes rotateLine_socialNetworl_up_1000px {
     0% {
         transform: rotate(0deg);
         width: 0px;
     }
     100% {
-        transform: rotate(90deg);
-        width: 220px;
+            transform: rotate(90deg);
+            width: 220px;
+    }
+}
+@keyframes rotateLine_socialNetworl_down_1000px {
+    0% {
+        transform: rotate(0deg);
+        width: 0px;
+    }
+    100% {
+            transform: rotate(90deg);
+            width: 180px;
+    }
+}
+@keyframes rotateLine_socialNetworl_down_768px {
+    0% {
+        transform: rotate(0deg);
+        width: 0px;
+    }
+    100% {
+            transform: rotate(90deg);
+            width: 150px;
+    }
+}
+@keyframes rotateLine_socialNetworl_down_600px {
+    0% {
+        transform: rotate(0deg);
+        width: 0px;
+    }
+    100% {
+            transform: rotate(90deg);
+            width: 140px;
+    }
+}
+@keyframes rotateLine_socialNetworl_down_376px {
+    0% {
+        transform: rotate(0deg);
+        width: 0px;
+    }
+    100% {
+            transform: rotate(90deg);
+            width: 120px;
     }
 }
 %socialNetworkIcon {
