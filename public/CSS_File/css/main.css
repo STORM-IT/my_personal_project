@@ -1958,6 +1958,11 @@ main {
   width: 420px;
   margin: 45px auto;
 }
+@media screen and (max-width: 590px) {
+  .contact form {
+    width: 80vw;
+  }
+}
 .contact form h1 {
   font-size: 3em;
   font-weight: 300;
@@ -1969,6 +1974,11 @@ main {
   text-transform: uppercase;
   color: #636363cb;
   font-family: Nazanin !important;
+}
+@media screen and (max-width: 590px) {
+  .contact form h2 {
+    font-size: 1.5rem !important;
+  }
 }
 .contact form hr.sep {
   background: rgba(0, 0, 0, 0);
@@ -1998,6 +2008,13 @@ main {
   border-bottom: 1px solid #636363cb;
   font-family: Nazanin, NavineDemo !important;
   cursor: text;
+}
+@media screen and (max-width: 590px) {
+  .contact input,
+.contact textarea {
+    width: 80vw;
+    font-size: 1rem;
+  }
 }
 .contact input:focus,
 .contact textarea:focus {
@@ -2033,10 +2050,20 @@ main {
   transition: 300ms ease all;
   font-family: Nazanin !important;
 }
+@media screen and (max-width: 590px) {
+  .contact label {
+    font-size: 1rem;
+  }
+}
 .contact .bar {
   position: relative;
   display: block;
   width: 420px;
+}
+@media screen and (max-width: 590px) {
+  .contact .bar {
+    width: 80vw;
+  }
 }
 .contact .bar:before {
   content: "";
@@ -2057,6 +2084,11 @@ main {
   text-transform: uppercase;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+@media screen and (max-width: 590px) {
+  .contact .btn {
+    padding: 5px 10px;
+  }
 }
 .contact .btn:hover {
   color: rgba(60, 60, 60, 0.857254902);
@@ -2418,9 +2450,7 @@ main {
   }
   .project-bodey .project-filter .project-logo-container {
     left: -50px;
-    width: 30px;
     background-color: rgba(0, 0, 0, 0.6) !important;
-    border-radius: 0px 17px 17px 0px;
     transform: rotate(270deg) !important;
     z-index: 5000 !important;
   }
@@ -2467,103 +2497,34 @@ main {
   .project-container {
     width: 600px;
   }
-  .project-container header:first {
-    height: 70px;
-  }
 
-  .card_project {
-    position: relative;
-    width: 100%;
-    height: 150px;
-    box-shadow: white 0px 0px 5px;
-    border: 1px solid white;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 15px 0px;
-  }
   .card_project_contant {
-    position: absolute;
-    background-color: white;
-    right: 0px;
     width: 80% !important;
-    height: 100%;
-  }
-  .card_project_title {
-    width: 100%;
-    text-align: right;
-    background-color: gainsboro;
   }
   .card_project_title a {
-    font-family: Yekan !important;
     font-size: 1.2rem !important;
-    font-weight: 800;
-    padding: 3px 10px;
-    cursor: pointer;
-  }
-  .card_project_description {
-    width: 100%;
-    height: 80px;
-    text-align: right;
-    box-sizing: border-box;
-    direction: rtl;
-    padding: 0px 10px;
-    overflow: hidden;
-    background-color: white;
   }
   .card_project_description p {
-    width: 100%;
-    height: 100%;
-    font-family: Yekan, sans-serif !important;
     font-size: 0.9rem !important;
     line-height: 21px !important;
-    white-space: wrap;
-    text-overflow: ellipsis;
     margin-bottom: 0px !important;
   }
   .card_project_expertise_badge {
-    position: absolute;
-    box-sizing: border-box !important;
-    bottom: 0px;
-    width: 100%;
-    text-align: right;
-    box-sizing: border-box;
     padding: 1px 0px !important;
-    background-color: gainsboro;
   }
   .card_project_expertise_badge div {
-    box-sizing: content-box !important;
-    display: inline-block;
     margin-right: 4px !important;
     padding: 1px 5px !important;
     background-color: #51fa67bb !important;
-    box-shadow: #000 1px 1px 3px;
-    border-radius: 8px !important;
-    font-size: 0.7rem !important;
     font-weight: 300 !important;
-    font-family: sans-serif;
   }
   .card_project_information {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    flex-wrap: nowrap;
-    flex-direction: column;
     width: 20% !important;
-    height: 100%;
-    text-align: right;
-    box-sizing: border-box !important;
-    border-right: 1px solid #bbbbbb;
-    background-color: gainsboro;
     overflow: visible !important;
   }
   .card_project_information p {
-    font-family: Nazanin !important;
-    direction: rtl;
     font-weight: 100 !important;
-    padding: 3px 5px;
     font-size: 0.9rem !important;
-    margin: 0px;
   }
   .card_project_information p span {
     font-size: 0.9rem !important;
@@ -2649,38 +2610,24 @@ main {
   .project-container {
     width: 370px;
   }
-  .project-container header:first {
-    height: 80px;
-  }
 
   .project-logo-container {
     left: -31px !important;
     width: 25px !important;
     padding: 2px 5px !important;
-    background-color: black;
-    border-radius: 10px 10px 0px 0px;
-    transform: rotate(90deg);
-    cursor: pointer;
-    transition: all 1s ease;
   }
   .project-logo-container img {
-    box-sizing: content-box !important;
     width: 20px !important;
-    transition: all 500ms linear;
   }
   .project-container header span {
     font-size: 1.3rem !important;
   }
   .project-container header .project-btn-openAll {
-    padding: 0px 25px;
-    font-size: 0.9rem;
-    font-weight: 100;
+    font-size: 0.8rem;
     line-height: 25px;
   }
   .project-container header .project-btn-sort {
-    padding: 0px 25px;
-    font-size: 0.9rem;
-    font-weight: 100;
+    font-size: 0.8rem;
     line-height: 25px;
   }
   .project-container header ul {
@@ -2704,45 +2651,26 @@ main {
     display: flex !important;
     justify-content: space-around !important;
     flex-direction: column !important;
-    position: relative;
-    width: 100%;
     height: 170px !important;
-    box-shadow: white 0px 0px 5px;
-    border: 1px solid white;
-    border-radius: 10px;
     overflow: hidden;
-    margin: 15px 0px;
   }
   .card_project_contant {
     position: relative !important;
-    background-color: white;
     width: 100% !important;
   }
   .card_project_title {
     width: 100%;
-    text-align: right;
-    background-color: gainsboro;
+    text-align: center !important;
   }
   .card_project_title a {
-    font-family: Yekan !important;
     font-size: 1.1rem !important;
     font-weight: 300 !important;
-    cursor: pointer;
   }
   .card_project_description {
-    width: 100%;
     height: auto !important;
-    text-align: right;
-    box-sizing: border-box;
-    direction: rtl;
     padding: 0px 5px !important;
-    overflow: hidden;
-    background-color: white;
   }
   .card_project_description p {
-    width: 100%;
-    height: 100%;
-    font-family: Yekan, sans-serif !important;
     font-size: 0.7rem !important;
     line-height: 23px;
     font-weight: 800 !important;
@@ -2851,6 +2779,11 @@ main {
 
   .header {
     height: 30vh;
+  }
+}
+@media screen and (max-width: 375px) {
+  .project-container {
+    width: 100vw;
   }
 }
 
