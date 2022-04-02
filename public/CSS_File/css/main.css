@@ -1483,6 +1483,11 @@ main {
     transform: rotateX(-180deg) scaleY(4);
   }
 }
+@media screen and (max-width: 600px) {
+  .project-container header .show_btn_sort_project:after {
+    transform: rotateX(-180deg) scaleY(4.1);
+  }
+}
 
 .project-container header .hide_btn_sort_project:after {
   transform: rotateX(0deg) scaleY(1);
@@ -2414,7 +2419,6 @@ main {
   .project-bodey .project-filter .project-logo-container {
     left: -50px;
     width: 30px;
-    padding: 5px 15px 5px 15px !important;
     background-color: rgba(0, 0, 0, 0.6) !important;
     border-radius: 0px 17px 17px 0px;
     transform: rotate(270deg) !important;
@@ -2465,6 +2469,108 @@ main {
   }
   .project-container header:first {
     height: 70px;
+  }
+
+  .card_project {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    box-shadow: white 0px 0px 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px 0px;
+  }
+  .card_project_contant {
+    position: absolute;
+    background-color: white;
+    right: 0px;
+    width: 80% !important;
+    height: 100%;
+  }
+  .card_project_title {
+    width: 100%;
+    text-align: right;
+    background-color: gainsboro;
+  }
+  .card_project_title a {
+    font-family: Yekan !important;
+    font-size: 1.2rem !important;
+    font-weight: 800;
+    padding: 3px 10px;
+    cursor: pointer;
+  }
+  .card_project_description {
+    width: 100%;
+    height: 80px;
+    text-align: right;
+    box-sizing: border-box;
+    direction: rtl;
+    padding: 0px 10px;
+    overflow: hidden;
+    background-color: white;
+  }
+  .card_project_description p {
+    width: 100%;
+    height: 100%;
+    font-family: Yekan, sans-serif !important;
+    font-size: 0.9rem !important;
+    line-height: 21px !important;
+    white-space: wrap;
+    text-overflow: ellipsis;
+    margin-bottom: 0px !important;
+  }
+  .card_project_expertise_badge {
+    position: absolute;
+    box-sizing: border-box !important;
+    bottom: 0px;
+    width: 100%;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 1px 0px !important;
+    background-color: gainsboro;
+  }
+  .card_project_expertise_badge div {
+    box-sizing: content-box !important;
+    display: inline-block;
+    margin-right: 4px !important;
+    padding: 1px 5px !important;
+    background-color: #51fa67bb !important;
+    box-shadow: #000 1px 1px 3px;
+    border-radius: 8px !important;
+    font-size: 0.7rem !important;
+    font-weight: 300 !important;
+    font-family: sans-serif;
+  }
+  .card_project_information {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 20% !important;
+    height: 100%;
+    text-align: right;
+    box-sizing: border-box !important;
+    border-right: 1px solid #bbbbbb;
+    background-color: gainsboro;
+    overflow: visible !important;
+  }
+  .card_project_information p {
+    font-family: Nazanin !important;
+    direction: rtl;
+    font-weight: 100 !important;
+    padding: 3px 5px;
+    font-size: 0.9rem !important;
+    margin: 0px;
+  }
+  .card_project_information p span {
+    font-size: 0.9rem !important;
+  }
+  .card_project_information p:last-of-type span {
+    font-weight: 500 !important;
+    font-size: 0.8rem !important;
   }
 }
 @media screen and (max-width: 768px) {
@@ -2540,6 +2646,163 @@ main {
     font-size: 1.1em;
   }
 
+  .project-container {
+    width: 370px;
+  }
+  .project-container header:first {
+    height: 80px;
+  }
+
+  .project-logo-container {
+    left: -31px !important;
+    width: 25px !important;
+    padding: 2px 5px !important;
+    background-color: black;
+    border-radius: 10px 10px 0px 0px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    transition: all 1s ease;
+  }
+  .project-logo-container img {
+    box-sizing: content-box !important;
+    width: 20px !important;
+    transition: all 500ms linear;
+  }
+  .project-container header span {
+    font-size: 1.3rem !important;
+  }
+  .project-container header .project-btn-openAll {
+    padding: 0px 25px;
+    font-size: 0.9rem;
+    font-weight: 100;
+    line-height: 25px;
+  }
+  .project-container header .project-btn-sort {
+    padding: 0px 25px;
+    font-size: 0.9rem;
+    font-weight: 100;
+    line-height: 25px;
+  }
+  .project-container header ul {
+    width: 80px;
+    left: 24px;
+    top: 40px;
+  }
+  .project-container header ul li p {
+    padding: 4px 0px;
+    margin-bottom: 5px;
+    font-size: 0.7rem;
+    text-shadow: none;
+    font-weight: 100 !important;
+  }
+  .project-container .project-filter {
+    right: -170px;
+    width: 170px !important;
+  }
+
+  .card_project {
+    display: flex !important;
+    justify-content: space-around !important;
+    flex-direction: column !important;
+    position: relative;
+    width: 100%;
+    height: 170px !important;
+    box-shadow: white 0px 0px 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px 0px;
+  }
+  .card_project_contant {
+    position: relative !important;
+    background-color: white;
+    width: 100% !important;
+  }
+  .card_project_title {
+    width: 100%;
+    text-align: right;
+    background-color: gainsboro;
+  }
+  .card_project_title a {
+    font-family: Yekan !important;
+    font-size: 1.1rem !important;
+    font-weight: 300 !important;
+    cursor: pointer;
+  }
+  .card_project_description {
+    width: 100%;
+    height: auto !important;
+    text-align: right;
+    box-sizing: border-box;
+    direction: rtl;
+    padding: 0px 5px !important;
+    overflow: hidden;
+    background-color: white;
+  }
+  .card_project_description p {
+    width: 100%;
+    height: 100%;
+    font-family: Yekan, sans-serif !important;
+    font-size: 0.7rem !important;
+    line-height: 23px;
+    font-weight: 800 !important;
+    overflow: hidden;
+    white-space: wrap;
+    text-overflow: ellipsis;
+  }
+  .card_project_expertise_badge {
+    position: absolute;
+    box-sizing: border-box !important;
+    bottom: 0px;
+    width: 100%;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 3px 0px;
+    background-color: gainsboro;
+    border-bottom: 1px black solid;
+  }
+  .card_project_expertise_badge div {
+    box-sizing: content-box !important;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 1px 10px;
+    background-color: #80ff91bb !important;
+    box-shadow: #000 1px 1px 3px;
+    border-radius: 10px;
+    font-size: 0.4rem !important;
+    font-weight: 600 !important;
+    font-family: sans-serif;
+  }
+  .card_project_information {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    flex-direction: row !important;
+    width: 100% !important;
+    height: auto !important;
+    text-align: right;
+    box-sizing: border-box !important;
+    border-right: 1px solid #bbbbbb;
+    background-color: gainsboro;
+    overflow: visible !important;
+  }
+  .card_project_information p {
+    font-family: Nazanin !important;
+    direction: rtl;
+    font-weight: 700;
+    padding: 3px 5px;
+    font-size: 0.7rem !important;
+    margin: 0px;
+  }
+  .card_project_information p span {
+    font-size: 0.6rem !important;
+  }
+  .card_project_information p:last-of-type span {
+    font-weight: 600;
+    font-size: 0.6rem !important;
+  }
+
   .Card-text {
     height: 80px;
   }
@@ -2587,7 +2850,7 @@ main {
   }
 
   .header {
-    height: 40vh;
+    height: 30vh;
   }
 }
 
