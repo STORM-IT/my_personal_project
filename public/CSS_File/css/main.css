@@ -181,14 +181,14 @@ main {
     height: 1px;
   }
   100% {
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
   }
 }
 @keyframes hideIconTop {
   0% {
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
   }
   100% {
     height: 1px;
@@ -2157,20 +2157,18 @@ main {
   animation: socialNetwork_move_bottom 2s ease alternate forwards;
 }
 
-.SocialNetwork {
-  padding: 0px 17%;
-}
-
 .SocialNetwork-container {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 400px;
+  width: 70vw;
+  height: 300px;
   top: 300px;
   z-index: 1;
   text-align: center;
+  margin: auto;
   border-radius: 70px;
   background-color: #393e46be;
 }
@@ -2183,7 +2181,7 @@ main {
 .SocialNetwork-container .line img {
   position: absolute;
   width: 350px;
-  height: 160px;
+  height: 15vh;
   top: 100px;
   left: -100px;
   transform: rotate(-90deg);
@@ -2204,7 +2202,7 @@ main {
 }
 .SocialNetwork-container .line div a {
   color: #eeeeee;
-  font-size: 50px;
+  font-size: 2.7rem;
   font-family: MacLemon !important;
 }
 .SocialNetwork-container .move-top {
@@ -2213,7 +2211,8 @@ main {
   bottom: -25px;
   font-size: 30px;
   color: #eeeeee;
-  background-color: black;
+  background-color: #393e46;
+  box-shadow: black 0px 5px 5px;
   overflow: hidden;
 }
 .SocialNetwork-container .move-top img {
@@ -2248,38 +2247,50 @@ main {
   }
   100% {
     transform: rotate(90deg);
-    width: 300px;
+    width: 220px;
   }
 }
-.footer-head-left-location img, .footer-head-left-call img, .footer-head-left-instagram img, .footer-head-left-whatsApp img, .footer-head-left-telegram img {
-  width: 25px;
-  height: 25px;
+@media screen and (min-width: 1000px) {
+  .footer-head-left-location img, .footer-head-left-call img, .footer-head-left-instagram img, .footer-head-left-whatsApp img, .footer-head-left-telegram img {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .footer-head-left-location img, .footer-head-left-call img, .footer-head-left-instagram img, .footer-head-left-whatsApp img, .footer-head-left-telegram img {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .footer {
   position: relative;
   width: 100%;
-  height: 430px;
+  height: 340px;
   background-color: #222831;
 }
 .footer-head {
+  position: absolute;
   z-index: -10;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-end;
-  bottom: 50px;
-  height: 100%;
+  bottom: 40px;
+  height: 80%;
+  z-index: 10;
 }
 .footer-head-left {
-  position: relative;
-  width: 500px;
-  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50vw;
+  height: 180px;
 }
 .footer-head-left-telegram {
-  position: relative;
   text-align: center;
   width: 100%;
-  height: 50px;
+  height: 15px;
 }
 .footer-head-left-telegram img {
   position: absolute;
@@ -2290,18 +2301,16 @@ main {
 }
 .footer-head-left-telegram p {
   height: 100%;
-  width: 500px;
-  margin-top: 7px;
-  margin-right: 40px;
+  width: 50vw;
   position: absolute;
   color: #bbbbbb;
-  font-size: 1em;
+  font-size: 1rem;
+  margin-bottom: 0px !important;
 }
 .footer-head-left-whatsApp {
-  position: relative;
   text-align: center;
   width: 100%;
-  height: 50px;
+  height: 15px;
 }
 .footer-head-left-whatsApp img {
   position: absolute;
@@ -2312,18 +2321,16 @@ main {
 }
 .footer-head-left-whatsApp p {
   height: 100%;
-  width: 500px;
-  margin-top: 7px;
-  margin-right: 40px;
+  width: 50vw;
   position: absolute;
   color: #bbbbbb;
-  font-size: 1em;
+  font-size: 1rem;
+  margin-bottom: 0px !important;
 }
 .footer-head-left-instagram {
-  position: relative;
   text-align: center;
   width: 100%;
-  height: 50px;
+  height: 15px;
 }
 .footer-head-left-instagram img {
   position: absolute;
@@ -2334,18 +2341,16 @@ main {
 }
 .footer-head-left-instagram p {
   height: 100%;
-  width: 500px;
-  margin-top: 7px;
-  margin-right: 40px;
+  width: 50vw;
   position: absolute;
   color: #bbbbbb;
-  font-size: 1em;
+  font-size: 1rem;
+  margin-bottom: 0px !important;
 }
 .footer-head-left-call {
-  position: relative;
   text-align: center;
   width: 100%;
-  height: 50px;
+  height: 15px;
 }
 .footer-head-left-call img {
   position: absolute;
@@ -2356,18 +2361,16 @@ main {
 }
 .footer-head-left-call p {
   height: 100%;
-  width: 500px;
-  margin-top: 7px;
-  margin-right: 40px;
+  width: 50vw;
   position: absolute;
   color: #bbbbbb;
-  font-size: 1em;
+  font-size: 1rem;
+  margin-bottom: 0px !important;
 }
 .footer-head-left-location {
-  position: relative;
   text-align: center;
   width: 100%;
-  height: 50px;
+  height: 15px;
 }
 .footer-head-left-location img {
   position: absolute;
@@ -2378,64 +2381,76 @@ main {
 }
 .footer-head-left-location p {
   height: 100%;
-  width: 500px;
-  margin-top: 7px;
-  margin-right: 40px;
+  width: 50vw;
   position: absolute;
   color: #bbbbbb;
-  font-size: 1em;
+  font-size: 1rem;
+  margin-bottom: 0px !important;
 }
 .footer-head-right {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  width: 500px;
-  height: 300px;
+  width: 50vw;
+  height: 180px;
 }
 .footer-head-right .version {
   text-align: center;
   width: 100%;
-  height: 50px;
+  height: 15px;
   color: #bbbbbb;
   font-family: sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
+  margin-bottom: 0px !important;
 }
 .footer-head-right .create {
   text-align: center;
   width: 100%;
-  height: 50px;
+  height: 15px;
   color: #bbbbbb;
   font-family: sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
+  margin-bottom: 0px !important;
 }
 .footer-head-right .update {
   text-align: center;
   width: 100%;
-  height: 50px;
+  height: 15px;
   color: #bbbbbb;
   font-family: sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
+  margin-bottom: 0px !important;
 }
 .footer-head-right .brand {
   text-align: center;
   width: 100%;
-  height: 50px;
+  height: 15px;
   color: #bbbbbb;
   font-family: sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
+  margin-bottom: 0px !important;
+}
+.footer-head-right .crator {
+  text-align: center;
+  width: 100%;
+  height: 15px;
+  color: #bbbbbb;
+  font-family: sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0px !important;
 }
 .footer-creator {
   position: absolute;
   bottom: 0px;
   width: 100%;
-  height: 40px;
   background-color: #22252a;
   color: #eeeeee;
   direction: ltr;
   text-align: center;
   font-family: RoyaBold !important;
-  font-size: 1.3em !important;
+  font-size: 1rem !important;
+  padding: 5px 0px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -2533,6 +2548,81 @@ main {
     font-weight: 500 !important;
     font-size: 0.8rem !important;
   }
+
+  .SocialNetwork-container {
+    width: 85vw;
+    height: 250px;
+    border-radius: 50px;
+  }
+  .SocialNetwork-container .line img {
+    height: 100px;
+  }
+  .SocialNetwork-container .line div a {
+    font-size: 2rem;
+  }
+  .SocialNetwork-container .move-top {
+    border-radius: 50%;
+    bottom: -25px;
+    font-size: 10px !important;
+  }
+  .SocialNetwork-container .move-top img {
+    cursor: pointer;
+  }
+
+  .footer {
+    position: relative;
+    width: 100%;
+    height: 310px;
+    background-color: #222831;
+  }
+  .footer-head {
+    bottom: 35px;
+  }
+  .footer-head-left {
+    height: 150px;
+  }
+  .footer-head-left-telegram p {
+    font-size: 0.8rem;
+  }
+  .footer-head-left-whatsApp p {
+    font-size: 0.8rem;
+  }
+  .footer-head-left-instagram p {
+    font-size: 0.8rem;
+  }
+  .footer-head-left-call p {
+    font-size: 0.8rem;
+  }
+  .footer-head-left-location p {
+    font-size: 0.8rem;
+  }
+  .footer-head-right {
+    height: 150px;
+  }
+  .footer-head-right .version {
+    height: 15px;
+    font-size: 0.8rem;
+  }
+  .footer-head-right .create {
+    height: 15px;
+    font-size: 0.8rem;
+  }
+  .footer-head-right .update {
+    height: 15px;
+    font-size: 0.8rem;
+  }
+  .footer-head-right .brand {
+    height: 15px;
+    font-size: 0.8rem;
+  }
+  .footer-head-right .crator {
+    height: 15px;
+    font-size: 0.8rem;
+  }
+  .footer-creator {
+    font-size: 0.8rem !important;
+    padding: 3px 0px;
+  }
 }
 @media screen and (max-width: 768px) {
   #type-text {
@@ -2568,6 +2658,26 @@ main {
   }
   .info_layout_css .text_img_container p {
     font-size: 1.1em;
+  }
+
+  .SocialNetwork-container {
+    width: 90vw;
+    height: 200px;
+    border-radius: 40px;
+  }
+  .SocialNetwork-container .line img {
+    height: 70px;
+  }
+  .SocialNetwork-container .line div a {
+    font-size: 1.7rem;
+  }
+  .SocialNetwork-container .move-top {
+    border-radius: 50%;
+    bottom: -25px;
+    font-size: 10px !important;
+  }
+  .SocialNetwork-container .move-top img {
+    cursor: pointer;
   }
 }
 @media screen and (min-width: 600px) {
@@ -2771,6 +2881,26 @@ main {
   .Card-expertise-git {
     width: var(--card-with-expertise);
   }
+
+  .SocialNetwork-container {
+    width: 95vw;
+    height: 170px;
+    border-radius: 40px;
+  }
+  .SocialNetwork-container .line img {
+    height: 70px;
+  }
+  .SocialNetwork-container .line div a {
+    font-size: 1.5rem;
+  }
+  .SocialNetwork-container .move-top {
+    border-radius: 50%;
+    bottom: -25px;
+    font-size: 10px !important;
+  }
+  .SocialNetwork-container .move-top img {
+    cursor: pointer;
+  }
 }
 @media screen and (max-width: 490px) {
   #type-text {
@@ -2784,6 +2914,25 @@ main {
 @media screen and (max-width: 375px) {
   .project-container {
     width: 100vw;
+  }
+
+  .SocialNetwork-container {
+    height: 150px;
+    border-radius: 40px;
+  }
+  .SocialNetwork-container .line img {
+    height: 70px;
+  }
+  .SocialNetwork-container .line div a {
+    font-size: 1.3rem;
+  }
+  .SocialNetwork-container .move-top {
+    border-radius: 50%;
+    bottom: -25px;
+    font-size: 10px !important;
+  }
+  .SocialNetwork-container .move-top img {
+    cursor: pointer;
   }
 }
 

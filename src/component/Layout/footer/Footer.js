@@ -27,6 +27,7 @@ export default function Footer() {
           <p className='create'>create : <span> 2022/02/21</span></p>
           <p className='update'>last update : <span> 2022/02/21</span></p>
           <p className='brand'>brand : <span> STOORMIX</span></p>
+          <p className='crator'>crator : <span> Ali Parsamanesh</span></p>
         </div>
       </div>
       
