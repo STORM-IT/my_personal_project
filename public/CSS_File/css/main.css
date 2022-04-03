@@ -274,7 +274,7 @@ main {
   top: 0px;
   overflow: hidden;
   font-family: MacLemon !important;
-  font-size: 35px;
+  font-size: 2.3rem;
   text-align: center;
   width: 18px;
 }
@@ -983,6 +983,11 @@ main {
   height: 120px;
   width: 100%;
 }
+@media screen and (max-width: 600px) {
+  .Card-body {
+    height: 70px !important;
+  }
+}
 .Card-expertise-html {
   display: flex;
   position: absolute;
@@ -1007,8 +1012,12 @@ main {
   width: 70px;
 }
 @media screen and (max-width: 600px) {
+  .Card-expertise-html {
+    width: 90%;
+    height: 50px;
+  }
   .Card-expertise-html span {
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin-left: 30px;
   }
   .Card-expertise-html img {
@@ -1041,8 +1050,12 @@ main {
   width: 70px;
 }
 @media screen and (max-width: 600px) {
+  .Card-expertise-css {
+    width: 90%;
+    height: 50px;
+  }
   .Card-expertise-css span {
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin-left: 30px;
   }
   .Card-expertise-css img {
@@ -1075,8 +1088,12 @@ main {
   width: 70px;
 }
 @media screen and (max-width: 600px) {
+  .Card-expertise-javascript {
+    width: 90%;
+    height: 50px;
+  }
   .Card-expertise-javascript span {
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin-left: 30px;
   }
   .Card-expertise-javascript img {
@@ -1109,8 +1126,12 @@ main {
   width: 70px;
 }
 @media screen and (max-width: 600px) {
+  .Card-expertise-bootstrap {
+    width: 90%;
+    height: 50px;
+  }
   .Card-expertise-bootstrap span {
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin-left: 30px;
   }
   .Card-expertise-bootstrap img {
@@ -1143,8 +1164,12 @@ main {
   width: 70px;
 }
 @media screen and (max-width: 600px) {
+  .Card-expertise-jquery {
+    width: 90%;
+    height: 50px;
+  }
   .Card-expertise-jquery span {
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin-left: 30px;
   }
   .Card-expertise-jquery img {
@@ -1177,8 +1202,12 @@ main {
   width: 70px;
 }
 @media screen and (max-width: 600px) {
+  .Card-expertise-sass {
+    width: 90%;
+    height: 50px;
+  }
   .Card-expertise-sass span {
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin-left: 30px;
   }
   .Card-expertise-sass img {
@@ -1211,8 +1240,12 @@ main {
   width: 70px;
 }
 @media screen and (max-width: 600px) {
+  .Card-expertise-react {
+    width: 90%;
+    height: 50px;
+  }
   .Card-expertise-react span {
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin-left: 30px;
   }
   .Card-expertise-react img {
@@ -1245,8 +1278,12 @@ main {
   width: 70px;
 }
 @media screen and (max-width: 600px) {
+  .Card-expertise-redux {
+    width: 90%;
+    height: 50px;
+  }
   .Card-expertise-redux span {
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin-left: 30px;
   }
   .Card-expertise-redux img {
@@ -1279,8 +1316,12 @@ main {
   width: 70px;
 }
 @media screen and (max-width: 600px) {
+  .Card-expertise-git {
+    width: 90%;
+    height: 50px;
+  }
   .Card-expertise-git span {
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin-left: 30px;
   }
   .Card-expertise-git img {
@@ -1313,8 +1354,12 @@ main {
   width: 70px;
 }
 @media screen and (max-width: 600px) {
+  .Card-expertise-sharp {
+    width: 90%;
+    height: 50px;
+  }
   .Card-expertise-sharp span {
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin-left: 30px;
   }
   .Card-expertise-sharp img {
@@ -2609,6 +2654,36 @@ main {
   }
 }
 @media screen and (max-width: 1000px) {
+  .nav-container .div_text_head {
+    height: 40px;
+    padding: 0px 20px 7px 20px;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .nav-container .div_text_head span {
+    top: 0px;
+    font-size: 2rem;
+  }
+
+  .Card-text {
+    height: 120px;
+  }
+  .Card-text h3 {
+    top: 30px;
+    font-size: 2rem;
+  }
+  .Card-container {
+    width: 85vw;
+    border-radius: 50px;
+    margin-bottom: 70px;
+  }
+  .Card-expertise {
+    width: 100% !important;
+  }
+  .Card-body {
+    height: 110px;
+    width: 100%;
+  }
+
   .project-container header span {
     font-size: 2rem !important;
   }
@@ -2754,6 +2829,15 @@ main {
   }
 }
 @media screen and (max-width: 768px) {
+  .nav-container .div_text_head {
+    padding: 0px 10px 0px 10px;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .nav-container .div_text_head span {
+    top: 0px;
+    font-size: 1.7rem;
+  }
+
   #type-text {
     font-size: 1.4rem !important;
   }
@@ -3055,6 +3139,16 @@ main {
   }
 }
 @media screen and (max-width: 490px) {
+  .nav-container .div_text_head {
+    height: 35px !important;
+    padding: 0px 5px 0px 5px;
+    border-radius: 0px 0px 7px 7px;
+  }
+  .nav-container .div_text_head span {
+    top: 0px;
+    font-size: 1.5rem;
+  }
+
   #type-text {
     font-size: 1rem !important;
   }
