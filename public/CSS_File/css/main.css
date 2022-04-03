@@ -2702,10 +2702,7 @@ main {
   }
 
   .footer {
-    position: relative;
-    width: 100%;
     height: 310px;
-    background-color: #222831;
   }
   .footer-head {
     bottom: 35px;
@@ -3004,6 +3001,58 @@ main {
   .SocialNetwork-container .move-top img {
     cursor: pointer;
   }
+
+  .footer {
+    height: 280px;
+  }
+  .footer-head {
+    bottom: 30px;
+  }
+  .footer-head-left {
+    height: 120px;
+  }
+  .footer-head-left-telegram p {
+    font-size: 0.7rem;
+  }
+  .footer-head-left-whatsApp p {
+    font-size: 0.7rem;
+  }
+  .footer-head-left-instagram p {
+    font-size: 0.7rem;
+  }
+  .footer-head-left-call p {
+    font-size: 0.7rem;
+  }
+  .footer-head-left-location p {
+    font-size: 0.7rem;
+  }
+  .footer-head-right {
+    height: 120px;
+  }
+  .footer-head-right .version {
+    height: 15px;
+    font-size: 0.7rem;
+  }
+  .footer-head-right .create {
+    height: 15px;
+    font-size: 0.7rem;
+  }
+  .footer-head-right .update {
+    height: 15px;
+    font-size: 0.7rem;
+  }
+  .footer-head-right .brand {
+    height: 15px;
+    font-size: 0.7rem;
+  }
+  .footer-head-right .crator {
+    height: 15px;
+    font-size: 0.7rem;
+  }
+  .footer-creator {
+    font-size: 0.8rem !important;
+    padding: 3px 0px;
+  }
 }
 @media screen and (max-width: 490px) {
   #type-text {
@@ -3038,6 +3087,58 @@ main {
   }
   .SocialNetwork-container .move-top img {
     cursor: pointer;
+  }
+
+  .footer {
+    height: 260px;
+  }
+  .footer-head {
+    bottom: 25px;
+  }
+  .footer-head-left {
+    height: 110px;
+  }
+  .footer-head-left-telegram p {
+    font-size: 0.6rem;
+  }
+  .footer-head-left-whatsApp p {
+    font-size: 0.6rem;
+  }
+  .footer-head-left-instagram p {
+    font-size: 0.6rem;
+  }
+  .footer-head-left-call p {
+    font-size: 0.6rem;
+  }
+  .footer-head-left-location p {
+    font-size: 0.6rem;
+  }
+  .footer-head-right {
+    height: 110px !important;
+  }
+  .footer-head-right .version {
+    height: 15px;
+    font-size: 0.6rem;
+  }
+  .footer-head-right .create {
+    height: 15px;
+    font-size: 0.6rem;
+  }
+  .footer-head-right .update {
+    height: 15px;
+    font-size: 0.6rem;
+  }
+  .footer-head-right .brand {
+    height: 15px;
+    font-size: 0.6rem;
+  }
+  .footer-head-right .crator {
+    height: 15px;
+    font-size: 0.6rem;
+  }
+  .footer-creator {
+    font-size: 0.8rem !important;
+    padding: 3px 0px;
   }
 }
 

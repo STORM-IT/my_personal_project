@@ -2945,11 +2945,7 @@ $fontsize: 30px;
     }
 
     .footer {
-        position: relative;
-        width: 100%;
         height: 310px;
-        background-color: $color_black;
-
         &-head {
             bottom: 35px; //change
             &-left {
@@ -3259,6 +3255,35 @@ $fontsize: 30px;
             }
         }
     }
+    .footer {
+        height: 280px;
+        &-head {
+            bottom: 30px; //change
+            &-left {
+                height: 120px; //change
+                @each $i in $socialNetwork {
+                    &-#{$i} {
+                        p {
+                            font-size: 0.7rem; //change
+                        }
+                    }
+                }
+            }
+            &-right {
+                height: 120px; //change 180
+                @each $i in $footerRightInfoSite {
+                    .#{$i} {
+                        height: 15px;
+                        font-size: 0.7rem; //change
+                    }
+                }
+            }
+        }
+        &-creator {
+            font-size: 0.8rem !important; //change
+            padding: 3px 0px; //change
+        }
+    }
 }
 @media screen and (max-width: 490px) {
     #type-text {
@@ -3296,6 +3321,35 @@ $fontsize: 30px;
             img {
                 cursor: pointer;
             }
+        }
+    }
+    .footer {
+        height: 260px;
+        &-head {
+            bottom: 25px; //change
+            &-left {
+                height: 110px; //change
+                @each $i in $socialNetwork {
+                    &-#{$i} {
+                        p {
+                            font-size: 0.6rem; //change
+                        }
+                    }
+                }
+            }
+            &-right {
+                height: 110px !important; //change 180
+                @each $i in $footerRightInfoSite {
+                    .#{$i} {
+                        height: 15px;
+                        font-size: 0.6rem; //change
+                    }
+                }
+            }
+        }
+        &-creator {
+            font-size: 0.8rem !important; //change
+            padding: 3px 0px; //change
         }
     }
 }
