@@ -1,47 +1,68 @@
-
-#find_correct_text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#find_correct_text {
+    height: 100vh;
     flex-direction: column;
-    /* font-family: sans-serif; */
-}
-#find_correct_text #title{
-    width: 500px;
+    background-color: aliceblue;
     text-align: center;
-padding: 50px;
-background-color: rgb(220, 239, 255);
-border-radius: 0px 0px 20px 20px;
+    font-size: 17px;
 }
-#find_correct_text #container-txt{
-padding: 40px 0px;
-font-size: 30px;
+#find_correct_text #title {
+    top: 0px;
+    width: 18em;
+    text-align: center;
+    padding: 2em;
+    background-color: rgb(220, 239, 255);
+    border-radius: 0px 0px 20px 20px;
+    font-family: sans-serif !important;
+    margin: auto;
+    font-size: 1.5em;    
 }
-#find_correct_text #container{
-padding: 50px;
+#find_correct_text #container-txt {
+    padding: 40px 0px;
+    font-size: 1.5em;
 }
-#find_correct_text #input-txt{
-padding:3px 5px;
-outline: none;
-border: 1px rgb(161, 161, 161) solid;
-box-shadow: rgb(97, 97, 97) 0px 0px 5px;
-border-radius: 0px !important;
-background-color: aliceblue;
+#find_correct_text #container {
+    padding: 50px;
 }
-#find_correct_text #check{
-    padding: 7px 40px;
+#find_correct_text #input-txt {
+    padding: 3px 5px;
+    outline: none;
+    border: 1px rgb(161, 161, 161) solid;
+    box-shadow: rgb(97, 97, 97) 0px 0px 5px;
+    border-radius: 0px !important;
+    background-color: aliceblue;
+    font-size: 1em;
+}
+#find_correct_text #check {
+    padding: 0.5em 2em;
     border: none;
     box-shadow: black 0px 0px 5px;
     border-radius: 10px;
-    background-color: rgb(100, 100, 100);
+    background-color: rgb(85, 111, 117);
     color: rgb(255, 255, 255);
-    margin-top: 10px;
-    font-size: 18px;
+    margin-top: 30px;
+    font-size: 1em;
 }
-#find_correct_text #check:hover{
-    background-color: rgb(73, 73, 73);
+#find_correct_text #check:hover {
+    background-color: rgba(85, 111, 117, 0.897);
+}
+#find_correct_text #effore {
+    padding: 50px;
+}
 
+
+
+@media screen and (max-width: 768px) {
+    #find_correct_text {
+        font-size: 15px;
+    }
 }
-#find_correct_text #effore{
-padding: 50px;
+@media screen and (max-width: 425px) {
+    #find_correct_text {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 375px) {
+    #find_correct_text {
+        font-size: 11px;
+    }
 }
