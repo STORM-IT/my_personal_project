@@ -21,7 +21,7 @@ $color_light: #eeeeee;
 
 $expertise: "Html & css", "JavaScript", "Bootstrap", "Jquery", "Sass", "React", "C#";
 $socialNetwork: "telegram", "whatsApp", "instagram", "call", "location";
-$footerRightInfoSite: "version", "create", "update", "brand","crator";
+$footerRightInfoSite: "version", "create", "update", "brand", "crator";
 
 @function card_item_style() {
     @return ();
@@ -314,8 +314,8 @@ main {
         height: 1px;
     }
     100% {
-            height: 50px;
-            width: 50px;
+        height: 50px;
+        width: 50px;
     }
 }
 @keyframes hideIconTop {
@@ -2237,7 +2237,7 @@ $d: 2;
         box-sizing: border-box;
         direction: rtl;
     }
-    
+
     // FORM // ============================== //
     form {
         width: $width;
@@ -2260,7 +2260,6 @@ $d: 2;
             font-family: Nazanin !important;
             @media screen and (max-width: 590px) {
                 font-size: 1.5rem !important;
-                
             }
         }
         hr.sep {
@@ -2339,7 +2338,6 @@ $d: 2;
         font-family: Nazanin !important;
         @media screen and (max-width: 590px) {
             font-size: 1rem;
-            
         }
     }
 
@@ -2430,27 +2428,29 @@ $d: 2;
     // }
 }
 .animation_socialNetwork_logo {
-    animation: showLogoGit 2s ease 2s alternate forwards;
+    // @media screen and (min-width: 768px) {
+        animation: showLogoGit_socialNetwork_up_768px 2s ease 2s alternate forwards;
+    // }
+    // @media screen and (max-width: 768px) {
+    //     animation: showLogoGit_socialNetwork_down_768px 2s ease 2s alternate forwards;
+    // }
+    // @media screen and (max-width: 600px) {
+    //     animation: showLogoGit_socialNetwork_down_600px 2s ease 2s alternate forwards;
+    // }
 }
 .animation_socialNetwork_userName {
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 768px) {
+        // animation: gitUsername_socialNetwork_down_1000px 2s ease 3s alternate forwards;
         animation: gitUsername_socialNetwork_up_1000px 2s ease 3s alternate forwards;
     }
-    // @media screen and (max-width: 1000px) {
-    //     // animation: gitUsername_socialNetwork_down_1000px 2s ease 3s alternate forwards;
-    //     animation: gitUsername_socialNetwork_up_1000px 2s ease 3s alternate forwards;
-    //     }
     @media screen and (max-width: 768px) {
-        animation: gitUsername_socialNetwork_down_768px 2s ease 3s alternate forwards; 
+        animation: gitUsername_socialNetwork_down_768px 2s ease 3s alternate forwards;
         // animation: gitUsername_socialNetwork_up_1000px 2s ease 3s alternate forwards;
-       }
+    }
 
     @media screen and (max-width: 600px) {
-        animation: gitUsername_socialNetwork_down_600px 2s ease 3s alternate forwards;  
-      }
-    @media screen and (max-width: 376px) {
-        // animation: gitUsername_socialNetwork_down_376px 2s ease 3s alternate forwards; 
-       }
+        animation: gitUsername_socialNetwork_down_600px 2s ease 3s alternate forwards;
+    }
 }
 @keyframes socialNetwork_move_top {
     0% {
@@ -2520,10 +2520,12 @@ $d: 2;
         img {
             position: absolute;
             width: 350px;
-            // height: 160px;
-            height: 15vh;
+            height: 160px;
+            // height: 15vh;
+            // top: 100px;
+            // left: -100px;
             top: 100px;
-            left: -100px;
+            left: -110px;
             transform: rotate(-90deg);
             object-fit: fill;
             object-position: 360px 0;
@@ -2568,6 +2570,23 @@ $d: 2;
     }
 }
 
+@keyframes showLogoGit_socialNetwork_up_768px {
+    0% {
+        object-position: 360px 0;
+    }
+    100% {
+        object-position: 0px 0;
+    }
+}
+// @keyframes showLogoGit_socialNetwork_down_768px {
+//     0% {
+//         object-position: 150px 0;
+//     }
+//     100% {
+//         object-position: 0px 0;
+//     }
+// }
+
 @keyframes gitUsername_socialNetwork_up_1000px {
     0% {
         display: block;
@@ -2607,22 +2626,22 @@ $d: 2;
         right: -165px;
     }
 }
-@keyframes showLogoGit {
-    0% {
-        object-position: 360px 0;
-    }
-    100% {
-        object-position: 0px 0;
-    }
-}
+
+
+
+
+
+
+
+
 @keyframes rotateLine_socialNetworl_up_1000px {
     0% {
         transform: rotate(0deg);
         width: 0px;
     }
     100% {
-            transform: rotate(90deg);
-            width: 220px;
+        transform: rotate(90deg);
+        width: 220px;
     }
 }
 @keyframes rotateLine_socialNetworl_down_1000px {
@@ -2631,8 +2650,8 @@ $d: 2;
         width: 0px;
     }
     100% {
-            transform: rotate(90deg);
-            width: 180px;
+        transform: rotate(90deg);
+        width: 180px;
     }
 }
 @keyframes rotateLine_socialNetworl_down_768px {
@@ -2641,8 +2660,8 @@ $d: 2;
         width: 0px;
     }
     100% {
-            transform: rotate(90deg);
-            width: 150px;
+        transform: rotate(90deg);
+        width: 150px;
     }
 }
 @keyframes rotateLine_socialNetworl_down_600px {
@@ -2651,8 +2670,8 @@ $d: 2;
         width: 0px;
     }
     100% {
-            transform: rotate(90deg);
-            width: 140px;
+        transform: rotate(90deg);
+        width: 140px;
     }
 }
 @keyframes rotateLine_socialNetworl_down_376px {
@@ -2661,8 +2680,8 @@ $d: 2;
         width: 0px;
     }
     100% {
-            transform: rotate(90deg);
-            width: 120px;
+        transform: rotate(90deg);
+        width: 120px;
     }
 }
 %socialNetworkIcon {
@@ -2724,7 +2743,7 @@ $d: 2;
                         // margin-right: 40px;
                         position: absolute;
                         color: darken($color: $color_light, $amount: 20);
-                        font-size: 1rem ;
+                        font-size: 1rem;
                         margin-bottom: 0px !important;
                     }
                 }
@@ -2873,7 +2892,6 @@ $fontsize: 30px;
         }
 
         &_information {
-            
             width: 20% !important; //change
             overflow: visible !important;
             p {
@@ -2897,6 +2915,8 @@ $fontsize: 30px;
         .line {
             img {
                 height: 100px;
+                top: 125px;
+                left: -130px;
             }
             div {
                 a {
@@ -2920,32 +2940,32 @@ $fontsize: 30px;
         width: 100%;
         height: 310px;
         background-color: $color_black;
-    
+
         &-head {
-            bottom: 35px;//change
+            bottom: 35px; //change
             &-left {
-                height: 150px;//change
+                height: 150px; //change
                 @each $i in $socialNetwork {
                     &-#{$i} {
                         p {
-                            font-size: 0.8rem ;//change
+                            font-size: 0.8rem; //change
                         }
                     }
                 }
             }
             &-right {
-                height: 150px;//change 180
+                height: 150px; //change 180
                 @each $i in $footerRightInfoSite {
                     .#{$i} {
                         height: 15px;
-                        font-size: 0.8rem;//change
+                        font-size: 0.8rem; //change
                     }
                 }
             }
         }
         &-creator {
-            font-size: 0.8rem !important;//change
-            padding: 3px 0px;//change
+            font-size: 0.8rem !important; //change
+            padding: 3px 0px; //change
         }
     }
 }
@@ -2988,7 +3008,9 @@ $fontsize: 30px;
         border-radius: 40px;
         .line {
             img {
-                height: 70px;
+                width: 240px;
+                left: -84px;
+                top: 70px;
             }
             div {
                 a {
@@ -3062,7 +3084,7 @@ $fontsize: 30px;
                 }
                 //css btn open all project
                 .project-btn-openAll {
-                    font-size: 0.8rem ;
+                    font-size: 0.8rem;
                     line-height: 25px;
                 }
                 //end css btn open all project
@@ -3077,7 +3099,7 @@ $fontsize: 30px;
                     width: 80px;
                     left: 24px; //79 //55
 
-                    top: 40px;//52
+                    top: 40px; //52
                     li {
                         p {
                             padding: 4px 0px;
@@ -3249,6 +3271,8 @@ $fontsize: 30px;
         border-radius: 40px;
         .line {
             img {
+                width: 210px;
+                left: -74px ;
                 height: 70px;
             }
             div {
@@ -3281,13 +3305,11 @@ $fontsize: 30px;
     //         width: 40vw;
     //     }
     // }
-    
 }
 
 @media screen and (max-width: 375px) {
     .project-container {
         width: 100vw;
-
     }
     .SocialNetwork-container {
         // width: 95vw;
@@ -3295,7 +3317,9 @@ $fontsize: 30px;
         border-radius: 40px;
         .line {
             img {
-                height: 70px;
+                width: 190px;
+                left: -70px ;
+                height: 50px;
             }
             div {
                 a {

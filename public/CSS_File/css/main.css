@@ -2144,10 +2144,10 @@ main {
 }
 
 .animation_socialNetwork_logo {
-  animation: showLogoGit 2s ease 2s alternate forwards;
+  animation: showLogoGit_socialNetwork_up_768px 2s ease 2s alternate forwards;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
   .animation_socialNetwork_userName {
     animation: gitUsername_socialNetwork_up_1000px 2s ease 3s alternate forwards;
   }
@@ -2162,6 +2162,7 @@ main {
     animation: gitUsername_socialNetwork_down_600px 2s ease 3s alternate forwards;
   }
 }
+
 @keyframes socialNetwork_move_top {
   0% {
     top: 300px;
@@ -2214,9 +2215,9 @@ main {
 .SocialNetwork-container .line img {
   position: absolute;
   width: 350px;
-  height: 15vh;
+  height: 160px;
   top: 100px;
-  left: -100px;
+  left: -110px;
   transform: rotate(-90deg);
   object-fit: fill;
   object-position: 360px 0;
@@ -2252,6 +2253,14 @@ main {
   cursor: pointer;
 }
 
+@keyframes showLogoGit_socialNetwork_up_768px {
+  0% {
+    object-position: 360px 0;
+  }
+  100% {
+    object-position: 0px 0;
+  }
+}
 @keyframes gitUsername_socialNetwork_up_1000px {
   0% {
     display: block;
@@ -2289,14 +2298,6 @@ main {
     width: 200px;
     height: 200px;
     right: -165px;
-  }
-}
-@keyframes showLogoGit {
-  0% {
-    object-position: 360px 0;
-  }
-  100% {
-    object-position: 0px 0;
   }
 }
 @keyframes rotateLine_socialNetworl_up_1000px {
@@ -2655,6 +2656,8 @@ main {
   }
   .SocialNetwork-container .line img {
     height: 100px;
+    top: 125px;
+    left: -130px;
   }
   .SocialNetwork-container .line div a {
     font-size: 2rem;
@@ -2765,7 +2768,9 @@ main {
     border-radius: 40px;
   }
   .SocialNetwork-container .line img {
-    height: 70px;
+    width: 240px;
+    left: -84px;
+    top: 70px;
   }
   .SocialNetwork-container .line div a {
     font-size: 1.7rem;
@@ -2987,6 +2992,8 @@ main {
     border-radius: 40px;
   }
   .SocialNetwork-container .line img {
+    width: 210px;
+    left: -74px;
     height: 70px;
   }
   .SocialNetwork-container .line div a {
@@ -3020,7 +3027,9 @@ main {
     border-radius: 40px;
   }
   .SocialNetwork-container .line img {
-    height: 70px;
+    width: 190px;
+    left: -70px;
+    height: 50px;
   }
   .SocialNetwork-container .line div a {
     font-size: 1.3rem;
