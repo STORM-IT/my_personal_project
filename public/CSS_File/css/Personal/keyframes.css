@@ -1,0 +1,509 @@
+@keyframes img_brightness_lamp {
+    0% {
+        filter: brightness(0%);
+    }
+    50% {
+        filter: brightness(140%);
+    }
+    100% {
+        filter: brightness(60%);
+    }
+}
+@keyframes img_brightness {
+    0% {
+        filter: brightness(0%);
+    }
+    50% {
+        filter: brightness(140%);
+    }
+    100% {
+        filter: brightness(80%);
+    }
+}
+@keyframes glow-in {
+    from {
+        opacity: 0;
+    }
+    65% {
+        opacity: 1;
+        text-shadow: 0 0 25px white;
+    }
+    75% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.7;
+    }
+}
+
+@keyframes showIconTop_up_768px {
+    0% {
+        height: 1px;
+    }
+    100% {
+        height: 50px;
+        width: 50px;
+    }
+}
+@keyframes showIconTop_down_768px {
+    0% {
+        height: 1px;
+    }
+    100% {
+        height: 40px;
+        width: 40px;
+    }
+}
+@keyframes showIconTop_down_376px {
+    0% {
+        height: 1px;
+    }
+    100% {
+        height: 35px;
+        width: 35px;
+    }
+}
+@keyframes hideIconTop {
+    0% {
+        height: 50px;
+        width: 50px;
+    }
+    100% {
+        height: 1px;
+    }
+}
+@keyframes showFooter {
+    0% {
+        width: 100%;
+        margin-bottom: -900px;
+    }
+    100% {
+        width: 95%;
+        margin-bottom: -850px;
+    }
+}
+@keyframes hideFooter {
+    0% {
+        width: 95%;
+        margin-bottom: -850px;
+    }
+    100% {
+        width: 100%;
+        margin-bottom: -900px;
+    }
+}
+
+@keyframes show_hover_select_nav {
+    0% {
+        opacity: 0;
+        right: -240px;
+    }
+    100% {
+        opacity: 0.8;
+        right: 0px;
+    }
+}
+@keyframes hide_hover_select_nav {
+    0% {
+        opacity: 0.8;
+        right: 0px;
+    }
+    100% {
+        opacity: 0.5;
+        right: -240px;
+    }
+}
+
+@keyframes show_text_head_char_1 {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: 54px;
+    }
+}
+@keyframes show_text_head_char_2 {
+    0% {
+        opacity: 1;
+        left: 0px;
+    }
+    100% {
+        opacity: 0;
+        left: 54px;
+    }
+}
+@keyframes show_text_head_char_3 {
+    0% {
+        opacity: 1;
+        left: 0px;
+    }
+    100% {
+        opacity: 0;
+        left: 36px;
+    }
+}
+@keyframes show_text_head_char_4 {
+    0% {
+        left: 0px;
+        opacity: 1;
+    }
+    100% {
+        left: 18px;
+        opacity: 0;
+    }
+}
+@keyframes show_text_head_char_5 {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes show_text_head_char_6 {
+    0% {
+        left: 0px;
+        opacity: 1;
+    }
+    100% {
+        left: -18px;
+        opacity: 0;
+    }
+}
+@keyframes show_text_head_char_7 {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: -36px;
+    }
+}
+@keyframes show_text_head_char_8 {
+    0% {
+        opacity: 1;
+        left: 0px;
+    }
+    100% {
+        opacity: 0;
+        left: -54px;
+    }
+}
+@keyframes show_text_head_char_9 {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: -54px;
+    }
+}
+
+@keyframes hide_text_head_char_1 {
+    0% {
+        left: 54px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+@keyframes hide_text_head_char_2 {
+    0% {
+        left: 54px;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        left: 0px;
+    }
+}
+@keyframes hide_text_head_char_3 {
+    0% {
+        left: 36px;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        left: 0px;
+    }
+}
+@keyframes hide_text_head_char_4 {
+    0% {
+        left: 18px;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        left: 0px;
+    }
+}
+@keyframes hide_text_head_char_5 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes hide_text_head_char_6 {
+    0% {
+        left: -18px;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        left: 0px;
+    }
+}
+@keyframes hide_text_head_char_7 {
+    0% {
+        left: -36px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+@keyframes hide_text_head_char_8 {
+    0% {
+        left: -54px;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        left: 0px;
+    }
+}
+@keyframes hide_text_head_char_9 {
+    0% {
+        left: -54px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+/* FALLING LEAVES */
+@-webkit-keyframes falling {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translate3d(-160vw, 580vh, 0) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes falling3 {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0) rotate(-20deg);
+    }
+
+    100% {
+        -webkit-transform: translate3d(-170vw, 470vh, 0) rotate(-70deg);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes falling2 {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0) rotate(90deg);
+    }
+
+    100% {
+        -webkit-transform: translate3d(-150vw, 350vh, 0) rotate(0deg);
+        opacity: 1;
+    }
+}
+/* E FALLING LEAVES */
+
+/* EXPERTISE MOVER */
+@keyframes MoveExpertiseRight {
+    0% {
+        left: -400px;
+    }
+    100% {
+        width: 400px;
+        left: 50px;
+    }
+}
+@keyframes MoveExpertiseLeft {
+    0% {
+        right: -400px;
+    }
+    100% {
+        width: 400px;
+        right: 50px;
+    }
+}
+/* E EXPERTISE MOVER */
+
+/* FILTER SECTION MOVER */
+@keyframes show_project_filter_right {
+    0% {
+        right: 0px;
+    }
+    100% {
+        right: -200px;
+    }
+}
+@keyframes hide_project_filter_right {
+    0% {
+        right: -200px;
+    }
+    100% {
+        right: 0px;
+    }
+}
+@keyframes show_project_filter_left {
+    0% {
+        right: -200px;
+    }
+    100% {
+        right: 0px;
+    }
+}
+@keyframes hide_project_filter_left {
+    0% {
+        right: 0px;
+    }
+    100% {
+        right: -200px;
+    }
+}
+@keyframes show_project_filter_left_mini {
+    0% {
+        right: -170px;
+    }
+    100% {
+        right: 0px;
+    }
+}
+@keyframes hide_project_filter_left_mini {
+    0% {
+        right: 0px;
+    }
+    100% {
+        right: -170px;
+    }
+}
+@keyframes show_list_sort_project {
+    0% {
+        transform: rotateX(0deg) scaleY(1);
+    }
+    100% {
+        transform: rotateX(-180deg) scaleY(4);
+    }
+}
+@keyframes hide_list_sort_project {
+    0% {
+        transform: rotateX(-180deg) scaleY(4);
+    }
+    100% {
+        transform: rotateX(0deg) scaleY(1);
+    }
+}
+/* E FILTER SECTION MOVER */
+
+
+
+/* GIT LOGO LINE USERNAME SOCIAL NETWORK GALSS */
+@keyframes showLogoGit_socialNetwork_up_768px {
+    0% {
+        object-position: 360px 0;
+    }
+    100% {
+        object-position: 0px 0;
+    }
+}
+@keyframes gitUsername_socialNetwork_up_1000px {
+    0% {
+        display: block;
+        width: 0px;
+        height: 0px;
+        right: 55px;
+    }
+    100% {
+        width: 300px;
+        height: 300px;
+        right: -245px;
+    }
+}
+@keyframes gitUsername_socialNetwork_down_768px {
+    0% {
+        display: block;
+        width: 0px;
+        height: 0px;
+        right: 35px;
+    }
+    100% {
+        width: 300px;
+        height: 300px;
+        right: -265px;
+    }
+}
+@keyframes gitUsername_socialNetwork_down_600px {
+    0% {
+        display: block;
+        width: 0px;
+        height: 0px;
+        right: 35px;
+    }
+    100% {
+        width: 200px;
+        height: 200px;
+        right: -165px;
+    }
+}
+
+@keyframes rotateLine_socialNetworl_up_1000px {
+    0% {
+        transform: rotate(0deg);
+        width: 0px;
+    }
+    100% {
+        transform: rotate(90deg);
+        width: 220px;
+    }
+}
+@keyframes rotateLine_socialNetworl_down_1000px {
+    0% {
+        transform: rotate(0deg);
+        width: 0px;
+    }
+    100% {
+        transform: rotate(90deg);
+        width: 180px;
+    }
+}
+@keyframes rotateLine_socialNetworl_down_768px {
+    0% {
+        transform: rotate(0deg);
+        width: 0px;
+    }
+    100% {
+        transform: rotate(90deg);
+        width: 150px;
+    }
+}
+@keyframes rotateLine_socialNetworl_down_600px {
+    0% {
+        transform: rotate(0deg);
+        width: 0px;
+    }
+    100% {
+        transform: rotate(90deg);
+        width: 140px;
+    }
+}
+@keyframes rotateLine_socialNetworl_down_376px {
+    0% {
+        transform: rotate(0deg);
+        width: 0px;
+    }
+    100% {
+        transform: rotate(90deg);
+        width: 120px;
+    }
+}
+
+/* E GIT LOGO LINE USERNAME SOCIAL NETWORK GALSS*/
+
+
