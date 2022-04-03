@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { decrement, get_number, increment, setValueWithWrite } from '../../Redux/Action/Projects/find_correct_number';
-// import { Get_number } from './Js_find_correct_number'
 
 export default function Find_correct_number() {
 
@@ -12,7 +11,7 @@ export default function Find_correct_number() {
     return (
         
             <div id="find_correct_number">
-                <p id="paragraph-effort">your effort is : <span id="effort">{effort}</span></p>
+                <p id="paragraph-effort">تعداد خطا های شما : <span id="effort">{effort}</span></p>
                 <hr />
                 <div id="container-number">
                     <div className="container-input">

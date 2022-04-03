@@ -74,7 +74,7 @@ export const get_number = () => {
                 correctNumber.list_text_math[i] = list_math[i].replaceAll(" * ", " x ");
             }
             correctNumber.check_start=true;
-            correctNumber.button_text="check number";
+            correctNumber.button_text="برسی اعداد";
             dispatch({ type: "START_GAME" , payload:correctNumber});
         }
         else {
