@@ -3050,7 +3050,7 @@ main {
     font-size: 0.7rem;
   }
   .footer-creator {
-    font-size: 0.8rem !important;
+    font-size: 0.7rem !important;
     padding: 3px 0px;
   }
 }
@@ -3137,8 +3137,8 @@ main {
     font-size: 0.6rem;
   }
   .footer-creator {
-    font-size: 0.8rem !important;
-    padding: 3px 0px;
+    font-size: 0.6rem !important;
+    padding: 2px 0px;
   }
 }
 
