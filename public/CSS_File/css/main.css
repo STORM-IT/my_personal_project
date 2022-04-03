@@ -156,8 +156,20 @@ body {
   animation: hideFooter 200ms linear alternate forwards;
 }
 
-.showIconTop {
-  animation: showIconTop 600ms linear 1s alternate forwards;
+@media screen and (min-width: 768px) {
+  .showIconTop {
+    animation: showIconTop_up_768px 600ms linear 1s alternate forwards;
+  }
+}
+@media screen and (max-width: 768px) {
+  .showIconTop {
+    animation: showIconTop_down_768px 600ms linear 1s alternate forwards;
+  }
+}
+@media screen and (max-width: 376px) {
+  .showIconTop {
+    animation: showIconTop_down_376px 600ms linear 1s alternate forwards;
+  }
 }
 
 .hideIconTop {
@@ -176,13 +188,31 @@ main {
   padding: 350px 0px 0px 0px;
 }
 
-@keyframes showIconTop {
+@keyframes showIconTop_up_768px {
   0% {
     height: 1px;
   }
   100% {
     height: 50px;
     width: 50px;
+  }
+}
+@keyframes showIconTop_down_768px {
+  0% {
+    height: 1px;
+  }
+  100% {
+    height: 40px;
+    width: 40px;
+  }
+}
+@keyframes showIconTop_down_376px {
+  0% {
+    height: 1px;
+  }
+  100% {
+    height: 35px;
+    width: 35px;
   }
 }
 @keyframes hideIconTop {
@@ -2951,39 +2981,6 @@ main {
   .Card-text h3 {
     top: 25px;
     font-size: 1.5rem;
-  }
-  .Card-expertise {
-    --card-with-expertise: 90%;
-  }
-  .Card-expertise-html {
-    width: var(--card-with-expertise);
-  }
-  .Card-expertise-css {
-    width: var(--card-with-expertise);
-  }
-  .Card-expertise-javascript {
-    width: var(--card-with-expertise);
-  }
-  .Card-expertise-bootstrap {
-    width: var(--card-with-expertise);
-  }
-  .Card-expertise-jquery {
-    width: var(--card-with-expertise);
-  }
-  .Card-expertise-sass {
-    width: var(--card-with-expertise);
-  }
-  .Card-expertise-react {
-    width: var(--card-with-expertise);
-  }
-  .Card-expertise-redux {
-    width: var(--card-with-expertise);
-  }
-  .Card-expertise-sharp {
-    width: var(--card-with-expertise);
-  }
-  .Card-expertise-git {
-    width: var(--card-with-expertise);
   }
 
   .SocialNetwork-container {
