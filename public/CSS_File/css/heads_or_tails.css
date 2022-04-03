@@ -1,0 +1,47 @@
+#heads_or_tails{
+    height: 100vh;
+    background-color: aliceblue;
+    font-size: 17px;
+}
+#heads_or_tails #p-top{
+    font-size: 2em;
+    padding: 1em;
+}
+#heads_or_tails #div-button button{
+    font-size: 1em;
+    padding: 0.5em 2em;
+}
+#heads_or_tails #score .score_title{
+    font-weight: 600;
+    font-size: 1.7em;
+}
+#heads_or_tails #score .score_conputer{
+    font-family: sans-serif !important;
+    font-size: 1.4em;
+}
+#heads_or_tails #score .score_conputer span{
+    font-family: sans-serif !important;
+}
+#heads_or_tails #score .score_user{
+    font-size: 1.4em;
+}
+#heads_or_tails #score .score_user span{
+    font-family: sans-serif !important;
+}
+
+
+@media screen and (max-width: 768px) {
+    #heads_or_tails{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 425px) {
+    #heads_or_tails{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 375px) {
+    #heads_or_tails{
+        font-size: 11px;
+    }
+}
