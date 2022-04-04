@@ -20,7 +20,7 @@ export default function Snake() {
                     <span className="snake text-success" id="Snake_head">o</span>
                 </div>
                 <div className="d-flex justify-content-around w-100 mt-2" id="container-button">
-                    <button onClick={()=>Get_random_location()} className="btn btn-success w-25" id="Start">Start</button>
+                    <button onClick={()=>Get_random_location()} className="btn btn-success" id="Start">Start</button>
                     <button onClick={()=>Get_random_location()} className="btn btn-warning" id="Restart">Restart</button>
                     <button onClick={()=>Stop_timer()} className="btn btn-danger" id="Stop">Stop-Game</button>
                 </div>
@@ -37,7 +37,7 @@ export default function Snake() {
                     </div>
                 </div>
             </div>
-            <p id="option">ll</p>
+            {/* <p id="option">ll</p> */}
         </div>
     )
 }

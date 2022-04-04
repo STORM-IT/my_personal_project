@@ -125,7 +125,7 @@ export default function Pc_site() {
                     <h2 id="text-logo">STOOORMIX</h2>
                 </div>
                 <main>
-                    <main id='main-container'>
+                    <div id='main-container'>
                         <div id="div-main-center">
                             <div className='container-card-movie'>
                                 <div className='right-section'>
@@ -290,7 +290,7 @@ export default function Pc_site() {
                                 </section>
                             </div>
                         </div>
-                    </main>
+                    </div>
                     <footer>
                         <div id="div-footer-top">
                             <div id="scroll-list-left" onClick={() => scrool_list_move_left()} className='scroll_footer_style'>

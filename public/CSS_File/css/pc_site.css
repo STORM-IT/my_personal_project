@@ -18,6 +18,7 @@
 #movie-site  {
     direction: rtl;
     font-family: RoyaBold,sans-serif;
+    background-color: aliceblue;
     /* overflow: hidden; */
 }
 #movie-site .header {
@@ -34,7 +35,7 @@
     /* top: 0px; */
     /* right: 0px; */
     width: 100%;
-    height: 40vh;
+    height:100%;
     object-fit: fill;
     z-index: -1;
 }
@@ -309,10 +310,13 @@ padding: 0px 5px;
     background-color: rgb(209, 209, 185);
 }
 
+#movie-site main {
+    padding: 50px 0;
+}
 #movie-site #main-container {
     display: flex;
     justify-content: space-around;
-    padding: 0px 300px;
+    padding: 0px 10vw;
 }
 
 #movie-site #div-main-left {

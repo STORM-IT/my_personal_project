@@ -7,59 +7,48 @@
     padding: 50px 0px;
     height: 100vh;
     box-sizing: border-box;
+    font-size: 17px;
 }
 #Snake #container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width:50% ;
+    width:800px ;
 }
 #Snake #Map{
     box-sizing: border-box;
     position: relative;
-    /* width: 900px; */
-    width: 800px;
+    width: 100%;
     height: 405px;
     background-color: rgb(0, 0, 0);
     border: 5px solid rgb(194, 186, 186);
     direction: rtl;
     font-size: 100%;
-    /* overflow: hidden; */
 }
 #Snake .snake{
-    
     position: absolute; 
-    /* color: rgb(37, 146, 241);  */
     color: rgb(41, 107, 21); 
     font-size: 50px; 
-    /* background-color: aliceblue; */
     height: 0px;
-    
     display: none;
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* width: 30px; */
-    /* height:30px; */
-    
 }
 #Snake #Rank-info{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
     align-self: flex-start;
     color: rgb(202, 192, 192);
-    font-size: 20px;
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
+    /* font-size: 20px; */
 }
 #Snake .Rank-p{
-    /* background-color: rgb(197, 205, 209); */
     padding: 6px;
     border-radius: 10px;
     position: relative;
-    
-    
-    
+    font-size: 1.6em;
 }
 #Snake .Rank{
     color: rgb(132, 230, 230);
@@ -69,9 +58,6 @@
     top: 80%;
     right: 80%;
 }
-/* #Snake .Rank-p:nth-child(2){
-    width: 13%;
-} */
 
 #Snake .animated_gift{
     position: absolute; 
@@ -100,8 +86,20 @@
     height: 70px;
     object-fit: cover;
     cursor: pointer;
-    /* color: rgb(116, 127, 136); */
-    /* filter: brightness(5); */
     filter: brightness(0);
-    /* box-shadow: rgb(107, 100, 100) 0px 0px 5px; */
+}
+#Snake #container-button button{
+font-size: 1em;
+padding: 0.3em 3em;
+}
+
+
+
+@media screen and (max-width: 830px) {
+    #Snake{
+        font-size: 14px;
+    }
+    #Snake #container{
+        width:500px ;
+    }
 }
