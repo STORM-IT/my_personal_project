@@ -1,6 +1,6 @@
  #Snake{
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     align-items: center;
     background-color: rgb(40, 48, 65);
     width: 100vw;
@@ -8,6 +8,7 @@
     height: 100vh;
     box-sizing: border-box;
     font-size: 17px;
+    /* text-align: center; */
 }
 #Snake #container{
     display: flex;
@@ -15,6 +16,7 @@
     align-items: center;
     flex-direction: column;
     width:800px ;
+    margin: auto;
 }
 #Snake #Map{
     box-sizing: border-box;
@@ -95,11 +97,11 @@ padding: 0.3em 3em;
 
 
 
-@media screen and (max-width: 830px) {
+/* @media screen and (max-width: 830px) {
     #Snake{
         font-size: 14px;
     }
     #Snake #container{
         width:500px ;
     }
-}
+} */

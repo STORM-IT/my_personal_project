@@ -228,7 +228,7 @@ export default function Project() {
                                     <Fragment>
                                         <div className='card_project' key={project.title}>
                                             <div className='card_project_contant'>
-                                                <div className='card_project_title'><Link to={project.title == "سایت شخصی" ? "/" : `/project/${project.title}`} onClick={project.title == "سایت شخصی" ? () => alert("شما در حال حاظر در سایت شخصی هستین") : ""} data-tooltip={`باز کردن پروژه ${project.title}`} data-tooltip-location="left">{project.title}</Link></div>
+                                                <div className='card_project_title'><Link to={project.title == "سایت شخصی" ? "/" : `/project/${project.title}`} target="_blank" onClick={project.title == "سایت شخصی" ? () => alert("شما در حال حاظر در سایت شخصی هستین") : ""} data-tooltip={`باز کردن پروژه ${project.title}`} data-tooltip-location="left">{project.title}</Link></div>
                                                 <div className='card_project_description'><p>{project.description}</p></div>
                                                 <div className='card_project_expertise_badge'>
                                                     {project.expertions.map(expertion => (

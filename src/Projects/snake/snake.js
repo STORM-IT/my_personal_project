@@ -19,12 +19,12 @@ export default function Snake() {
                     <span className="snake snake_body" >o</span>
                     <span className="snake text-success" id="Snake_head">o</span>
                 </div>
-                <div className="d-flex justify-content-around w-100 mt-2" id="container-button">
+                <div className="d-flex justify-content-around w-100 mt-4" id="container-button">
                     <button onClick={()=>Get_random_location()} className="btn btn-success" id="Start">Start</button>
                     <button onClick={()=>Get_random_location()} className="btn btn-warning" id="Restart">Restart</button>
                     <button onClick={()=>Stop_timer()} className="btn btn-danger" id="Stop">Stop-Game</button>
                 </div>
-                <div className="d-flex justify-content-around flex-column align-items-center mt-3">
+                {/* <div className="d-flex justify-content-around flex-column align-items-center mt-3">
                     <div className="m-1">
                         <img src='/IMG/Project_snake/icon_move_snake.svg' onClick={()=>Move_snake('top')} className=" btn-move-snake btn_snake_move_top"/>
                     </div>
@@ -35,9 +35,9 @@ export default function Snake() {
                     <div className="m-1">
                         <img src='/IMG/Project_snake/icon_move_snake.svg' onClick={()=>Move_snake('bottom')} className=" btn-move-snake btn_snake_move_bottom"/>
                     </div>
-                </div>
+                </div> */}
             </div>
-            {/* <p id="option">ll</p> */}
+            <p id="option">ll</p>
         </div>
     )
 }

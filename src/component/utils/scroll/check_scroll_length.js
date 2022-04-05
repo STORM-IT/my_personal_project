@@ -12,12 +12,14 @@ var LastScroll=0;
 export const scroll_utils = (Scroll) => {
     
     console.log(Scroll)
-    set_effect_glowIn(Scroll)
+    console.log(window.innerWidth)
+
+    // set_effect_glowIn(Scroll)
     scroll_nav(Scroll); // Scroll >= 600
     scroll_text_head(Scroll,LastScroll); //
     scroll_img_background(Scroll);// Scroll <= 1300 || 3900 <= Scroll
     scroll_card_expertise(Scroll);// Scroll > 1300
     scroll_sociaNetwork(Scroll); // Scroll >= 3900
-    scroll_footer(Scroll);// Scroll >= 4300
+    scroll_footer(Scroll,window.innerWidth);// Scroll >= 4300
     LastScroll=Scroll;
 }

@@ -89,6 +89,7 @@ function move_snake_right() {
         'left:' + snake.offsetLeft;
 
 
+        
     for (let i = 0; i < Snake_all.length; i++) {
         let now_left;
         let now_top;
@@ -108,6 +109,7 @@ function move_snake_right() {
 
 function move_snake_top() {
 
+    // debugger
     check_Loser();
 
 
@@ -121,7 +123,6 @@ function move_snake_top() {
     option.innerHTML =
         'top:' + snake.offsetTop + '</br>' +
         'left:' + snake.offsetLeft;
-
     for (let i = 0; i < Snake_all.length; i++) {
         let now_left;
         let now_top;

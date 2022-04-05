@@ -3,8 +3,8 @@ var container;
 var button;
 var list_effort = [];
 var check_start = false;
-var list_name = ['ali', 'ahmad', 'reza'];
-var list_name_Broken = ['lia', 'madah', 'zare'];
+var list_name = ['ali', 'ahmad', 'reza','alireza','mohamad','maral','mariya','bahar','amir','heydar','amir ali'];
+var list_name_Broken = ['lia', 'madah', 'zare','ezraial','ahommad','ralam','yiarma','haarb','mira','ydearh','mair ila'];
 var effort = 0;
 var select = 0;
 
@@ -13,8 +13,9 @@ export default function get_random_text() {
     container = document.querySelector('#container-txt');
     button = document.getElementById('check');
     debugger
+    button.innerHTML = 'check text';
     if (check_start === false) {
-        select = Math.floor(Math.random() * 3);
+        select = Math.floor(Math.random() * 11);
         var element = document.createElement('p');
         element.innerHTML = list_name_Broken[select];
         element.style.fontSize = '30px';
