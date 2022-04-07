@@ -247,6 +247,7 @@ export default function Project() {
                                                 <p>تعداد خط کد : <span>{project.line_code}</span></p>
                                                 <p>ساخت : <span>{project.create}</span></p>
                                                 <p>آپدیت : <span>{project.last_update}</span></p>
+                                                <p>ریسپانس : <span>{project.responsive}</span></p>
                                                 <p>سختی : <span>{project.mood}</span></p>
                                             </div>
                                         </div>

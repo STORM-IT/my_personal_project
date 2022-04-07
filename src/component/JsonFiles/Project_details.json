@@ -10,6 +10,7 @@
             "line_code": 287,
             "create": "1400/4",
             "last_update": "1401/1/5",
+            "responsive":"بله",
             "mood": "EASY"
         }
         ,
@@ -28,6 +29,7 @@
             "line_code": 293,
             "create": "1400/9",
             "last_update": "1400/12/22",
+            "responsive":"بله",
             "mood": "NORMAL"
         }
         ,
@@ -42,6 +44,7 @@
             "line_code": 167,
             "create": "1400/5",
             "last_update": "1400/12/25",
+            "responsive":"بله",
             "mood": "EASY"
         }
         ,
@@ -55,6 +58,7 @@
             "line_code": 75,
             "create": "1400/4",
             "last_update": "1400/12/22",
+            "responsive":"بله",
             "mood": "EASY"
         }
         ,
@@ -73,6 +77,7 @@
             "line_code": 47,
             "create": "1400/4",
             "last_update": "1400/12/20",
+            "responsive":"بله",
             "mood": "EASY"
         }
         ,
@@ -87,6 +92,7 @@
             "line_code": 493,
             "create": "1400/6",
             "last_update": "1400/12/20",
+            "responsive":"خیر",
             "mood": "NORMAL"
         }
         ,
@@ -101,6 +107,7 @@
             "line_code": 547,
             "create": "1400/7",
             "last_update": "1400/12/25",
+            "responsive":"خیر",
             "mood": "HARD"
         }
         ,
@@ -117,6 +124,7 @@
             "line_code": 4781,
             "create": "1400/11",
             "last_update": "1401/01/10",
+            "responsive":"بله",
             "mood": "NORMAL"
         }
         ,
@@ -132,6 +140,7 @@
             "line_code": 6573,
             "create": "1399/9",
             "last_update": "1400/03/10",
+            "responsive":"بله",
             "mood": "HARD"
         }
         

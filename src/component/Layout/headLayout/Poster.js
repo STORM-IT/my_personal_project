@@ -74,7 +74,7 @@ export default function Poster() {
                 //     "امید وارم مشکلی در کارکردن با سایت نداشته باشین "
                 // );
 
-               
+
             }
         }
 
@@ -111,8 +111,46 @@ export default function Poster() {
     return (
         <Fragment>
             <div className='header-short'>
-                <video id='short-video_head' className='header-short-video' src={url} onEnded={() => dispatch(Set_url_video())} ref={vidRef} muted poster="../../IMG/poster/picture.jpg" />
-                <img className='header-short-img' src="../../IMG/poster/picture_2.jpg" />
+                {/* <video id='short-video_head' className='header-short-video' src={url} onEnded={() => dispatch(Set_url_video())} ref={vidRef} muted poster="../../IMG/poster/picture.jpg" /> */}
+                {/* <img className='header-short-img' src="../../IMG/poster/picture_2.jpg" /> */}
+                <div id='clouds_container'> 
+                    <div class="cloud large cloud-1">
+                        <div></div><div></div><div></div><div></div>
+                    </div>
+                    <div class="cloud normal cloud-2">
+                        <div></div><div></div><div></div><div></div>
+                    </div>
+                    <div class="cloud small cloud-3">
+                        <div></div><div></div><div></div><div></div>
+                    </div>
+                    <div class="cloud tiny cloud-4">
+                        <div></div><div></div><div></div><div></div>
+                    </div>
+                    <div class="cloud large cloud-5">
+                        <div></div><div></div><div></div><div></div>
+                    </div>
+                    <div class="cloud normal cloud-6">
+                        <div></div><div></div><div></div><div></div>
+                    </div>
+                    <div class="cloud small cloud-7">
+                        <div></div><div></div><div></div><div></div>
+                    </div>
+                    <div class="cloud tiny cloud-8">
+                        <div></div><div></div><div></div><div></div>
+                    </div>
+                    <div class="cloud small cloud-9">
+                        <div></div><div></div><div></div><div></div>
+                    </div>
+                    <div class="cloud normal cloud-10">
+                        <div></div><div></div><div></div><div></div>
+                    </div>
+                    <div class="cloud tiny cloud-11">
+                        <div></div><div></div><div></div><div></div>
+                    </div>
+                    <div class="cloud small cloud-12">
+                        <div></div><div></div><div></div><div></div>
+                    </div>
+                </div>
                 <div id='effect_text_head_container'>
                     <span is="type-async" id="type-text">...</span>
                     <span className='blinking-cursor'>|</span>
