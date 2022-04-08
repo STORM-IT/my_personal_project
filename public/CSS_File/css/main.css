@@ -1862,7 +1862,6 @@ main {
   height: 900px;
   padding: 200px 0px 150px 0px;
   margin: 250px 0px 150px 0px;
-  background: linear-gradient(180deg, #0092ca 0%, white 100%);
 }
 .contact *,
 .contact :before,
@@ -1872,6 +1871,11 @@ main {
 }
 .contact form {
   width: 420px;
+  box-sizing: content-box;
+  background: linear-gradient(200deg, rgba(33, 150, 243, 0.5046393557) 0%, #eeeeee 70%);
+  box-shadow: #6a6d72be 0px 0px 20px;
+  border-radius: 10px;
+  padding: 15px;
   margin: 45px auto;
 }
 @media screen and (max-width: 590px) {
