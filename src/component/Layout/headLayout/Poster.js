@@ -114,40 +114,40 @@ export default function Poster() {
                 {/* <video id='short-video_head' className='header-short-video' src={url} onEnded={() => dispatch(Set_url_video())} ref={vidRef} muted poster="../../IMG/poster/picture.jpg" /> */}
                 {/* <img className='header-short-img' src="../../IMG/poster/picture_2.jpg" /> */}
                 <div id='clouds_container'> 
-                    <div class="cloud large cloud-1">
+                    <div className="cloud large cloud-1">
                         <div></div><div></div><div></div><div></div>
                     </div>
-                    <div class="cloud normal cloud-2">
+                    <div className="cloud normal cloud-2">
                         <div></div><div></div><div></div><div></div>
                     </div>
-                    <div class="cloud small cloud-3">
+                    <div className="cloud small cloud-3">
                         <div></div><div></div><div></div><div></div>
                     </div>
-                    <div class="cloud tiny cloud-4">
+                    <div className="cloud tiny cloud-4">
                         <div></div><div></div><div></div><div></div>
                     </div>
-                    <div class="cloud large cloud-5">
+                    <div className="cloud large cloud-5">
                         <div></div><div></div><div></div><div></div>
                     </div>
-                    <div class="cloud normal cloud-6">
+                    <div className="cloud normal cloud-6">
                         <div></div><div></div><div></div><div></div>
                     </div>
-                    <div class="cloud small cloud-7">
+                    <div className="cloud small cloud-7">
                         <div></div><div></div><div></div><div></div>
                     </div>
-                    <div class="cloud tiny cloud-8">
+                    <div className="cloud tiny cloud-8">
                         <div></div><div></div><div></div><div></div>
                     </div>
-                    <div class="cloud small cloud-9">
+                    <div className="cloud small cloud-9">
                         <div></div><div></div><div></div><div></div>
                     </div>
-                    <div class="cloud normal cloud-10">
+                    <div className="cloud normal cloud-10">
                         <div></div><div></div><div></div><div></div>
                     </div>
-                    <div class="cloud tiny cloud-11">
+                    <div className="cloud tiny cloud-11">
                         <div></div><div></div><div></div><div></div>
                     </div>
-                    <div class="cloud small cloud-12">
+                    <div className="cloud small cloud-12">
                         <div></div><div></div><div></div><div></div>
                     </div>
                 </div>
@@ -156,7 +156,7 @@ export default function Poster() {
                     <span className='blinking-cursor'>|</span>
                 </div>
                 <div>
-                    <svg className="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <svg className="waves" viewBox="0 24 150 28" preserveAspectRatio="none"  shapeRendering={"auto"}>
                         <defs>
                             <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
                         </defs>

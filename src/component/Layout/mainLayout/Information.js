@@ -15,7 +15,7 @@ export default function Information() {
         <img id='img_info' src='./IMG/information/final/IMG_20220210_180308.jpg' />
         <div className='text_img_container'>
           <h3 className=''>اطلاعات کلی درباره من</h3><hr />
-          <p className='glowIn_text_info' style={{"white-space": "pre-wrap"}}>علی پارسامنش 20 ساله از مشهد. <br/> برنامه نویس ویندوز و وب. <br/> برنامه نویسی رو دوساله که شروع کردم ، با ویندوز استارت زدم و بعد از آموزش کوچ کردم به طراحی وبسایت.<br/>علاقمند به تکنولوژی های جدید و نو ظهور و همچنین خیلی قدیمی.<br/></p>
+          <p className='glowIn_text_info'>علی پارسامنش 20 ساله از مشهد. <br/> برنامه نویس ویندوز و وب. <br/> برنامه نویسی رو دوساله که شروع کردم ، با ویندوز استارت زدم و بعد از آموزش کوچ کردم به طراحی وبسایت.<br/>علاقمند به تکنولوژی های جدید و نو ظهور و همچنین خیلی قدیمی.<br/></p>
         </div>
       </section>
     </Fragment>

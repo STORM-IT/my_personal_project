@@ -225,7 +225,7 @@ export default function Project() {
                             <div className='project-listProject'>
                                 {list_projects.map(project => (
 
-                                    <Fragment>
+                                    // <Fragment>
                                         <div className='card_project' key={project.title}>
                                             <div className='card_project_contant'>
                                                 {/* <div className='card_project_title'><Link to={project.title == "سایت شخصی" ? "/" : `/project/${project.title}`} target='_top' onClick={project.title == "سایت شخصی" ? () => alert("شما در حال حاظر در سایت شخصی هستین") : ""} data-tooltip={`باز کردن پروژه ${project.title}`} data-tooltip-location="left">{project.title}</Link></div> */}
@@ -239,7 +239,7 @@ export default function Project() {
                                                 <div className='card_project_description'><p>{project.description}</p></div>
                                                 <div className='card_project_expertise_badge'>
                                                     {project.expertions.map(expertion => (
-                                                        <div className='card_expertise_badge'>{expertion}</div>
+                                                        <div className='card_expertise_badge' key={expertion}>{expertion}</div>
                                                     ))}
                                                 </div>
                                             </div>
@@ -251,7 +251,7 @@ export default function Project() {
                                                 <p>سختی : <span>{project.mood}</span></p>
                                             </div>
                                         </div>
-                                    </Fragment>
+                                    // </Fragment>
                                 ))}
                             </div>
                         </div>

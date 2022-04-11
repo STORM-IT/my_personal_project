@@ -5,7 +5,7 @@ import Main from './component/Layout/mainLayout/Main';
 // import { scroll_utils } from './component/utils/scroll/check_scroll_length'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Find_correct_number from './Projects/find_correct_number/Find_correct_number';
-import { scroll_utils } from './component/utils/scroll/check_scroll_length';
+import { Scroll_utils } from './component/utils/scroll/check_scroll_length';
 import Calculator from './Projects/calculator/calculator';
 // import Calendar from './Projects/calendar/calendarr';
 import Find_correct_text from './Projects/find_correct_text/find_correct_text';
@@ -16,6 +16,10 @@ import Heads_or_tails from './Projects/heads_or_tails/heads_or_tails'
 export default function App() {
 
   // console.log(window.location.pathname)
+  useEffect(() => {
+    Scroll_utils();
+  }, [])
+  
   return (
     <Fragment>
       <BrowserRouter>
@@ -44,7 +48,8 @@ export default function App() {
       {/* <Heads_or_tails/> */}
 
       <div className='footer-creator'>این سایت متعلق به علی پارسامنش میباشد  </div>
-      {scroll_utils}
+      {/* {scroll_utils} */}
+      {/* {Scroll_utils} */}
     </Fragment>
   )
 }

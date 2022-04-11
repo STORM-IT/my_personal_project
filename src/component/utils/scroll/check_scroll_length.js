@@ -7,12 +7,12 @@ import { set_effect_glowIn } from "./set_glowIn";
 import { scroll_sociaNetwork } from "./socialNetwork";
 import { scroll_text_head } from "./textHead";
 
-window.addEventListener('scroll', () => { scroll_utils(window.pageYOffset) });
+window.addEventListener('scroll', () => { Scroll_utils(window.pageYOffset) });
 var LastScroll=0;
-export const scroll_utils = (Scroll) => {
+export const Scroll_utils = (Scroll) => {
     
-    console.log(Scroll)
-    console.log(window.innerWidth)
+    // console.log(Scroll)
+    // console.log(window.innerWidth)
 
     set_effect_glowIn(Scroll,window.innerWidth)
     scroll_nav(Scroll); // Scroll >= 600

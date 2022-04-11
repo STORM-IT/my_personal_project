@@ -1,9 +1,7 @@
 import json_project_file from '../../component/JsonFiles/Project_details.json'
 
 export const getAllProjects = () => {
-    console.log(json_project_file)
     return (dispatch, getState) => {
-        // debugger
         dispatch({ type: "ALL_PROJECTS", payload: json_project_file });
     }
 }
