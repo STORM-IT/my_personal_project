@@ -1872,7 +1872,7 @@ main {
 .contact form {
   width: 420px;
   box-sizing: content-box;
-  background: linear-gradient(200deg, rgba(33, 150, 243, 0.5046393557) 0%, #eeeeee 70%);
+  background: linear-gradient(200deg, rgba(33, 150, 243, 0.45) 0%, #eeeeee 70%);
   box-shadow: #6a6d72be 0px 0px 20px;
   border-radius: 10px;
   padding: 15px;
