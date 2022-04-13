@@ -316,6 +316,7 @@ main {
             color: $color_light;
             z-index: 10000;
             background-color: lighten($color: $color_blue, $amount: 20);
+            box-shadow: #6a6d72 0px 0px 10px;
             span {
                 display: inline-block;
                 top: 0px;
@@ -1998,7 +1999,6 @@ $colors_logo_expertise: #ff5733, #264de4, #e2c400, #131b28, #cd6799, #61dbfb, #7
     text-align: center;
     width: 70vw;
     height: 300px;
-    top: 300px;
     z-index: 1;
     text-align: center;
     margin: auto;
@@ -2049,6 +2049,23 @@ $colors_logo_expertise: #ff5733, #264de4, #e2c400, #131b28, #cd6799, #61dbfb, #7
         img {
             cursor: pointer;
         }
+    }
+
+
+    @media screen and (min-device-width: 1000px) {
+        top: 280px;
+    }
+    @media screen and (max-device-width: 1000px) {
+        top: 220px;
+    }
+    @media screen and (max-device-width: 768px) {
+        top: 180px;
+    }
+    @media screen and (max-device-width: 600px) {
+        top: 150px;
+    }
+    @media screen and (max-device-width: 375px) {
+        top: 130px;
     }
 }
 
@@ -2369,9 +2386,9 @@ $colors_logo_expertise: #ff5733, #264de4, #e2c400, #131b28, #cd6799, #61dbfb, #7
     #type-text {
         font-size: 1.4rem !important;
     }
-    .header {
-        height: 60vh;
-    }
+    // .header {
+    //     height: 60vh;
+    // }
     .info_layout_css {
         width: 500px; //700
         height: 250px;
@@ -2682,13 +2699,15 @@ $colors_logo_expertise: #ff5733, #264de4, #e2c400, #131b28, #cd6799, #61dbfb, #7
     #type-text {
         font-size: 1rem !important;
     }
-    .header {
-        height: 30vh;
-    }
+    .header{
+        overflow: visible;
+        height: 0px;
+    &-short {
+        display: none;
+        // height: 30vh;
+    }}
 }
 
-@media screen and (max-width: 375px) {
-}
 @media screen and (max-width: 375px) {
     .project-container {
         width: 100vw;

@@ -11,7 +11,7 @@ window.addEventListener('scroll', () => { Scroll_utils(window.pageYOffset) });
 var LastScroll=0;
 export const Scroll_utils = (Scroll) => {
     
-    // console.log(Scroll)
+    console.log(Scroll)
     // console.log(window.innerWidth)
 
     set_effect_glowIn(Scroll,window.innerWidth)
@@ -19,7 +19,7 @@ export const Scroll_utils = (Scroll) => {
     scroll_text_head(Scroll,LastScroll); //
     scroll_img_background(Scroll);// Scroll <= 1300 || 3900 <= Scroll
     scroll_card_expertise(Scroll);// Scroll > 1300
-    scroll_sociaNetwork(Scroll); // Scroll >= 3900
+    // scroll_sociaNetwork(Scroll); // Scroll >= 3900
     scroll_footer(Scroll,window.innerWidth);// Scroll >= 4300
     LastScroll=Scroll;
 }

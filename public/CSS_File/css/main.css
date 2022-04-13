@@ -181,6 +181,7 @@ main {
   color: #eeeeee;
   z-index: 10000;
   background-color: #31c6ff;
+  box-shadow: #6a6d72 0px 0px 10px;
 }
 .nav-container .div_text_head span {
   display: inline-block;
@@ -2251,7 +2252,6 @@ main {
   text-align: center;
   width: 70vw;
   height: 300px;
-  top: 300px;
   z-index: 1;
   text-align: center;
   margin: auto;
@@ -2303,6 +2303,31 @@ main {
 }
 .SocialNetwork-container .move-top img {
   cursor: pointer;
+}
+@media screen and (min-device-width: 1000px) {
+  .SocialNetwork-container {
+    top: 280px;
+  }
+}
+@media screen and (max-device-width: 1000px) {
+  .SocialNetwork-container {
+    top: 220px;
+  }
+}
+@media screen and (max-device-width: 768px) {
+  .SocialNetwork-container {
+    top: 180px;
+  }
+}
+@media screen and (max-device-width: 600px) {
+  .SocialNetwork-container {
+    top: 150px;
+  }
+}
+@media screen and (max-device-width: 375px) {
+  .SocialNetwork-container {
+    top: 130px;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -2723,10 +2748,6 @@ main {
     font-size: 1.4rem !important;
   }
 
-  .header {
-    height: 60vh;
-  }
-
   .info_layout_css {
     width: 500px;
     height: 250px;
@@ -3035,7 +3056,11 @@ main {
   }
 
   .header {
-    height: 30vh;
+    overflow: visible;
+    height: 0px;
+  }
+  .header-short {
+    display: none;
   }
 }
 @media screen and (max-width: 375px) {

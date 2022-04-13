@@ -14,7 +14,7 @@ export default function SocialNetwork() {
               <a href='https://github.com/alipsm' target={"_blank"} className='Username'>STOORMIX</a>
             </div>
           </div>
-          <a href='#head-nav' className='move-top'>
+          <a onClick={()=>document.documentElement.scrollTop = 0} className='move-top'>
             <img src='./IMG/Move_logo/up.svg' className='move-top-icon' />
           </a>
         </div>
