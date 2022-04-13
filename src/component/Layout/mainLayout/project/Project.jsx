@@ -225,7 +225,6 @@ export default function Project() {
                             <div className='project-listProject'>
                                 {list_projects.map(project => (
 
-                                    // <Fragment>
                                         <div className='card_project' key={project.title}>
                                             <div className='card_project_contant'>
                                                 {/* <div className='card_project_title'><Link to={project.title == "سایت شخصی" ? "/" : `/project/${project.title}`} target='_top' onClick={project.title == "سایت شخصی" ? () => alert("شما در حال حاظر در سایت شخصی هستین") : ""} data-tooltip={`باز کردن پروژه ${project.title}`} data-tooltip-location="left">{project.title}</Link></div> */}
@@ -251,7 +250,7 @@ export default function Project() {
                                                 <p>سختی : <span>{project.mood}</span></p>
                                             </div>
                                         </div>
-                                    // </Fragment>
+
                                 ))}
                             </div>
                         </div>

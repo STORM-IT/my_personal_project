@@ -113,7 +113,7 @@
 
 body {
   position: relative;
-  background-color: black !important;
+  background-color: #9c9c9c !important;
   z-index: -10000;
 }
 
