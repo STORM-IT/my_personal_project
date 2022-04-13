@@ -257,9 +257,14 @@ body {
         animation: showIconTop_down_376px 600ms linear 1s alternate forwards;
     }
 }
+
 .hideIconTop {
-    animation: hideIconTop 600ms linear 1s alternate forwards;
+        height: 50px;
+        width: 50px;
+    animation: hideIconTop_all_resolation 600ms linear alternate forwards;
+
 }
+
 
 main {
     position: relative;
