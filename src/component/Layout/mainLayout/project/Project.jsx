@@ -7,7 +7,7 @@ import { filterExpertise, open_all_projects_state, sort_chalenged, sort_date, so
 import { list_sort, show_filter_section } from './Script'
 export default function Project() {
 
-    const [showModal,setShowModal]=useState(false)
+    const [showModal, setShowModal] = useState(false)
 
     useEffect(() => {
         list_sort()
@@ -81,7 +81,7 @@ export default function Project() {
                             <button className='project-btn-sort'>Sort</button>
                             <span className='project-txt-header'>Projects</span>
                             <div data-tooltip={"اطلاعات پروژه ها"} data-tooltip-location="left">
-                                <button className='project-btn-openAll' onClick={()=>setShowModal(true)} >Info</button>
+                                <button className='project-btn-openAll' onClick={() => setShowModal(true)} >Info</button>
                             </div>
                         </header>
                         <div className='project-bodey'>
@@ -225,31 +225,30 @@ export default function Project() {
                             <div className='project-listProject'>
                                 {list_projects.map(project => (
 
-                                        <div className='card_project' key={project.title}>
-                                            <div className='card_project_contant'>
-                                                {/* <div className='card_project_title'><Link to={project.title == "سایت شخصی" ? "/" : `/project/${project.title}`} target='_top' onClick={project.title == "سایت شخصی" ? () => alert("شما در حال حاظر در سایت شخصی هستین") : ""} data-tooltip={`باز کردن پروژه ${project.title}`} data-tooltip-location="left">{project.title}</Link></div> */}
-                                                <div className='card_project_title'>
-                                                    {project.title == "حسابداری رستوران" ? (
-                                                        <a href="https://github.com/STORM-IT/Restaurant_Management" target='_blank' data-tooltip={`باز کردن پروژه ${project.title}`} data-tooltip-location="left">{project.title}</a>
+                                    <div className='card_project' key={project.title}>
+                                        <div className='card_project_contant'>
+                                            <div className='card_project_title'>
+                                                {project.path == "management_restaurant" ? (
+                                                        <a href="https://github.com/alipsm/Restaurant_Management" target='_blank' data-tooltip={`باز کردن پروژه ${project.title}`} data-tooltip-location="left">{project.title}</a>
                                                     ): (
-                                                    <Link to={project.title == "سایت شخصی"|project.title == "حسابداری رستوران" ? `` : `/project/${project.title}`} target={project.title == "سایت شخصی" ? "" : "_blank"} onClick={project.title == "سایت شخصی" ? () => alert("شما در حال حاظر در سایت شخصی هستین") : `/project/${project.title}`} data-tooltip={`باز کردن پروژه ${project.title}`} data-tooltip-location="left">{project.title}</Link>
-                                                    )}
-                                                    </div>
-                                                <div className='card_project_description'><p>{project.description}</p></div>
-                                                <div className='card_project_expertise_badge'>
-                                                    {project.expertions.map(expertion => (
-                                                        <div className='card_expertise_badge' key={expertion}>{expertion}</div>
-                                                    ))}
-                                                </div>
+                                                <Link to={project.path == "personal_site" ? "" : `/project/${project.path}`} target={project.path == "personal_site" ? "" : "_blank"} onClick={project.path == "personal_site" ? (e) =>{e.preventDefault(); alert("شما در حال حاظر در سایت شخصی هستین");} : null} data-tooltip={`باز کردن پروژه ${project.title}`} data-tooltip-location="left">{project.title}</Link>
+                                                 )} 
                                             </div>
-                                            <div className='card_project_information'>
-                                                <p>تعداد خط کد : <span>{project.line_code}</span></p>
-                                                <p>ساخت : <span>{project.create}</span></p>
-                                                <p>آپدیت : <span>{project.last_update}</span></p>
-                                                <p>ریسپانس : <span>{project.responsive}</span></p>
-                                                <p>سختی : <span>{project.mood}</span></p>
+                                            <div className='card_project_description'><p>{project.description}</p></div>
+                                            <div className='card_project_expertise_badge'>
+                                                {project.expertions.map(expertion => (
+                                                    <div className='card_expertise_badge' key={expertion}>{expertion}</div>
+                                                ))}
                                             </div>
                                         </div>
+                                        <div className='card_project_information'>
+                                            <p>تعداد خط کد : <span>{project.line_code}</span></p>
+                                            <p>ساخت : <span>{project.create}</span></p>
+                                            <p>آپدیت : <span>{project.last_update}</span></p>
+                                            <p>ریسپانس : <span>{project.responsive}</span></p>
+                                            <p>سختی : <span>{project.mood}</span></p>
+                                        </div>
+                                    </div>
 
                                 ))}
                             </div>
@@ -260,7 +259,7 @@ export default function Project() {
 
             {/* modal info projects*/}
             <Modal
-            dir="rtl"
+                dir="rtl"
                 show={showModal}
                 size="lg"
                 aria-labelledby="contained-modal-title-vcenter"
@@ -282,7 +281,7 @@ export default function Project() {
                     <p>میزان سختی هر پروژه مربوط به ضعف من در تشریح آن پروژه بوده و این مسئله به این معنا نیست که ساخت آن پروژه برایه همه به این مقدار تعیین شده دشوار است.</p>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button onClick={()=>setShowModal(false)} >متوجه شدم</Button>
+                    <Button onClick={() => setShowModal(false)} >متوجه شدم</Button>
                 </Modal.Footer>
             </Modal>
         </Fragment>
