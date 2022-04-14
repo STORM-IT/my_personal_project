@@ -113,7 +113,7 @@
 
 body {
   position: relative;
-  background-color: #9c9c9c !important;
+  background-color: black !important;
   z-index: -10000;
 }
 
@@ -3059,10 +3059,7 @@ main {
 
   .header {
     overflow: visible;
-    height: 0px;
-  }
-  .header-short {
-    display: none;
+    height: 90vh;
   }
 }
 @media screen and (max-width: 375px) {

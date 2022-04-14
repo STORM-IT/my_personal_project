@@ -11,7 +11,8 @@
             "create": "1400/4",
             "last_update": "1401/1/5",
             "responsive":"بله",
-            "mood": "EASY"
+            "mood": "EASY",
+            "path":"calculator"
         }
         ,
         {
@@ -30,7 +31,8 @@
             "create": "1400/9",
             "last_update": "1400/12/22",
             "responsive":"بله",
-            "mood": "NORMAL"
+            "mood": "NORMAL",
+            "path":"calendar"
         }
         ,
         {
@@ -45,7 +47,8 @@
             "create": "1400/5",
             "last_update": "1400/12/25",
             "responsive":"بله",
-            "mood": "EASY"
+            "mood": "EASY",
+            "path":"math_try"
         }
         ,
         {
@@ -59,7 +62,8 @@
             "create": "1400/4",
             "last_update": "1400/12/22",
             "responsive":"بله",
-            "mood": "EASY"
+            "mood": "EASY",
+            "path":"find_correct_text"
         }
         ,
         {
@@ -78,7 +82,8 @@
             "create": "1400/4",
             "last_update": "1400/12/20",
             "responsive":"بله",
-            "mood": "EASY"
+            "mood": "EASY",
+            "path":"heads_or_tails"
         }
         ,
         {
@@ -93,7 +98,8 @@
             "create": "1400/6",
             "last_update": "1400/12/20",
             "responsive":"خیر",
-            "mood": "NORMAL"
+            "mood": "NORMAL",
+            "path":"movie_site"
         }
         ,
         {
@@ -108,7 +114,8 @@
             "create": "1400/7",
             "last_update": "1400/12/25",
             "responsive":"خیر",
-            "mood": "HARD"
+            "mood": "HARD",
+            "path":"snake"
         }
         ,
         {
@@ -125,7 +132,8 @@
             "create": "1400/11",
             "last_update": "1401/01/10",
             "responsive":"بله",
-            "mood": "NORMAL"
+            "mood": "NORMAL",
+            "path":"personal_site"
         }
         ,
         {
@@ -141,7 +149,8 @@
             "create": "1399/9",
             "last_update": "1400/03/10",
             "responsive":"بله",
-            "mood": "HARD"
+            "mood": "HARD",
+            "path":"management_restaurant"
         }
         
     ]
