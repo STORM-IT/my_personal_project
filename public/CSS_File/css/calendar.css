@@ -4,7 +4,6 @@ font-family: sans-serif,Nazanin !important;
 #calendar{
   height: 100vh;
   background-color: rgb(72, 102, 114);
-  overflow: scroll;
   font-size: 17px;
 }
 #calendar .alert_title{
