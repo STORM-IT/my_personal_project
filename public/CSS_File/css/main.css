@@ -16,7 +16,7 @@
   position: relative;
   color: #222831;
   background-color: rgba(0, 0, 0, 0.9);
-  width: 700px;
+  width: 705px;
   height: 300px;
   overflow: hidden;
   border-radius: 5px;
@@ -30,7 +30,7 @@
   width: 30%;
   height: 100%;
   border-radius: 0px 10px 10px 0px;
-  filter: brightness(0%);
+  filter: brightness(20%);
   box-shadow: black -5px 5px 10px;
 }
 .information_project .text_img_container, .info_layout_css .text_img_container {
@@ -1612,7 +1612,7 @@ main {
   align-items: flex-end;
   flex-wrap: nowrap;
   flex-direction: column;
-  width: 17%;
+  width: 15%;
   height: 100%;
   text-align: right;
   box-sizing: border-box !important;
@@ -1929,7 +1929,7 @@ main {
   border: none;
   border-radius: 0;
   border-bottom: 1px solid #636363cb;
-  font-family: Nazanin, NavineDemo !important;
+  font-family: Nazanin, sans-serif !important;
   cursor: text;
 }
 @media screen and (max-width: 590px) {
@@ -2809,6 +2809,11 @@ main {
   }
 }
 @media screen and (max-width: 600px) {
+  .text_img_container {
+    width: 98% !important;
+    line-height: 23px;
+  }
+
   .info_layout_css {
     width: 360px;
     height: 210px;
