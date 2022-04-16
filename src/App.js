@@ -4,12 +4,11 @@ import { deviceDetect, mobileModel } from "react-device-detect"
 import Footer from './component/Layout/footer/Footer';
 import Head from './component/Layout/headLayout/Head';
 import Main from './component/Layout/mainLayout/Main';
-// import { scroll_utils } from './component/utils/scroll/check_scroll_length'
+
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Find_correct_number from './Projects/find_correct_number/Find_correct_number';
 import { Scroll_utils } from './component/utils/scroll/check_scroll_length';
 import Calculator from './Projects/calculator/calculator';
-// import Calendar from './Projects/calendar/calendarr';
 import Find_correct_text from './Projects/find_correct_text/find_correct_text';
 import Snake from './Projects/snake/snake';
 import Personal_manager from './Projects/calendar/containers/personal_manager';
@@ -17,17 +16,11 @@ import Pc_site from './Projects/pc_site/pc_site';
 import Heads_or_tails from './Projects/heads_or_tails/heads_or_tails'
 export default function App() {
 
-  // console.log(window.location.pathname)
   useEffect(() => {
     Scroll_utils();
-    var fs = require('./component/JsonFiles/ip_device.txt');
-    // fs.writeFile("test.txt", "{S}", function (err) {
-    //   if (err) {
-    //     console.log(err);
-    //   }
-    // });
     console.log("devicedata deviceDetect", deviceDetect()) // gives object shown in image below
     console.log("devicedata browserName", mobileModel) // gives "iphone"
+    
   }, [])
 
   return (
