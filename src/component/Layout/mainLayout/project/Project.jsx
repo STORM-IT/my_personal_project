@@ -17,6 +17,19 @@ export default function Project() {
     const state = useSelector(state => state.projects)
     const list_projects = state.PROJECT;
     const dispatch = useDispatch();
+    {/* <a href={project.path == "personal_site"|project.path == "management_restaurant" ? null : `/project/${project.path}`} 
+data-tooltip={`باز کردن پروژه ${project.title}`} data-tooltip-location="left">{project.title}</a> */}
+    const check_path = (path) => {
+        debugger
+        if (path == "personal_site") {
+            return null;
+        } 
+        // else if (path == "management_restaurant") {
+        //     return "https://github.com/alipsm/Restaurant_Management"
+        // }
+        return "/project/" + path;
+    }
+
     return (
         <Fragment>
 
@@ -227,11 +240,16 @@ export default function Project() {
 
                                     <div className='card_project' key={project.title}>
                                         <div className='card_project_contant'>
+                                            {/* <div className='card_project_title'><Link to={project.title == "سایت شخصی" ? "/" : `/project/${project.title}`} target='_top' onClick={project.title == "سایت شخصی" ? () => alert("شما در حال حاظر در سایت شخصی هستین") : ""} data-tooltip={`باز کردن پروژه ${project.title}`} data-tooltip-location="left">{project.title}</Link></div> */}
                                             <div className='card_project_title'>
                                                 {project.path == "management_restaurant" ? (
                                                         <a href="https://github.com/alipsm/Restaurant_Management" target='_blank' data-tooltip={`باز کردن پروژه ${project.title}`} data-tooltip-location="left">{project.title}</a>
                                                     ): (
+                                                // {/* <Link to={project.title == "سایت شخصی"|project.title == "حسابداری رستوران" ? `` : `/project/${project.title}`} target={project.title == "سایت شخصی" ? "" : "_blank"} onClick={project.title == "سایت شخصی" ? () => alert("شما در حال حاظر در سایت شخصی هستین") : `/project/${project.title}`} data-tooltip={`باز کردن پروژه ${project.title}`} data-tooltip-location="left">{project.title}</Link> */}
+                                                // <Link to={project.path == "personal_site"|project.path == "management_restaurant" ? `` : `/project/${project.path}`} onClick={project.path == "personal_site" ? () => alert("شما در حال حاظر در سایت شخصی هستین") : `/project/${project.path}`} data-tooltip={`باز کردن پروژه ${project.title}`} data-tooltip-location="left">{project.title}</Link>
+                                                // <Link to={project.path == "personal_site" ? `` : `/project/${project.path}`} data-tooltip={`باز کردن پروژه ${project.title}`} data-tooltip-location="left">{project.title}</Link>
                                                 <Link to={project.path == "personal_site" ? "" : `/project/${project.path}`} target={project.path == "personal_site" ? "" : "_blank"} onClick={project.path == "personal_site" ? (e) =>{e.preventDefault(); alert("شما در حال حاظر در سایت شخصی هستین");} : null} data-tooltip={`باز کردن پروژه ${project.title}`} data-tooltip-location="left">{project.title}</Link>
+                                                //  <Link to={`/project/snake`} >{project.title}</Link>
                                                  )} 
                                             </div>
                                             <div className='card_project_description'><p>{project.description}</p></div>
@@ -272,7 +290,7 @@ export default function Project() {
                 </Modal.Header>
                 <Modal.Body>
                     <h5>تعداد خط کد</h5>
-                    <p>جمع تمام خطوی کدی که در روند ساخت پروژه استفاده شده با فاکتور گرفتن کامنت ها و فضاهای خالی.</p>
+                    <p>جمع تمام خطوط کدی که در روند ساخت پروژه استفاده شده با فاکتور گرفتن کامنت ها و فضاهای خالی.</p>
                     <h5>ساخت</h5>
                     <p>به دلیل استفاده نکردن از گیت در زمان شروع پروژه ها اطلاعات تخمینی از زمان شروع پروژه قرار داده شده است.</p>
                     <h5>آپدیت</h5>
