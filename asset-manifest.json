@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.6d873206.css",
+    "main.js": "/portfolio/static/js/main.2b8335a5.js",
+    "static/js/787.5fc4858d.chunk.js": "/portfolio/static/js/787.5fc4858d.chunk.js",
+    "static/media/Resume.pdf": "/portfolio/static/media/Resume.7be075c6328c447cb517.pdf",
+    "static/media/Vazir-Bold.ttf": "/portfolio/static/media/Vazir-Bold.fc61016d5ab7aa60ad44.ttf",
+    "static/media/desktopGrayVector_1.png": "/portfolio/static/media/desktopGrayVector_1.25ca9e4a0a4d00462fc1.png",
+    "static/media/desktopGrayVector_2.png": "/portfolio/static/media/desktopGrayVector_2.c2aa4389cfef1b9597a2.png",
+    "static/media/desktopPurpleVector.png": "/portfolio/static/media/desktopPurpleVector.9b75907abd7acc4418d9.png",
+    "static/media/mobilePurpleVector.png": "/portfolio/static/media/mobilePurpleVector.e656462dc017a691cf97.png",
+    "static/media/humanGraphic.svg": "/portfolio/static/media/humanGraphic.d46efed14d1d34b571e97af80a80e1f3.svg",
+    "static/media/instagram.svg": "/portfolio/static/media/instagram.a86c9948d18f73073ae6b447fdbf2650.svg",
+    "static/media/linkedin.svg": "/portfolio/static/media/linkedin.265536f685f45aa0283947ef299dec21.svg",
+    "static/media/checkList.svg": "/portfolio/static/media/checkList.65a227d60aa63ef2a1784ed705f1c3eb.svg",
+    "static/media/twitter.svg": "/portfolio/static/media/twitter.2dddde435f2a6f1f756936bf961d60dd.svg",
+    "static/media/markLocation.svg": "/portfolio/static/media/markLocation.1080d5ce1f3336cc437b584c8ee38e83.svg",
+    "static/media/circleTick.svg": "/portfolio/static/media/circleTick.102778971a6eae8e8917a21f0e41d725.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/resumeMenu.svg": "/portfolio/static/media/resumeMenu.b6417319a4e48ddf1b962bc1e1c8e621.svg",
+    "static/media/telegram.svg": "/portfolio/static/media/telegram.83a0c82e74ee96656cb1997b64f3e419.svg",
+    "static/media/homeMenu.svg": "/portfolio/static/media/homeMenu.683bfc0f3bed3b4ae434b34ce8c7205e.svg",
+    "static/media/email.svg": "/portfolio/static/media/email.e699c62f04b61a0744ecf66c12a8e605.svg",
+    "static/media/education_cap.svg": "/portfolio/static/media/education_cap.6efc1d291c768aff3e1c05517630ad97.svg",
+    "static/media/myInformationMenu.svg": "/portfolio/static/media/myInformationMenu.80886115de08e4dfe5c597bfa335c312.svg",
+    "static/media/contactMenu.svg": "/portfolio/static/media/contactMenu.ee52eb43e7482814864b156484b520a9.svg",
+    "main.6d873206.css.map": "/portfolio/static/css/main.6d873206.css.map",
+    "main.2b8335a5.js.map": "/portfolio/static/js/main.2b8335a5.js.map",
+    "787.5fc4858d.chunk.js.map": "/portfolio/static/js/787.5fc4858d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d873206.css",
+    "static/js/main.2b8335a5.js"
+  ]
+}
