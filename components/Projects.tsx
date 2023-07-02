@@ -40,21 +40,21 @@ const Projects = () => {
                   <Image
                     className="w-[full] h-full object-contain"
                     src={segmento_1}
-                    alt="femgpt"
+                    alt="segmentoPic"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image
                     className="w-[full] h-full object-contain"
                     src={segmento_2}
-                    alt="femgpt"
+                    alt="segmentoPic"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image
                     className="w-[full] h-full object-contain"
                     src={segmento_3}
-                    alt="femgpt"
+                    alt="segmentoPic"
                   />
                 </SwiperSlide>
               </Swiper>
@@ -100,21 +100,21 @@ const Projects = () => {
                   <Image
                     className="w-[full] h-full object-contain"
                     src={englishLand_1}
-                    alt="femgpt"
+                    alt="englishLandPic"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image
                     className="w-[full] h-full object-contain"
                     src={englishLand_2}
-                    alt="femgpt"
+                    alt="englishLandPic"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image
                     className="w-[full] h-full object-contain"
                     src={englishLand_3}
-                    alt="femgpt"
+                    alt="englishLandPic"
                   />
                 </SwiperSlide>
               </Swiper>
@@ -156,28 +156,28 @@ const Projects = () => {
                   <Image
                     className="w-[full] h-full object-contain"
                     src={rsa_1}
-                    alt="femgpt"
+                    alt="rsaPic"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image
                     className="w-[full] h-full object-contain"
                     src={rsa_2}
-                    alt="femgpt"
+                    alt="rsaPic"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image
                     className="w-[full] h-full object-contain"
                     src={rsa_3}
-                    alt="femgpt"
+                    alt="rsaPic"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image
                     className="w-[full] h-full object-contain"
                     src={rsa_4}
-                    alt="femgpt"
+                    alt="rsaPic"
                   />
                 </SwiperSlide>
               </Swiper>
@@ -217,14 +217,14 @@ const Projects = () => {
                   <Image
                     className="w-[full] h-full object-contain"
                     src={cv_1}
-                    alt="femgpt"
+                    alt="cvPic"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image
                     className="w-[full] h-full object-contain"
                     src={cv_2}
-                    alt="femgpt"
+                    alt="cvPic"
                   />
                 </SwiperSlide>
               </Swiper>
