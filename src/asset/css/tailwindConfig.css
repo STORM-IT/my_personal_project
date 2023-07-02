@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: vazirBold;
+  src: url(../fonts/Vazir-Bold.ttf);
+}
+
+*{
+  font-family: vazirBold ;
+}
+
+.rtl-grid {
+  direction: rtl;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #E5E5E5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: #30475e9c;
+  
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  /* background: #D4D4D4;
+  background: #30475e9c;
+   */
+  background: #30475ed0;
+
+}

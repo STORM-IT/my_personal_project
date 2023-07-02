@@ -1,0 +1,22 @@
+.movingHomeVectore1 {
+  animation: animation_x-10px ease-in-out 2000ms infinite alternate;
+}
+.movingHomeVectore2 {
+  animation: animation_x-10px ease-in-out 25000ms infinite alternate;
+}
+.movingHomeVectore3 {
+  animation: animation_x-10px ease-in-out 3000ms infinite alternate;
+}
+
+@keyframes animation_x-10px {
+  from {
+    transform: translateX(0px);
+
+    /* transform:translate(10px); */
+  }
+  to {
+    transform: translateX(-10px);
+
+    /* transform:translate(-0px) */
+  }
+}
