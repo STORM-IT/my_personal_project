@@ -1,11 +1,12 @@
 import "../styles/globals.css";
+import 'swiper/css';
 import type { AppProps } from "next/app";
 import Script from "next/script";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Script
+      {/* <Script
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
       />
@@ -19,7 +20,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           page_path: window.location.pathname,
           });
         `}
-      </Script>
+      </Script> */}
       <Component {...pageProps} />
     </>
   );

@@ -8,45 +8,22 @@ const About = () => {
   return (
     <section
       id="about"
-      className="max-w-containerSmall mx-auto py-10 lgl:py-32 flex flex-col gap-8"
-    >
+      className="max-w-containerSmall mx-auto py-10 lgl:py-32 flex flex-col gap-8">
       <SectionTitle title="About" />
-
       <div className="flex flex-col lgl:flex-row gap-16">
         <div className="w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4">
-          <p>
-            With a robust career spanning over 6 years as a skilled software
-            engineer, I have made significant contributions to numerous
-            institutions, building applications that cater to diverse sectors
-            such as finance, education, product management, design, and SAAS. My
-            expertise lies in utilizing a wide range of cutting-edge
-            technologies, including JavaScript, TypeScript, React, Next.js,
-            Node.js, Nest.js, GCP, and AWS, to develop highly functional and
-            efficient solutions.
-          </p>
-          <p>
-            As a full-stack engineer, I possess a comprehensive understanding of
-            both front-end and back-end development, allowing me to seamlessly
-            navigate the entire software development lifecycle.
-          </p>
-          <p>
-            What truly drives me is the opportunity to harness technology and
-            make a tangible difference in people&apos;s lives. I am passionate
-            about creating applications and systems that enhance productivity,
-            streamline processes, and simplify daily tasks for users. This
-            dedication to improving daily experiences through technology has
-            been the cornerstone of my work throughout my career.
-          </p>
-          {/* <p>
-            Looking ahead, my aspirations extend towards the realms of AI and
-            cybersecurity. I am eager to dive deeper into these fields,
-            leveraging artificial intelligence to develop intelligent systems
-            that can automate complex tasks and enhance decision-making
-            processes. Additionally, I am keen on contributing to the
-            cybersecurity landscape, working towards building robust and secure
-            applications that safeguard sensitive data and protect against
-            evolving threats.
-          </p> */}
+          hi everyone
+          <br />
+          hope you are well
+          <br />
+          my name is ali parsamanesh
+          <br />
+          i'm living in the iran
+          <br />
+          It has been almost 3+ years since I entered the world of technology
+          <br />
+          Currently, I really love programming and new technologies
+          
           <p>
             With a drive for continuous learning and a desire to stay at the
             forefront of technological advancements, I am committed to expanding
@@ -76,7 +53,7 @@ const About = () => {
               <span className="text-textGreen">
                 <AiFillThunderbolt />
               </span>
-              NodeJs
+              AlpineJs
             </li>
             <li className="flex items-center gap-2">
               <span className="text-textGreen">
@@ -88,19 +65,31 @@ const About = () => {
               <span className="text-textGreen">
                 <AiFillThunderbolt />
               </span>
-              Google Cloud
+              Redux
             </li>
             <li className="flex items-center gap-2">
               <span className="text-textGreen">
                 <AiFillThunderbolt />
               </span>
-              Mongodb
+              Tailwindcss
             </li>
             <li className="flex items-center gap-2">
               <span className="text-textGreen">
                 <AiFillThunderbolt />
               </span>
-              PostgreSql
+              Context Api
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-textGreen">
+                <AiFillThunderbolt />
+              </span>
+              Scss
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-textGreen">
+                <AiFillThunderbolt />
+              </span>
+              Zustand
             </li>
           </ul>
         </div>

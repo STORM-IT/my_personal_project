@@ -121,7 +121,7 @@ const Navbar = () => {
               </motion.li>
             </Link>
           </ul>
-          <Link href="/assets/Obafemi_Ogunmokun_Resume.pdf" target="_blank">
+          <Link href="/assets/parsamanesh.pdf" target="_blank">
             <motion.button
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -153,7 +153,7 @@ const Navbar = () => {
               initial={{ x: 20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.1 }}
-              className="w-[80%] h-full overflow-y-scroll scrollbarHide bg-[#112240] flex flex-col items-center px-4 py-10 relative"
+              className="w-[80%] h-full  scrollbarHide bg-[#112240] flex flex-col items-center px-4 py-10 relative"
             >
               <MdOutlineClose
                 onClick={() => setShowMenu(false)}
@@ -233,7 +233,7 @@ const Navbar = () => {
                 </ul>
 
                 <Link
-                  href="/assets/Obafemi_Ogunmokun_Resume.pdf"
+                  href="/assets/parsamanesh.pdf"
                   target="_blank"
                 >
                   <motion.button
@@ -252,14 +252,14 @@ const Navbar = () => {
                   transition={{ delay: 0.8, ease: "easeIn" }}
                   className="flex items-center justify-center w-full gap-4"
                 >
-                  <Link href="https://github.com/femzy123" target="_blank">
+                  <Link href="https://github.com/alipsm" target="_blank">
                     <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
                       <TbBrandGithub />
                     </span>
                   </Link>
 
                   <Link
-                    href="https://www.linkedin.com/in/obafemiogunmokun/"
+                    href="https://www.linkedin.com/in/ali-parsamanesh"
                     target="_blank"
                   >
                     <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
@@ -267,11 +267,7 @@ const Navbar = () => {
                     </span>
                   </Link>
 
-                  <Link href="https://twitter.com/femzycodes" target="_blank">
-                    <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
-                      <SlSocialTwitter />
-                    </span>
-                  </Link>
+                  
                 </motion.div>
 
                 <motion.a

@@ -16,7 +16,8 @@ const Contact = () => {
         WHather you have a question or just want to say hi, I&apos;ll surely get
         back to you!
       </p>
-      <Link href="mailto:obafemiogunmokun@gmail.com">
+     
+      <Link href="mailto:parsamanesh.it@gmail.com">
         <button className="w-40 h-14 border border-textGreen rounded">Say Hello</button>
       </Link>
     </section>

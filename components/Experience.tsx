@@ -1,56 +1,29 @@
 import React, { useState } from "react";
 import SectionTitle from "./SectionTitle";
-import RpInc from "./works/RpInc";
-import Nativshark from "./works/Nativshark";
-import Ansa from "./works/Ansa";
-import Enovait from "./works/Enovait";
-import Lopwork from "./works/Lopwork";
+import Xaankoo from "./works/Xaankoo";
+import Freelancer from "./works/Freelancer";
 
 const Experience = () => {
-  const [rpinc, setRpinc] = useState(true)
-  const [nativshark, setNativshark] = useState(false)
+  const [freelancer, setFreelancer] = useState(true)
+  const [xaankoo, setXaankoo] = useState(false)
   const [lopwork, setLopwork] = useState(false)
-  const [enovait, setEnovait] = useState(false)
-  const [ansa, setAnsa] = useState(false)
 
   const selectRP = () => {
-    setRpinc(true)
-    setNativshark(false)
+    setFreelancer(true)
+    setXaankoo(false)
     setLopwork(false)
-    setEnovait(false)
-    setAnsa(false);
   }
 
   const selectNativshark = () => {
-    setRpinc(false);
-    setNativshark(true);
+    setFreelancer(false);
+    setXaankoo(true);
     setLopwork(false);
-    setEnovait(false);
-    setAnsa(false);
   };
 
   const selectLopworks = () => {
-    setRpinc(false);
-    setNativshark(false);
+    setFreelancer(false);
+    setXaankoo(false);
     setLopwork(true);
-    setEnovait(false);
-    setAnsa(false);
-  };
-
-  const selectEnovait = () => {
-    setRpinc(false);
-    setNativshark(false);
-    setLopwork(false);
-    setEnovait(true);
-    setAnsa(false);
-  };
-
-  const selectAnsa = () => {
-    setRpinc(false);
-    setNativshark(false);
-    setLopwork(false);
-    setEnovait(false);
-    setAnsa(true)
   };
 
   return (
@@ -65,18 +38,18 @@ const Experience = () => {
           <li
             onClick={selectRP}
             className={`border-l-2 ${
-              rpinc ? "border-l-textGreen" : "border-l-hoverColor"
+              freelancer ? "border-l-textGreen" : "border-l-hoverColor"
             } text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
           >
-            Relentless Persistence Inc.
+            Freelancer
           </li>
           <li
             onClick={selectNativshark}
             className={`border-l-2 ${
-              nativshark ? "border-l-textGreen" : "border-l-hoverColor"
+              xaankoo ? "border-l-textGreen" : "border-l-hoverColor"
             } text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
           >
-            NativShark
+            Xaankoo
           </li>
           <li
             onClick={selectLopworks}
@@ -84,30 +57,11 @@ const Experience = () => {
               lopwork ? "border-l-textGreen" : "border-l-hoverColor"
             } text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
           >
-            Lopworks Limited
-          </li>
-          <li
-            onClick={selectEnovait}
-            className={`border-l-2 ${
-              enovait ? "border-l-textGreen" : "border-l-hoverColor"
-            } text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
-          >
-            Enovait
-          </li>
-          <li
-            onClick={selectAnsa}
-            className={`border-l-2 ${
-              ansa ? "border-l-textGreen" : "border-l-hoverColor"
-            } text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
-          >
-            ANSA
+            
           </li>
         </ul>
-        {rpinc && <RpInc />}
-        {nativshark && <Nativshark />}
-        {lopwork && <Lopwork />}
-        {enovait && <Enovait />}
-        {ansa && <Ansa />}
+        {freelancer && <Freelancer />}
+        {xaankoo && <Xaankoo />}
       </div>
     </section>
   );

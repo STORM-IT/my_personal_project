@@ -2,150 +2,245 @@ import React from "react";
 import SectionTitle from "./SectionTitle";
 import Link from "next/link";
 import Image from "next/image";
-import { covid, femgpt, femgram, nativshark, sprintzero, sumzy } from "../public/assets";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper";
+import {
+  segmento_1,
+  segmento_2,
+  segmento_3,
+  englishLand_1,
+  englishLand_2,
+  englishLand_3,
+  rsa_1,
+  rsa_2,
+  rsa_3,
+  rsa_4,
+  cv_1,
+  cv_2,
+  restaurant_1,
+} from "../public/assets";
 
 const Projects = () => {
   return (
     <section id="project" className="max-w-container mx-auto lgl:px-20 py-24">
       <SectionTitle title="Some Things I have Built" />
-
       <div className="flex flex-col gap-14">
         <div className="w-full flex flex-col xl:flex-row items-center justify-center gap-28 lgl:gap-0 mt-10">
-          <Link
-            className="w-full xl:w-1/2 h-auto relative group"
-            href="https://femgpt.vercel.app/"
-            target="_blank"
-          >
+          <div className="w-full xl:w-1/2 h-auto relative group">
             <div>
-              <Image
-                className="w-[full] h-full object-contain"
-                src={femgpt}
-                alt="femgpt"
-              />
+              <Swiper
+                modules={[Autoplay]}
+                loop
+                autoplay={{
+                  delay: 3000,
+                  disableOnInteraction: false,
+                }}
+                slidesPerView={1}>
+                <SwiperSlide>
+                  <Image
+                    className="w-[full] h-full object-contain"
+                    src={segmento_1}
+                    alt="femgpt"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    className="w-[full] h-full object-contain"
+                    src={segmento_2}
+                    alt="femgpt"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    className="w-[full] h-full object-contain"
+                    src={segmento_3}
+                    alt="femgpt"
+                  />
+                </SwiperSlide>
+              </Swiper>
             </div>
-          </Link>
+          </div>
 
           <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-end text-right xl:-ml-16 z-10">
-            {/* <p className="font-titleFont text-textGreen text-sm tracking-wide">
-            Featured Project
-          </p> */}
-            <h3 className="text-2xl font-bold">FemGPT</h3>
+            <Link href={"https://segmento.ir/"} target="_blank">
+              <h3 className="text-2xl font-bold">Segmento</h3>
+            </Link>
             <p className="bg-[#112240] text-left text-sm md:text-base p-2 md:p-6 rounded-md">
-              FemGPT is an advanced ChatGPT clone app built with JavaScript,
-              Node.js, HTML, and CSS. It offers a seamless interface for
-              engaging in intelligent and dynamic conversations. With its
-              powerful natural language processing capabilities, FemGPT allows
-              users to ask questions, seek recommendations, and have meaningful
-              discussions.
+              Get practical options for SEO by using this site.
+              <br />
+              This site is able to suggest you to find the title of the articles
+              according to the entered keywords.
+              <br />
+              Also, according to the purchased plan, this build can give you
+              unique features, for example, you can reach it by entering the
+              workspace and check its rank on Google pages.
             </p>
             <ul className="text-xs md:text-sm font-titleFont tracking-wide flex gap-2 md:gap-5 justify-between text-textDark">
               <li>Javascript</li>
-              <li>Nodejs</li>
+              <li>ReactJs</li>
               <li>HTML & CSS</li>
-              <li>OpenAI</li>
+              <li>Tailwindcss</li>
+              <li>Redux</li>
             </ul>
           </div>
         </div>
 
         <div className="w-full flex flex-col xl:flex-row-reverse items-center justify-center gap-28 lgl:gap-0 mt-10">
-          <Link
-            className="w-full xl:w-1/2 h-auto relative group"
-            href="https://nativshark.com"
-            target="_blank"
-          >
+          <div className="w-full xl:w-1/2 h-auto relative group">
             <div>
-              <Image
-                className="w-[full] h-full object-contain"
-                src={nativshark}
-                alt="nativshark"
-              />
+              <Swiper
+                modules={[Autoplay]}
+                loop
+                autoplay={{
+                  delay: 3000,
+                  disableOnInteraction: false,
+                }}
+                slidesPerView={1}>
+                <SwiperSlide>
+                  <Image
+                    className="w-[full] h-full object-contain"
+                    src={englishLand_1}
+                    alt="femgpt"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    className="w-[full] h-full object-contain"
+                    src={englishLand_2}
+                    alt="femgpt"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    className="w-[full] h-full object-contain"
+                    src={englishLand_3}
+                    alt="femgpt"
+                  />
+                </SwiperSlide>
+              </Swiper>
             </div>
-          </Link>
-
+          </div>
           <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-start text-right xl:-mr-16 z-10">
-            <h3 className="text-2xl font-bold">Nativshark</h3>
+            <Link href={"https://alipsm.ir/englishLand/"} target="_blank">
+              <h3 className="text-2xl font-bold">English Land</h3>
+            </Link>
             <p className="bg-[#112240] text-left text-sm md:text-base p-2 md:p-6 rounded-md">
-              NativShark is a revolutionary language learning platform that
-              leverages artificial intelligence and immersive techniques to
-              provide a highly effective and engaging language learning
-              experience. With personalized lessons, interactive exercises, and
-              real-time feedback, NativShark empowers learners to master new
-              languages with confidence and fluency.
+              A very simple machine that can help you learn English.
+              <br />
+              Using an intelligent algorithm, this site can compare your words
+              with their original meanings, and if your meaning is almost equal,
+              it will give you the correct answer.
             </p>
             <ul className="text-xs md:text-sm font-titleFont tracking-wide flex gap-2 md:gap-5 justify-between text-textDark">
               <li>Nextjs</li>
               <li>Typescript</li>
               <li>React</li>
               <li>Tailwindcss</li>
-              <li>AWS</li>
+              <li>Sass</li>
+              <li>Axios</li>
             </ul>
           </div>
         </div>
-
         <div className="w-full flex flex-col xl:flex-row items-center justify-center gap-28 lgl:gap-0 mt-10">
-          <Link
-            className="w-full xl:w-1/2 h-auto relative group"
-            href="https://sumzy.netlify.app/"
-            target="_blank"
-          >
+          <div className="w-full xl:w-1/2 h-auto relative group">
             <div>
-              <Image
-                className="w-[full] h-full object-contain"
-                src={sumzy}
-                alt="sprintzero"
-              />
+              <Swiper
+                modules={[Autoplay]}
+                loop
+                autoplay={{
+                  delay: 3000,
+                  disableOnInteraction: false,
+                }}
+                slidesPerView={1}>
+                <SwiperSlide>
+                  <Image
+                    className="w-[full] h-full object-contain"
+                    src={rsa_1}
+                    alt="femgpt"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    className="w-[full] h-full object-contain"
+                    src={rsa_2}
+                    alt="femgpt"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    className="w-[full] h-full object-contain"
+                    src={rsa_3}
+                    alt="femgpt"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    className="w-[full] h-full object-contain"
+                    src={rsa_4}
+                    alt="femgpt"
+                  />
+                </SwiperSlide>
+              </Swiper>
             </div>
-          </Link>
-
+          </div>
           <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-end text-right xl:-ml-16 z-10">
-            {/* <p className="font-titleFont text-textGreen text-sm tracking-wide">
-            Featured Project
-          </p> */}
-            <h3 className="text-2xl font-bold">Sumzy</h3>
+            <Link
+              href={"https://github.com/alipsm/RSA-cryptosystem"}
+              target="_blank">
+              <h3 className="text-2xl font-bold">RSA Algorithm</h3>
+            </Link>
             <p className="bg-[#112240] text-left text-sm md:text-base p-2 md:p-6 rounded-md">
-              Sumzy is an open-source article summarizer that simplifies your
-              reading experience by transforming lengthy articles into clear and
-              concise summaries. It utilizes the power of OpenAI GPT-4 to
-              provide efficient and accurate summaries.
+              You can encrypt your text using this algorithm and decrypt it
+              using private and public keys.
+              <br />
+              This tool has the ability to automatically break the algorithm and
+              find the simplest keys.
             </p>
             <ul className="text-xs md:text-sm font-titleFont tracking-wide flex gap-2 md:gap-5 justify-between text-textDark">
-              <li>React</li>
-              <li>Tailwindcss</li>
-              <li>Redux</li>
-              <li>OpenAI</li>
+              <li>C++</li>
             </ul>
           </div>
         </div>
 
         <div className="w-full flex flex-col xl:flex-row-reverse items-center justify-center gap-28 lgl:gap-0 mt-10">
-          <Link
-            className="w-full xl:w-1/2 h-auto relative group"
-            href="https://covid-19-tracker-2257e.web.app/"
-            target="_blank"
-          >
+          <div className="w-full xl:w-1/2 h-auto relative group">
             <div>
-              <Image
-                className="w-[full] h-full object-contain"
-                src={covid}
-                alt="covid app"
-              />
+              <Swiper
+                modules={[Autoplay]}
+                loop
+                autoplay={{
+                  delay: 3000,
+                  disableOnInteraction: false,
+                }}
+                slidesPerView={1}>
+                <SwiperSlide>
+                  <Image
+                    className="w-[full] h-full object-contain"
+                    src={cv_1}
+                    alt="femgpt"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    className="w-[full] h-full object-contain"
+                    src={cv_2}
+                    alt="femgpt"
+                  />
+                </SwiperSlide>
+              </Swiper>
             </div>
-          </Link>
-
+          </div>
           <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-start text-right xl:-mr-16 z-10">
-            <h3 className="text-2xl font-bold">Covid 19 Tracker</h3>
+            <h3 className="text-2xl font-bold">Basic Personal Resume</h3>
             <p className="bg-[#112240] text-left text-sm md:text-base p-2 md:p-6 rounded-md">
-              Covid19-tracker is a comprehensive and user-friendly app designed
-              to track and display up-to-date Covid-19 data from around the
-              world. Built with React, Firebase, Chart.js, and Leaflet, this app
-              provides a seamless and informative experience for users seeking
-              accurate information on the global pandemic.
+              Responsive site for entering personal and professional information
+              as well as introducing projects.
             </p>
             <ul className="text-xs md:text-sm font-titleFont tracking-wide flex gap-2 md:gap-5 justify-between text-textDark">
               <li>React</li>
-              <li>Firebase</li>
-              <li>Leaflet</li>
-              <li>Chartjs</li>
+              <li>NextJs</li>
+              <li>TailwindCss</li>
+              <li></li>
             </ul>
           </div>
         </div>
@@ -154,12 +249,11 @@ const Projects = () => {
           <Link
             className="w-full xl:w-1/2 h-auto relative group"
             href="https://femgram-37983.web.app/"
-            target="_blank"
-          >
+            target="_blank">
             <div>
               <Image
                 className="w-[full] h-full object-contain"
-                src={femgram}
+                src={restaurant_1}
                 alt="femgram"
               />
             </div>
@@ -169,19 +263,24 @@ const Projects = () => {
             {/* <p className="font-titleFont text-textGreen text-sm tracking-wide">
             Featured Project
           </p> */}
-            <h3 className="text-2xl font-bold">Femgram</h3>
+            <h3 className="text-2xl font-bold">Restaurant Management</h3>
             <p className="bg-[#112240] text-left text-sm md:text-base p-2 md:p-6 rounded-md">
-              Femgram is a stylish photo gallery web app powered by React,
-              Firebase, and Framer Motion. It provides a seamless user
-              experience for browsing and showcasing photos. With its minimalist
-              design, secure cloud storage, and elegant animations, Femgram
-              offers a visually appealing way to explore stunning photographs on
-              any device.
+              Windows application to manage restaurant and store accounting This
+              program uses sql server to store information Some features of this
+              application:
+              <br />
+              create,delete,update for admin and users/ setting admin access to
+              the application / the amount of sales and working time of each
+              admin / calculating the progress and performance of the restaurant
+              compared to previous months / view the purchase history of each
+              user / ...
+              <br />
+              And many, many other features
             </p>
             <ul className="text-xs md:text-sm font-titleFont tracking-wide flex gap-2 md:gap-5 justify-between text-textDark">
-              <li>React</li>
-              <li>Framer Motion</li>
-              <li>Firebase</li>
+              <li>C#</li>
+              <li>Sql</li>
+              <li>Stimulsoft</li>
             </ul>
           </div>
         </div>
