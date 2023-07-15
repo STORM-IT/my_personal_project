@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { AiFillThunderbolt } from "react-icons/ai";
 import { TiArrowForward } from "react-icons/ti";
 
 const Freelancer = () => {

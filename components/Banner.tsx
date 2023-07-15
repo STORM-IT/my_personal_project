@@ -45,7 +45,7 @@ const Banner = () => {
         transition={{ duration: 0.5, delay: 0.6 }}
         className="text-base md:max-w-[650px] text-textDark font-medium">
         I don't try to clean all the codes in the world, but I try to create
-        cleaner programs and codes every day, finally if everyone cleans their
+        cleaner applications and codes every day, finally if everyone cleans their
         own code, no dirty code will remain.
       </motion.p>
 

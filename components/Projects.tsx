@@ -63,7 +63,7 @@ const Projects = () => {
 
           <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-end text-right xl:-ml-16 z-10">
             <Link href={"https://segmento.ir/"} target="_blank">
-              <h3 className="text-2xl font-bold">Segmento</h3>
+              <h3 className="text-2xl font-bold underline">Segmento</h3>
             </Link>
             <p className="bg-[#112240] text-left text-sm md:text-base p-2 md:p-6 rounded-md">
               Get practical options for SEO by using this site.
@@ -122,7 +122,7 @@ const Projects = () => {
           </div>
           <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-start text-right xl:-mr-16 z-10">
             <Link href={"https://alipsm.ir/englishLand/"} target="_blank">
-              <h3 className="text-2xl font-bold">English Land</h3>
+              <h3 className="text-2xl font-bold underline">English Land</h3>
             </Link>
             <p className="bg-[#112240] text-left text-sm md:text-base p-2 md:p-6 rounded-md">
               A very simple machine that can help you learn English.
@@ -187,7 +187,7 @@ const Projects = () => {
             <Link
               href={"https://github.com/alipsm/RSA-cryptosystem"}
               target="_blank">
-              <h3 className="text-2xl font-bold">RSA Algorithm</h3>
+              <h3 className="text-2xl font-bold underline">RSA Algorithm</h3>
             </Link>
             <p className="bg-[#112240] text-left text-sm md:text-base p-2 md:p-6 rounded-md">
               You can encrypt your text using this algorithm and decrypt it
@@ -201,7 +201,6 @@ const Projects = () => {
             </ul>
           </div>
         </div>
-
         <div className="w-full flex flex-col xl:flex-row-reverse items-center justify-center gap-28 lgl:gap-0 mt-10">
           <div className="w-full xl:w-1/2 h-auto relative group">
             <div>
@@ -231,11 +230,11 @@ const Projects = () => {
             </div>
           </div>
           <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-start text-right xl:-mr-16 z-10">
-          <Link
+            <Link
               href={"https://alipsm.github.io/portfolio/#/home"}
               target="_blank">
-            <h3 className="text-2xl font-bold">Basic Personal Resume</h3>
-              </Link>
+              <h3 className="text-2xl font-bold underline">Basic Personal Resume</h3>
+            </Link>
             <p className="bg-[#112240] text-left text-sm md:text-base p-2 md:p-6 rounded-md">
               Responsive site for entering personal and professional information
               as well as introducing projects.
@@ -248,25 +247,20 @@ const Projects = () => {
             </ul>
           </div>
         </div>
-
         <div className="w-full flex flex-col xl:flex-row items-center justify-center gap-28 lgl:gap-0 mt-10">
-          
-            <div>
-              <Image
-                className="w-[full] h-full object-contain"
-                src={restaurant_1}
-                alt="femgram"
-              />
-            </div>
-         
-
+          <div>
+            <Image
+              className="w-[full] h-full object-contain"
+              src={restaurant_1}
+              alt="femgram"
+            />
+          </div>
           <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-end text-right xl:-ml-16 z-10">
-            {/* <p className="font-titleFont text-textGreen text-sm tracking-wide">
-            Featured Project
-          </p> */}
-          <Link href={"https//github.com/alipsm/Restaurant_Management"} target="_blank">
-            <h3 className="text-2xl font-bold">Restaurant Management</h3>
-          </Link>
+            <Link
+              href={"https://github.com/alipsm/Restaurant_Management"}
+              target="_blank">
+              <h3 className="text-2xl font-bold underline">Restaurant Management</h3>
+            </Link>
             <p className="bg-[#112240] text-left text-sm md:text-base p-2 md:p-6 rounded-md">
               Windows application to manage restaurant and store accounting This
               program uses sql server to store information Some features of this

@@ -1,5 +1,5 @@
 import { TbBrandGithub } from "react-icons/tb";
-import { SlSocialLinkedin, SlSocialTwitter } from "react-icons/sl";
+import { SlSocialLinkedin } from "react-icons/sl";
 import Link from "next/link";
 
 const Footer = () => {

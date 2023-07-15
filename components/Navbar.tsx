@@ -3,7 +3,7 @@ import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { MdOutlineClose } from "react-icons/md";
 import { TbBrandGithub } from "react-icons/tb";
-import { SlSocialLinkedin, SlSocialTwitter } from "react-icons/sl";
+import { SlSocialLinkedin } from "react-icons/sl";
 
 const Navbar = () => {
   const ref = useRef<string | any>("");
@@ -41,12 +41,6 @@ const Navbar = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          {/* <Link
-            href="/"
-            className="w-14 text-xl hover:text-2xl hover:bg-hoverColor font-bold border-2 border-white rounded p-2 transition-all duration-300 linear"
-          >
-            00
-          </Link> */}
         </motion.div>
 
         <div className="hidden mdl:inline-flex items-center gap-7">
@@ -274,7 +268,7 @@ const Navbar = () => {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 1.0, ease: "easeIn" }}
-                  href="mailto:obafemiogunmokun@gmail.com"
+                  href="mailto:parsamanesh.it@gmail.com"
                 >
                   <p className="text-sm w-72 tracking-widest text-textGreen text-center mt-4">
                     Send a message!
